@@ -1,0 +1,2289 @@
+{
+"sections": {
+"ATW TWR 051-052 Part 3": {
+"author": "Abdulaziz Alharbi",
+"questions": [
+{
+"variants": [
+"In standard ICAO phraseology, the instruction 'LINE UP AND WAIT' means:",
+"What does the controller mean by 'LINE UP AND WAIT'?",
+"The phrase 'LINE UP AND WAIT' directs the pilot to:"
+],
+"options": [
+["Enter the runway and hold, awaiting take‑off clearance", "Taxi onto the runway and wait for departure clearance", "Move onto the runway and hold, expecting further clearance"],
+["Cleared for take‑off immediately", "Take off without delay", "You are cleared for immediate departure"],
+["Hold short of the runway", "Stop before the runway", "Do not enter the runway"],
+["Vacate the runway after landing", "Leave the runway", "Exit the runway"],
+["Continue taxiing along the taxiway", "Proceed on the taxiway", "Taxi along the designated route"],
+["Go around and abandon the approach", "Execute a missed approach", "Climb away from the runway"]
+],
+"correct": "Enter the runway and hold, awaiting take‑off clearance",
+"hint": "LINE UP authorises entry onto the active runway but does not grant take‑off clearance.",
+"insight": "CLEARED FOR TAKE‑OFF gives immediate take‑off; HOLD SHORT prohibits entry; VACATE RUNWAY is after landing.",
+"explanation": "'LINE UP AND WAIT' means the pilot may taxi onto the runway and hold position until take‑off clearance is issued."
+},
+{
+"variants": [
+"What is the standard ICAO phraseology for authorising an aircraft to enter the runway and await take‑off clearance?",
+"Which controller instruction permits a pilot to taxi onto the runway and hold?",
+"To instruct a pilot to line up on the runway and wait, the controller says:"
+],
+"options": [
+["LINE UP AND WAIT", "LINE UP [AND WAIT]", "Line up and wait"],
+["CLEARED FOR TAKEOFF", "CLEARED FOR TAKE‑OFF", "Take‑off clearance issued"],
+["HOLD SHORT OF RUNWAY", "HOLD SHORT", "Stop before the runway"],
+["TAXI TO HOLDING POINT", "TAXI TO HOLD", "Proceed to the holding point"],
+["BACKTRACK APPROVED", "BACKTRACK RUNWAY", "Approved to backtrack"],
+["VACATE RUNWAY", "LEAVE THE RUNWAY", "Exit runway now"]
+],
+"correct": "LINE UP AND WAIT",
+"hint": "This phrase deliberately separates the lining‑up clearance from the take‑off clearance.",
+"insight": "CLEARED FOR TAKE‑OFF would grant immediate departure; HOLD SHORT would forbid runway entry; BACKTRACK is turning around.",
+"explanation": "The correct phraseology to authorise an aircraft to enter the runway and hold is 'LINE UP AND WAIT'."
+},
+{
+"variants": [
+"When a controller says 'BACKTRACK APPROVED', the pilot is authorised to:",
+"What does 'BACKTRACK APPROVED' mean?",
+"The instruction 'BACKTRACK APPROVED' allows a pilot to:"
+],
+"options": [
+["Taxi along the runway in the opposite direction to reach a position", "Back‑track on the runway", "Move along the runway in the reverse direction"],
+["Enter the runway and hold for take‑off", "Line up and wait on the runway", "Take position on the runway and hold"],
+["Cross the runway without delay", "Cross the runway immediately", "Cross the active runway"],
+["Take off in the opposite direction", "Depart in the reverse runway direction", "Take‑off against the published direction"],
+["Vacate the runway immediately", "Leave the runway at once", "Exit the runway now"],
+["Turn 180 degrees on the runway using a turn pad", "Use the turn pad for a 180‑degree turn", "Turn around on the runway pad"]
+],
+"correct": "Taxi along the runway in the opposite direction to reach a position",
+"hint": "Backtracking is used when no taxiways exist at the runway end and the aircraft must use the runway to turn around.",
+"insight": "It is not lining up, crossing, taking off, vacating, or a turn‑pad turn; it's a taxi along the runway in the reverse direction.",
+"explanation": "'BACKTRACK APPROVED' means the aircraft is cleared to taxi along the runway in the opposite direction to reach a position, usually the start of the runway."
+},
+{
+"variants": [
+"What phraseology cancels a take‑off clearance after it has been issued?",
+"When the controller needs to stop a take‑off, what is the exact phrase?",
+"To cancel a take‑off clearance, the controller says:"
+],
+"options": [
+["HOLD POSITION, CANCEL TAKE‑OFF I SAY AGAIN CANCEL TAKE‑OFF", "HOLD POSITION, CANCEL TAKE‑OFF", "Cancel take‑off, hold position"],
+["STOP IMMEDIATELY", "ABORT TAKE‑OFF", "Reject take‑off now"],
+["LINE UP AND WAIT I SAY AGAIN LINE UP AND WAIT", "LINE UP AND WAIT again", "Line up and wait, repeated"],
+["GO AROUND", "Execute missed approach", "Abandon landing, climb away"],
+["VACATE RUNWAY IMMEDIATELY", "Clear the runway", "Leave the runway at once"],
+["CLEARED TO LAND CANCELLED", "CLEARED TO LAND REVOKED", "Landing clearance cancelled"]
+],
+"correct": "HOLD POSITION, CANCEL TAKE‑OFF I SAY AGAIN CANCEL TAKE‑OFF",
+"hint": "The phrase explicitly repeats the cancellation to ensure it is understood under high workload.",
+"insight": "STOP IMMEDIATELY is not standard; GO AROUND is for landing; VACATE RUNWAY is after landing.",
+"explanation": "The correct phraseology to cancel a take‑off clearance is 'HOLD POSITION, CANCEL TAKE‑OFF I SAY AGAIN CANCEL TAKE‑OFF'."
+},
+{
+"variants": [
+"The phrase 'GO AROUND' is used to instruct a pilot to:",
+"What does the controller mean by 'GO AROUND'?",
+"'GO AROUND' directs the flight crew to:"
+],
+"options": [
+["Abandon the approach and climb away", "Execute a missed approach", "Discontinue the landing and climb"],
+["Enter the runway and hold", "Line up and wait on the runway", "Take position and hold"],
+["Taxi along the runway for a full length", "Use the full runway length to taxi", "Proceed along the runway for backtrack"],
+["Reduce speed and hold on the taxiway", "Slow down and wait", "Hold on the taxiway"],
+["Take off immediately", "Commence departure without delay", "Begin take‑off roll"],
+["Circle the aerodrome once", "Make one orbit around the airport", "Fly a full circuit and re‑join"]
+],
+"correct": "Abandon the approach and climb away",
+"hint": "GO AROUND is a safety command used when the approach or runway is unsafe.",
+"insight": "It is not a take‑off clearance or a taxi instruction; it cancels the landing attempt.",
+"explanation": "'GO AROUND' means the pilot must abandon the approach and execute a missed‑approach procedure."
+},
+{
+"variants": [
+"Which phraseology clears an aircraft to perform a low approach without landing?",
+"What is the standard phrase for a low approach?",
+"To authorise a flight crew to fly low over the runway without touching down, the controller says:"
+],
+"options": [
+["CLEARED LOW APPROACH [RUNWAY (number)]", "CLEARED LOW APPROACH", "Low approach approved"],
+["CLEARED TOUCH AND GO", "Touch and go approved", "Cleared touch‑and‑go"],
+["MAKE FULL STOP", "Land and stop", "Full stop landing"],
+["GO AROUND", "Execute missed approach", "Climb away now"],
+["ORBIT RIGHT", "Make a right‑hand circuit", "Circle right"],
+["CLEARED FOR TAKE‑OFF", "Take‑off approved", "Cleared for departure"]
+],
+"correct": "CLEARED LOW APPROACH [RUNWAY (number)]",
+"hint": "A low approach allows the pilot to inspect the runway or practise without landing.",
+"insight": "TOUCH AND GO involves landing and immediate take‑off; FULL STOP is a landing; GO AROUND aborts.",
+"explanation": "The correct clearance for a low approach is 'CLEARED LOW APPROACH [RUNWAY (number)]'."
+},
+{
+"variants": [
+"'CLEARED TOUCH AND GO' authorises the pilot to:",
+"What does the phrase 'CLEARED TOUCH AND GO' mean?",
+"When cleared for a touch‑and‑go, the pilot is expected to:"
+],
+"options": [
+["Land and then immediately take off again", "Touch down and depart without stopping", "Land, rolling, and then go‑around"],
+["Land and come to a full stop", "Make a full stop landing", "Stop on the runway after landing"],
+["Perform a low approach without landing", "Fly over the runway without touching", "Low pass only"],
+["Abandon the approach and climb away", "Go around", "Discontinue the landing attempt"],
+["Taxi along the runway and return", "Backtrack and take off", "Use the runway for taxi"],
+["Hold short of the runway and wait", "Stop before entering the runway", "Remain at the holding point"]
+],
+"correct": "Land and then immediately take off again",
+"hint": "The touch‑and‑go is a training manoeuvre combining landing and take‑off without stopping.",
+"insight": "FULL STOP means complete landing; LOW APPROACH means no touchdown; GO AROUND means no landing.",
+"explanation": "'CLEARED TOUCH AND GO' allows the aircraft to land and, without stopping, immediately commence a take‑off."
+},
+{
+"variants": [
+"'EXPEDITE TAXI' is used by the controller to:",
+"What does the instruction 'EXPEDITE TAXI' mean?",
+"The controller says 'EXPEDITE TAXI' in order to:"
+],
+"options": [
+["Request a faster taxi speed for operational reasons", "Speed up the taxi", "Ask the pilot to taxi more quickly"],
+["Stop taxiing immediately", "Hold position and wait", "Taxi to a halt"],
+["Leave the runway after landing", "Vacate the runway", "Clear the runway"],
+["Enter the runway and hold for take‑off", "Line up and wait", "Take the runway and hold"],
+["Turn left or right at the next intersection", "Take the next taxiway", "Make a turn onto another taxiway"],
+["Contact ground control after vacating", "Switch to ground frequency", "Change to ground"]
+],
+"correct": "Request a faster taxi speed for operational reasons",
+"hint": "EXPEDITE is used to minimise runway or taxiway occupancy time.",
+"insight": "It does not mean to stop, vacate, line up, turn, or change frequency.",
+"explanation": "'EXPEDITE TAXI' requests the pilot to increase taxi speed due to operational necessity, often to reduce delays."
+},
+{
+"variants": [
+"What is the phraseology to instruct a pilot to cross an active runway?",
+"Which phrase authorises an aircraft to cross a runway?",
+"The controller would say to permit crossing a runway:"
+],
+"options": [
+["CROSS RUNWAY (number) [REPORT VACATED]", "CROSS RUNWAY (number)", "Cross runway (number) and report when clear"],
+["BACKTRACK APPROVED", "Backtrack runway", "Cleared to backtrack"],
+["TAXI TO HOLDING POINT RUNWAY (number)", "Taxi to holding point", "Proceed to the hold short line"],
+["LINE UP AND WAIT", "Line up on the runway", "Enter the runway and hold"],
+["VACATE RUNWAY", "Leave the runway", "Exit the runway"],
+["CLEARED TO LAND", "Landing clearance", "You are cleared to land"]
+],
+"correct": "CROSS RUNWAY (number) [REPORT VACATED]",
+"hint": "Crossing a runway requires explicit clearance and often a report when the aircraft is clear.",
+"insight": "BACKTRACK is for turning around; TAXI TO HOLDING POINT is for approaching the runway; LINE UP is for take‑off.",
+"explanation": "The phrase 'CROSS RUNWAY (number) [REPORT VACATED]' authorises a pilot to cross an active runway and, if requested, report clear."
+},
+{
+"variants": [
+"What does the instruction 'ORBIT RIGHT' (or LEFT) mean?",
+"When the controller says 'ORBIT', the pilot is to:",
+"The phrase 'ORBIT LEFT' directs the pilot to:"
+],
+"options": [
+["Make a 360‑degree turn in the specified direction for spacing", "Fly a complete circle left (or right) from the present position", "Execute a full orbit to delay or sequence"],
+["Go around and join the missed approach", "Abandon the approach", "Climb straight ahead"],
+["Enter a holding pattern at a fix", "Proceed to the holding fix and hold", "Hold as published"],
+["Line up and wait on the runway", "Take the runway position and hold", "Await take‑off clearance"],
+["Circle the aerodrome for another approach", "Make a full circuit and re‑join", "Fly around the traffic pattern again"],
+["Vacate the runway immediately", "Exit the runway at once", "Clear the landing area"]
+],
+"correct": "Make a 360‑degree turn in the specified direction for spacing",
+"hint": "ORBIT is used to create spacing or delay an aircraft without leaving the immediate area.",
+"insight": "It differs from going around, holding, or making a full circuit; it's a single 360‑degree turn from the present position.",
+"explanation": "'ORBIT (RIGHT, or LEFT)' means the pilot must make a 360‑degree turn in the specified direction from present position to provide spacing."
+},
+{
+"variants": [
+"After landing, which phrase is used to instruct the pilot to switch to ground control?",
+"What is the standard phraseology for contacting ground after exiting the runway?",
+"The controller transmits 'CONTACT GROUND (frequency)'. This means:"
+],
+"options": [
+["Switch to the ground control frequency", "Change to the ground frequency", "Contact ground control on the specified channel"],
+["Line up and wait on the runway", "Enter the runway and hold", "Take the active and wait"],
+["Report when ready for departure", "Advise when prepared for take‑off", "Inform ATC when ready"],
+["Cross the runway and report vacated", "Cross runway number and call clear", "Cross and report clear"],
+["Vacate the runway immediately", "Clear the runway at once", "Leave the runway now"],
+["Make a 360‑degree turn on the taxiway", "Orbit on the taxiway", "Do a full circle on ground"]
+],
+"correct": "Switch to the ground control frequency",
+"hint": "After leaving the runway, the pilot is handed over to ground control for further taxi instructions.",
+"insight": "It is not a clearance to line up, cross, or vacate; it's a frequency change instruction.",
+"explanation": "'CONTACT GROUND (frequency)' means the pilot should change radio frequency and establish communication with the ground controller."
+},
+{
+"variants": [
+"According to RTF procedures, communication shall be:",
+"Radiotelephony communication must be:",
+"RTF exchanges must comply with which standard?"
+],
+"options": [
+["Concise, unambiguous, and using standard phraseology", "Brief, clear, and with standard words", "Short, unmistakable, and following standard ICAO phraseology"],
+["Long and detailed for full understanding", "Detailed and comprehensive", "Extended to cover all possibilities"],
+["Only in English regardless of region", "Exclusively in English", "English language only"],
+["Abbreviated at all times to save frequency time", "Always abbreviated", "Shortened for efficiency"],
+["Without any readback to save time", "No readback required", "No need to repeat clearances"],
+["Using plain language only", "Everyday language only", "Common spoken language without standard terms"]
+],
+"correct": "Concise, unambiguous, and using standard phraseology",
+"hint": "RTF procedures aim to eliminate confusion and excess words by using a fixed set of approved phraseology.",
+"insight": "Plain language, excessive detail, or continuous abbreviation can lead to misunderstandings; standard ICAO phraseology is mandatory.",
+"explanation": "Radiotelephony communication shall be concise, unambiguous, and shall employ standard ICAO phraseology."
+},
+{
+"variants": [
+"Abbreviated RTF procedures should only be used:",
+"When may abbreviated procedures be employed?",
+"Abbreviated radiotelephony is permitted only:"
+],
+"options": [
+["After initial contact has been established", "Following the first exchange", "Once the initial call is complete"],
+["At any time for experienced pilots", "Whenever the crew prefers", "For skilled operators only"],
+["Only during emergency situations", "In emergencies exclusively", "When PAN PAN or MAYDAY is declared"],
+["Only when the frequency is congested", "When many aircraft on frequency", "During high workload periods"],
+["Only under radar control", "When radar identified", "When surveillance service is provided"],
+["Never; full phraseology is always required", "Full procedures at all times", "No abbreviations permitted"]
+],
+"correct": "After initial contact has been established",
+"hint": "Abbreviated procedures save time but are safe only after both parties have established unambiguous communication.",
+"insight": "Abbreviation is not allowed at initial contact; it follows a confirmed link‑up.",
+"explanation": "Abbreviated procedures should be used only after initial contact has been successfully made."
+},
+{
+"variants": [
+"The acknowledgment of receipt of a message must include:",
+"What must the readback of a message contain at minimum?",
+"Acknowledgement of an ATC message shall comprise:"
+],
+"options": [
+["The aircraft call sign", "Call sign of the receiving station", "The aircraft's identification"],
+["The entire message repeated verbatim", "Full readback of the whole message", "Word‑for‑word repetition"],
+["Only the word 'Roger'", "Simply 'ROGER'", "Just the word 'Roger'"],
+["The controller's operating initials", "Controller initials", "The ATCO's initials"],
+["The aircraft's altitude and heading", "Current level and direction", "Flight parameters"],
+["The runway and taxiway designators", "Runway and taxiway names", "Airfield movement details"]
+],
+"correct": "The aircraft call sign",
+"hint": "Including the call sign ensures the sender knows exactly who acknowledged the transmission.",
+"insight": "'Roger' alone does not identify the aircraft; the call sign is the mandatory element for acknowledgment.",
+"explanation": "An acknowledgment of receipt shall comprise the aircraft call sign."
+},
+{
+"variants": [
+"Aircraft shall read back which of the following ATC messages?",
+"What type of ATC messages must a pilot read back?",
+"Readback is mandatory for:"
+],
+"options": [
+["Important ATC messages", "Significant ATC clearances and instructions", "Safety‑critical controller messages"],
+["Every single transmission from ATC", "All ATC communications", "Each message, without exception"],
+["Only take‑off and landing clearances", "Departure and arrival clearances only", "Runway‑related instructions"],
+["Only clearances containing a level change", "Level‑change clearances", "Altitude or flight level assignments"],
+["Only when requested by ATC", "When the controller asks for readback", "On ATC demand only"],
+["Only emergency‑related instructions", "Emergency instructions only", "Safety alert instructions"]
+],
+"correct": "Important ATC messages",
+"hint": "Readback guarantees that safety‑critical parts of a clearance are correctly received.",
+"insight": "Not every message requires readback, but those vital for separation or safety do.",
+"explanation": "Aircraft shall read back important ATC messages to confirm correct reception and understanding."
+},
+{
+"variants": [
+"A conversation shall be terminated by the receiving station using:",
+"To end a radiotelephony exchange, the recipient transmits:",
+"How is a two‑way RTF conversation properly ended?"
+],
+"options": [
+["Its call sign", "The station's own call sign", "The receiving station's identification"],
+["The word 'OUT'", "'OUT' message", "The term OUT"],
+["The controller's operating initials", "ATCO initials", "The initials of the controller"],
+["The phrase 'CLEARED TO LAND'", "CLEARED TO LAND call", "Landing clearance as termination"],
+["The phrase 'GOOD DAY'", "GOOD DAY transmission", "Good day greeting"],
+["Nothing; the frequency just goes silent", "Silence indicates end", "No formal termination required"]
+],
+"correct": "Its call sign",
+"hint": "Formal termination with call sign avoids ambiguity about whether the conversation is finished.",
+"insight": "No verbal 'OUT' or formal greeting is needed; only the station's call sign closes the exchange.",
+"explanation": "A radiotelephony conversation shall be terminated by the receiving station using its call sign."
+},
+{
+"variants": [
+"When an error has been made in a transmission, the word used to introduce the correction is:",
+"What term indicates a mistake and introduces the correct version?",
+"To correct an erroneous message, the controller begins with:"
+],
+"options": [
+["CORRECTION", "The word CORRECTION", "CORRECTION followed by the corrected part"],
+["ERROR", "The word ERROR", "ERROR statement"],
+["NEGATIVE", "NEGATIVE call", "The word NEGATIVE"],
+["CANCEL", "CANCEL phrase", "Cancel transmission"],
+["DISREGARD", "DISREGARD instruction", "Disregard previous message"],
+["SORRY", "SORRY apology", "Sorry, correct is"]
+],
+"correct": "CORRECTION",
+"hint": "CORRECTION is the standard ICAO term to announce that an error has been made and the correct message follows.",
+"insight": "NEGATIVE is used to correct an acknowledged mistake by the other station, not to correct a transmission in progress.",
+"explanation": "The word 'CORRECTION' is used when an error has been made and the corrected message immediately follows."
+},
+{
+"variants": [
+"If the correction requires repeating the entire message, the phrase to use is:",
+"What is said to repeat a whole message after an error?",
+"After a mistake, to repeat the full corrected message, say:"
+],
+"options": [
+["CORRECTION, I SAY AGAIN", "CORRECTION I SAY AGAIN", "Correction, I say again"],
+["I SAY AGAIN only", "Simply I SAY AGAIN", "Only I say again"],
+["NEGATIVE, I SAY AGAIN", "NEGATIVE I SAY AGAIN", "Negative, I say again"],
+["REPEAT MESSAGE", "REPEAT MESSAGE phrase", "Repeat the message"],
+["SAY AGAIN ALL AFTER", "SAY AGAIN ALL AFTER phrase", "Say again all after"],
+["CANCEL, I SAY AGAIN", "CANCEL I SAY AGAIN", "Cancel, I say again"]
+],
+"correct": "CORRECTION, I SAY AGAIN",
+"hint": "The phrase combines the error indicator and the repetition command for the entire message.",
+"insight": "I SAY AGAIN alone is insufficient because it does not indicate a correction. NEGATIVE I SAY AGAIN is for correcting an acknowledged inaccurate message.",
+"explanation": "If the correction needs the entire message repeated, use 'CORRECTION, I SAY AGAIN'."
+},
+{
+"variants": [
+"When radio reception is difficult, the important elements of a message should be:",
+"In poor reception conditions, how are critical parts transmitted?",
+"To ensure understanding during bad quality, important items must be:"
+],
+"options": [
+["Repeated twice", "Said two times", "Transmitted twice"],
+["Repeated three times", "Said three times", "Transmitted three times"],
+["Omitted entirely", "Left out", "Not transmitted"],
+["Spoken more slowly without repetition", "Slower speech only", "Only slower diction"],
+["Transmitted on an alternate frequency", "Sent on another channel", "Frequency change required"],
+["Spelled phonetically only", "Spelled using ICAO alphabet", "Only phonetic spelling"]
+],
+"correct": "Repeated twice",
+"hint": "Repeating critical items doubles the chance of correct reception.",
+"insight": "Three times is not the rule; the text says important elements should be repeated twice in difficult conditions.",
+"explanation": "If reception is difficult, important elements shall be repeated twice."
+},
+{
+"variants": [
+"To request repetition of all that came before a certain point in a message, use:",
+"What phrase asks for a repeat of the earlier part of a message?",
+"SAY AGAIN ALL BEFORE means:"
+],
+"options": [
+["SAY AGAIN ALL BEFORE", "Say again everything before a given point", "Repeat all that preceded"],
+["SAY AGAIN ALL AFTER", "Say again everything after a point", "Repeat all following parts"],
+["SAY AGAIN", "Repeat entire last message", "Full repeat request"],
+["REPEAT ALL BEFORE", "REPEAT ALL BEFORE phrase", "Repeat earlier part"],
+["I SAY AGAIN ALL BEFORE", "I SAY AGAIN ALL BEFORE", "I repeat all before"],
+["SAY AGAIN ALL", "SAY AGAIN ALL phrase", "Repeat everything"]
+],
+"correct": "SAY AGAIN ALL BEFORE",
+"hint": "The phrase explicitly limits the repetition to the segment before the indicated point.",
+"insight": "SAY AGAIN alone repeats the whole message; ALL AFTER asks for the later part.",
+"explanation": "'SAY AGAIN ALL BEFORE' asks for a repeat of everything preceding a specific point in the last transmission."
+},
+{
+"variants": [
+"To request repetition of a specific element such as QNH, the phrase is:",
+"How does a pilot ask for QNH to be repeated?",
+"A request to repeat QNH uses:"
+],
+"options": [
+["SAY AGAIN QNH", "SAY AGAIN followed by the specific item", "SAY AGAIN (specific item)"],
+["REPEAT QNH", "REPEAT QNH instruction", "Repeat the QNH value"],
+["WHAT IS QNH", "WHAT IS QNH request", "Ask for QNH again"],
+["I SAY AGAIN QNH", "I SAY AGAIN QNH", "I repeat QNH"],
+["CONFIRM QNH", "CONFIRM QNH call", "Confirm QNH setting"],
+["READ BACK QNH", "READ BACK QNH request", "Read back the QNH"]
+],
+"correct": "SAY AGAIN QNH",
+"hint": "SAY AGAIN is the standard word for requesting a repetition, and the specific item follows directly.",
+"insight": "REPEAT is not the standard term; SAY AGAIN is used, and CONFIRM asks for verification, not repetition.",
+"explanation": "Specific items can be requested, e.g., 'SAY AGAIN QNH'."
+},
+{
+"variants": [
+"If an aircraft acknowledges a message with an incorrect element, the controller shall respond:",
+"How is an incorrect readback corrected by ATC?",
+"When the pilot reads back an inaccurate element, the controller transmits:"
+],
+"options": [
+["NEGATIVE, I SAY AGAIN...", "NEGATIVE I SAY AGAIN followed by the correct version", "Negative, I say again (correct data)"],
+["CORRECTION, I SAY AGAIN...", "CORRECTION I SAY AGAIN", "Correction, I say again"],
+["WRONG, I SAY AGAIN...", "WRONG I SAY AGAIN", "Wrong, I say again"],
+["DISREGARD, I SAY AGAIN...", "DISREGARD I SAY AGAIN", "Disregard, I say again"],
+["READ BACK CORRECT...", "READ BACK CORRECT", "Read back correct"],
+["NEGATIVE, CORRECT IS...", "NEGATIVE, CORRECT IS", "Negative, correct is"]
+],
+"correct": "NEGATIVE, I SAY AGAIN...",
+"hint": "NEGATIVE indicates the error, and I SAY AGAIN introduces the correct element.",
+"insight": "CORRECTION is for the transmitting station to correct itself, not to correct an acknowledgment.",
+"explanation": "When an acknowledged message contains an incorrect element, the controller uses 'NEGATIVE, I SAY AGAIN…' to provide the right information."
+},
+{
+"variants": [
+"Aircraft shall maintain a continuous listening watch on:",
+"What frequencies must an aircraft continuously monitor?",
+"Aircraft are required to guard which frequencies?"
+],
+"options": [
+["The designated ATS frequency and the emergency frequency", "Assigned ATS channel and the emergency channel 121.5", "Operational frequency and emergency frequency"],
+["Only the designated ATS frequency", "Only the assigned air traffic channel", "Solely the ATS frequency"],
+["Only the emergency frequency 121.5", "Only VHF 121.5", "Solely the emergency channel"],
+["All available ATS frequencies in the area", "All local ATC frequencies", "Every nearby ATS channel"],
+["The ATIS frequency only", "Only the ATIS broadcast", "Solely the ATIS frequency"],
+["No continuous watch is required", "No requirement for monitoring", "Listening watch not mandatory"]
+],
+"correct": "The designated ATS frequency and the emergency frequency",
+"hint": "Dual watch ensures that the aircraft can be reached both routinely and in an emergency.",
+"insight": "Monitoring only the assigned ATS frequency might miss emergency calls; guarding only 121.5 ignores routine clearances.",
+"explanation": "Aircraft shall maintain a continuous watch on the designated ATS frequency and the emergency frequency (121.5)."
+},
+{
+"variants": [
+"Aeronautical stations shall maintain a continuous listening watch on:",
+"Which frequency must an aeronautical station continuously monitor?",
+"Continuous listening watch is compulsory for aeronautical stations on:"
+],
+"options": [
+["VHF 121.5", "The emergency frequency 121.5 MHz", "121.5 megahertz"],
+["The aerodrome control frequency", "Tower frequency", "The local TWR channel"],
+["All frequencies available", "Every frequency assigned", "All channels of the station"],
+["Only during published hours of operation", "During operating hours only", "When the station is open"],
+["The ATIS frequency", "ATIS broadcast channel", "Automatic Terminal Information Service frequency"],
+["Any frequency as directed by the supervisor", "Supervisor-assigned frequency", "Directed by the shift supervisor"]
+],
+"correct": "VHF 121.5",
+"hint": "This is the international aeronautical emergency frequency, requiring constant coverage.",
+"insight": "While aeronautical stations monitor many frequencies, the continuous watch obligation is specifically for 121.5.",
+"explanation": "Aeronautical stations shall maintain a continuous listening watch on VHF 121.5."
+},
+{
+"variants": [
+"In the initial call to an ATC unit, an aircraft under aerodrome control shall include:",
+"What must be transmitted in the first contact with an aerodrome control tower?",
+"The initial ATC call from a controlled aircraft comprises:"
+],
+"options": [
+["Designation of the station called, aircraft call sign (and 'heavy' if applicable), position, and additional elements as required", "Station name, call sign with 'heavy' if heavy, position, and any extra required info", "Station called, identification, position, and any ATS‑specified additional elements"],
+["Only aircraft call sign and position", "Just call sign and location", "Call sign and position only"],
+["Only the station designation and call sign", "Station name and call sign", "Just who is being called and who is calling"],
+["Call sign, position, and the word 'heavy' regardless of weight", "Call sign, position, and always 'heavy'", "Identification, location, and heavy"],
+["Only the aircraft call sign repeated three times", "Call sign three times", "Three‑time call sign repetition"],
+["Call sign and the ATIS information identifier", "Call sign and ATIS code", "Call sign and current ATIS letter"]
+],
+"correct": "Designation of the station called, aircraft call sign (and 'heavy' if applicable), position, and additional elements as required",
+"hint": "The initial call must fully identify the receiving station, the caller, the location, and any required supplementary data.",
+"insight": "Omitting the station name or position, or always using 'heavy', is incomplete or incorrect.",
+"explanation": "Initial contact shall include: designation of the station called, call sign (and 'heavy' for heavy category), position, and additional elements as required by the ATS authority."
+},
+{
+"variants": [
+"An ATC clearance is best defined as:",
+"What is an ATC clearance?",
+"An ATC clearance authorises:"
+],
+"options": [
+["Authorisation for an aircraft to proceed under conditions specified by an ATC unit", "Permission to proceed as directed by ATC", "Clearance from ATC to operate according to given conditions"],
+["An advisory suggesting a course of action", "Suggested route and level", "Advice on how to fly"],
+["A meteorological report for flight planning", "Weather information for planning", "Forecast for flight preparation"],
+["A flight plan filed by the operator", "The filed flight plan", "Operator‑filed plan"],
+["A request from the pilot for level change", "Pilot‑requested level change", "Level request from pilot"],
+["An emergency instruction issued by the pilot", "Emergency instruction from crew", "Pilot‑issued emergency command"]
+],
+"correct": "Authorisation for an aircraft to proceed under conditions specified by an ATC unit",
+"hint": "Clearance is a legal permission, not just information, and it binds the flight to specific conditions.",
+"insight": "Advisory, weather, flight plan, pilot requests, and emergency instructions are not clearances.",
+"explanation": "An ATC clearance is an authorization for an aircraft to proceed under conditions specified by an air traffic control unit."
+},
+{
+"variants": [
+"The correct order of elements in an ATC clearance is:",
+"Which sequence correctly lists the contents of an ATC clearance?",
+"An ATC clearance must present information in this order:"
+],
+"options": [
+["Aircraft identification, clearance limit, route, level(s), any necessary instructions or information", "Identification, limit, route, levels, instructions", "Aircraft ID, limit, route, levels, and further information"],
+["Clearance limit, aircraft identification, route, levels, instructions", "Limit, ID, route, levels, extra info", "Limit first, then ID, route, levels, rest"],
+["Route, level, aircraft identification, limit, instructions", "Route, level, ID, limit, instructions", "Route first, then levels, ID, limit, and commands"],
+["Levels, route, clearance limit, identification, instructions", "Levels, route, limit, ID, instructions", "Levels first then route, limit, ID, and info"],
+["Aircraft identification, levels, route, limit", "ID, levels, route, limit", "Identification, then levels, then route, then limit"],
+["Aircraft identification, instructions, level, route", "ID, instructions, level, route", "Identification, then commands, then level, then route"]
+],
+"correct": "Aircraft identification, clearance limit, route, level(s), any necessary instructions or information",
+"hint": "The sequence always starts with the aircraft's identity and the destination (limit) before detailing the path and altitude.",
+"insight": "Levels come after the route, not before; the limit is stated early.",
+"explanation": "The content in order is: aircraft identification, clearance limit, route, level(s), and then any necessary instructions or information."
+},
+{
+"variants": [
+"The sole purpose of an ATC clearance is:",
+"An ATC clearance is issued only for:",
+"Clearances are provided exclusively to:"
+],
+"options": [
+["Expedite and separate traffic", "Expediting traffic and maintaining separation", "To speed up flow and ensure separation"],
+["Provide weather updates", "Give meteorological information", "Inform about weather"],
+["Advise on fuel efficiency", "Optimise fuel consumption", "Save fuel"],
+["Replace filed flight plans", "Amend flight plans", "Substitute for FPLs"],
+["Assign parking stands", "Gate assignment", "Allocate aircraft parking"],
+["Communicate non‑urgent administrative messages", "Administrative messages", "Send non‑operational notes"]
+],
+"correct": "Expedite and separate traffic",
+"hint": "Clearances are operational tools for traffic flow and safety, not for weather or admin.",
+"insight": "Weather updates, fuel advice, flight plan changes, parking, and admin messages are not the purpose.",
+"explanation": "ATC clearance is issued solely for expediting and separating traffic."
+},
+{
+"variants": [
+"An ATC clearance is based on:",
+"What is the basis for issuing an ATC clearance?",
+"Clearances are built upon:"
+],
+"options": [
+["Known traffic conditions affecting safety", "Traffic conditions that impact safety", "The current traffic situation regarding safety"],
+["The aircraft's fuel on board", "Fuel endurance", "Fuel quantity"],
+["The pilot's experience level", "Pilot experience", "How experienced the crew is"],
+["The airport's operational hours", "Airport operating times", "Hours of service"],
+["The type of aircraft only", "Aircraft type exclusively", "Only the aircraft category"],
+["The operator's commercial schedule", "Airline schedule", "Commercial timetable"]
+],
+"correct": "Known traffic conditions affecting safety",
+"hint": "Safety‑critical traffic information determines what a clearance can safely permit.",
+"insight": "Fuel, pilot experience, airport hours, aircraft type alone, or commercial schedules are not the basis.",
+"explanation": "An ATC clearance is based on known traffic conditions which affect safety."
+},
+{
+"variants": [
+"Transfer of communication between units earlier than the transfer of control:",
+"How does transfer of communication relate to transfer of control?",
+"Regarding COM transfer and control transfer, which is true?"
+],
+"options": [
+["Does not constitute transfer of control", "Is not transfer of control", "COM handover is not control handover"],
+["Automatically transfers control", "Implies control transfer", "Control is transferred with communication"],
+["Is not permitted under any circumstances", "Never allowed", "Forbidden entirely"],
+["Requires a separate clearance from the pilot", "Pilot clearance needed", "Pilot must request it"],
+["Only applies in radar airspace", "Radar airspace only", "Applicable only under radar"],
+["Must be confirmed in writing", "Written confirmation required", "Needs a written document"]
+],
+"correct": "Does not constitute transfer of control",
+"hint": "A pilot changing frequency does not mean the receiving controller yet has responsibility for separation.",
+"insight": "Control is formally handed off separately; communication transfer is only a prerequisite.",
+"explanation": "Transfer of communication earlier than transfer of control does NOT mean transfer of control."
+},
+{
+"variants": [
+"Transfer of communication should normally be effected how long before the aircraft reaches the common control area boundary?",
+"When is COM transfer typically initiated?",
+"COM transfer is normally made at what time before the boundary?"
+],
+"options": [
+["5 minutes", "Five minutes", "5 min prior to the boundary"],
+["10 minutes", "Ten minutes", "10 min before"],
+["15 minutes", "Fifteen minutes", "15 min ahead"],
+["2 minutes", "Two minutes", "2 min before"],
+["At the boundary", "Right at the boundary", "Exactly at the boundary"],
+["30 minutes", "Thirty minutes", "30 min in advance"]
+],
+"correct": "5 minutes",
+"hint": "Early enough to allow the transfer but not so early that the aircraft is far from the boundary.",
+"insight": "10, 15, 2, at the boundary, or 30 minutes are not the specified standard.",
+"explanation": "Transfer of communication shall be made 5 minutes before the aircraft reaches the common control area boundary, unless otherwise agreed or separation is based on surveillance."
+},
+{
+"variants": [
+"Based on radar, ADS‑B, or MLAT, the horizontal separation minimum is:",
+"What is the minimum horizontal separation using surveillance systems?",
+"Radar, ADS‑B, and MLAT separation minima are:"
+],
+"options": [
+["5.0 NM", "5 nautical miles", "Five NM"],
+["3.0 NM", "3 nautical miles", "Three NM"],
+["10.0 NM", "10 nautical miles", "Ten NM"],
+["2.5 NM", "2.5 nautical miles", "Two point five NM"],
+["7.0 NM", "7 nautical miles", "Seven NM"],
+["8.0 NM", "8 nautical miles", "Eight NM"]
+],
+"correct": "5.0 NM",
+"hint": "This standard minimum applies when aircraft are under radar or equivalent surveillance.",
+"insight": "3 NM is used in some approach environments but the standard is 5 NM.",
+"explanation": "The horizontal separation minimum based on radar and/or ADS‑B and/or MLAT is 5.0 NM."
+},
+{
+"variants": [
+"TWR is NOT required to apply wake turbulence separation for:",
+"Under which circumstances is wake turbulence separation not applied by the tower?",
+"When can a TWR omit wake turbulence separation?"
+],
+"options": [
+["Arriving VFR aircraft behind a landing SUPER, HEAVY, or MEDIUM, and arriving IFR aircraft on a visual approach when the succeeding aircraft has visual contact with the preceding", "ARR VFR behind SUPER/HEAVY/MEDIUM, and ARR IFR visual with preceding in sight", "VFR arrivals behind heavier categories and IFR visuals with traffic in sight"],
+["All aircraft at all times", "No wake turbulence separation ever", "Separation never applied"],
+["Only when the runway is dry", "Dry runway only", "When the surface is dry"],
+["Only between two heavy aircraft", "Heavy behind heavy", "For heavy aircraft pairs"],
+["When the pilot explicitly requests it", "On pilot request", "If the crew asks for it"],
+["Only during daylight hours", "Daytime only", "In daylight conditions"]
+],
+"correct": "Arriving VFR aircraft behind a landing SUPER, HEAVY, or MEDIUM, and arriving IFR aircraft on a visual approach when the succeeding aircraft has visual contact with the preceding",
+"hint": "The pilot assumes responsibility for wake avoidance when visual contact is established and a caution is given.",
+"insight": "Wake turbulence separation is not waived without conditions; it requires visual contact and a caution issuance.",
+"explanation": "TWR shall not apply wake turbulence separation for arriving VFR behind SUPER/HEAVY/MEDIUM, and for arriving IFR on visual approach when the succeeding aircraft has visual contact with the preceding. In both cases, ATC shall issue a caution."
+},
+{
+"variants": [
+"For departing aircraft, what is the time‑based wake turbulence separation for a Heavy behind a Super?",
+"What separation time applies when a heavy aircraft departs behind a Super?",
+"H behind J departure separation requires:"
+],
+"options": [
+["2 minutes", "2 min", "Two minutes"],
+["3 minutes", "3 min", "Three minutes"],
+["4 minutes", "4 min", "Four minutes"],
+["1 minute", "1 min", "One minute"],
+["5 minutes", "5 min", "Five minutes"],
+["No separation required", "Nil separation", "No minimum"]
+],
+"correct": "2 minutes",
+"hint": "The time matrices give specific values; H behind J departure is 2 minutes.",
+"insight": "3 minutes is for L or M behind J; 4 minutes applies in displaced threshold or opposite direction scenarios, not standard departure.",
+"explanation": "For a Heavy departing behind a Super, the required time‑based wake turbulence separation is 2 minutes."
+},
+{
+"variants": [
+"Under Table 2 (Departing ACFT from intermediate), what is the separation for a Large or Medium behind a Super?",
+"When an L or M aircraft departs from an intermediate point behind a Super, the time separation is:",
+"L or M behind J (intermediate departure) requires:"
+],
+"options": [
+["4 minutes", "4 min", "Four minutes"],
+["3 minutes", "3 min", "Three minutes"],
+["2 minutes", "2 min", "Two minutes"],
+["1 minute", "1 min", "One minute"],
+["5 minutes", "5 min", "Five minutes"],
+["No separation", "Nil", "Zero minutes"]
+],
+"correct": "4 minutes",
+"hint": "The table for departing from intermediate (rotation point less than 760 m) lists 4 minutes for L or M behind J.",
+"insight": "3 minutes applies to L or M behind H in that table, and 2 minutes for H behind H; Super behind J is 3 minutes.",
+"explanation": "For a Large or Medium departing from an intermediate point behind a Super, the required separation is 4 minutes."
+},
+{
+"variants": [
+"When a heavier aircraft is making a low or missed approach and a lighter aircraft is taking off on the opposite runway, the wake turbulence separation for L or M behind J is:",
+"In opposite‑direction operations with a heavy low approach and lighter takeoff, what separation is required for L/M behind J?",
+"Opposite direction: L or M behind J requires what time separation?"
+],
+"options": [
+["4 minutes", "4 min", "Four minutes"],
+["3 minutes", "3 min", "Three minutes"],
+["2 minutes", "2 min", "Two minutes"],
+["1 minute", "1 min", "One minute"],
+["5 minutes", "5 min", "Five minutes"],
+["No separation", "Nil", "Zero"]
+],
+"correct": "4 minutes",
+"hint": "The table for opposite‑direction low/missed approach lists 4 minutes for L or M behind J.",
+"insight": "H behind J in opposite direction is 3 minutes; standard departure L/M behind J is 3 minutes; here, the risk is higher so time increases.",
+"explanation": "In opposite‑direction operations, for L or M behind J (heavy behind super) when the heavier aircraft is making a low or missed approach, the required separation is 4 minutes."
+},
+{
+"variants": [
+"The Airborne Collision Avoidance System (ACAS) provides:",
+"What does ACAS do?",
+"ACAS is designed to:"
+],
+"options": [
+["Advice to pilots to avoid potential collisions, operating independently of ground equipment", "Pilot advice for collision avoidance, independent of ATC ground systems", "Collision avoidance guidance from onboard equipment, not reliant on ground radar"],
+["Terrain and obstacle warnings", "Ground proximity warnings", "Terrain avoidance information"],
+["Weather radar returns", "Meteorological radar data", "Weather depiction"],
+["Automatic dependent surveillance reports", "ADS data", "ADS‑C reports"],
+["Radio communication relay", "Voice relay service", "Communication rebroadcast"],
+["Navigation guidance to the nearest airport", "Direct‑to guidance to an airport", "Airport navigation assistance"]
+],
+"correct": "Advice to pilots to avoid potential collisions, operating independently of ground equipment",
+"hint": "ACAS uses transponder signals to detect threats and provide vertical maneuver recommendations.",
+"insight": "ACAS does not provide terrain warnings (GPWS), weather (WXR), or ADS‑C functions; it is solely for collision avoidance.",
+"explanation": "ACAS is an airborne system based on SSR transponder signals that provides advice to the pilot on potential conflicting aircraft, operating independently of ground‑based equipment."
+},
+{
+"variants": [
+"A Traffic Advisory (TA) from ACAS provides:",
+"What information does an ACAS TA give?",
+"An ACAS TA indicates:"
+],
+"options": [
+["Visual indication of an intruder's position and identification of a potential threat", "Position of a nearby aircraft and potential conflict", "Intruder position display and threat assessment"],
+["A vertical maneuver command", "RA climb or descend instruction", "Resolution advisory with vertical instruction"],
+["An immediate turn command", "Horizontal maneuver command", "Turn left or right instruction"],
+["A radio call to the pilot on guard frequency", "Voice alert on 121.5", "Auditory alert on emergency frequency"],
+["A weather advisory for turbulence", "Turbulence warning", "CAT advisory"],
+["An engine failure warning", "Power loss alert", "Engine malfunction indication"]
+],
+"correct": "Visual indication of an intruder's position and identification of a potential threat",
+"hint": "TA alerts the pilot to the traffic without yet issuing a vertical resolution command.",
+"insight": "A vertical maneuver is an RA; TA is the advisory with traffic information only.",
+"explanation": "An ACAS TA (Traffic Advisory) provides a visual indication of the intruder's position and determines which aircraft might be a potential threat."
+},
+{
+"variants": [
+"According to the separation standards diagram, if a following aircraft is 40 kt or more faster than the preceding, what minimum divergence angle permits a reduced time separation of 1 minute?",
+"What divergence angle allows a 1‑minute separation when the following aircraft is 40 kt or more faster?",
+"With a speed differential of ≥40 kt, the 1‑minute separation applies when the aircraft diverge by at least:"
+],
+"options": [
+["7°", "Seven degrees", "A divergence of 7 degrees"],
+["45°", "Forty‑five degrees", "45 degrees divergence"],
+["15°", "Fifteen degrees", "15 degrees"],
+["10°", "Ten degrees", "10 degrees"],
+["30°", "Thirty degrees", "30 degrees"],
+["3°", "Three degrees", "3 degrees"]
+],
+"correct": "7°",
+"hint": "The 7‑degree divergence combined with a 40 kt speed advantage allows a 1‑minute interval.",
+"insight": "45° is also shown but is likely the divergence that allows even more reduction; the minimum to get 1 min is 7°.",
+"explanation": "The diagram shows that when a departing aircraft is 40 kt or more faster, a 1‑minute separation can be applied if the tracks diverge by at least 7°."
+},
+{
+"variants": [
+"A departing aircraft shall not normally commence take‑off until the preceding departing aircraft has:",
+"What must occur before a take‑off clearance is issued to a subsequent departure?",
+"Take‑off may not be permitted until the preceding departure has:"
+],
+"options": [
+["Crossed the upwind end of the runway or started a turn", "Passed the runway end or begun a turn", "Passed the departure end or initiated a turn"],
+["Reached the holding point of the next runway", "Taxied to the holding point", "Arrived at the adjacent taxiway"],
+["Reported airborne and on course", "Telephoned airborne", "Called air‑borne and heading"],
+["Landed and vacated the runway", "Landed and cleared the runway", "Arrived and vacated"],
+["Reached the ILS critical area boundary", "Passed the sensitive area", "Cleared the ILS zone"],
+["Been issued a departure clearance by APP", "Received an APP clearance", "Gotten clearance from approach"]
+],
+"correct": "Crossed the upwind end of the runway or started a turn",
+"hint": "Runway occupancy must end before another aircraft is permitted to begin its take‑off roll.",
+"insight": "Landing aircraft must also be clear of the runway; the question focuses on the condition for a departing aircraft following a departing aircraft.",
+"explanation": "A departing aircraft will not normally be permitted to commence take‑off until the preceding departing aircraft has crossed the end of the runway‑in‑use or has started a turn."
+},
+{
+"variants": [
+"A take‑off clearance shall not be issued until the preceding landing aircraft has:",
+"What condition must be met before a departing aircraft can take off after a landing?",
+"Before clearing a departure after a landing, the landing aircraft must:"
+],
+"options": [
+["Vacated the runway‑in‑use", "Cleared the active runway", "Is clear of the runway"],
+["Landed and started its landing roll", "Touched down and rolling", "On the runway rolling"],
+["Taxied to the apron", "Reached the parking area", "At the stand"],
+["Reported off the runway to ground", "Contacted ground control", "Called ground after vacating"],
+["Crossed the holding point", "Past the hold line", "Beyond the runway holding position"],
+["Been issued a go‑around", "Executed missed approach", "Discontinued the landing"]
+],
+"correct": "Vacated the runway‑in‑use",
+"hint": "The runway must be completely free of landing traffic before a departure can begin.",
+"insight": "The aircraft must be clear of the runway, not just landed or taxiing.",
+"explanation": "A departing aircraft must not commence take‑off until all preceding landing aircraft are clear of the runway‑in‑use."
+},
+{
+"variants": [
+"The stages of a coordination and transfer of control message are, in order:",
+"What is the correct sequence for a coordination message?",
+"A coordination and TFR message comprises:"
+],
+"options": [
+["Notification of the flight, coordination of TFR conditions by the transferring unit, coordination and acceptance by the accepting unit, and transfer of control", "Notification, coordination of conditions, acceptance, transfer of control", "Notify flight, coordinate conditions, accept conditions, transfer"],
+["Transfer of control, notification, coordination, acceptance", "Transfer, notify, coordinate, accept", "Control transfer, flight notification, coordination, acceptance"],
+["Coordination of conditions, notification, acceptance, transfer", "Coordinate conditions, notify flight, accept, transfer", "Conditions coordination, notification, acceptance, control transfer"],
+["Acceptance of conditions, notification, coordination, transfer of control", "Accept, notify, coordinate, transfer", "Acceptance first, then notification, coordination, transfer"],
+["Notification of the flight, transfer of control, coordination", "Notify, transfer, coordinate", "Notification, control transfer, coordination"],
+["Coordination of conditions, acceptance, notification", "Coordinate, accept, notify", "Conditions coordination, acceptance, notification"]
+],
+"correct": "Notification of the flight, coordination of TFR conditions by the transferring unit, coordination and acceptance by the accepting unit, and transfer of control",
+"hint": "The process builds from initial awareness through negotiation to formal hand‑off.",
+"insight": "Transfer of control is the final stage; acceptance must happen before control is transferred.",
+"explanation": "The stages are: notification of the flight, coordination of conditions for transfer by the transferring unit, coordination and acceptance by the accepting unit, and the transfer of control."
+},
+{
+"variants": [
+"TWR shall keep Approach advised of:",
+"What information does the tower provide to approach control?",
+"Approach control must be kept informed by TWR about:"
+],
+"options": [
+["ATAs and ATDs, in‑sight and landing‑assured reports, information on overdue or unreported traffic, missed approaches, and essential local traffic affecting APP traffic", "Actual arrival/departure times, landing assured reports, overdue/unreported traffic, missed approaches, and local traffic impacting approach", "ATA/ATD, sight‑landing assured, overdue, missed approaches, local traffic affecting APP"],
+["ETAs and levels over the aerodrome (at least 15 min before)", "Estimated arrival times and levels", "ETA/level information 15 minutes ahead"],
+["Transfer of control statements and inbound release conditions", "Control transfer and inbound release", "Inbound release conditions"],
+["Anticipated delay to departing aircraft", "Delay information for departures", "Expected departure delays"],
+["Runway visual range and weather updates", "RVR and MET info", "Weather updates"],
+["Cleared flight levels and routes for departing aircraft", "Cleared levels and routes", "Flight level and route assignments"]
+],
+"correct": "ATAs and ATDs, in‑sight and landing‑assured reports, information on overdue or unreported traffic, missed approaches, and essential local traffic affecting APP traffic",
+"hint": "Tower supplies the actual movement data and local traffic picture that approach cannot always see.",
+"insight": "ETAs and levels are what Approach gives to Tower, not the reverse.",
+"explanation": "TWR shall keep Approach advised of ATAs and ATDs, in‑sight‑and‑landing‑assured reports, overdue/unreported traffic, missed approaches, and essential local traffic affecting APP."
+},
+{
+"variants": [
+"Approach shall keep TWR advised of:",
+"What information does approach control provide to the tower?",
+"TWR receives from APP:"
+],
+"options": [
+["ETAs and levels over the aerodrome at least 15 minutes before, transfer of control statement and conditions, and anticipated delay to departing aircraft", "ETA/level 15 min prior, transfer of control and conditions, and departure delay anticipation", "Estimated arrival times/levels (≥15 min), control transfer details, and expected departure delays"],
+["ATAs and ATDs", "Actual times of arrival and departure", "ATA/ATD information"],
+["In‑sight and landing‑assured reports", "Landing assured information", "Sighting and landing assurance"],
+["Missed approach notifications", "Missed approach reports", "Go‑around alerts"],
+["Overdue or unreported traffic information", "Overdue/unreported traffic", "Overdue aircraft data"],
+["Essential local traffic updates", "Local traffic affecting TWR", "Local traffic picture"]
+],
+"correct": "ETAs and levels over the aerodrome at least 15 minutes before, transfer of control statement and conditions, and anticipated delay to departing aircraft",
+"hint": "Approach provides the forward planning data that tower needs to prepare for arrivals and regulate departures.",
+"insight": "ATAs, in‑sight reports, missed approaches, and overdue traffic are what TWR gives to APP.",
+"explanation": "Approach shall keep TWR advised of ETAs and levels over the AD (at least 15 min before), transfer of control statement and conditions (inbound release), and anticipated delay to departing aircraft."
+},
+{
+"variants": [
+"The prime objective of coordination between ATS units is to:",
+"Coordination primarily aims to:",
+"What is the main goal of ATS coordination?"
+],
+"options": [
+["Avoid collision and expedite and maintain an orderly flow of traffic", "Prevent collisions and ensure a smooth, orderly traffic flow", "Maintain safety and an efficient, orderly traffic stream"],
+["Transfer control between units", "Hand over control", "Pass control responsibility"],
+["Provide meteorological information to all aircraft", "Disseminate weather data", "Share MET info"],
+["Ensure all aircraft have filed flight plans", "Confirm FPLs on file", "Check flight plan submission"],
+["Monitor all emergency frequencies continuously", "Guard 121.5", "Continuous emergency watch"],
+["Coordinate military and civilian operations only", "Mil‑civil coordination", "Joint military‑civilian control"]
+],
+"correct": "Avoid collision and expedite and maintain an orderly flow of traffic",
+"hint": "Coordination is the mechanism that integrates sectors and units to preserve safety and efficiency.",
+"insight": "Transfer of control is a step in coordination, not its primary objective.",
+"explanation": "The prime objective of coordination is to avoid collision and to expedite and maintain an orderly flow of traffic."
+},
+{
+"variants": [
+"The controller may use which two primary tools for coordination?",
+"Which inter‑unit communication tools are mentioned for coordination?",
+"Coordination between units can be performed using:"
+],
+"options": [
+["The direct hotline or radio frequencies", "Hotline and radio", "Direct line or VHF/UHF radio"],
+["Telephone and email", "Phone and email", "Voice call and electronic mail"],
+["Data link and satellite communication", "CPDLC and SATCOM", "Digital link and satellite"],
+["Written messages and fax", "Memo and facsimile", "Printed note and fax"],
+["Intercom and public address", "Internal intercom and PA", "Intercom and tannoy"],
+["Radar hand‑off and electronic strips", "Electronic coordination", "Radar hand‑off and e‑strips"]
+],
+"correct": "The direct hotline or radio frequencies",
+"hint": "These are immediate voice tools that permit real‑time coordination.",
+"insight": "Data link may also be used, but the specific tools listed are the direct hotline and radio frequencies.",
+"explanation": "The controller will use the applicable/available tools for coordination purposes. These tools may include the direct hotline or radio frequencies."
+},
+{
+"variants": [
+"If communication with a transferred aircraft has not been established as expected, ATC shall:",
+"What must ATC do when a transferred aircraft fails to establish contact?",
+"Upon unsuccessful communication transfer, the receiving unit shall inform:"
+],
+"options": [
+["Inform the transferring unit", "Notify the transferring unit that contact was not established", "Advise the unit that handed over the aircraft"],
+["Attempt to contact the aircraft on guard (121.5)", "Call on emergency frequency", "Try 121.5"],
+["Declare an uncertainty phase", "Initiate INCERFA", "Start uncertainty procedures"],
+["Transfer control back to the original unit", "Return control", "Send control back automatically"],
+["Keep trying for 10 minutes before escalating", "Wait 10 minutes", "Delay action for 10 minutes"],
+["Issue a general broadcast about the missing aircraft", "Broadcast an alert", "Call all stations"]
+],
+"correct": "Inform the transferring unit",
+"hint": "The transferring unit still holds relevant data and may be able to assist in re‑establishing contact.",
+"insight": "The initial action is to inform the transferring unit, not to declare an emergency.",
+"explanation": "ATC shall inform the transferring unit if the communication has not been established with the transferred aircraft as expected."
+},
+{
+"variants": [
+"ACAS I provides what level of collision avoidance assistance?",
+"ACAS I is a system that offers:",
+"Which statement best describes ACAS I?"
+],
+"options": [
+["Information as an aid to 'see and avoid', without Resolution Advisories", "Traffic awareness information only, no RAs", "See‑and‑avoid assistance, no resolution commands"],
+["Both Traffic Advisories and Resolution Advisories in the vertical plane", "TAs and RAs with vertical manoeuvres", "Full collision avoidance with vertical RAs"],
+["Only Traffic Advisories with automatic avoidance commands", "TAs and automatic resolution", "Advisory and automatic avoidance"],
+["Resolution Advisories in both vertical and horizontal planes", "RAs in all axes", "Horizontal and vertical resolution"],
+["Terrain warnings and obstacle alerts", "GPWS and obstacle warning", "Ground proximity alerts"],
+["Only voice alerts to the pilot", "Audio warnings only", "Verbal collision warnings"]
+],
+"correct": "Information as an aid to 'see and avoid', without Resolution Advisories",
+"hint": "ACAS I provides traffic awareness to assist the pilot's visual scan, not manoeuvre commands.",
+"insight": "ACAS II provides both TAs and RAs, while ACAS I does not issue RAs at all.",
+"explanation": "ACAS I is a system that provides information to aid the pilot’s 'see and avoid' principle; it does not generate Resolution Advisories."
+},
+{
+"variants": [
+"ACAS II provides Resolution Advisories in which plane?",
+"In what dimension does ACAS II issue RAs?",
+"ACAS II generates Resolution Advisories:"
+],
+"options": [
+["The vertical plane", "Vertical only", "In the vertical sense (climb/descend)"],
+["The horizontal plane", "Horizontal turns", "Lateral manoeuvres only"],
+["Both vertical and horizontal planes simultaneously", "Vertical and lateral", "All axes"],
+["Only speed adjustments", "Speed changes only", "Increase or decrease speed"],
+["Only reverse thrust commands", "Reverse thrust", "Deceleration commands"],
+["No Resolution Advisories, only Traffic Advisories", "TAs only", "Only traffic information"]
+],
+"correct": "The vertical plane",
+"hint": "ACAS II gives vertical escape manoeuvres, not horizontal turns.",
+"insight": "It does not command turns; RAs are limited to climb or descent instructions.",
+"explanation": "ACAS II provides Resolution Advisories in the vertical plane only (e.g., 'CLIMB', 'DESCEND')."
+},
+{
+"variants": [
+"Traffic Advisories (TAs) and Resolution Advisories (RAs) in ACAS are based on:",
+"ACAS calculates TAs and RAs using which parameter?",
+"The ACAS collision avoidance logic is primarily dependent on:"
+],
+"options": [
+["Time to potential collision, not distance", "Time‑based prediction, not range", "The time remaining before a possible impact"],
+["Distance between aircraft", "Range in nautical miles", "Slant range distance"],
+["Altitude separation only", "Vertical distance", "Flight level difference"],
+["Speed differential only", "Speed difference", "Closure rate only"],
+["Bearing change rate", "Azimuth change", "Angular rate"],
+["Radio signal strength", "Signal power", "Transponder reply strength"]
+],
+"correct": "Time to potential collision, not distance",
+"hint": "ACAS uses time to the closest point of approach to decide when to issue advisories.",
+"insight": "The system anticipates the collision threat based on time, not absolute distance.",
+"explanation": "Both TA and RA are time‑based, not distance‑based. ACAS computes the time remaining before a possible collision."
+},
+{
+"variants": [
+"Resolution Advisories (RAs) from ACAS are inhibited:",
+"At what height are all ACAS RAs suppressed?",
+"Below which altitude are RAs not generated?"
+],
+"options": [
+["Below 1,000 ft AGL", "Under 1,000 feet above ground level", "When the aircraft is below 1,000 ft AGL"],
+["Below 2,500 ft AGL", "Under 2,500 ft above ground", "2,500 ft AGL inhibition"],
+["Below 500 ft AGL", "Under 500 ft above ground", "500 ft AGL"],
+["At all altitudes; RAs are never inhibited", "No inhibition", "Always active"],
+["Only when landing gear is extended", "Gear down", "With landing gear down"],
+["Only when flaps are fully extended", "Full flap", "Full flap configuration"]
+],
+"correct": "Below 1,000 ft AGL",
+"hint": "At very low altitude, vertical manoeuvres could conflict with safe terrain clearance.",
+"insight": "All RAs are inhibited below 1,000 ft AGL to prevent unsafe low‑level manoeuvres.",
+"explanation": "All Resolution Advisories are inhibited below 1,000 ft AGL."
+},
+{
+"variants": [
+"Ground‑based safety nets are an integral part of the ATM system and serve to:",
+"What is the purpose of ground‑based safety nets?",
+"Ground‑based safety nets provide:"
+],
+"options": [
+["Help prevent hazardous situations from developing into major incidents or accidents, giving ATC early warning", "Prevent imminent hazards from escalating, with timely ATC alerts", "Early warning to ATC to avoid major incidents or accidents"],
+["Replace air traffic controllers", "Automate ATC", "Remove human control"],
+["Provide automatic separation between all aircraft", "Automatic separation", "Self‑separation for all flights"],
+["Replace ACAS in controlled airspace", "Substitute for airborne collision avoidance", "Ground‑based replacement for ACAS"],
+["Issue landing clearances automatically", "Auto‑clearance", "Automated landing clearance"],
+["Control aircraft taxiing without controller input", "Automatic taxi control", "Automated ground movement"]
+],
+"correct": "Help prevent hazardous situations from developing into major incidents or accidents, giving ATC early warning",
+"hint": "Safety nets alert the controller before a hazard becomes critical.",
+"insight": "They do not replace controllers or ACAS; they support the controller with timely warnings.",
+"explanation": "Ground‑based safety nets help prevent imminent or actual hazardous situations from developing into major incidents or even accidents by providing warnings early enough for ATC to act."
+},
+{
+"variants": [
+"Which of the following is an example of a ground‑based safety net?",
+"What is one of the listed ground‑based safety nets?",
+"A ground‑based safety net includes:"
+],
+"options": [
+["Short Term Conflict Alert (STCA)", "STCA", "Short Term Conflict Alert"],
+["Airborne Collision Avoidance System (ACAS)", "ACAS", "TCAS"],
+["Ground Proximity Warning System (GPWS)", "GPWS", "TAWS"],
+["Traffic Alert and Collision Avoidance System (TCAS)", "TCAS", "Airborne collision avoidance"],
+["Automatic Dependent Surveillance‑Broadcast (ADS‑B)", "ADS‑B", "Automatic Dependent Surveillance"],
+["Controller‑Pilot Data Link Communications (CPDLC)", "CPDLC", "Data link communications"]
+],
+"correct": "Short Term Conflict Alert (STCA)",
+"hint": "STCA is a radar‑based alert system that warns the controller of an imminent loss of separation.",
+"insight": "ACAS and TCAS are airborne systems; GPWS is terrain; ADS‑B and CPDLC are not safety nets.",
+"explanation": "Short Term Conflict Alert (STCA) is an example of a ground‑based safety net. Other examples include MSAW, APM, and APW."
+},
+{
+"variants": [
+"The functions of a control tower may be performed by:",
+"Which controllers may carry out TWR duties?",
+"Aerodrome control tower functions can be exercised by:"
+],
+"options": [
+["Aerodrome controller, ground controller, and clearance delivery", "Local, ground, and clearance delivery controllers", "The TWR team comprising aerodrome, ground, and delivery"],
+["Aerodrome controller only", "Only the local controller", "Solely the aerodrome controller"],
+["Approach controller and area controller", "APP and ACC", "Approach and area control"],
+["Ground controller only", "Only ground control", "Solely the ground movement controller"],
+["Clearance delivery only", "Only delivery", "Solely the clearance delivery position"],
+["Flight information service officer", "FISO", "Aerodrome flight information service"]
+],
+"correct": "Aerodrome controller, ground controller, and clearance delivery",
+"hint": "The TWR function can be divided among multiple positions to manage workload.",
+"insight": "Approach and area control are separate services; the tower positions are those listed.",
+"explanation": "TWR function may be performed by an aerodrome controller, a ground controller, and a clearance delivery position."
+},
+{
+"variants": [
+"TWR shall issue information and clearances to prevent collisions between aircraft and which of the following?",
+"Collision prevention by TWR extends to:",
+"The tower is responsible for preventing collisions involving:"
+],
+"options": [
+["Aircraft flying in the aerodrome control zone, aircraft on the manoeuvring area, aircraft landing/taking off, aircraft and vehicles on the manoeuvring area, and aircraft on the manoeuvring area and obstructions", "All aircraft in the vicinity, ground traffic, vehicles, and obstructions", "Aircraft in the air and on the ground, plus vehicles and obstacles"],
+["Only IFR aircraft in the control zone", "IFR flights in the zone", "Only instrument traffic"],
+["Only aircraft on the runway", "Runway traffic only", "Aircraft on the active runway"],
+["Only vehicles on the manoeuvring area", "Vehicles only", "Only ground vehicles"],
+["Only VFR aircraft in the circuit", "VFR circuit traffic", "Only visual flights in the pattern"],
+["Only emergency aircraft", "Emergency flights", "Only aircraft in distress"]
+],
+"correct": "Aircraft flying in the aerodrome control zone, aircraft on the manoeuvring area, aircraft landing/taking off, aircraft and vehicles on the manoeuvring area, and aircraft on the manoeuvring area and obstructions",
+"hint": "TWR has a broad responsibility for all aerodrome traffic, both airborne and on the ground.",
+"insight": "The list includes five distinct categories of potential collision hazards.",
+"explanation": "TWR issues information and clearances to prevent collisions between: aircraft flying within the AOR, aircraft on the manoeuvring area, aircraft landing/taking off, aircraft and vehicles, and aircraft and obstructions."
+},
+{
+"variants": [
+"Aerodrome controllers shall maintain a continuous watch on all aerodrome traffic operations:",
+"How must TWR monitor aerodrome traffic?",
+"Continuous surveillance of aerodrome operations is achieved by:"
+],
+"options": [
+["By visual means, or by surveillance systems when available", "Using visual observation supplemented by surveillance systems if available", "Visually, or with radar/other surveillance when accessible"],
+["By using only visual surveillance at all times", "Purely visual means", "Exclusively by looking out the window"],
+["By using only radar and ADS‑B", "Radar and ADS‑B only", "Only electronic surveillance"],
+["By listening to pilot position reports", "Pilot voice reports", "Reliance on pilot reports"],
+["By relying on vehicle drivers' reports", "Vehicle driver reports", "Ground vehicle observations"],
+["By using automatic conflict detection algorithms only", "Conflict detection software", "Automated monitoring"]
+],
+"correct": "By visual means, or by surveillance systems when available",
+"hint": "Visual watch is the primary method, but technology can supplement it.",
+"insight": "It is not radar‑only or visual‑only; the method depends on available equipment.",
+"explanation": "Aerodrome controllers shall maintain a continuous watch on all aerodrome traffic operations on and in the vicinity of the aerodrome by visual means, or by surveillance systems when available."
+},
+{
+"variants": [
+"TWR shall immediately report any failure or irregularity of:",
+"What equipment failures must be reported by the tower without delay?",
+"The tower is required to promptly report malfunctions in:"
+],
+"options": [
+["Any equipment, light or other device established for guidance of aerodrome traffic or required for ATC", "Any guidance equipment, lighting, or device needed for traffic or ATC service", "Equipment, lights, or devices used for traffic guidance or ATC provision"],
+["Only the runway lighting system", "Only runway lights", "Exclusively runway illumination"],
+["Only the communication radios", "Only radio equipment", "Exclusively COM transceivers"],
+["Only the radar surveillance system", "Only radar", "Exclusively the radar display"],
+["Only the meteorological sensors", "Only weather sensors", "Exclusively MET equipment"],
+["Only the emergency power supply", "Only backup power", "Emergency generators"]
+],
+"correct": "Any equipment, light or other device established for guidance of aerodrome traffic or required for ATC",
+"hint": "This broad requirement covers all infrastructure that supports safe movement and control.",
+"insight": "Lighting, navaids, radios, and radar all fall under this reporting obligation.",
+"explanation": "Aerodrome control towers shall immediately report any failure or irregularity of any equipment, light or other device established for guidance of aerodrome traffic or required for the provision of ATC service."
+},
+{
+"variants": [
+"The term 'runway‑in‑use' denotes:",
+"What is the meaning of 'runway‑in‑use'?",
+"'Runway‑in‑use' is defined as the runway:"
+],
+"options": [
+["That TWR considers most suitable for the types of aircraft expected to land or take off at that time", "Considered by the tower as the best choice for the expected arrivals and departures", "The runway judged most appropriate by TWR for the anticipated traffic"],
+["With the longest available landing distance", "Longest runway", "Maximum LDA"],
+["Closest to the terminal building", "Closest runway to the terminal", "Most convenient for passengers"],
+["With the most precision approach aids", "Best‑equipped runway", "The runway with CAT III ILS"],
+["That the pilot requests", "Pilot‑requested runway", "The runway the crew wants"],
+["That is used by all aircraft regardless of wind", "Mandatory runway", "The only operational runway"]
+],
+"correct": "That TWR considers most suitable for the types of aircraft expected to land or take off at that time",
+"hint": "The tower chooses the runway based on wind, traffic, and other operational factors.",
+"insight": "The choice is not dictated solely by length or pilot preference; it is TWR's operational decision.",
+"explanation": "'Runway‑in‑use' shall be used to indicate the runway that TWR considers the most suitable for the types of aircraft expected to land or take off at the aerodrome."
+},
+{
+"variants": [
+"Normally, aircraft land and take off into wind unless other factors make a different direction preferable. Which of the following is one of those factors?",
+"What might override the 'into wind' rule for runway selection?",
+"A different runway direction may be chosen if:"
+],
+"options": [
+["The runway configuration, meteorological conditions, or air traffic conditions determine a different direction is preferable", "Runway layout, weather, or traffic may favour another direction", "Configuration, MET, or traffic may dictate a different choice"],
+["Pilot preference regardless of wind", "Pilot request", "Crew choice"],
+["The aircraft's fuel state", "Fuel remaining", "Endurance"],
+["The aircraft's weight only", "Weight factor only", "Solely aircraft weight"],
+["The airline's schedule demands", "Schedule pressure", "Commercial urgency"],
+["ATC controller's personal convenience", "Controller convenience", "Staff convenience"]
+],
+"correct": "The runway configuration, meteorological conditions, or air traffic conditions determine a different direction is preferable",
+"hint": "Safety, runway layout, weather, available approaches, or traffic can override the wind rule.",
+"insight": "Pilot preference or commercial factors are not listed; operational necessity governs.",
+"explanation": "Aircraft normally land and take off into wind unless safety, runway configuration, meteorological conditions, available instrument approach procedures, or air traffic conditions determine a different direction is preferable."
+},
+{
+"variants": [
+"Prior to taxiing for take‑off, TWR shall provide which of the following information?",
+"What aerodrome and meteorological data must be given to a departing aircraft before taxi?",
+"Before pushback or taxi for departure, the tower delivers:"
+],
+"options": [
+["Runway to be used, surface wind direction and speed, altimeter setting, air temperature (for turbine aircraft), visibility or RVR, and the correct time", "RWY, wind, QNH/QFE, temperature (turbine), visibility/RVR, time", "Runway, wind, altimeter, temp, RVR/visibility, and time"],
+["Only the runway and wind", "Just the runway and surface wind", "Runway and wind only"],
+["Only the altimeter setting and time", "QNH and time", "Altimeter and time check"],
+["Only the ATIS broadcast identifier", "ATIS letter", "The current ATIS code"],
+["Only the departure clearance limit", "Clearance limit", "Cleared destination"],
+["Only the expected take‑off time", "TKOF time", "Start‑up and take‑off time"]
+],
+"correct": "Runway to be used, surface wind direction and speed, altimeter setting, air temperature (for turbine aircraft), visibility or RVR, and the correct time",
+"hint": "A full set of operational data is needed for safe departure planning.",
+"insight": "Not just wind; all elements are required before taxi.",
+"explanation": "Prior to taxiing for take‑off, TWR shall provide: runway to be used, surface wind, altimeter setting, air temperature (for turbine‑engine aircraft), visibility or RVR, and the correct time."
+},
+{
+"variants": [
+"Essential local traffic information provided by TWR shall:",
+"What is the requirement for issuing essential local traffic information?",
+"When must TWR pass information about local traffic that may be a hazard?"
+],
+"options": [
+["Be issued in a timely manner, in the interest of safety or when requested by the pilot, and be described so as to be easily identified", "Issued promptly for safety or upon pilot request, with clear identification", "Timely, safety‑driven or on demand, and clearly described"],
+["Be broadcast continuously on ATIS", "Continuous ATIS broadcast", "Repeated on ATIS"],
+["Be printed on the flight strip", "Flight strip annotation", "Written on the strip"],
+["Be given only after the aircraft enters the manoeuvring area", "After entering the manoeuvring area", "When inside the movement area"],
+["Be provided only for IFR flights", "IFR only", "Only to instrument flights"],
+["Be limited to aircraft and exclude vehicles and personnel", "Aircraft only, no vehicles/personnel", "Excluding ground vehicles and staff"]
+],
+"correct": "Be issued in a timely manner, in the interest of safety or when requested by the pilot, and be described so as to be easily identified",
+"hint": "The information must be timely, safety‑oriented, and clearly understandable.",
+"insight": "Other methods like ATIS or strips are not the required delivery mechanism.",
+"explanation": "Essential local traffic information shall be issued in a timely manner, in the interest of safety or when requested by the pilot, and shall be described so as to be easily identified."
+},
+{
+"variants": [
+"Before issuing a taxi clearance, TWR must first determine:",
+"What must the tower controller establish before giving taxi instructions?",
+"Prior to a taxi clearance, the controller ascertains:"
+],
+"options": [
+["Where the aircraft is parked", "The parking position of the aircraft", "The aircraft's location on the aerodrome"],
+["The aircraft's fuel endurance", "Fuel remaining", "How much fuel is on board"],
+["The pilot's experience level", "Pilot qualifications", "Crew experience"],
+["The passenger count", "Persons on board", "POB"],
+["The aircraft's maintenance status", "Technical condition", "Airworthiness status"],
+["The destination weather", "Arrival aerodrome MET", "Weather at destination"]
+],
+"correct": "Where the aircraft is parked",
+"hint": "Knowing the starting point is essential for providing a correct and collision‑free taxi route.",
+"insight": "Fuel, experience, POB, maintenance, and weather are not needed before issuing a taxi clearance.",
+"explanation": "TWR shall determine where the aircraft concerned is parked before issuing a taxi clearance."
+},
+{
+"variants": [
+"A taxi clearance shall be concise and adequate, and must provide:",
+"What must a taxi clearance include to ensure safety?",
+"The content of a proper taxi clearance ensures:"
+],
+"options": [
+["The correct taxi route, avoiding collision and inadvertent entry to an active runway", "A safe taxi route that prevents collisions and runway incursions", "Correct routing that avoids conflict and active runway penetration"],
+["Only the assigned parking stand", "Gate number only", "The stand designation alone"],
+["Only the runway holding point", "Holding point only", "Just where to hold"],
+["The expected take‑off time", "TKOF time estimate", "Estimated departure time"],
+["The ATIS information identifier", "ATIS code", "Current ATIS letter"],
+["Ground control frequency only", "GND frequency", "The frequency to contact"]
+],
+"correct": "The correct taxi route, avoiding collision and inadvertent entry to an active runway",
+"hint": "The taxi clearance must give enough routing to keep the aircraft safe and clear of active runways.",
+"insight": "Stand, holding point, TKOF time, ATIS, or frequency alone are insufficient; the full route is needed.",
+"explanation": "Taxi clearance shall be concise and adequate, and provide the correct taxi route to avoid collision and to avoid inadvertently entering an active runway."
+},
+{
+"variants": [
+"Essential information on aerodrome conditions includes all of the following except:",
+"Which is not listed as essential aerodrome condition information?",
+"Aerodrome condition reports must include:"
+],
+"options": [
+["Aircraft fuel prices", "Fuel cost information", "Aviation fuel pricing"],
+["Construction or maintenance work on or adjacent to the movement area", "Works on the movement area", "Maintenance near the manoeuvring area"],
+["Rough or broken surfaces on a runway, taxiway, or apron", "Broken pavement on movement areas", "Surface damage on runways/taxiways/aprons"],
+["Snow, slush, or ice on a runway, taxiway, or apron", "Winter contamination on movement areas", "Ice or slush on operational surfaces"],
+["Water on a runway, taxiway, or apron", "Standing water on the movement area", "Flooding on runways or taxiways"],
+["Failure or irregular operation of part or all of the aerodrome lighting system", "Lighting system malfunction", "Partial or complete lighting failure"]
+],
+"correct": "Aircraft fuel prices",
+"hint": "Aerodrome condition information relates to physical hazards and infrastructure status, not commercial services.",
+"insight": "Construction, surface conditions, winter contamination, water, and lighting failures are all listed as essential aerodrome condition information.",
+"explanation": "Essential information on aerodrome conditions includes work, rough surfaces, snow/slush/ice, water, snow banks, other temporary hazards, and lighting failures. Fuel prices are not part of this safety information."
+},
+{
+"variants": [
+"Information on an abnormal configuration or condition of an aircraft shall be:",
+"When TWR notices an aircraft with an abnormal configuration, the information must be:",
+"Upon observing an abnormal aircraft condition, the controller transmits the information:"
+],
+"options": [
+["Passed without delay", "Transmitted immediately", "Given to the pilot without any delay"],
+["Recorded in the log only", "Written in the unit log", "Logged for later review"],
+["Passed after the aircraft lands", "Given after landing", "Transmitted post‑flight"],
+["Reported to the airline operator only", "Given to the operator", "Sent to the airline"],
+["Provided only if the pilot requests it", "On pilot request only", "Only if asked for by the crew"],
+["Included in the ATIS broadcast", "Added to ATIS", "Broadcast on ATIS"]
+],
+"correct": "Passed without delay",
+"hint": "An abnormal configuration, such as gear not extended, requires immediate notification for safety.",
+"insight": "Delaying the information, logging it only, or waiting for a pilot request could have serious consequences.",
+"explanation": "Information on an abnormal configuration or condition of an aircraft shall be passed without delay."
+},
+{
+"variants": [
+"Aircraft taxiing on the runway‑in‑use may be permitted provided:",
+"When may aircraft taxi on the active runway?",
+"Taxiing on the runway‑in‑use is allowed only when:"
+],
+"options": [
+["No delay or risk to other aircraft will result", "It causes no delay or risk to other traffic", "No negative impact on other aircraft safety or schedule"],
+["The aircraft is a heavy category", "Heavy aircraft only", "Only Category H or J"],
+["Visibility is above 5 km", "Good visibility", "RVR above 5 km"],
+["The pilot specifically requests it", "Pilot request only", "When the crew asks"],
+["It is the only operational surface available", "Only when no taxiways exist", "When taxiways are closed"],
+["Ground control is closed", "GND position closed", "When no ground controller on duty"]
+],
+"correct": "No delay or risk to other aircraft will result",
+"hint": "Safety and traffic flow take priority; the runway can be used for taxiing if it doesn't compromise either.",
+"insight": "Heavy category, visibility, pilot request, lack of taxiways, or ground closure are not the listed criteria.",
+"explanation": "Aircraft may be permitted to taxi on the runway‑in‑use provided no delay or risk to other aircraft will result."
+},
+{
+"variants": [
+"Before an aircraft enters the runway‑in‑use for taxiing, communication must be transferred:",
+"COM transfer for taxiing on the active runway is made from:",
+"When an aircraft will taxi on the runway, the frequency change is:"
+],
+"options": [
+["From the ground controller to the local controller", "Ground to local (aerodrome) controller", "GND to TWR local position"],
+["From the local controller to the ground controller", "Local to ground", "TWR to GND"],
+["From approach to the tower", "APP to TWR", "Approach to aerodrome controller"],
+["From clearance delivery to ground", "Delivery to ground", "CD to GND"],
+["From the operator to ATC", "Company to ATC", "Airline to air traffic"],
+["No transfer is required", "No COM change needed", "Same frequency continues"]
+],
+"correct": "From the ground controller to the local controller",
+"hint": "Local control must have direct communication with the aircraft while it is on the active runway.",
+"insight": "The local controller is responsible for runway separation, so the aircraft must be on the local frequency.",
+"explanation": "Communication with the aircraft concerned should be transferred from the ground controller to the local controller prior to the aircraft entering the runway‑in‑use."
+},
+{
+"variants": [
+"When TWR notices a lost aircraft or vehicle unaware of its position, the controller shall:",
+"What action is taken when an aircraft or vehicle is lost on the aerodrome?",
+"A lost aircraft or vehicle requires TWR to:"
+],
+"options": [
+["Take action to safeguard operations and assist the aircraft or vehicle", "Safeguard the operation and help the lost aircraft/vehicle", "Act to protect operations and provide assistance"],
+["Immediately close the runway", "Shut the runway", "Cease all runway operations"],
+["Declare an emergency", "Initiate emergency procedures", "Start the emergency checklist"],
+["Issue a NOTAM about the lost aircraft", "Publish a NOTAM", "Send out a notice"],
+["Transfer the aircraft to another frequency", "Change frequency", "Send to another channel"],
+["Contact the airline operator", "Call the operator", "Notify the carrier"]
+],
+"correct": "Take action to safeguard operations and assist the aircraft or vehicle",
+"hint": "A lost aircraft or vehicle is a safety risk that must be managed with protective action and guidance.",
+"insight": "Closing the runway or declaring an emergency may be excessive; the procedure is to safeguard and assist.",
+"explanation": "If TWR notices a lost aircraft or vehicle that is unaware of its position, the controller shall take action to safeguard the operation and assist the aircraft/vehicle."
+},
+{
+"variants": [
+"When wake turbulence separation rests with the pilot, TWR shall:",
+"What does TWR do when wake turbulence avoidance is the pilot's responsibility?",
+"In situations where the pilot is responsible for wake turbulence separation, TWR must:"
+],
+"options": [
+["Advise the aircraft of the expected occurrence of wake turbulence hazards", "Warn about expected wake turbulence", "Inform the pilot of anticipated wake turbulence"],
+["Issue mandatory radar vectors for wake avoidance", "Vector the aircraft around wake", "Provide radar guidance to avoid turbulence"],
+["Increase separation to 10 NM", "Apply 10‑mile separation", "Extend separation to 10 NM"],
+["Apply time‑based separation minima", "Use time separation", "Apply the wake turbulence time matrix"],
+["Cancel the pilot's landing clearance", "Cancel landing clearance", "Revoke the approach clearance"],
+["Transfer the aircraft to another runway", "Change the assigned runway", "Switch to a parallel runway"]
+],
+"correct": "Advise the aircraft of the expected occurrence of wake turbulence hazards",
+"hint": "When the pilot assumes responsibility, the controller's role is to issue a cautionary advisory.",
+"insight": "TWR does not apply separation or issue vectors; it only provides the hazard information.",
+"explanation": "TWR shall advise the aircraft of the expected occurrence of wake turbulence hazards when wake turbulence separation rests with the pilot."
+},
+{
+"variants": [
+"Prior to entering the traffic circuit or starting an approach to land, TWR shall provide:",
+"What information must be given to an arriving aircraft before it enters the circuit?",
+"Before approach or circuit entry, the tower passes:"
+],
+"options": [
+["Runway to be used, surface wind direction and speed, and QNH or QFE", "RWY, wind, and QNH/QFE", "The runway, surface wind, and altimeter setting"],
+["Runway, wind, temperature, and RVR", "RWY, wind, temp, RVR", "Full MET and runway data"],
+["Only the runway and QNH", "Runway and QNH only", "Runway and altimeter setting"],
+["The expected approach time and delay", "Approach delay information", "EAT and holding instructions"],
+["The ATIS broadcast only", "ATIS information", "The current ATIS"],
+["The landing clearance and go‑around instructions", "Clearance to land", "Landing clearance with missed approach"]
+],
+"correct": "Runway to be used, surface wind direction and speed, and QNH or QFE",
+"hint": "This is distinct from the pre‑taxi information; it is specifically for arriving traffic before they enter the pattern.",
+"insight": "Temperature and RVR are part of the pre‑taxi information, not the pre‑circuit information.",
+"explanation": "Prior to entering the traffic circuit or starting an approach to land, TWR shall provide: runway to be used, surface wind direction and speed, and QNH or QFE."
+},
+{
+"variants": [
+"Prior to take‑off, TWR shall provide information on significant changes in:",
+"Before departure, what updated information must the tower pass?",
+"Just before take‑off, TWR updates the pilot about changes in:"
+],
+"options": [
+["Surface wind direction and speed, air temperature, visibility or RVR, and significant meteorological conditions in the take‑off and climb‑out area", "Wind, temperature, visibility/RVR, and MET in T/O and climb‑out", "Significant changes in wind, temp, RVR/visibility, and weather in departure areas"],
+["Only the surface wind", "Surface wind changes only", "Updated wind information"],
+["Only the altimeter setting", "QNH changes", "Updated pressure setting"],
+["Only the RVR", "RVR changes", "Updated runway visual range"],
+["The expected departure clearance time", "Departure time slot", "CTOT update"],
+["The traffic situation in the control zone", "Traffic update", "Local traffic picture"]
+],
+"correct": "Surface wind direction and speed, air temperature, visibility or RVR, and significant meteorological conditions in the take‑off and climb‑out area",
+"hint": "Final pre‑take‑off information updates any significant weather changes since the taxi clearance.",
+"insight": "Wind, temp, and RVR are mentioned specifically because they directly affect take‑off performance.",
+"explanation": "Prior to take‑off, TWR shall provide significant changes in surface wind direction and speed, air temperature, visibility or RVR, and significant MET conditions in the take‑off and climb‑out areas."
+},
+{
+"variants": [
+"TWR shall terminate the use of any part of the maneuvering area that:",
+"When must the tower close a portion of the maneuvering area?",
+"Under what condition does TWR cease operations on part of the aerodrome?"
+],
+"options": [
+["Might endanger the safety of aircraft", "Could threaten aircraft safety", "Poses a potential danger to aircraft"],
+["Is requested by the aerodrome authority", "Airport management request", "When the aerodrome operator asks"],
+["Is not illuminated at night", "Has lighting failure", "Dark portion of the movement area"],
+["Has not been inspected in 24 hours", "Missed daily inspection", "No inspection for 24 hours"],
+["Is undergoing routine maintenance", "Scheduled maintenance area", "Planned works area"],
+["Is not in use by any aircraft", "Unused area", "Inactive portion"]
+],
+"correct": "Might endanger the safety of aircraft",
+"hint": "Safety is the trigger; any hazard, regardless of cause, requires the tower to act.",
+"insight": "The controller must also notify the aerodrome authority after terminating use.",
+"explanation": "TWR controller shall terminate the use of any part of the maneuvering area that might endanger the safety of aircraft, and notify the aerodrome authority."
+},
+{
+"variants": [
+"Air taxiing by helicopters may be authorized at speeds:",
+"What is the maximum speed for helicopter air taxiing?",
+"Helicopter air taxiing is permitted at speeds below:"
+],
+"options": [
+["Below 20 kts", "Less than 20 knots", "Under 20 kt"],
+["Below 30 kts", "Less than 30 knots", "Under 30 kt"],
+["Below 10 kts", "Less than 10 knots", "Under 10 kt"],
+["Below 15 kts", "Less than 15 knots", "Under 15 kt"],
+["Below 5 kts", "Less than 5 knots", "Under 5 kt"],
+["No speed limit", "Unrestricted speed", "Any speed"]
+],
+"correct": "Below 20 kts",
+"hint": "Air taxiing is a low‑speed hovering movement used for safety, not for fast ground travel.",
+"insight": "Speeds above 20 kts would generate too much downwash and reduce safety margins.",
+"explanation": "Air taxiing may be authorized at speeds below 20 kts to minimise turbulence and maintain safety."
+},
+{
+"variants": [
+"Aircraft shall not be permitted to line up and hold on the approach end of a runway‑in‑use when another aircraft is landing until:",
+"When may an aircraft line up on the runway with a landing aircraft approaching?",
+"Lining up on the approach end is permitted only after the landing aircraft has:"
+],
+"options": [
+["The landing aircraft has passed the point of intended holding", "Passed the point where the departing aircraft is waiting", "Gone beyond the line‑up position"],
+["The landing aircraft has touched down", "Landed and rolling", "After touchdown"],
+["The landing aircraft has been cleared to land", "Landing clearance issued", "When landing clearance is given"],
+["The landing aircraft has reported on final", "Reported on final approach", "When the landing aircraft calls final"],
+["The preceding departing aircraft has taken off", "After the departure has started roll", "When the preceding aircraft is airborne"],
+["The ground controller authorises", "Ground controller clearance", "When GND approves"]
+],
+"correct": "The landing aircraft has passed the point of intended holding",
+"hint": "The aircraft waiting to line up must not pose a collision risk to the landing traffic.",
+"insight": "The landing aircraft must pass the holding point so that no conflict exists at the runway threshold.",
+"explanation": "Aircraft shall not be permitted to line up on the approach end of a runway‑in‑use until the landing aircraft has passed the point of intended holding."
+},
+{
+"variants": [
+"Movement of pedestrians or vehicles on the maneuvering area is subject to:",
+"Who authorises vehicles and pedestrians to enter the maneuvering area?",
+"Before entering the maneuvering area, vehicles and pedestrians must obtain:"
+],
+"options": [
+["Authorisation by the aerodrome control tower", "TWR authorisation", "Approval from the tower"],
+["Authorisation by the airport authority", "Airport operator permission", "Aerodrome management approval"],
+["Authorisation by ground control only", "Ground controller clearance", "GND authorisation"],
+["Authorisation by the fire service", "Fire and rescue permission", "F&RS approval"],
+["Authorisation by the airline operator", "Airline company approval", "Operator permission"],
+["No authorisation is required", "Free access", "Unrestricted entry"]
+],
+"correct": "Authorisation by the aerodrome control tower",
+"hint": "TWR controls all movements on the maneuvering area to prevent conflicts with aircraft.",
+"insight": "Airport authority may own the land, but operational entry requires TWR clearance.",
+"explanation": "The movement of pedestrians or vehicles on the maneuvering area shall be subject to authorisation by the aerodrome control tower."
+},
+{
+"variants": [
+"All vehicles and pedestrians on the maneuvering area must:",
+"What is the right‑of‑way rule for vehicles and pedestrians on the maneuvering area?",
+"Vehicles on the maneuvering area are required to:"
+],
+"options": [
+["Give way to aircraft", "Yield to aircraft", "Always let aircraft pass"],
+["Give way to emergency vehicles only", "Yield only to emergency vehicles", "Only E‑vehicles have priority"],
+["Proceed as quickly as possible", "Move fast", "Clear the area rapidly"],
+["Follow the controller's vehicle", "Follow the lead vehicle", "Trail behind the controller's car"],
+["Sound horn continuously", "Use horn", "Audible warning at all times"],
+["Stop at every intersection", "Halt at each crossing", "Stop at all junctions"]
+],
+"correct": "Give way to aircraft",
+"hint": "Aircraft have priority on surfaces meant for their operation.",
+"insight": "This rule applies to all vehicles and pedestrians, not just those near runways.",
+"explanation": "All vehicles and pedestrians shall give way to aircraft."
+},
+{
+"variants": [
+"Emergency vehicles proceeding to assist an aircraft in distress shall be:",
+"What priority do emergency vehicles have on the maneuvering area?",
+"Emergency vehicles responding to an aircraft in distress are given:"
+],
+"options": [
+["Priority over all other surface movement traffic", "Highest surface priority", "Precedence over all other ground movements"],
+["The same priority as other vehicles", "No special priority", "Equal treatment"],
+["Priority only after the aircraft lands", "After landing priority", "Post‑landing priority"],
+["Priority only if the tower declares an emergency", "If tower declares emergency", "Conditional on emergency declaration"],
+["No priority; they must wait like all vehicles", "Must wait for clearance", "No special treatment"],
+["Priority only during low visibility", "Low visibility priority", "Only in LVP"]
+],
+"correct": "Priority over all other surface movement traffic",
+"hint": "Saving lives overrides normal surface movement sequencing.",
+"insight": "ATC should hold other traffic to allow emergency vehicles to move without impediment.",
+"explanation": "Emergency vehicles proceeding to assist an aircraft in distress shall be afforded priority over all other surface movement traffic."
+},
+{
+"variants": [
+"When an aircraft is landing or taking off, vehicles shall not hold closer to the runway‑in‑use than:",
+"Where must vehicles stop when the runway is active?",
+"The closest a vehicle may hold to a runway‑in‑use during operations is:"
+],
+"options": [
+["At a runway‑holding position, or at other locations at a distance equal to the runway‑holding position separation", "At the runway‑holding position or an equivalent distance", "Runway‑holding position or same separation distance elsewhere"],
+["At the runway threshold", "At the threshold", "Right at the runway edge"],
+["At least 100 m from the runway", "100 m away", "Minimum 100 metres"],
+["At the taxiway centreline only", "Taxiway centreline", "On the taxiway centre"],
+["Nowhere; they must leave the maneuvering area", "Must exit the maneuvering area", "Leave entirely"],
+["At the apron boundary", "Apron edge", "Only at the apron entrance"]
+],
+"correct": "At a runway‑holding position, or at other locations at a distance equal to the runway‑holding position separation",
+"hint": "The protected area mirrors the standard holding position distance to keep the runway strip clear.",
+"insight": "The threshold is too close; 100 m is arbitrary and may not reflect the marked holding position.",
+"explanation": "Vehicles shall not be permitted to hold closer to the runway‑in‑use than at a runway‑holding position (when at RWY/TWY intersection) or at other locations at a distance equal to the separation distance of the runway‑holding position."
+},
+{
+"variants": [
+"According to the light signals from aerodrome control, a steady red means:",
+"What does a steady red light signal from the tower indicate?",
+"A steady red directed at an aircraft or vehicle signifies:"
+],
+"options": [
+["Stop", "Come to a halt", "Do not move"],
+["Move off the landing area or taxiway", "Clear the landing area", "Vacate the taxiway"],
+["Permission to cross landing area", "Cross the landing area", "Proceed across"],
+["Return to starting point", "Return to the apron", "Go back"],
+["Continue taxiing", "Proceed", "Keep moving"],
+["Expedite taxi and clear the runway", "Speed up", "Move faster"]
+],
+"correct": "Stop",
+"hint": "Red universally means stop in aviation visual signals, as in road traffic.",
+"insight": "Other colours (green, red flashes, white) have different meanings.",
+"explanation": "A steady red light signal from aerodrome control means ‘Stop’."
+},
+{
+"variants": [
+"Green flashes from the control tower signal:",
+"What does a flashing green light from the tower mean?",
+"Flashing green is a signal for:"
+],
+"options": [
+["Permission to cross the landing area or move onto a taxiway", "Clearance to cross or enter taxiway", "Cross landing area or taxi onto taxiway"],
+["Stop immediately", "Halt", "Cease movement"],
+["Move off the landing area or taxiway", "Vacate the landing area", "Clear the taxiway"],
+["Return to the apron", "Go back to the apron", "Proceed to parking"],
+["Take‑off immediately", "Cleared for take‑off", "Depart at once"],
+["Taxi to the holding point", "Proceed to hold", "Move to the holding point"]
+],
+"correct": "Permission to cross the landing area or move onto a taxiway",
+"hint": "Flashing green is a permissive signal for ground movement across or onto taxiways.",
+"insight": "It is not for take‑off, stopping, or vacating.",
+"explanation": "Green flashes mean permission to cross the landing area or to move onto a taxiway."
+},
+{
+"variants": [
+"If visual signals are not observed, the meaning of flashing runway or taxiway lights is:",
+"What do flashing runway/taxiway lights mean when visual signals are not seen?",
+"Flashing runway or taxiway lights in the absence of visual signal observance instruct the pilot to:"
+],
+"options": [
+["Vacate the runway and observe the tower for a light signal", "Clear the runway and look for the tower light signal", "Leave the runway and watch for the tower's visual signal"],
+["Stop immediately", "Halt", "Cease movement"],
+["Continue taxiing", "Proceed", "Keep taxiing"],
+["Enter the runway and line up", "Line up and wait", "Move onto the runway"],
+["Expedite taxi", "Speed up taxi", "Hasten movement"],
+["Contact the tower on radio", "Call TWR on frequency", "Radio the tower"]
+],
+"correct": "Vacate the runway and observe the tower for a light signal",
+"hint": "The flashing lights serve as an attention‑getter when the pilot is not responding to visual signals.",
+"insight": "It is not a command to stop or continue; it directs the pilot to leave the runway and get a visual instruction.",
+"explanation": "Flashing runway or taxiway lights mean ‘Vacate the runway and observe the tower for a light signal’."
+},
+{
+"variants": [
+"Priority for landing shall be given to:",
+"Which aircraft receive landing priority?",
+"According to the priority list, precedence is given to:"
+],
+"options": [
+["Aircraft compelled to land due to emergency, hospital aircraft, SAR aircraft, and other aircraft as determined by the ATS Authority", "Emergency, hospital, SAR, and ATS‑designated priority flights", "Forced‑landing aircraft, medical flights, search‑and‑rescue, and other authority‑determined cases"],
+["Only aircraft with a declared emergency", "Distress aircraft only", "MAYDAY flights exclusively"],
+["Only scheduled commercial flights", "Scheduled airlines", "Commercial passenger services"],
+["Aircraft on first come, first served basis", "First come first served", "In order of arrival"],
+["Only military aircraft", "Military flights", "Armed forces aircraft"],
+["Only flights with the highest fuel efficiency", "Eco‑friendly flights", "Lowest fuel burn"]
+],
+"correct": "Aircraft compelled to land due to emergency, hospital aircraft, SAR aircraft, and other aircraft as determined by the ATS Authority",
+"hint": "The list goes from life‑threatening to other forms of priority as decided by ATS.",
+"insight": "Not only emergency; medical transport and SAR also have explicit priority.",
+"explanation": "Priority shall be given to aircraft compelled to land due to emergency, hospital aircraft, SAR aircraft, and other aircraft as determined by the ATS Authority."
+},
+{
+"variants": [
+"Take‑off clearance shall be issued only after:",
+"When must take‑off clearance be given?",
+"Take‑off clearance is conditional on the aircraft having:"
+],
+"options": [
+["Received and acknowledged the ATC clearance", "Got the ATC clearance and acknowledged it", "The ATC clearance has been received and read back"],
+["Started engines", "Engine start", "After pushback"],
+["Taxied to the holding point", "Reached the holding point", "Positioned at the holding point"],
+["Reported ready for departure", "Pilot reports ready", "Called 'ready'"],
+["Received the ATIS information", "Copied ATIS", "ATIS acknowledged"],
+["Contacted approach control", "Called APP", "On APP frequency"]
+],
+"correct": "Received and acknowledged the ATC clearance",
+"hint": "The pilot must know the en‑route clearance before the tower issues take‑off clearance.",
+"insight": "Being at the holding point or ready is not enough; the ATC clearance acknowledgement is mandatory.",
+"explanation": "Take‑off clearance shall be issued only after the aircraft has received and acknowledged the ATC clearance."
+},
+{
+"variants": [
+"The term 'take‑off' shall only be used when:",
+"In which situations may the word 'take‑off' be transmitted?",
+"'Take‑off' is permitted in radiotelephony only for:"
+],
+"options": [
+["Clearing an aircraft for take‑off or cancelling a take‑off clearance", "Take‑off clearance or its cancellation", "When issuing a take‑off clearance or when cancelling it"],
+["In any transmission involving the runway", "Any runway‑related message", "For all runway operations"],
+["When instructing an aircraft to line up", "'Line up and wait' instruction", "During line‑up instructions"],
+["During taxi instructions to the holding point", "Taxi to holding point", "While taxiing"],
+["When asking if the aircraft is ready for departure", "'Are you ready' inquiry", "During departure readiness check"],
+["Only during emergency communications", "Emergency use only", "MAYDAY or PAN PAN"]
+],
+"correct": "Clearing an aircraft for take‑off or cancelling a take‑off clearance",
+"hint": "Using 'take‑off' in other contexts risks misunderstanding; it is reserved for the actual clearance.",
+"insight": "The term is deliberately restricted to prevent premature take‑off initiation.",
+"explanation": "The term ‘take‑off’ shall only be used when an aircraft is cleared for take‑off or when cancelling a take‑off clearance."
+},
+{
+"variants": [
+"To expedite traffic, a landing aircraft may be requested to do any of the following except:",
+"Which is not a permissible request to a landing aircraft for expediting traffic?",
+"ATC may ask a landing aircraft to:"
+],
+"options": [
+["Land before the threshold", "Land ahead of the threshold", "Touch down before the runway start"],
+["Hold short of an intersecting runway after landing", "Stop before an intersecting runway", "Hold short of a crossing runway"],
+["Land beyond the touchdown zone of the runway", "Touch down past the TDZ", "Land long beyond the touchdown zone"],
+["Vacate the runway at a specified exit taxiway", "Exit the runway at a given taxiway", "Clear the runway at a designated exit"],
+["Expedite vacating the runway", "Vacate the runway quickly", "Speed up runway clearance"],
+["Hold short of an intersecting runway after landing", "Land and hold short", "Stop before the next runway"]
+],
+"correct": "Land before the threshold",
+"hint": "All the other options are standard procedures to increase runway throughput.",
+"insight": "Landing before the threshold is unsafe and not an authorised instruction.",
+"explanation": "Landing aircraft may be requested to hold short of an intersecting runway, land beyond the touchdown zone, vacate at a specified exit, or expedite vacating. Landing before the threshold is not permitted."
+},
+{
+"variants": [
+"A HEAVY aircraft shall not be requested to:",
+"What instruction must never be given to a heavy aircraft on landing?",
+"For a heavy category aircraft, ATC shall not request:"
+],
+"options": [
+["Land beyond the touchdown zone of a runway", "Touch down past the TDZ", "Land long beyond the touchdown zone"],
+["Hold short of an intersecting runway", "Hold short", "Stop before the intersection"],
+["Expedite vacating the runway", "Vacate quickly", "Speed up exit"],
+["Vacate at a specified exit taxiway", "Clear at a given exit", "Exit at a designated taxiway"],
+["Reduce speed on final approach", "Slow down on final", "Decrease approach speed"],
+["Make an early turn off", "Turn off early", "Exit quickly at the first taxiway"]
+],
+"correct": "Land beyond the touchdown zone of a runway",
+"hint": "Heavy aircraft need the full touchdown zone for safe stopping; landing long reduces safety margins.",
+"insight": "The other requests are generally permissible, but landing beyond the TDZ is prohibited for heavies.",
+"explanation": "A HEAVY aircraft shall not be requested to land beyond the touchdown zone of a runway."
+},
+{
+"variants": [
+"Aircraft shall not be held closer to a runway‑in‑use than:",
+"What is the minimum holding distance from an active runway for aircraft?",
+"The closest an aircraft may be held to a runway‑in‑use is:"
+],
+"options": [
+["At a runway‑holding position", "At the designated runway‑holding position", "Only at the runway‑holding point"],
+["At the runway threshold", "Right at the runway edge", "At the threshold itself"],
+["50 metres from the runway centreline", "50 m from centreline", "At least 50 m away"],
+["At the taxiway intersection", "At any taxiway junction", "At a TWY intersection only"],
+["At the apron boundary", "Where the apron starts", "At the edge of the apron"],
+["100 ft from the hold line", "100 feet before the hold line", "100 ft prior to the marking"]
+],
+"correct": "At a runway‑holding position",
+"hint": "The runway‑holding position is a marked safety boundary that keeps aircraft clear of the active runway strip.",
+"insight": "The threshold, taxiway intersections, and arbitrary distances do not guarantee the protected area is respected.",
+"explanation": "Aircraft shall not be held closer to a runway‑in‑use than at a runway‑holding position."
+},
+{
+"variants": [
+"Take‑off clearance may be issued to an aircraft when:",
+"What assurance is needed before issuing a take‑off clearance?",
+"Take‑off clearance is issued only if there is reasonable assurance that:"
+],
+"options": [
+["The prescribed separation will exist when the aircraft commences take‑off", "Separation will be present at the start of the take‑off roll", "Required separation will exist when the aircraft begins take‑off"],
+["The aircraft has completed all pre‑flight checks", "Pre‑flight checks are done", "The crew has completed checks"],
+["The runway has been inspected in the last 15 minutes", "Recent runway inspection", "The runway was checked within 15 min"],
+["The destination weather is above minima", "Destination weather OK", "Arrival aerodrome is suitable"],
+["The flight plan has been fully processed", "Flight plan processed", "FPL has been accepted"],
+["The aircraft is at the holding point", "At the holding point", "Positioned at the hold line"]
+],
+"correct": "The prescribed separation will exist when the aircraft commences take‑off",
+"hint": "Separation must be assured before the aircraft starts rolling, not after.",
+"insight": "Being at the holding point or having a flight plan does not guarantee separation.",
+"explanation": "Take‑off clearance may be issued when there is reasonable assurance that the prescribed separation will exist when the aircraft commences take‑off."
+},
+{
+"variants": [
+"Which of the following is a factor to consider in determining the departure sequence?",
+"What must ATC consider when ordering aircraft for departure?",
+"Departure sequence depends on:"
+],
+"options": [
+["Types of aircraft and their relative performance, routes after take‑off, minimum departure intervals, wake turbulence separation, aircraft which should be afforded priority, and aircraft subject to ATFM requirements", "Aircraft type/performance, routes, intervals, wake turbulence, priority, and ATFM constraints", "Performance, routing, separation minima, wake, priorities, and flow management"],
+["Only the order in which aircraft call ready", "Call‑ready order", "First come, first served"],
+["Only the aircraft's fuel endurance", "Fuel remaining", "How much fuel is on board"],
+["Only the aircraft's weight category", "Wake turbulence category", "L, M, H, or J"],
+["Only the filed flight plan route", "Flight plan route", "The route in the FPL"],
+["Only the operator's preference", "Airline preference", "What the operator wants"]
+],
+"correct": "Types of aircraft and their relative performance, routes after take‑off, minimum departure intervals, wake turbulence separation, aircraft which should be afforded priority, and aircraft subject to ATFM requirements",
+"hint": "Multiple operational and safety factors influence the sequence to optimise flow and maintain separation.",
+"insight": "Weight category alone or first‑come order is insufficient; the full set of factors must be balanced.",
+"explanation": "Factors to be considered in relation to departure sequence include aircraft types and performance, routes, departure intervals, wake turbulence, priority, and ATFM requirements."
+},
+{
+"variants": [
+"ATC may delay a departure based on the estimated time of departure (ETD) except:",
+"What are the exceptions to delaying a departure based on ETD?",
+"Delay of departure based on ETD is permitted, but not when it is done to:"
+],
+"options": [
+["Obtain the least average delay or to satisfy the operator’s request to delay the flight", "Minimise overall delay or meet an operator’s delay request", "Achieve minimum average delay or accommodate a carrier‑requested hold"],
+["Allow an arriving aircraft to land first", "Priority to landing traffic", "Give landing aircraft precedence"],
+["Wait for better weather at destination", "Destination weather improvement", "Improved arrival weather"],
+["Give the crew more time for briefing", "Extra briefing time", "Additional crew preparation"],
+["Let the fuel load settle", "Fuel settling time", "Fuel stabilisation"],
+["Meet an ATFM slot compliance only", "ATFM slot only", "Only for flow management slots"]
+],
+"correct": "Obtain the least average delay or to satisfy the operator’s request to delay the flight",
+"hint": "The ETD is the baseline, but efficiency and operator request can override it.",
+"insight": "Giving priority to landings or waiting for weather are not listed as the exceptions.",
+"explanation": "When delaying departure, ATC shall clear traffic for take‑off based on the ETD, except to obtain the least average delay or to satisfy the operator’s request to delay the flight."
+},
+{
+"variants": [
+"A clearance for IMMEDIATE take‑off may be issued:",
+"When may a controller issue an 'IMMEDIATE TAKE‑OFF' clearance?",
+"An immediate take‑off clearance is used:"
+],
+"options": [
+["When the traffic situation permits and the aircraft is ready and at or approaching the departure runway", "When the aircraft is ready and the traffic allows an immediate departure", "If traffic allows and the aircraft is in position"],
+["Only when an emergency vehicle is on the runway", "Emergency vehicle present", "To clear the runway for fire trucks"],
+["Only for aircraft with a medical emergency on board", "Medical emergency", "Hospital flights"],
+["Only during low visibility procedures", "Low visibility", "LVP in effect"],
+["Only when the preceding aircraft has landed", "After a landing", "Following an arrival"],
+["Only when the pilot requests it", "Pilot request only", "When the crew asks for it"]
+],
+"correct": "When the traffic situation permits and the aircraft is ready and at or approaching the departure runway",
+"hint": "Immediate take‑off is a time‑saving measure, not an emergency instruction, and requires traffic conditions to permit it.",
+"insight": "It is not limited to emergencies or low visibility; it's a standard clearance option.",
+"explanation": "Clearance for IMMEDIATE take‑off may be issued when the aircraft is ready and at or approaching the runway, and the traffic situation permits."
+},
+{
+"variants": [
+"VFR operations in the vicinity of an aerodrome may be suspended by:",
+"Which units can initiate VFR suspension?",
+"VFR suspension may be ordered by:"
+],
+"options": [
+["TWR, APP, ACC, or the ATS Authority", "Tower, approach, area control, or the ATS Authority", "Any of four entities: TWR, APP, ACC, or ATS Authority"],
+["TWR only", "Only the tower", "Exclusively the aerodrome control tower"],
+["APP only", "Approach control only", "Only APP"],
+["ACC only", "Area control centre only", "Only ACC"],
+["The ATS Authority only", "Only the ATS Authority", "Exclusively the ATS Authority"],
+["The pilot in command", "The captain", "The aircraft commander"]
+],
+"correct": "TWR, APP, ACC, or the ATS Authority",
+"hint": "Multiple ATS units have authority to suspend VFR operations, but suspension is always accomplished by or through the tower.",
+"insight": "Suspension is not a pilot decision; it's an ATS operational measure.",
+"explanation": "VFR operations in the vicinity of the aerodrome may be suspended by TWR, APP, ACC, or the ATS Authority. Suspension shall be accomplished by or through TWR."
+},
+{
+"variants": [
+"Approach lighting shall be operated continuously during:",
+"When must approach lighting be operated?",
+"Approach lights are to be operated:"
+],
+"options": [
+["The hours of darkness, when the sun is more than 6° below the horizon, during MET conditions that make it desirable for safety, during day when requested by an aircraft, and when the associated runway lighting is operated", "At night, when the sun is >6° below horizon, in poor weather, during day on request, and when runway lights are on", "Darkness, sun >6° below horizon, bad MET, day on request, and with runway lighting"],
+["Only during the hours of darkness", "Only at night", "Exclusively nighttime"],
+["Only during low visibility procedures", "LVP only", "When visibility is low"],
+["Only when the runway is in use", "When runway in use", "Only for active runways"],
+["Only during CAT II and III operations", "CAT II/III only", "Exclusively precision approaches"],
+["24 hours a day, every day", "All the time", "Continuously without interruption"]
+],
+"correct": "The hours of darkness, when the sun is more than 6° below the horizon, during MET conditions that make it desirable for safety, during day when requested by an aircraft, and when the associated runway lighting is operated",
+"hint": "The operational requirement covers a broad range of conditions to ensure safety.",
+"insight": "Not limited to night; day requests and weather also trigger approach lighting operation.",
+"explanation": "Approach lighting shall be operated continuously during darkness, when sun is >6° below horizon, during MET conditions making it desirable for safety, during day when requested by aircraft, and when the associated runway lighting is operated."
+},
+{
+"variants": [
+"VASIS must be operated:",
+"When is the Visual Approach Slope Indicator System required to be turned on?",
+"VASIS shall be operated:"
+],
+"options": [
+["Always when the runway is being used", "Whenever the runway is in operation", "Continuously while the runway is in use"],
+["Only during the hours of darkness", "At night only", "Exclusively at night"],
+["Only during low visibility", "In low visibility only", "When RVR is low"],
+["Only when requested by a pilot", "Pilot request only", "On demand"],
+["Only during precision approaches", "Precision approaches only", "CAT I/II/III operations"],
+["Only when the approach lights are on", "When approach lighting is active", "Only with ALS"]
+],
+"correct": "Always when the runway is being used",
+"hint": "VASIS provides continuous glide path information whenever the runway is operational.",
+"insight": "It is not limited to night or poor weather; it is a permanent visual aid for all runway use.",
+"explanation": "VASIS shall be operated always when the runway is being used."
+},
+{
+"variants": [
+"Runway lighting shall NOT be operated if the runway is NOT in use, except:",
+"When may runway lighting be operated on a runway that is not in use?",
+"An exception to the rule prohibiting operation of runway lighting when not in use is:"
+],
+"options": [
+["During inspection or maintenance", "For inspection or maintenance purposes", "When the runway is being inspected or maintained"],
+["During any weather condition", "In poor weather only", "When MET conditions are bad"],
+["When a pilot requests it", "Pilot request", "If the crew asks"],
+["During air shows only", "Air show operations", "For display purposes"],
+["When the tower supervisor approves", "Supervisor approval", "With management permission"],
+["At all times, no exception", "No exceptions", "Never permitted"]
+],
+"correct": "During inspection or maintenance",
+"hint": "Lighting may be activated to support essential airfield inspection or repair work.",
+"insight": "Pilot request or supervisor approval are not the listed exceptions.",
+"explanation": "Runway lighting shall NOT be operated if the runway is NOT in use, unless during periods of inspection or maintenance."
+},
+{
+"variants": [
+"If runway lighting is not operated continuously, it shall be kept on after take‑off:",
+"What is the requirement for runway lighting after a take‑off when lighting is not continuous?",
+"After departure, runway lighting must remain on:"
+],
+"options": [
+["As long as necessary in case the aircraft will return for an emergency, or at aerodromes without ATC, for 15 minutes or more after take‑off", "Long enough for possible emergency return, or at non‑ATC aerodromes, a minimum of 15 minutes", "Until emergency return is no longer possible, or at least 15 minutes at uncontrolled aerodromes"],
+["For exactly 5 minutes", "5 minutes only", "Only for five minutes"],
+["Until the aircraft reaches the end of the control zone", "Until the CTR boundary", "Until leaving the zone"],
+["Only if the pilot requests it", "Pilot request", "When asked by the crew"],
+["For at least 30 minutes", "30 minutes minimum", "Half an hour"],
+["Only during low visibility", "LVP", "Only in reduced visibility"]
+],
+"correct": "As long as necessary in case the aircraft will return for an emergency, or at aerodromes without ATC, for 15 minutes or more after take‑off",
+"hint": "The lighting provides a safety net for a possible immediate return or for uncontrolled aerodrome operations.",
+"insight": "5 minutes is too short; the time depends on the emergency return window or a standard 15‑minute period.",
+"explanation": "If runway lighting is not operated continuously, it shall be kept on after take‑off as long as necessary for an emergency return, or at aerodromes without ATC, 15 minutes or more after take‑off."
+},
+{
+"variants": [
+"The aerodrome controller monitors the status of aerodrome lighting by:",
+"How does the tower controller ensure lighting serviceability?",
+"Aerodrome controllers monitor the lights:"
+],
+"options": [
+["Using monitoring tools if provided, and by visual observation or information from external sources", "Through monitoring tools, visual checks, or external reports", "With available monitoring equipment, visual observation, or outside information"],
+["Only by automatic fault detection systems", "Automatic detection", "Only through alarm systems"],
+["Only by pilot reports", "Pilot reports only", "Only when pilots report faults"],
+["Only by daily physical inspection", "Daily inspection", "Once‑a‑day physical check"],
+["Only by airport electricians", "Electrician reports", "Only maintenance staff"],
+["The controller is not responsible for monitoring lights", "No responsibility", "Not a controller duty"]
+],
+"correct": "Using monitoring tools if provided, and by visual observation or information from external sources",
+"hint": "The controller uses all available means to stay aware of lighting status.",
+"insight": "It is not limited to one method; monitoring tools, visual checks, and reports from others are all used.",
+"explanation": "Aerodrome controllers shall monitor the lights, if provided with monitoring tools, to ensure serviceability. The controller shall also make visual observation or use information from external sources to maintain awareness of operational status."
+},
+{
+"variants": [
+"When a fault is detected in aerodrome lighting, TWR shall:",
+"What action does the tower take upon discovering a lighting fault?",
+"In case of lighting faults, the controller must:"
+],
+"options": [
+["Take action to safeguard any affected traffic and have the faulty light rectified", "Safeguard affected traffic and arrange for rectification of the fault", "Protect traffic impacted by the fault and get the light fixed"],
+["Close the runway immediately", "Shut the runway", "Cease all operations"],
+["Issue a NOTAM and continue operations", "Publish a NOTAM", "Send out a notice and proceed"],
+["Wait for the maintenance crew to report", "Await maintenance", "Wait for the electrician"],
+["Switch to backup lighting only", "Use backup lights", "Activate alternate lighting"],
+["Suspend all approaches until the fault is cleared", "Stop approaches", "Hold all arrivals"]
+],
+"correct": "Take action to safeguard any affected traffic and have the faulty light rectified",
+"hint": "Immediate safety of aircraft is the priority, followed by repair action.",
+"insight": "Closing the runway without assessing traffic may be excessive; safeguard and rectify is the balanced response.",
+"explanation": "In case of faults, TWR shall take action to safeguard any affected traffic and to have the faulty light rectified."
+},
+{
+"variants": [
+"Transfer of control of a succeeding aircraft on final approach to TWR shall be:",
+"How is control transferred to the tower for successive arrivals?",
+"Handing over control of following aircraft on final to TWR must be:"
+],
+"options": [
+["In accordance with prescribed local procedures, with transfer of communication early enough to allow timely clearance and instructions", "By local procedures, with COM transfer early enough for timely clearance", "According to local instructions, with early communication to permit timely ATC direction"],
+["At the final approach fix for all aircraft", "At the FAF only", "Always at the Final Approach Fix"],
+["At a fixed 10 NM from touchdown", "10 NM final", "At exactly 10 miles"],
+["Only when the preceding aircraft has landed", "After previous landing", "When the aircraft ahead is on the ground"],
+["At the pilot's request", "Pilot‑requested transfer", "When the crew asks"],
+["At the outer marker regardless of procedure", "OM transfer", "Always at the Outer Marker"]
+],
+"correct": "In accordance with prescribed local procedures, with transfer of communication early enough to allow timely clearance and instructions",
+"hint": "Local procedures define the transfer point, but early communication is essential for the pilot to receive timely instructions.",
+"insight": "There is no single fixed distance or fix; it depends on local procedures and the need for early communication.",
+"explanation": "Transfer of control of succeeding aircraft to TWR shall be in accordance with prescribed local procedures. Transfer of COM to TWR should be early enough to allow for clearance and instructions in a timely manner."
+},
+{
+"variants": [
+"When a pilot is unable to comply with a requested landing or roll‑out maneuver, the pilot shall:",
+"What must the flight crew do if they cannot comply with an ATC request for a specific landing operation?",
+"If the pilot‑in‑command cannot comply with the tower's requested maneuver, they must:"
+],
+"options": [
+["Advise the controller without delay", "Inform ATC immediately", "Notify the controller without any delay"],
+["Comply regardless of safety", "Execute the request anyway", "Follow the instruction irrespective"],
+["Wait until after landing to report", "Report after landing", "Advise after arrival"],
+["Declare an emergency", "Declare MAYDAY", "Initiate emergency procedures"],
+["Request a runway change", "Ask for another runway", "Change the landing runway"],
+["Ignore the request and continue", "Disregard the instruction", "Proceed as originally planned"]
+],
+"correct": "Advise the controller without delay",
+"hint": "Safety is paramount; if the instruction cannot be safely followed, immediate notification allows the controller to adjust plans.",
+"insight": "Complying unsafely or waiting to report could lead to an incident.",
+"explanation": "If the pilot‑in‑command is unable to comply with the requested operation, the controller shall be advised without delay."
+},
+{
+"variants": [
+"The report that a runway has been vacated shall be made when:",
+"When is the 'runway vacated' report triggered?",
+"The pilot reports runway vacated at the moment:"
+],
+"options": [
+["The entire aircraft is beyond the runway‑holding position", "All parts of the aircraft have passed the holding position", "The whole aircraft is clear of the runway strip beyond the hold line"],
+["The aircraft has turned onto the taxiway", "When turning off the runway", "Once on the taxiway"],
+["The nose gear passes the hold line", "Nose wheel past the line", "When the nose crosses the marking"],
+["The aircraft has stopped moving", "After full stop", "When completely stationary"],
+["The pilot has contacted ground control", "Contacted ground", "When switched to GND frequency"],
+["The landing roll is complete", "After landing roll", "When the landing run is finished"]
+],
+"correct": "The entire aircraft is beyond the runway‑holding position",
+"hint": "The holding position is the safety boundary; the whole aircraft must clear it.",
+"insight": "Just the nose gear or turning onto the taxiway may leave part of the aircraft on the runway strip.",
+"explanation": "The report shall be made when the entire aircraft is beyond the runway‑holding position."
+},
+{
+"variants": [
+"When ATC requests a landing aircraft to perform a specific landing and/or roll‑out maneuver, the controller must consider:",
+"Which of the following factors must be considered before asking for a specific landing maneuver?",
+"Before requesting a long landing or specific exit, ATC evaluates:"
+],
+"options": [
+["The type of aircraft, runway length, location of exit taxiways, reported braking action, and prevailing meteorological conditions", "Aircraft type, runway length, exit locations, braking action, and weather", "Type, length, exits, friction, and MET"],
+["Only the type of aircraft", "Aircraft type only", "Just the aircraft category"],
+["Only the runway length", "Runway length alone", "Only runway dimensions"],
+["Only the braking action", "Braking action alone", "Only reported friction"],
+["Only the prevailing wind", "Wind only", "Just the wind component"],
+["The pilot's experience level", "Pilot experience", "How experienced the crew is"]
+],
+"correct": "The type of aircraft, runway length, location of exit taxiways, reported braking action, and prevailing meteorological conditions",
+"hint": "A safe landing maneuver depends on aircraft performance, runway geometry, surface friction, and weather.",
+"insight": "Pilot experience is not listed; the controller considers physical and environmental factors.",
+"explanation": "ATC shall consider the type of aircraft, runway length, location of exit taxiways, reported braking action on runway and taxiway, and prevailing meteorological conditions."
+},
+{
+"variants": [
+"According to the light signals from aerodrome control, red flashes mean:",
+"What does a flashing red light from the tower indicate?",
+"Red flashes directed at an aircraft or vehicle signify:"
+],
+"options": [
+["Move off the landing area or taxiway and watch out for aircraft", "Vacate the landing area or taxiway and look for aircraft", "Clear the landing area or taxiway and be alert for aircraft"],
+["Stop immediately", "Come to a halt", "Cease movement"],
+["Permission to cross the landing area", "Cross the landing area", "Proceed across"],
+["Return to the apron", "Go back to the apron", "Return to parking"],
+["Continue taxiing", "Proceed", "Keep moving"],
+["Expedite movement", "Speed up", "Move quickly"]
+],
+"correct": "Move off the landing area or taxiway and watch out for aircraft",
+"hint": "Flashing red is a warning to clear the active area while staying alert for other aircraft.",
+"insight": "Steady red means stop; red flashes instruct movement away from the landing area or taxiway.",
+"explanation": "Red flashes mean 'Move off the landing area or taxiway and watch out for aircraft'."
+},
+{
+"variants": [
+"White flashes from the control tower signal:",
+"What does a flashing white light from the tower mean?",
+"White flashes directed at an aircraft or vehicle indicate:"
+],
+"options": [
+["Vacate the manoeuvring area in accordance with local instructions", "Leave the manoeuvring area per local procedures", "Clear the movement area according to local rules"],
+["Stop immediately", "Halt", "Cease movement"],
+["Permission to cross the landing area", "Cross the landing area", "Proceed across"],
+["Move off the landing area or taxiway", "Clear the landing area", "Vacate the taxiway"],
+["Return to the apron", "Go back to the apron", "Return to parking"],
+["Continue taxiing", "Proceed", "Keep moving"]
+],
+"correct": "Vacate the manoeuvring area in accordance with local instructions",
+"hint": "White flashes require the vehicle or aircraft to leave the movement area as per local procedures.",
+"insight": "Unlike red flashes, which only clear the landing area, white flashes require leaving the entire manoeuvring area.",
+"explanation": "White flashes mean 'Vacate the manoeuvring area in accordance with local instructions'."
+},
+{
+"variants": [
+"If visual signals from the tower are not observed, the meaning of flashing runway or taxiway lights is:",
+"What does flashing runway/taxiway lights mean when visual signals are not seen?",
+"When the pilot does not see visual signals, flashing runway or taxiway lights indicate:"
+],
+"options": [
+["Vacate the runway and observe the tower for a light signal", "Clear the runway and look to the tower for a visual signal", "Leave the runway and watch the tower for a light instruction"],
+["Stop immediately", "Halt", "Cease movement"],
+["Continue taxiing", "Proceed", "Keep taxiing"],
+["Enter the runway and line up", "Line up and wait", "Move onto the runway"],
+["Return to the apron", "Go back to the apron", "Return to parking"],
+["Contact ground control on the radio", "Call GND", "Radio ground control"]
+],
+"correct": "Vacate the runway and observe the tower for a light signal",
+"hint": "Flashing lights serve as an attention‑getter to prompt the pilot to check for the tower's visual instruction.",
+"insight": "The lights are not the message itself; they direct the pilot to look for a visual signal from the tower.",
+"explanation": "If visual signals are not observed, flashing runway or taxiway lights mean 'Vacate the runway and observe the tower for a light signal'."
+},
+{
+"variants": [
+"An IFR arrival shall normally be cleared to land:",
+"How is an IFR aircraft normally cleared for landing?",
+"The standard landing clearance for an IFR flight is:"
+],
+"options": [
+["Straight in, unless visual manoeuvring to the landing runway is required", "Straight‑in approach, unless a visual circuit is necessary", "A direct landing unless visual circling is needed"],
+["Only after completing a full traffic circuit", "After a full circuit", "Required to fly a complete pattern"],
+["Only after a visual approach is requested", "When visual approach is requested", "If the pilot asks for a visual"],
+["Only from the final approach fix", "From the FAF", "After passing the final approach fix"],
+["Only after holding over the aerodrome", "After holding", "From the holding pattern"],
+["Only when the runway is clear of all traffic", "When runway clear", "If no other traffic on the runway"]
+],
+"correct": "Straight in, unless visual manoeuvring to the landing runway is required",
+"hint": "IFR arrivals are normally set up for a straight‑in approach; a visual circuit is the exception.",
+"insight": "An IFR arrival does not need to fly a full traffic pattern unless visual manoeuvring is necessary.",
+"explanation": "An IFR arrival shall normally be cleared to land straight in unless visual manoeuvring to the landing runway is required."
+},
+{
+"variants": [
+"Depending on circumstances and traffic, an aircraft may be cleared to join the traffic circuit:",
+"Where may an aircraft be positioned in the traffic circuit when cleared?",
+"When joining the circuit, an aircraft can be cleared:"
+],
+"options": [
+["At any position in the traffic circuit and wait for landing clearance due to other traffic", "At any point in the circuit, then await landing clearance if traffic requires", "Any position in the pattern, holding for landing clearance if necessary"],
+["Only at the downwind leg", "Downwind only", "Exclusively at the downwind position"],
+["Only at the base leg", "Base leg only", "Exclusively at base"],
+["Only on final approach", "Final only", "Exclusively on final"],
+["Only at the initial approach fix", "IAF only", "Only at the Initial Approach Fix"],
+["Only after completing a full orbit", "After an orbit", "Must orbit before joining"]
+],
+"correct": "At any position in the traffic circuit and wait for landing clearance due to other traffic",
+"hint": "Flexible circuit joining allows ATC to sequence arrivals efficiently.",
+"insight": "The aircraft is not restricted to a single leg; it can join at any point and wait if needed.",
+"explanation": "Depending on circumstances and traffic conditions, an aircraft may be cleared to join at any position in the traffic circuit and wait for landing clearance due to other traffic."
+},
+{
+"variants": [
+"Approach lighting includes which of the following?",
+"What types of lights are included in approach lighting?",
+"The approach lighting system may consist of:"
+],
+"options": [
+["Simple approach lighting systems, precision approach lighting systems, VASIS, circling guidance lights, approach light beacons, and runway alignment indicators", "Simple ALS, precision ALS, VASIS, circling lights, beacons, and alignment indicators", "Various approach lights: simple, precision, VASIS, circling, beacons, and runway alignment"],
+["Only precision approach lighting systems", "Precision ALS only", "Only CAT I/II/III approach lights"],
+["Only VASIS and PAPI", "VASIS and PAPI only", "Visual slope indicators"],
+["Only approach light beacons and runway alignment indicators", "Beacons and alignment indicators only", "Only identification lights"],
+["Only simple approach lighting systems", "Simple ALS only", "Only basic approach lights"],
+["Only circling guidance lights", "Circling lights only", "Only visual circuit guidance"]
+],
+"correct": "Simple approach lighting systems, precision approach lighting systems, VASIS, circling guidance lights, approach light beacons, and runway alignment indicators",
+"hint": "Approach lighting is a comprehensive category that covers multiple types of visual aids.",
+"insight": "It includes not just VASIS or precision lights, but several other specific aids listed in the text.",
+"explanation": "Approach lighting includes simple approach lighting systems, precision approach lighting systems, visual approach slope indicator systems, circling guidance lights, approach light beacons, and runway alignment indicators."
+},
+{
+"variants": [
+"Vehicles operating on the manoeuvring area must maintain two‑way radio communication with TWR. Under what condition may a vehicle be exempted from this requirement?",
+"When may a vehicle on the manoeuvring area be exempt from carrying a two‑way radio?",
+"A vehicle is allowed on the manoeuvring area without two‑way radio if:"
+],
+"options": [
+["The vehicle is accompanied by another vehicle that has the required communication, or is operated under a pre‑arranged plan with TWR", "If it is escorted by a radio‑equipped vehicle or follows an agreed plan with the tower", "When it is with a radio‑equipped vehicle or operates per a pre‑agreed procedure with TWR"],
+["The vehicle is an emergency vehicle", "Emergency vehicles are always exempt", "Only fire trucks are exempt"],
+["The driver possesses a special licence", "Special driver licence", "Driver certification exemption"],
+["The vehicle is used only on the apron", "Apron‑only vehicle", "Only on the apron"],
+["The vehicle is a pushback tractor", "Tow vehicle exemption", "Only tugs are exempt"],
+["No exemption is ever granted", "Never exempt", "All vehicles must carry radio"]
+],
+"correct": "The vehicle is accompanied by another vehicle that has the required communication, or is operated under a pre‑arranged plan with TWR",
+"hint": "The procedure ensures that workers (such as maintenance personnel) are not required to carry a two‑way radio while still maintaining safety.",
+"insight": "Emergency vehicles normally carry radios; the exemption is for vehicles accompanied by a radio‑equipped escort or operating under a formal plan.",
+"explanation": "Vehicles can be exempted from the radio communication requirement if they are accompanied by a vehicle with the required COM, or if they are employed in accordance with a pre‑arranged plan with TWR."
+},
+{
+"variants": [
+"To allow emergency vehicles to move without impediment, ATC should:",
+"What must the controller do to facilitate the movement of an emergency vehicle?",
+"When an emergency vehicle is proceeding to assist an aircraft in distress, ATC shall:"
+],
+"options": [
+["Hold other traffic to allow the emergency vehicle's movement not to be impeded", "Suspend all other surface movement to clear the way", "Stop other traffic so that the emergency vehicle is not obstructed"],
+["Increase the speed of all other vehicles", "Speed up other traffic", "Tell vehicles to move faster"],
+["Close the entire manoeuvring area", "Shut down the manoeuvring area", "Close all movement surfaces"],
+["Transfer the emergency vehicle to a different frequency", "Change the vehicle's radio channel", "Move to another frequency"],
+["Alert the aircraft in distress that help is on the way", "Advise the aircraft", "Tell the pilot help is coming"],
+["Issue a general broadcast only", "Broadcast to all stations", "Call all units"]
+],
+"correct": "Hold other traffic to allow the emergency vehicle's movement not to be impeded",
+"hint": "Priority is not enough; ATC must actively hold other traffic to ensure the emergency corridor remains clear.",
+"insight": "Simply giving priority does not physically clear the path; ATC must inhibit other movements.",
+"explanation": "ATC should hold other traffic to allow the emergency vehicle's movement not to be impeded."
+},
+{
+"variants": [
+"After initial authorisation, any entry to a runway or runway strip, or any change in the operation already authorised, requires:",
+"What additional clearance is needed to enter a runway or alter an existing vehicle authorisation?",
+"Before a vehicle enters a runway strip or changes its authorised operation, it must obtain:"
+],
+"options": [
+["A further specific authorisation from the control tower", "Another specific clearance from TWR", "An additional explicit permission from the tower"],
+["Only a radio check", "Radio check only", "A communication test"],
+["A written permit from the airport authority", "Written permit", "Airport administration approval"],
+["A beacon to be turned on", "Beacon activation", "Vehicle lights switched on"],
+["No further authorisation; initial clearance suffices", "Initial clearance is enough", "No extra permission needed"],
+["A verbal announcement on the tower frequency", "Verbal announcement", "Just a call on the radio"]
+],
+"correct": "A further specific authorisation from the control tower",
+"hint": "Runway strip access is safety‑critical and always requires explicit separate clearance, even if the vehicle was previously authorised on the manoeuvring area.",
+"insight": "The initial clearance to operate on the manoeuvring area does not extend to entering a runway strip.",
+"explanation": "Entry to a runway or runway strip, or change in the operation authorised, shall be subject to a further specific authorisation from the tower."
+},
+{
+"variants": [
+"When single‑pilot helicopters are operating, TWR should avoid:",
+"What should the tower minimise for single‑pilot helicopters?",
+"For single‑pilot helicopter operations, the controller avoids:"
+],
+"options": [
+["Frequency changes", "Changing frequencies unnecessarily", "Radio channel switches"],
+["Issuing visual signals", "Using light signals", "Light gun instructions"],
+["Giving taxi instructions", "Taxi guidance", "Directing ground movement"],
+["Applying wake turbulence separation", "Wake turbulence minima", "Time‑based separation"],
+["Issuing SVFR clearances", "Special VFR authorisations", "SVFR approval"],
+["Clearing the helicopter to cross runways", "Runway crossing clearances", "Crossing instructions"]
+],
+"correct": "Frequency changes",
+"hint": "Single‑pilot helicopters have high cockpit workload; avoiding frequency changes reduces pilot task saturation.",
+"insight": "Other clearances are still necessary; frequency changes are the ones specifically to be avoided.",
+"explanation": "Frequency changes to single‑pilot helicopters should be avoided to reduce pilot workload."
+},
+{
+"variants": [
+"If an aircraft enters the aerodrome traffic circuit without proper authorisation but its actions indicate it wishes to land, the controller should:",
+"An unauthorised aircraft appearing to want to land in the circuit shall be:",
+"ATC's response to an aircraft joining the circuit without clearance but showing intent to land is to:"
+],
+"options": [
+["Permit it to land, and instruct other aircraft to give way if necessary", "Allow it to land; other traffic may be told to give way", "Let it land and have other aircraft give way as needed"],
+["Deny landing and force a go‑around", "Refuse landing clearance", "Order it to go around"],
+["Declare an emergency and alert the F&RS", "Initiate emergency response", "Call fire and rescue"],
+["Report the violation to the authority", "File a violation report", "Report the infraction"],
+["Instruct the aircraft to leave the control zone", "Order it out of the zone", "Depart the CTR"],
+["Ignore it if no other traffic is present", "Ignore if no conflict", "No action if no traffic"]
+],
+"correct": "Permit it to land, and instruct other aircraft to give way if necessary",
+"hint": "The aircraft may be in distress or communication failure; presuming an emergency, the safest action is to facilitate landing.",
+"insight": "ATC should consider the possibility of an emergency when an aircraft acts without authorisation.",
+"explanation": "If an aircraft enters the circuit without authorisation and its actions indicate it wants to land, it shall be permitted to land. Other aircraft may be instructed to give way."
+},
+{
+"variants": [
+"Traffic shall normally be cleared for take‑off in the order:",
+"In what sequence are departing aircraft usually cleared?",
+"The standard departure sequence is based on:"
+],
+"options": [
+["The order in which they are ready for take‑off", "When they report ready for departure", "Readiness order for departure"],
+["The sequence of filed flight plans", "Flight plan filing order", "FPL submission time"],
+["Aircraft weight, heaviest first", "Heaviest first", "Largest aircraft first"],
+["Destination distance, farthest first", "Farthest destination first", "Longest route first"],
+["Operator priority agreements", "Airline priorities", "Commercial agreements"],
+["Alphabetical by callsign", "Alphabetical order", "Callsign sequence"]
+],
+"correct": "The order in which they are ready for take‑off",
+"hint": "First come, first served is the guiding principle, modified only for safety and efficiency exceptions.",
+"insight": "The exceptions (least average delay, operator request) are to improve efficiency, not to prioritise certain aircraft arbitrarily.",
+"explanation": "Traffic shall normally be cleared in the order they are ready for take‑off, except when minimising the average delay or satisfying an operator's request to delay."
+},
+{
+"variants": [
+"When an ATC clearance is available, the tower controller should pass it to the aircraft:",
+"How soon should TWR deliver an ATC clearance to a departing aircraft?",
+"The tower shall transmit the ATC clearance to the pilot:"
+],
+"options": [
+["As early as possible", "At the earliest opportunity", "Without unnecessary delay"],
+["After the aircraft starts engines", "After engine start", "Once engines are running"],
+["Only after the aircraft reports ready for departure", "When ready", "When the pilot calls ready"],
+["At the runway holding point", "At the holding point", "Once the aircraft reaches the hold"],
+["Only when the aircraft requests it", "Pilot request only", "When the crew asks"],
+["After the ATIS broadcast is updated", "After ATIS update", "Following ATIS change"]
+],
+"correct": "As early as possible",
+"hint": "Early delivery allows the crew to review the clearance and prepare the aircraft while still on the ground.",
+"insight": "Waiting until ready for departure or at the holding point could cause delays.",
+"explanation": "TWR shall pass the ATC clearance as early as possible."
+},
+{
+"variants": [
+"When selecting the runway‑in‑use, the tower must consider the following factors in addition to wind:",
+"What non‑wind factors influence the choice of runway‑in‑use?",
+"Besides the surface wind, TWR also evaluates these when designating the active runway:"
+],
+"options": [
+["Aerodrome traffic circuits, runway length, available approach and landing aids, and noise‑sensitive areas", "Traffic patterns, runway length, navaids, and noise abatement zones", "Circuit direction, runway dimensions, instrument aids, and areas sensitive to aircraft noise"],
+["Only the runway length and the availability of approach lighting", "Runway length and ALS only", "Length and the presence of approach lights"],
+["The number of parked aircraft and the occupancy of the apron", "Apron occupancy and parked aircraft count", "How many aircraft are at the gates"],
+["The pilot's preference and the aircraft's weight category", "Crew request and wake turbulence category", "Pilot choice and aircraft weight class"],
+["The airline schedule and the flight's destination", "Carrier timetable and destination aerodrome", "Commercial schedule and arrival airport"],
+["The colour of the runway markings and the taxiway surface condition", "Marking colour and taxiway friction", "Runway marking condition and TWY state"]
+],
+"correct": "Aerodrome traffic circuits, runway length, available approach and landing aids, and noise‑sensitive areas",
+"hint": "Wind is the primary factor, but operational and environmental considerations also influence the decision.",
+"insight": "The text explicitly lists traffic circuits, runway length, approach/landing aids, and noise‑sensitive areas as additional factors.",
+"explanation": "When selecting RWY‑in‑use, TWR shall consider (beside wind): aerodrome traffic circuits, the length of runways, the approach and landing aids available, and noise‑sensitive areas."
+},
+{
+"variants": [
+"According to start‑up time procedures, when a pilot requests an expected take‑off time prior to engine start, TWR should:",
+"What should the tower provide if a pilot asks for an expected take‑off time before start‑up?",
+"Upon a pilot's request before engine start, the expected TKOF time:"
+],
+"options": [
+["Give an expected take‑off time", "Provide the anticipated departure time", "Issue an estimated take‑off time"],
+["Deny the request and instruct the pilot to start up at their own discretion", "Refuse to give a time; the pilot may start when ready", "Tell the pilot to start up without a time"],
+["Clear the aircraft for immediate start‑up without any delay information", "Issue start‑up clearance with no time estimate", "Allow engine start without giving a TKOF time"],
+["Tell the pilot to contact clearance delivery for the time", "Transfer the request to delivery", "Refer the pilot to the delivery frequency"],
+["Advise the pilot to wait until the ATIS is updated", "Instruct to wait for the next ATIS", "Delay until the ATIS broadcast changes"],
+["Provide the time only if the aircraft is ready for immediate departure", "Only give the time for immediate departures", "Restrict the information to aircraft ready to go"]
+],
+"correct": "Give an expected take‑off time",
+"hint": "A pilot may request an expected TKOF time before starting engines, and the tower is to provide it.",
+"insight": "The procedure is separate from start‑up clearance; the expected time is informational.",
+"explanation": "When requested by the pilot prior to engine start, an expected TKOF time should be given."
+},
+{
+"variants": [
+"Start‑up clearance shall be withheld only:",
+"Under what circumstances may the tower withhold start‑up clearance?",
+"When may TWR refuse to issue a start‑up clearance?"
+],
+"options": [
+["Under conditions specified in the local procedures", "As defined in the local unit procedures", "When local operational procedures dictate"],
+["Whenever the controller deems it necessary for any reason", "At the controller's discretion", "For any operational reason the tower decides"],
+["Only when the runway is closed", "If the runway is not available", "Exclusively during runway closures"],
+["When the pilot has not filed a flight plan", "If no FPL has been submitted", "Missing flight plan submission"],
+["Only during low visibility procedures", "During LVP only", "When low visibility ops are in force"],
+["When the aircraft is not ready for immediate departure", "If the crew is not prepared for immediate take‑off", "Aircraft not ready for instant departure"]
+],
+"correct": "Under conditions specified in the local procedures",
+"hint": "Start‑up clearance is not arbitrarily withheld; there must be a published local condition.",
+"insight": "The tower must also inform the flight crew of the reason when withholding start‑up.",
+"explanation": "Start‑up clearance shall only be withheld under conditions specified in the local procedures. TWR shall inform the flight crew of the reason for withholding start‑up clearance."
+},
+{
+"variants": [
+"When the tower withholds start‑up clearance, the controller must:",
+"What is the controller obliged to do if start‑up clearance is withheld?",
+"If the tower refuses to issue a start‑up clearance, the flight crew must be:"
+],
+"options": [
+["Informed of the reason for the delay", "Told why the clearance is being withheld", "Given the reason for withholding start‑up"],
+["Issued an immediate take‑off clearance as soon as the aircraft is ready", "Given an instant departure clearance when ready", "Cleared for take‑off without delay"],
+["Transferred to another frequency", "Switched to a different channel", "Handed off to another controller"],
+["Instructed to shut down the engines", "Told to stop the engines", "Ordered to cease engine operation"],
+["Required to file a new flight plan", "Obliged to submit a new FPL", "Needing to re‑submit the flight plan"],
+["Advised to contact the airline operator", "Told to call their company", "Directed to reach the airline's operations"]
+],
+"correct": "Informed of the reason for the delay",
+"hint": "Transparency with the flight crew is required so they understand the operational reason.",
+"insight": "The local procedures specify when withholding is permitted, and the controller must communicate the reason.",
+"explanation": "TWR shall inform the flight crew of the reason for withholding start‑up clearance."
+},
+{
+"variants": [
+"The positions where aircraft normally receive TWR clearances are:",
+"At which locations in the circuit are TWR clearances typically issued?",
+"TWR clearances are normally given to aircraft:"
+],
+"options": [
+["The positions in the traffic and taxi circuits", "The locations within the aerodrome traffic pattern and on the taxiways", "The standard points in the air and ground circuits"],
+["Only at the runway holding point", "At the holding point exclusively", "Only when holding short of the active runway"],
+["Only on the final approach track", "On final approach only", "Exclusively during the final segment"],
+["Only at the clearance delivery position", "At the delivery frequency only", "Exclusively from clearance delivery"],
+["Anywhere as requested by the pilot", "Wherever the pilot asks", "At the pilot's discretion"],
+["Only after the aircraft has started its take‑off roll", "After commencing the take‑off run", "Once the departure roll has begun"]
+],
+"correct": "The positions in the traffic and taxi circuits",
+"hint": "Clearances should be issued without delay when aircraft approach these designated positions.",
+"insight": "Controllers should watch aircraft closely as they near these positions so that proper clearances can be issued without waiting for the pilot to call.",
+"explanation": "The positions of aircraft in the traffic and taxi circuits are the positions where aircraft normally receive TWR clearances. Where practicable, all clearances should be issued without waiting for aircraft to initiate the call."
+}
+]
+}
+}
+}

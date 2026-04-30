@@ -1,0 +1,602 @@
+{
+"sections": {
+"Aviation Phraseology": {
+"author": "Abdulaziz Alharbi",
+"questions": [
+{
+"variants": [
+"The correct ICAO code word assigned to the letter A is:",
+"Which word represents the letter A in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter A is spoken as:"
+],
+"options": [
+["Alfa", "Alfa word", "ICAO word: Alfa"],
+["Able", "Able (legacy military)", "Able code word"],
+["Adam", "Adam (old phonetic)", "Adam word"],
+["Anchor", "Anchor (nautical term)", "Anchor word"],
+["Arrow", "Arrow (projectile)", "Arrow word"],
+["Apple", "Apple (fruit)", "Apple word"]
+],
+"correct": "Alfa",
+"hint": "The ICAO word for this letter uses a spelling that avoids the 'ph' combination, unlike the common English version.",
+"insight": "All options begin with A and are plausible, but only one is the official ICAO term; the rest are legacy codes or everyday words not used in radiotelephony.",
+"explanation": "'Alfa' is the ICAO spelling alphabet word for A. 'Able' and 'Adam' belong to older systems, while 'Anchor', 'Arrow', and 'Apple' are not part of any standard aviation alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter B is:",
+"Which word represents the letter B in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter B is spoken as:"
+],
+"options": [
+["Bravo", "Bravo (official ICAO)", "ICAO word: Bravo"],
+["Baker", "Baker (legacy military)", "Baker code word"],
+["Boston", "Boston (city name)", "Boston word"],
+["Beta", "Beta (Greek letter)", "Beta term"],
+["Berlin", "Berlin (capital city)", "Berlin word"],
+["Bulldog", "Bulldog (animal breed)", "Bulldog word"]
+],
+"correct": "Bravo",
+"hint": "The ICAO spelling alphabet assigns a specific word to each letter, chosen for distinctiveness and international intelligibility.",
+"insight": "All options begin with B and could be guessed, but only one is the official ICAO term; the others are older codes, cities, or unrelated words.",
+"explanation": "'Bravo' is the ICAO word for the letter B. 'Baker' belongs to an older US military alphabet, and the rest are not part of any standard aviation phonetic system."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter C is:",
+"Which word represents the letter C in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter C is spoken as:"
+],
+"options": [
+["Charlie", "Charlie (official ICAO)", "ICAO word: Charlie"],
+["Charles", "Charles (common name)", "Charles variant"],
+["Canada", "Canada (country name)", "Canada word"],
+["Chicago", "Chicago (city name)", "Chicago word"],
+["Copper", "Copper (metal)", "Copper term"],
+["Cobra", "Cobra (snake)", "Cobra word"]
+],
+"correct": "Charlie",
+"hint": "The ICAO alphabet uses a familiar male given name for this letter, ending in 'ie'.",
+"insight": "Although several C‑words start the same, the correct term is a specific name used globally in aviation communications; other options are place names or unrelated nouns.",
+"explanation": "'Charlie' is the ICAO word for C. 'Charles' is similar but not the standard; 'Canada' and 'Chicago' are country/city names, not assigned."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter D is:",
+"Which word represents the letter D in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter D is spoken as:"
+],
+"options": [
+["Delta", "Delta (official ICAO)", "ICAO word: Delta"],
+["David", "David (common name)", "David name"],
+["Denmark", "Denmark (country)", "Denmark word"],
+["Diamond", "Diamond (gemstone)", "Diamond term"],
+["Doctor", "Doctor (profession)", "Doctor word"],
+["Dolphin", "Dolphin (animal)", "Dolphin word"]
+],
+"correct": "Delta",
+"hint": "The ICAO word for this letter is also the name of a Greek letter and a geographical feature.",
+"insight": "All options start with D, but only the correct word has a specific double association (Greek letter/river mouth) and is the official aviation term.",
+"explanation": "'Delta' is the ICAO word for D. 'David' might be used in old alphabets, but it's not current; other words are not recognized."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter E is:",
+"Which word represents the letter E in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter E is spoken as:"
+],
+"options": [
+["Echo", "Echo (official ICAO)", "ICAO word: Echo"],
+["Edward", "Edward (name)", "Edward name"],
+["England", "England (country)", "England word"],
+["Eagle", "Eagle (bird)", "Eagle term"],
+["Epsilon", "Epsilon (Greek letter)", "Epsilon word"],
+["Estate", "Estate (property)", "Estate word"]
+],
+"correct": "Echo",
+"hint": "The ICAO word for this letter is a term from acoustics, referring to a reflected sound.",
+"insight": "Although 'Eagle' or 'Edward' might sound plausible, only the official term is used universally; the others are not part of the radiotelephony alphabet.",
+"explanation": "'Echo' is the ICAO word for E. Words like 'Eagle' or 'Edward' are not standard, and 'Epsilon' is a Greek letter but not assigned to E."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter F is:",
+"Which word represents the letter F in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter F is spoken as:"
+],
+"options": [
+["Foxtrot", "Foxtrot (official ICAO)", "ICAO word: Foxtrot"],
+["Frank", "Frank (name)", "Frank name"],
+["France", "France (country)", "France word"],
+["Falcon", "Falcon (bird)", "Falcon term"],
+["Freedom", "Freedom (concept)", "Freedom word"],
+["Fantasy", "Fantasy (genre)", "Fantasy word"]
+],
+"correct": "Foxtrot",
+"hint": "The ICAO word for this letter is a dance style name, a compound word starting with 'Fox'.",
+"insight": "All options begin with F, but the official term is a specific dance, while 'Frank' or 'France' might be intuitive guesses but are not adopted.",
+"explanation": "'Foxtrot' is the ICAO word for F. No other common F‑word (like France or Falcon) is part of the standard alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter G is:",
+"Which word represents the letter G in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter G is spoken as:"
+],
+"options": [
+["Golf", "Golf (sport)", "ICAO word: Golf"],
+["George", "George (name)", "George name"],
+["Germany", "Germany (country)", "Germany word"],
+["Gamma", "Gamma (Greek letter)", "Gamma term"],
+["Garden", "Garden (place)", "Garden word"],
+["Goblin", "Goblin (mythical creature)", "Goblin word"]
+],
+"correct": "Golf",
+"hint": "The ICAO word for this letter is a sport played with clubs and a ball.",
+"insight": "While 'George' was an old US code, the current standard uses a shorter, distinct word; other options are unrelated nouns.",
+"explanation": "'Golf' is the ICAO word for G. 'George' was previously used in older alphabets, but it has been replaced."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter H is:",
+"Which word represents the letter H in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter H is spoken as:"
+],
+"options": [
+["Hotel", "Hotel (accommodation)", "ICAO word: Hotel"],
+["Harry", "Harry (name)", "Harry name"],
+["Hungary", "Hungary (country)", "Hungary word"],
+["Hammer", "Hammer (tool)", "Hammer term"],
+["Helium", "Helium (element)", "Helium word"],
+["Horizon", "Horizon (line)", "Horizon word"]
+],
+"correct": "Hotel",
+"hint": "The ICAO word for this letter is a building that provides lodging.",
+"insight": "Many H‑words are possible, but only 'Hotel' is the official radiotelephony term; 'Harry' and others are not part of the current alphabet.",
+"explanation": "'Hotel' is the ICAO word for H. Older alphabets used 'Harry' or 'How', but these are no longer standard."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter I is:",
+"Which word represents the letter I in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter I is spoken as:"
+],
+"options": [
+["India", "India (country)", "ICAO word: India"],
+["Item", "Item (old US military)", "Item code word"],
+["Italy", "Italy (country)", "Italy word"],
+["Igloo", "Igloo (dwelling)", "Igloo term"],
+["Impulse", "Impulse (physics)", "Impulse word"],
+["Insect", "Insect (animal)", "Insect word"]
+],
+"correct": "India",
+"hint": "The ICAO word for this letter is the name of a South Asian country.",
+"insight": "While 'Item' was used in the past, the current standard is a country name; other options are general nouns or other countries.",
+"explanation": "'India' is the ICAO word for I. 'Item' belongs to an older US military alphabet, and 'Italy' is not used."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter J is:",
+"Which word represents the letter J in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter J is spoken as:"
+],
+"options": [
+["Juliett", "Juliett (double t)", "ICAO word: Juliett"],
+["Juliet", "Juliet (single t)", "Juliet name variant"],
+["Japan", "Japan (country)", "Japan word"],
+["Jaguar", "Jaguar (animal)", "Jaguar term"],
+["Jupiter", "Jupiter (planet)", "Jupiter word"],
+["Jewel", "Jewel (gem)", "Jewel term"]
+],
+"correct": "Juliett",
+"hint": "The ICAO spelling of this word has a distinctive double consonant at the end, unlike the common Shakespearean name.",
+"insight": "All start with J, but only the official ICAO spelling with double 't' is correct; any single‑t version or other J‑words are not standard.",
+"explanation": "'Juliett' is the official ICAO spelling for the letter J. 'Juliet' with one 't' is not the correct form, and other J‑words are not part of the alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter K is:",
+"Which word represents the letter K in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter K is spoken as:"
+],
+"options": [
+["Kilo", "Kilo (metric prefix)", "ICAO word: Kilo"],
+["King", "King (royal title)", "King word"],
+["Kuwait", "Kuwait (country)", "Kuwait word"],
+["Kappa", "Kappa (Greek letter)", "Kappa term"],
+["Ketchup", "Ketchup (condiment)", "Ketchup word"],
+["Krypton", "Krypton (element)", "Krypton word"]
+],
+"correct": "Kilo",
+"hint": "The ICAO word for this letter is also a metric prefix meaning one thousand.",
+"insight": "While 'King' was used in some older alphabets, the current standard is the metric term; other options are unrelated K‑words.",
+"explanation": "'Kilo' is the ICAO word for K. It replaces older terms like 'King' and is chosen for its clear pronunciation."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter L is:",
+"Which word represents the letter L in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter L is spoken as:"
+],
+"options": [
+["Lima", "Lima (capital of Peru)", "ICAO word: Lima"],
+["London", "London (city)", "London word"],
+["Lemon", "Lemon (fruit)", "Lemon term"],
+["Lambda", "Lambda (Greek letter)", "Lambda word"],
+["Lion", "Lion (animal)", "Lion term"],
+["Legacy", "Legacy (heritage)", "Legacy word"]
+],
+"correct": "Lima",
+"hint": "The ICAO word for this letter is the name of a South American capital city.",
+"insight": "Other L‑words like London or Lion might be guessed, but the official term specifically refers to this city.",
+"explanation": "'Lima' is the ICAO word for L. London is a different city, and the other options are not standard phonetic words."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter M is:",
+"Which word represents the letter M in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter M is spoken as:"
+],
+"options": [
+["Mike", "Mike (familiar name)", "ICAO word: Mike"],
+["Mary", "Mary (female name)", "Mary name"],
+["Mexico", "Mexico (country)", "Mexico word"],
+["Monkey", "Monkey (animal)", "Monkey term"],
+["Metric", "Metric (measurement)", "Metric word"],
+["Mosaic", "Mosaic (art)", "Mosaic word"]
+],
+"correct": "Mike",
+"hint": "The ICAO word for this letter is a short male given name, often used as a nickname for Michael.",
+"insight": "A few names and common words begin with M, but only this one is the official term; others like Mary or Mexico are not used.",
+"explanation": "'Mike' is the ICAO word for M. It is simple and distinct; 'Mary' and 'Mexico' are not assigned."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter N is:",
+"Which word represents the letter N in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter N is spoken as:"
+],
+"options": [
+["November", "November (month)", "ICAO word: November"],
+["Nan", "Nan (old phonetic)", "Nan name"],
+["Norway", "Norway (country)", "Norway word"],
+["Neutron", "Neutron (particle)", "Neutron term"],
+["Napkin", "Napkin (cloth)", "Napkin word"],
+["Novel", "Novel (book)", "Novel term"]
+],
+"correct": "November",
+"hint": "The ICAO word for this letter is the eleventh month of the year.",
+"insight": "Although 'Nan' was previously used in older systems, the current standard is a month name; other N‑words are not adopted.",
+"explanation": "'November' is the ICAO word for N. 'Nan' belonged to the old US military alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter O is:",
+"Which word represents the letter O in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter O is spoken as:"
+],
+"options": [
+["Oscar", "Oscar (award/male name)", "ICAO word: Oscar"],
+["Ocean", "Ocean (water body)", "Ocean term"],
+["October", "October (month)", "October word"],
+["Omega", "Omega (Greek letter)", "Omega term"],
+["Olive", "Olive (fruit)", "Olive word"],
+["Oxygen", "Oxygen (element)", "Oxygen term"]
+],
+"correct": "Oscar",
+"hint": "The ICAO word for this letter is also an award statue and a common male name.",
+"insight": "Several O‑words could be guessed, but only the specific name/accolade is official; months and elements are not used.",
+"explanation": "'Oscar' is the ICAO word for O. 'October' is a month, but not assigned to this letter."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter P is:",
+"Which word represents the letter P in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter P is spoken as:"
+],
+"options": [
+["Papa", "Papa (father)", "ICAO word: Papa"],
+["Peter", "Peter (name)", "Peter name"],
+["Paris", "Paris (city)", "Paris word"],
+["Panda", "Panda (animal)", "Panda term"],
+["Pascal", "Pascal (pressure unit)", "Pascal word"],
+["Pluto", "Pluto (dwarf planet)", "Pluto term"]
+],
+"correct": "Papa",
+"hint": "The ICAO word for this letter is an informal family term for father.",
+"insight": "All start with P, but the official term is a familial word; 'Peter' was used in old alphabets, and other words are not standard.",
+"explanation": "'Papa' is the ICAO word for P. 'Peter' is from older systems, while 'Paris' and 'Panda' are not in the radiotelephony alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter Q is:",
+"Which word represents the letter Q in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter Q is spoken as:"
+],
+"options": [
+["Quebec", "Quebec (Canadian province)", "ICAO word: Quebec"],
+["Queen", "Queen (monarch)", "Queen term"],
+["Quartz", "Quartz (mineral)", "Quartz word"],
+["Quest", "Quest (journey)", "Quest term"],
+["Quota", "Quota (allocation)", "Quota word"],
+["Quill", "Quill (feather)", "Quill term"]
+],
+"correct": "Quebec",
+"hint": "The ICAO word for this letter is the name of a province in Canada.",
+"insight": "Although 'Queen' might be an intuitive choice, the official term is a geographic name; other Q‑words are not used.",
+"explanation": "'Quebec' is the ICAO word for Q. 'Queen' appears in some older phonetic lists but is not current."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter R is:",
+"Which word represents the letter R in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter R is spoken as:"
+],
+"options": [
+["Romeo", "Romeo (literary character)", "ICAO word: Romeo"],
+["Roger", "Roger (old US military)", "Roger word"],
+["Russia", "Russia (country)", "Russia term"],
+["Radar", "Radar (technology)", "Radar word"],
+["Rocket", "Rocket (spacecraft)", "Rocket term"],
+["Riddle", "Riddle (puzzle)", "Riddle word"]
+],
+"correct": "Romeo",
+"hint": "The ICAO word for this letter is the name of Shakespeare's famous male lover.",
+"insight": "Many R‑words exist, but only this romantic name is official; 'Roger' was used previously, and others are not part of the standard.",
+"explanation": "'Romeo' is the ICAO word for R. 'Roger' is a legacy code but not the current ICAO standard for the letter itself."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter S is:",
+"Which word represents the letter S in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter S is spoken as:"
+],
+"options": [
+["Sierra", "Sierra (mountain range)", "ICAO word: Sierra"],
+["Sugar", "Sugar (sweetener)", "Sugar term"],
+["Sweden", "Sweden (country)", "Sweden word"],
+["Sigma", "Sigma (Greek letter)", "Sigma term"],
+["Shadow", "Shadow (shade)", "Shadow word"],
+["Sapphire", "Sapphire (gem)", "Sapphire term"]
+],
+"correct": "Sierra",
+"hint": "The ICAO word for this letter is a geographical term for a jagged mountain chain.",
+"insight": "All start with S, but only the geographical term is official; 'Sugar' was an old British code, and others are not used.",
+"explanation": "'Sierra' is the ICAO word for S. 'Sugar' belonged to older alphabets but is no longer standard."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter T is:",
+"Which word represents the letter T in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter T is spoken as:"
+],
+"options": [
+["Tango", "Tango (dance)", "ICAO word: Tango"],
+["Tommy", "Tommy (name)", "Tommy term"],
+["Tokyo", "Tokyo (city)", "Tokyo word"],
+["Taurus", "Taurus (zodiac)", "Taurus term"],
+["Temple", "Temple (building)", "Temple word"],
+["Trigger", "Trigger (mechanism)", "Trigger term"]
+],
+"correct": "Tango",
+"hint": "The ICAO word for this letter is a Latin American dance style with a distinct rhythm.",
+"insight": "All start with T, but the official term is a dance; 'Tommy' was an old British code, and other words are not assigned.",
+"explanation": "'Tango' is the ICAO word for T. 'Tommy' was used in older British phonetic alphabets but not in the ICAO standard."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter U is:",
+"Which word represents the letter U in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter U is spoken as:"
+],
+"options": [
+["Uniform", "Uniform (clothing)", "ICAO word: Uniform"],
+["Uncle", "Uncle (relative)", "Uncle term"],
+["Utopia", "Utopia (ideal place)", "Utopia word"],
+["Uranus", "Uranus (planet)", "Uranus term"],
+["Upsilon", "Upsilon (Greek letter)", "Upsilon word"],
+["Utility", "Utility (usefulness)", "Utility term"]
+],
+"correct": "Uniform",
+"hint": "The ICAO word for this letter is a type of standardized clothing, often worn by military or service personnel.",
+"insight": "All options begin with U, but only one is the official term; 'Uncle' was an older code, and other words are not used.",
+"explanation": "'Uniform' is the ICAO word for U. 'Uncle' was part of the old US military alphabet, but it has been replaced."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter V is:",
+"Which word represents the letter V in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter V is spoken as:"
+],
+"options": [
+["Victor", "Victor (winner)", "ICAO word: Victor"],
+["Venice", "Venice (city)", "Venice term"],
+["Violet", "Violet (color/flower)", "Violet word"],
+["Vector", "Vector (mathematics)", "Vector term"],
+["Volcano", "Volcano (geological)", "Volcano word"],
+["Vitamin", "Vitamin (nutrient)", "Vitamin term"]
+],
+"correct": "Victor",
+"hint": "The ICAO word for this letter means a winner or conqueror.",
+"insight": "While many V‑words exist, only this name meaning 'conqueror' is the official radiotelephony term; cities, flowers, etc. are not used.",
+"explanation": "'Victor' is the ICAO word for V. Other common V‑words like Venice or Violet are not part of the alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter W is:",
+"Which word represents the letter W in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter W is spoken as:"
+],
+"options": [
+["Whiskey", "Whiskey (alcoholic drink)", "ICAO word: Whiskey"],
+["William", "William (name)", "William term"],
+["Warsaw", "Warsaw (city)", "Warsaw word"],
+["Wallet", "Wallet (pocket item)", "Wallet term"],
+["Wizard", "Wizard (magician)", "Wizard word"],
+["Window", "Window (opening)", "Window term"]
+],
+"correct": "Whiskey",
+"hint": "The ICAO word for this letter is a distilled alcoholic beverage, spelled with an 'e'.",
+"insight": "All start with W, but only the drink name is official; 'William' was an old code, and other common words are not used.",
+"explanation": "'Whiskey' is the ICAO word for W. 'William' appears in older phonetic systems, but not the current standard."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter X is:",
+"Which word represents the letter X in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter X is spoken as:"
+],
+"options": [
+["Xray", "Xray (no hyphen)", "ICAO word: Xray"],
+["Xenon", "Xenon (chemical element)", "Xenon term"],
+["Xylophone", "Xylophone (instrument)", "Xylophone word"],
+["Xerox", "Xerox (brand)", "Xerox term"],
+["Xenophobia", "Xenophobia (fear of strangers)", "Xenophobia word"],
+["Xerxes", "Xerxes (historical name)", "Xerxes term"]
+],
+"correct": "Xray",
+"hint": "The ICAO word for this letter is a compound that combines the letter with a form of electromagnetic radiation, written without a hyphen.",
+"insight": "All options begin with X, but only one is the official term; the others are elements, instruments, brands, or unrelated words.",
+"explanation": "'Xray' is the ICAO word for X. Other X‑words, though plausible, are not part of the radiotelephony alphabet."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter Y is:",
+"Which word represents the letter Y in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter Y is spoken as:"
+],
+"options": [
+["Yankee", "Yankee (American)", "ICAO word: Yankee"],
+["Yacht", "Yacht (boat)", "Yacht term"],
+["Yellow", "Yellow (color)", "Yellow word"],
+["Yogurt", "Yogurt (food)", "Yogurt term"],
+["Yokohama", "Yokohama (city)", "Yokohama word"],
+["Ypsilon", "Ypsilon (Greek letter)", "Ypsilon term"]
+],
+"correct": "Yankee",
+"hint": "The ICAO word for this letter is a colloquial term for an American.",
+"insight": "All start with Y, but only the American nickname is official; cities, colors, and foods are not part of the standard alphabet.",
+"explanation": "'Yankee' is the ICAO word for Y. No other Y‑word is used in aviation phonetics."
+},
+{
+"variants": [
+"The correct ICAO code word assigned to the letter Z is:",
+"Which word represents the letter Z in the ICAO spelling alphabet?",
+"In ICAO radiotelephony, the letter Z is spoken as:"
+],
+"options": [
+["Zulu", "Zulu (African ethnic group)", "ICAO word: Zulu"],
+["Zebra", "Zebra (animal)", "Zebra term"],
+["Zodiac", "Zodiac (astrology)", "Zodiac word"],
+["Zero", "Zero (number)", "Zero term"],
+["Zircon", "Zircon (mineral)", "Zircon term"],
+["Zombie", "Zombie (undead)", "Zombie term"]
+],
+"correct": "Zulu",
+"hint": "The ICAO word for this letter is the name of an ethnic group from Southern Africa.",
+"insight": "All start with Z, but only the ethnic group name is official; 'Zebra' was used in older alphabets, and numbers or minerals are not assigned.",
+"explanation": "'Zulu' is the ICAO word for Z. 'Zebra' was part of the old US military alphabet but not the current standard."
+},
+{
+"variants": [
+"According to ICAO, the digit 3 is pronounced as:",
+"How does ICAO prescribe saying the number 3?",
+"The correct spoken form for the digit 3 in ICAO radiotelephony is:"
+],
+"options": [
+["Tree", "Tree (ICAO standard)", "Tree pronunciation"],
+["Three", "Three (standard English)", "Three pronunciation"],
+["Tray", "Tray (mispronunciation)", "Tray form"],
+["Tee", "Tee (shortened)", "Tee pronunciation"],
+["Thray", "Thray (blend of three and tray)", "Thray variant"],
+["Free", "Free (accented mishearing)", "Free pronunciation"],
+["Trey", "Trey (archaic term for three)", "Trey variant"],
+["Thwee", "Thwee (childlike lisp)", "Thwee pronunciation"]
+],
+"correct": "Tree",
+"hint": "ICAO alters the initial consonant blend and vowel to produce a sharp, unmistakable sound over radio frequencies.",
+"insight": "Many variations of the number three exist, including the standard 'Three' and slang like 'Trey', but only the ICAO-mandated form avoids confusion with other digits.",
+"explanation": "The digit 3 is spoken as 'Tree' to prevent it from being mistaken for other numbers, particularly in conditions of poor reception."
+},
+{
+"variants": [
+"According to ICAO, the digit 4 is pronounced as:",
+"How does ICAO prescribe saying the number 4?",
+"The correct spoken form for the digit 4 in ICAO radiotelephony is:"
+],
+"options": [
+["Fower", "Fower (ICAO standard)", "Fower pronunciation"],
+["Four", "Four (standard English)", "Four pronunciation"],
+["For", "For (as in the number)", "For variant"],
+["Fore", "Fore (golf term)", "Fore form"],
+["Fewer", "Fewer (comparative of few)", "Fewer mishearing"],
+["Foyer", "Foyer (entrance hall)", "Foyer mispronunciation"],
+["Foe", "Foe (enemy)", "Foe variant"],
+["Fur", "Fur (animal hair)", "Fur mishearing"]
+],
+"correct": "Fower",
+"hint": "The ICAO form inserts a distinct 'ow' sound to separate it from similar-sounding words that might be confused over the radio.",
+"insight": "Standard 'Four' is the most tempting distractor, but other words like 'For' or 'Foe' are not the prescribed spoken form; only the two-syllable rendering is correct.",
+"explanation": "The digit 4 is articulated as 'Fower' to clearly distinguish it from 'for' and other monosyllabic words, enhancing clarity."
+},
+{
+"variants": [
+"According to ICAO, the digit 5 is pronounced as:",
+"How does ICAO prescribe saying the number 5?",
+"The correct spoken form for the digit 5 in ICAO radiotelephony is:"
+],
+"options": [
+["Fife", "Fife (ICAO standard)", "Fife pronunciation"],
+["Five", "Five (standard English)", "Five pronunciation"],
+["Life", "Life (common misreading)", "Life variant"],
+["Live", "Live (verb, to exist)", "Live mishearing"],
+["Fy-ve", "Fy-ve (exaggerated enunciation)", "Fy-ve articulation"],
+["Fif", "Fif (clipped)", "Fif variant"],
+["Fieve", "Fieve (archaic spelling)", "Fieve mispronunciation"]
+],
+"correct": "Fife",
+"hint": "ICAO replaces the voiced 'v' with an unvoiced 'f' at the end to avoid confusion with the digit nine, which ends in a similar sound.",
+"insight": "Standard 'Five' is the closest distractor but risks blending with 'Nine' in poor radio conditions; the other variations are not authorized.",
+"explanation": "The digit 5 is spoken as 'Fife' in ICAO radiotelephony, using an 'f' sound at both ends to completely separate it from 'Nine' (pronounced 'Niner')."
+},
+{
+"variants": [
+"According to ICAO, the digit 9 is pronounced as:",
+"How does ICAO prescribe saying the number 9?",
+"The correct spoken form for the digit 9 in ICAO radiotelephony is:"
+],
+"options": [
+["Niner", "Niner (ICAO standard)", "Niner pronunciation"],
+["Nine", "Nine (standard English)", "Nine pronunciation"],
+["Nein", "Nein (German word for no)", "Nein variant"],
+["Neener", "Neener (childish taunt)", "Neener form"],
+["Ninah", "Ninah (extra syllable)", "Ninah mispronunciation"]
+],
+"correct": "Niner",
+"hint": "The added 'r' at the end of the digit creates a distinct termination that separates it from other numbers, especially 'five'.",
+"insight": "Standard 'Nine' is the main error; other renderings like 'Nein' or artificial extensions are not official and can bring ambiguity.",
+"explanation": "The digit 9 is articulated as 'Niner', with an emphasized 'r' ending, to differentiate it from 'Five' and improve clarity."
+},
+{
+"variants": [
+"According to ICAO, the word 'thousand' is pronounced as:",
+"How does ICAO prescribe saying the quantity 1000?",
+"The correct spoken form for 'thousand' in ICAO radiotelephony is:"
+],
+"options": [
+["Tousand", "Tousand (ICAO standard)", "Tousand pronunciation"],
+["Thousand", "Thousand (standard English)", "Thousand pronunciation"],
+["Thowsand", "Thowsand (drawn-out)", "Thowsand articulation"],
+["Thousan", "Thousan (clipped)", "Thousan variant"],
+["Towsan", "Towsan (slurred)", "Towsan mispronunciation"],
+["Towsend", "Towsend (altered vowel)", "Towsend variant"]
+],
+"correct": "Tousand",
+"hint": "ICAO drops the dental fricative 'th' sound and simplifies to a crisp 't' onset, making the word easier for non-native speakers.",
+"insight": "The full 'Thousand' with its voiced 'th' is the closest distractor, but the official form intentionally replaces that sound; other broken or slurred versions are not authorized.",
+"explanation": "The term thousand is spoken as 'Tousand', removing the initial 'h' sound to ensure uniform pronunciation across languages and radio conditions."
+}
+]
+}
+}
+}

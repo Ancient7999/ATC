@@ -1,0 +1,522 @@
+{
+"sections": {
+"Aviation Phraseology Introduction": {
+"author": "Abdulaziz Alharbi",
+"questions": [
+{
+"variants": [
+"In aviation phraseology, the word 'Acknowledge' means:",
+"What is the meaning of the standard ICAO phrase 'Acknowledge'?",
+"When a controller says 'Acknowledge', they are instructing the pilot to:"
+],
+"options": [
+["Let me know that you have received and understood this message", "Tell me you received and comprehended the transmission", "Indicate receipt and understanding of the message"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval for the requested action is given", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect the system or process"],
+["Authorized to proceed under the conditions specified", "Cleared to continue as specified", "You are allowed to proceed under the stated conditions"]
+],
+"correct": "Let me know that you have received and understood this message",
+"hint": "This term is a directive asking the receiver to actively confirm they have received and understood the communication, not a statement of fact or approval.",
+"insight": "Phrases like 'Affirm' and 'Cleared' give permissions or simple yes/no answers, while 'Check' asks for an inspection; only one phrase requests an explicit acknowledgment of understanding.",
+"explanation": "'Acknowledge' requires the pilot to respond that they have received and understood the message. It is not a permission, a cancellation, or an inspection command."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Affirm' means:",
+"What is the meaning of the standard ICAO phrase 'Affirm'?",
+"When a pilot transmits 'Affirm', they are indicating:"
+],
+"options": [
+["Yes", "Affirmative", "Yes, affirmative"],
+["Let me know that you have received and understood the message", "Acknowledge receipt and understanding", "Indicate you received and comprehended"],
+["Permission for proposed action granted", "Approval of the requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect the system or process"],
+["That is correct", "Correct", "True"]
+],
+"correct": "Yes",
+"hint": "This is the simple affirmative response; it means yes, not an acknowledgment of correctness.",
+"insight": "While 'Correct' validates the accuracy of a statement, 'Affirm' is a direct 'yes' to a question or request. The variants 'That is correct' and 'True' belong to a different phrase.",
+"explanation": "'Affirm' means 'yes'. It is the standard way to give a positive reply in aviation radiotelephony, distinct from 'Correct', which confirms the accuracy of a message."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Approved' means:",
+"What is the meaning of the standard ICAO phrase 'Approved'?",
+"When a controller says 'Approved', they are:"
+],
+"options": [
+["Permission for proposed action granted", "The requested action is authorized", "You have permission for the proposed action"],
+["Yes", "Affirmative", "Affirm"],
+["Annul the previously transmitted clearance", "Cancel the previous instruction", "Void the earlier clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["Authorized to proceed under the conditions specified", "Cleared to proceed as specified", "You are allowed to continue under given conditions"],
+["That is correct", "Correct", "True"]
+],
+"correct": "Permission for proposed action granted",
+"hint": "This word gives explicit consent for something that a pilot or other party has requested, not a simple yes/no or an instruction to inspect.",
+"insight": "'Cleared' also grants authorization, but it includes specified conditions; this term is a straightforward granting of a request.",
+"explanation": "'Approved' means the requested action is permitted. It differs from 'Cleared', which includes specific conditions, and from 'Affirm', which is merely a yes."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Cancel' means:",
+"What is the meaning of the standard ICAO phrase 'Cancel'?",
+"When a controller transmits 'Cancel', they intend to:"
+],
+"options": [
+["Annul the previously transmitted clearance", "Void the earlier instruction", "Revoke the prior clearance"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["Authorized to proceed under the conditions specified", "Cleared to continue as specified", "You are allowed to proceed under stated conditions"],
+["That is correct", "Correct", "True"]
+],
+"correct": "Annul the previously transmitted clearance",
+"hint": "This word is used to completely withdraw a previously issued clearance, making it as if it had never been given.",
+"insight": "Unlike 'Correction' which amends part of a message, this term removes the entire preceding instruction.",
+"explanation": "'Cancel' annuls the entire previously transmitted clearance. It is not a request for inspection, a yes, or a permission."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Check' means:",
+"What is the meaning of the standard ICAO phrase 'Check'?",
+"When a controller says 'Check', they want the pilot to:"
+],
+"options": [
+["Examine a system or procedure", "Inspect a system or process", "Verify the functioning of a system or procedure"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Authorized to proceed under the conditions specified", "Cleared to continue as specified", "You are allowed to proceed under given conditions"],
+["Let me know that you have received and understood this message", "Acknowledge receipt and understanding", "Indicate you received and comprehended"]
+],
+"correct": "Examine a system or procedure",
+"hint": "This is an instruction to perform a physical or procedural verification, not to reply with a simple yes or acknowledgment.",
+"insight": "It is distinct from 'Confirm', which asks for a spoken verification of a message, as this term demands a practical examination.",
+"explanation": "'Check' means to examine a system or procedure. It is not a permission, cancellation, or acknowledgment."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Cleared' means:",
+"What is the meaning of the standard ICAO phrase 'Cleared'?",
+"When a controller says 'Cleared', they are:"
+],
+"options": [
+["Authorized to proceed under the conditions specified", "You are allowed to continue under the stated conditions", "Proceed as specified"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["That is correct", "Correct", "True"]
+],
+"correct": "Authorized to proceed under the conditions specified",
+"hint": "This term grants movement or action but always within defined limits, unlike a blanket approval.",
+"insight": "'Approved' simply gives permission; this word carries explicit conditions that must be followed.",
+"explanation": "'Cleared' means authorized to proceed strictly in accordance with the stated conditions, not a blanket yes or inspection."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Confirm' means:",
+"What is the meaning of the standard ICAO phrase 'Confirm'?",
+"When a controller says 'Confirm', they are requesting:"
+],
+"options": [
+["Have you received the following message?", "Did you receive the next transmission?", "Verify reception of the following message"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["Let me know that you have received and understood this message", "Acknowledge receipt and understanding", "Indicate you received and comprehended"]
+],
+"correct": "Have you received the following message?",
+"hint": "This phrase is a request for the receiver to verify that they have received a specific message, not to perform an action.",
+"insight": "It is frequently confused with 'Acknowledge', which demands an understanding response; here, only confirmation of receipt is sought.",
+"explanation": "'Confirm' asks whether the following message was received. It is distinct from 'Acknowledge', which requires acknowledgment of both receipt and understanding."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Contact' means:",
+"What is the meaning of the standard ICAO phrase 'Contact'?",
+"When a controller instructs a pilot to 'Contact', they mean to:"
+],
+"options": [
+["Establish radio contact with a specified station", "Make radio contact with ...", "Set up a radio link with ..."],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["Let me know that you have received and understood this message", "Acknowledge receipt and understanding", "Indicate you received and comprehended"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"]
+],
+"correct": "Establish radio contact with a specified station",
+"hint": "This term is an instruction to switch frequencies and communicate with another unit or facility.",
+"insight": "It is not an acknowledgment, a yes, or a check of equipment—it specifically directs a change in communication target.",
+"explanation": "'Contact' means to establish radio communication with a designated station. It is an operational directive, not an informational response."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Correct' means:",
+"What is the meaning of the standard ICAO phrase 'Correct'?",
+"When a pilot says 'Correct', they are indicating:"
+],
+"options": [
+["That is correct", "True", "That is right"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["Let me know that you have received and understood this message", "Acknowledge receipt and understanding", "Indicate you received and comprehended"]
+],
+"correct": "That is correct",
+"hint": "This phrase confirms the truth or accuracy of a statement previously transmitted.",
+"insight": "It differs from 'Affirm' because it validates a specific piece of information, not simply says yes to a request.",
+"explanation": "'Correct' means that a previous statement is accurate. 'Affirm' is a general yes, whereas this confirms specific data."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Correction' means:",
+"What is the meaning of the standard ICAO phrase 'Correction'?",
+"When a controller begins with 'Correction', they are indicating:"
+],
+"options": [
+["An error has been made; the correct message is", "A mistake occurred; the correct transmission is", "There was an error; the correct version follows"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["That is correct", "Correct", "True"]
+],
+"correct": "An error has been made; the correct message is",
+"hint": "This word prefaces a restatement after a mistake, cancelling the erroneous portion and replacing it.",
+"insight": "Unlike 'Cancel', which wipes the whole clearance, this term preserves the rest of the transmission and only fixes the incorrect part.",
+"explanation": "'Correction' means an error occurred in the previous message and the corrected version follows. It is not a complete annulment or a yes."
+},
+{
+"variants": [
+"In aviation phraseology, the phrase 'Go Ahead' means:",
+"What is the meaning of the standard ICAO phrase 'Go Ahead'?",
+"When a controller says 'Go Ahead', they are instructing the pilot to:"
+],
+"options": [
+["Proceed with your message", "Continue with your transmission", "Send your message"],
+["Examine a system or procedure", "Check a system or procedure", "Inspect a system or process"],
+["Let me know that you have received and understood this message", "Acknowledge receipt and understanding", "Indicate you received and comprehended"],
+["Yes", "Affirmative", "Affirm"],
+["Permission for proposed action granted", "Approval of requested action", "The proposed action is permitted"],
+["Annul the previously transmitted clearance", "Cancel the earlier instruction", "Void the prior clearance"]
+],
+"correct": "Proceed with your message",
+"hint": "This phrase invites the pilot to begin or continue speaking after a pause or when the frequency is available.",
+"insight": "It is not a permission to take off or to perform an action—only an invitation to transmit.",
+"explanation": "'Go Ahead' tells the pilot to start or resume their transmission. It does not authorize any aircraft maneuver or clearance."
+},
+{
+"variants": [
+"In aviation phraseology, the phrase 'How do you read me?' means:",
+"What is the meaning of the standard ICAO inquiry 'How do you read me?'?",
+"When a pilot asks 'How do you read me?', they are requesting:"
+],
+"options": [
+["A report on the readability of my radio transmission", "The quality of my signal", "An assessment of how well my transmission is being received"],
+["Repeat all of your last message", "Say the last transmission again", "Retransmit your previous communication"],
+["I have received all of your last transmission", "Your entire last message was received", "Acknowledgment of full reception"],
+["Pass me the following information", "Provide the requested data", "Give me the specified details"],
+["Wait and I will call you", "Hold on and I will contact you", "Stand by until I call"],
+["I wish to obtain something", "I request permission or information", "I want to acquire"]
+],
+"correct": "A report on the readability of my radio transmission",
+"hint": "This phrase asks the receiver to evaluate and report the clarity and strength of the incoming signal.",
+"insight": "It is not a request to repeat, a confirmation of receipt, or a plea for information—only an assessment of transmission quality is sought.",
+"explanation": "'How do you read me?' specifically asks the receiver to judge the readability of the transmission on a scale from 1 (unreadable) to 5 (perfectly readable)."
+},
+{
+"variants": [
+"According to the ICAO readability scale, a transmission reported as '1' is:",
+"If a controller says 'I read you 1', the signal was:",
+"The readability rating 1 indicates the transmission was:"
+],
+"options": [
+["Unreadable", "Cannot be understood at all", "Impossible to read"],
+["Readable now and then", "Understandable occasionally", "Readable in bursts"],
+["Readable but with difficulty", "Understandable with effort", "Difficult to read"],
+["Readable", "Clearly understandable", "Good readability"],
+["Perfectly readable", "Flawless reception", "Crystal clear"],
+["Clear and strong", "Loud and clear", "Strong signal but not an official rating"]
+],
+"correct": "Unreadable",
+"hint": "The scale runs from 1 (worst) to 5 (best); 1 means no usable communication.",
+"insight": "The other options describe progressively better readability, but only 'Unreadable' matches the lowest rating.",
+"explanation": "An 'I read you 1' report means the transmission is entirely unreadable."
+},
+{
+"variants": [
+"According to the ICAO readability scale, a transmission reported as '2' is:",
+"If a controller says 'I read you 2', the signal was:",
+"The readability rating 2 indicates the transmission was:"
+],
+"options": [
+["Readable now and then", "Understandable occasionally", "Readable in bursts"],
+["Unreadable", "Cannot be understood at all", "Impossible to read"],
+["Readable but with difficulty", "Understandable with effort", "Difficult to read"],
+["Readable", "Clearly understandable", "Good readability"],
+["Perfectly readable", "Flawless reception", "Crystal clear"],
+["Clear and strong", "Loud and clear", "Strong signal but not an official rating"]
+],
+"correct": "Readable now and then",
+"hint": "The scale runs from 1 (worst) to 5 (best); 2 means only occasional words are understood.",
+"insight": "It is not completely unreadable nor merely difficult; it is specifically intermittent reception.",
+"explanation": "A rating of 2 means the transmission is readable only now and then, with frequent dropouts."
+},
+{
+"variants": [
+"According to the ICAO readability scale, a transmission reported as '3' is:",
+"If a controller says 'I read you 3', the signal was:",
+"The readability rating 3 indicates the transmission was:"
+],
+"options": [
+["Readable but with difficulty", "Understandable with effort", "Difficult to read"],
+["Readable now and then", "Understandable occasionally", "Readable in bursts"],
+["Unreadable", "Cannot be understood at all", "Impossible to read"],
+["Readable", "Clearly understandable", "Good readability"],
+["Perfectly readable", "Flawless reception", "Crystal clear"],
+["Clear and strong", "Loud and clear", "Strong signal but not an official rating"]
+],
+"correct": "Readable but with difficulty",
+"hint": "The scale runs from 1 (worst) to 5 (best); 3 indicates the message can be understood but requires effort.",
+"insight": "It is not intermittent like 2, nor fully clear like 4; it sits between occasional and easy reception.",
+"explanation": "A rating of 3 means the transmission is readable but with noticeable difficulty."
+},
+{
+"variants": [
+"According to the ICAO readability scale, a transmission reported as '4' is:",
+"If a controller says 'I read you 4', the signal was:",
+"The readability rating 4 indicates the transmission was:"
+],
+"options": [
+["Readable", "Clearly understandable", "Good readability"],
+["Perfectly readable", "Flawless reception", "Crystal clear"],
+["Readable but with difficulty", "Understandable with effort", "Difficult to read"],
+["Readable now and then", "Understandable occasionally", "Readable in bursts"],
+["Unreadable", "Cannot be understood at all", "Impossible to read"],
+["Clear and strong", "Loud and clear", "Strong signal but not an official rating"]
+],
+"correct": "Readable",
+"hint": "The scale runs from 1 (worst) to 5 (best); 4 means fully understandable without issues but not necessarily perfect.",
+"insight": "It is not the highest rating—'Perfectly readable' is 5—but it indicates no practical difficulty.",
+"explanation": "A rating of 4 means the transmission is readable with no difficulty whatsoever, though not necessarily flawless."
+},
+{
+"variants": [
+"According to the ICAO readability scale, a transmission reported as '5' is:",
+"If a controller says 'I read you 5', the signal was:",
+"The readability rating 5 indicates the transmission was:"
+],
+"options": [
+["Perfectly readable", "Flawless reception", "Crystal clear"],
+["Readable", "Clearly understandable", "Good readability"],
+["Readable but with difficulty", "Understandable with effort", "Difficult to read"],
+["Readable now and then", "Understandable occasionally", "Readable in bursts"],
+["Unreadable", "Cannot be understood at all", "Impossible to read"],
+["Clear and strong", "Loud and clear", "Strong signal but not an official rating"]
+],
+"correct": "Perfectly readable",
+"hint": "The scale runs from 1 (worst) to 5 (best); 5 represents the highest possible clarity.",
+"insight": "Even 'Readable' (4) is excellent, but only 5 denotes absolute perfection with no imperfections.",
+"explanation": "A rating of 5 means the transmission is perfectly readable, the best quality on the scale."
+},
+{
+"variants": [
+"In aviation phraseology, the phrase 'I Say Again' means:",
+"What is the meaning of the standard ICAO phrase 'I Say Again'?",
+"When a controller says 'I Say Again', they intend to:"
+],
+"options": [
+["Repeat for clarity or to emphasize", "Say again for emphasis", "Restate the previous message"],
+["No, or the information is wrong", "The information is incorrect", "That is not correct"],
+["Repeat all of my message back to me", "Read back what I just said", "Echo the entire transmission"],
+["Pass me the following information", "Provide the specified details", "Give me the required data"],
+["Wait and I will call you", "Hold on", "Standby until I call"],
+["I have received all of your last transmission", "Full message received", "Acknowledgment of last transmission"]
+],
+"correct": "Repeat for clarity or to emphasize",
+"hint": "This phrase prefaces a restatement of what was just said, either because it was important or not fully understood.",
+"insight": "It is not a request for the pilot to read back, nor a negative response; it is a self-initiated repetition.",
+"explanation": "'I Say Again' means the speaker is about to repeat what they just said, either to stress it or because clarity is needed."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Negative' means:",
+"What is the meaning of the standard ICAO phrase 'Negative'?",
+"When a pilot says 'Negative', they are indicating:"
+],
+"options": [
+["No, or the information is wrong", "That is not correct", "The statement is false"],
+["Yes, affirmative", "I agree", "That is correct"],
+["I will comply with your message", "Wilco", "Understood and will comply"],
+["Repeat all of your last transmission", "Say again", "Retransmit your message"],
+["Leave the runway or frequency", "Vacate", "Exit immediately"],
+["Wait and I will call you", "Standby", "Hold on for my call"]
+],
+"correct": "No, or the information is wrong",
+"hint": "This is the standard way to deny a request or to indicate that a piece of information is not accurate.",
+"insight": "It is the opposite of 'Affirm' and is not an acknowledgment, a wilco, or an instruction to wait.",
+"explanation": "'Negative' means 'No' or 'The information is wrong'. It provides a clear, unambiguous refusal or correction."
+},
+{
+"variants": [
+"In aviation phraseology, the phrase 'Read Back' means:",
+"What is the meaning of the standard ICAO instruction 'Read Back'?",
+"When a controller orders 'Read Back', they want the pilot to:"
+],
+"options": [
+["Repeat all of the message I just gave you", "Echo my entire transmission", "Say back what I told you"],
+["Wait and I will call you", "Standby for my call", "Hold on"],
+["Pass me the following information", "Report the specified details", "Give me the required information"],
+["I have received all of your last transmission", "Roger", "Your transmission received"],
+["Leave the runway or frequency", "Vacate", "Exit"],
+["I wish to obtain something", "Request permission or information", "I want to acquire"]
+],
+"correct": "Repeat all of the message I just gave you",
+"hint": "This instruction requires the pilot to repeat the entire clearance or instruction back to the controller verbatim.",
+"insight": "While 'Say Again' means the speaker repeats, this term commands the listener to repeat back; it is not a request for a new report or a wait order.",
+"explanation": "'Read Back' means the pilot must repeat the complete message as received, ensuring no misunderstanding of the clearance."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Report' means:",
+"What is the meaning of the standard ICAO phrase 'Report'?",
+"When a controller says 'Report', they are asking the pilot to:"
+],
+"options": [
+["Pass me the following information", "Provide the specified details", "Give me the requested data"],
+["Repeat all of your last message", "Say again", "Retransmit your communication"],
+["Wait and I will call you", "Standby", "Hold for my call"],
+["I have received all of your transmission", "Roger", "Acknowledged"],
+["Leave the runway or frequency", "Vacate", "Exit"],
+["I wish to obtain something", "Request permission", "I want to get"]
+],
+"correct": "Pass me the following information",
+"hint": "This word precedes a request for a specific piece of data, like a position report or weather observation.",
+"insight": "It is not a repetition command, a hold instruction, or a receipt acknowledgment—it prompts the pilot to transmit information.",
+"explanation": "'Report' means the controller wants the pilot to provide the forthcoming specified information."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Request' means:",
+"What is the meaning of the standard ICAO phrase 'Request'?",
+"When a pilot says 'Request', they are indicating:"
+],
+"options": [
+["I wish to obtain something", "I want to acquire", "I am asking for permission or information"],
+["Pass me the following information", "Report the data", "Give me the required details"],
+["I have received all of your transmission", "Roger", "Acknowledged"],
+["Wait and I will call you", "Standby", "Hold for my call"],
+["Leave the runway or frequency", "Vacate", "Exit"],
+["Repeat all of your last message", "Say again", "Retransmit"]
+],
+"correct": "I wish to obtain something",
+"hint": "This term introduces a desire for a clearance, information, or service from the controller.",
+"insight": "It is not a response to a message; rather it initiates a new ask.",
+"explanation": "'Request' means the pilot wants to obtain something—clearance, information, etc."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Roger' means:",
+"What is the meaning of the standard ICAO phrase 'Roger'?",
+"When a pilot says 'Roger', they are indicating:"
+],
+"options": [
+["I have received all of your last transmission", "Your entire last message was received", "Full reception of your last communication"],
+["Yes, affirmative", "Affirm", "That is correct"],
+["I will comply", "Wilco", "Understood and will comply"],
+["Repeat all", "Say again", "Retransmit"],
+["Wait and I will call you", "Standby", "Hold on"],
+["Leave the runway or frequency", "Vacate", "Exit"]
+],
+"correct": "I have received all of your last transmission",
+"hint": "This word acknowledges that the full transmission was received, but it does not imply compliance or agreement.",
+"insight": "It is often confused with 'Wilco', which adds compliance, and 'Affirm', which means yes. It simply confirms receipt.",
+"explanation": "'Roger' means the entire last transmission was received. It does not indicate whether the message will be complied with."
+},
+{
+"variants": [
+"In aviation phraseology, the phrase 'Say Again' means:",
+"What is the meaning of the standard ICAO phrase 'Say Again'?",
+"When a pilot says 'Say Again', they are requesting:"
+],
+"options": [
+["Repeat all of your last transmission", "Say your last message again", "Retransmit your entire last communication"],
+["Wait and I will call you", "Standby", "Hold for my call"],
+["Pass me the following information", "Report the data", "Give me the information"],
+["I have received all of your last transmission", "Roger", "Acknowledged"],
+["Leave the runway or frequency", "Vacate", "Exit"],
+["I wish to obtain something", "Request permission", "I want to acquire"]
+],
+"correct": "Repeat all of your last transmission",
+"hint": "This is a request for the other station to retransmit their previous message in its entirety.",
+"insight": "Although 'Read Back' also means 'Repeat all', that is an instruction to the pilot to echo a clearance, not a request for the speaker to repeat.",
+"explanation": "'Say Again' asks the sender to repeat the entire last transmission. It is distinct from 'Read Back', which requires the listener to repeat."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Standby' means:",
+"What is the meaning of the standard ICAO phrase 'Standby'?",
+"When a controller says 'Standby', they mean:"
+],
+"options": [
+["Wait and I will call you", "Hold on and I will contact you", "Do not transmit until I call"],
+["Repeat all", "Say again", "Retransmit"],
+["Leave the runway or frequency", "Vacate", "Exit"],
+["I have received all of your last transmission", "Roger", "Acknowledged"],
+["Pass me the following information", "Report the information", "Provide the data"],
+["No, or the information is wrong", "Negative", "That is incorrect"]
+],
+"correct": "Wait and I will call you",
+"hint": "This instruction tells the pilot to pause and expect a future call; it is a temporary hold.",
+"insight": "It does not cancel anything, ask for a repeat, or give a receipt; it simply delays communication.",
+"explanation": "'Standby' means the controller wants the pilot to wait and will initiate further contact shortly."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Vacate' means:",
+"What is the meaning of the standard ICAO phrase 'Vacate'?",
+"When a controller orders 'Vacate', they are instructing the pilot to:"
+],
+"options": [
+["Leave the runway or frequency", "Exit the runway or channel", "Depart from the specified position or channel"],
+["Wait and I will call you", "Standby", "Hold for my call"],
+["Repeat all", "Say again", "Retransmit"],
+["I have received all of your transmission", "Roger", "Acknowledged"],
+["Pass me the following information", "Report", "Give me the data"],
+["I wish to obtain something", "Request", "I want to acquire"]
+],
+"correct": "Leave the runway or frequency",
+"hint": "This is an explicit command to exit a physical area or to stop using a radio frequency.",
+"insight": "It is not a request for information, a repeat, or a receipt; it mandates immediate departure.",
+"explanation": "'Vacate' means to leave the runway or to abandon a frequency. It is a direct clearance to exit."
+},
+{
+"variants": [
+"In aviation phraseology, the word 'Wilco' means:",
+"What is the meaning of the standard ICAO abbreviation 'Wilco'?",
+"When a pilot responds 'Wilco', they are indicating:"
+],
+"options": [
+["I understand your message and will comply with it", "Understood and will comply", "Your message is understood and I will obey"],
+["I have received all of your transmission", "Roger", "Acknowledged"],
+["Yes, affirmative", "Affirm", "That is correct"],
+["Wait and I will call you", "Standby", "Hold on"],
+["Leave the runway or frequency", "Vacate", "Exit"],
+["Repeat all", "Say again", "Retransmit"]
+],
+"correct": "I understand your message and will comply with it",
+"hint": "This is a combination of 'Roger' and compliance; it confirms understanding and intent to follow instructions.",
+"insight": "Unlike 'Roger', which only acknowledges receipt, 'Wilco' goes further by committing to act on the message.",
+"explanation": "'Wilco' (will comply) means the pilot has received the message, understands it, and will carry out the instructions."
+} 
+]
+}
+}
+}

@@ -1,0 +1,2004 @@
+{
+"sections": {
+"Aviation Advanced Phraseology": {
+"author": "Abdulaziz Alharbi",
+"questions": [
+{
+"variants": [
+"AAL is the abbreviation for:",
+"What does AAL stand for?",
+"The acronym AAL means:"
+],
+"options": [
+["Above aerodrome level", "Above aerodrome level", "Height above the aerodrome"],
+["Above ground level", "AGL definition", "Height above the ground"],
+["Above mean sea level", "AMSL", "Altitude above mean sea level"],
+["Aerodrome approach lighting", "Approach lights", "Aerodrome approach light system"],
+["Automatic approach landing", "Auto land", "Automatic landing system"],
+["Aircraft altitude limit", "Altitude limit", "Aircraft height restriction"]
+],
+"correct": "Above aerodrome level",
+"hint": "AAL is measured from the aerodrome elevation, not from sea level or the ground beneath the aircraft.",
+"insight": "AGL is above ground level; AMSL is above mean sea level; AAL specifically references the aerodrome level.",
+"explanation": "AAL stands for Above Aerodrome Level, the height measured from the aerodrome elevation."
+},
+{
+"variants": [
+"ACC is the abbreviation for:",
+"What does ACC mean in air traffic services?",
+"The acronym ACC refers to:"
+],
+"options": [
+["Area control centre", "Area control centre", "Regional ATC facility"],
+["Approach control centre", "Approach control", "Terminal ATC facility"],
+["Aerodrome control centre", "Aerodrome control", "Tower ATC facility"],
+["Air traffic control centre", "ATC centre", "Air traffic control hub"],
+["Advisory control centre", "Advisory centre", "Air traffic advisory unit"],
+["Automatic control centre", "Automatic control", "Automated ATC"]
+],
+"correct": "Area control centre",
+"hint": "ACC handles en‑route traffic in controlled airspace, distinct from approach and aerodrome control.",
+"insight": "APP is approach; TWR is aerodrome; ACC specifically handles area (en‑route) control.",
+"explanation": "ACC stands for Area Control Centre, the facility providing ATC service to en‑route flights in controlled airspace."
+},
+{
+"variants": [
+"ACAS is the abbreviation for:",
+"What does ACAS stand for?",
+"The acronym ACAS means:"
+],
+"options": [
+["Airborne collision avoidance system", "Airborne collision avoidance system", "System to avoid mid‑air collisions using transponders"],
+["Aircraft collision alert system", "Collision alert system", "Aircraft collision warning device"],
+["Automatic control approach system", "Automatic approach system", "Auto approach control"],
+["Air traffic collision advisory service", "Collision advisory service", "Traffic collision advisory"],
+["Aerodrome control and surveillance", "Aerodrome control and surveillance", "Tower control monitoring"],
+["Approach collision avoidance system", "Approach collision avoidance", "Terminal area collision system"]
+],
+"correct": "Airborne collision avoidance system",
+"hint": "ACAS operates independently of ground equipment and uses SSR transponder signals.",
+"insight": "The word 'airborne' distinguishes it from ground‑based safety nets; 'collision avoidance' is its purpose.",
+"explanation": "ACAS stands for Airborne Collision Avoidance System, providing advice to pilots on potential conflicting aircraft."
+},
+{
+"variants": [
+"ADS-B is the abbreviation for:",
+"What does ADS-B stand for?",
+"The acronym ADS-B means:"
+],
+"options": [
+["Automatic dependent surveillance-broadcast", "Automatic dependent surveillance (broadcast)", "ADS‑Broadcast system"],
+["Aircraft data system-broadcast", "Aircraft data system broadcast", "Data broadcast from aircraft"],
+["Airborne detection system-broadcast", "Airborne detection broadcast", "Detection system broadcast"],
+["Automatic direction system-broadcast", "Automatic direction broadcast", "Direction finding broadcast"],
+["Area dependent surveillance-broadcast", "Area dependent surveillance", "Area surveillance broadcast"],
+["Automated data surveillance-broadcast", "Automated data broadcast", "Data surveillance automated"]
+],
+"correct": "Automatic dependent surveillance-broadcast",
+"hint": "ADS-B is a surveillance technology where the aircraft determines its position via satellite and broadcasts it.",
+"insight": "'Automatic' because no interrogation is needed; 'dependent' because it depends on onboard navigation; 'broadcast' because it transmits to all.",
+"explanation": "ADS-B stands for Automatic Dependent Surveillance-Broadcast, a system where aircraft broadcast their identity, position, and other data."
+},
+{
+"variants": [
+"AGL is the abbreviation for:",
+"What does AGL stand for?",
+"The acronym AGL means:"
+],
+"options": [
+["Above ground level", "Above ground level", "Height measured from the ground directly below"],
+["Above aerodrome level", "Above aerodrome level", "Height from the aerodrome reference"],
+["Above mean sea level", "Above mean sea level", "Altitude from sea level"],
+["Aircraft ground level", "Aircraft ground level", "Aircraft height on the surface"],
+["Aerodrome ground lighting", "Ground lighting", "Aerodrome illumination"],
+["Automatic ground locator", "Ground locator", "Automated ground positioning"]
+],
+"correct": "Above ground level",
+"hint": "AGL is the height measured from the terrain immediately beneath the aircraft.",
+"insight": "AAL is measured from the aerodrome; AMSL is from the sea; AGL is from the surface directly below.",
+"explanation": "AGL stands for Above Ground Level, the vertical distance from the aircraft to the ground directly beneath it."
+},
+{
+"variants": [
+"AIP is the abbreviation for:",
+"What does AIP stand for in aviation documentation?",
+"The acronym AIP refers to:"
+],
+"options": [
+["Aeronautical information publication", "Aeronautical information publication", "Official publication of lasting aeronautical data"],
+["Airport information pamphlet", "Airport information pamphlet", "Airport guide booklet"],
+["Aircraft inspection publication", "Aircraft inspection publication", "Inspection manual"],
+["Aeronautical instruction publication", "Aeronautical instruction publication", "Instruction manual for aviation"],
+["Airspace information protocol", "Airspace information protocol", "Airspace usage rules"],
+["Approach information publication", "Approach information publication", "Approach procedure document"]
+],
+"correct": "Aeronautical information publication",
+"hint": "The AIP contains information of lasting character essential to air navigation, issued by a State.",
+"insight": "'Pamphlet' and 'Protocol' are the most common distractor words; the correct term is 'Publication'.",
+"explanation": "AIP stands for Aeronautical Information Publication, the official document containing essential aeronautical information."
+},
+{
+"variants": [
+"ATIS is the abbreviation for:",
+"What does ATIS stand for?",
+"The acronym ATIS means:"
+],
+"options": [
+["Automatic terminal information service", "Automatic terminal information service", "Continuous broadcast of routine aerodrome information"],
+["Air traffic information service", "Air traffic information service", "Traffic advisory broadcast"],
+["Aerodrome terminal information system", "Aerodrome terminal information system", "Terminal area data"],
+["Automatic traffic information system", "Automatic traffic information system", "Traffic data broadcast"],
+["Approach terminal information service", "Approach terminal information service", "Approach data service"],
+["Air transport information service", "Air transport information service", "Aviation transport data"]
+],
+"correct": "Automatic terminal information service",
+"hint": "ATIS provides a continuous recorded broadcast of current aerodrome information for arriving and departing aircraft.",
+"insight": "It is 'automatic' (continuous), 'terminal' (aerodrome area), and a 'service' providing routine information.",
+"explanation": "ATIS stands for Automatic Terminal Information Service, providing current routine aerodrome information via continuous broadcast."
+},
+{
+"variants": [
+"APAPI is the abbreviation for:",
+"What does APAPI stand for?",
+"The acronym APAPI means:"
+],
+"options": [
+["Abbreviated precision approach path indicator", "Abbreviated precision approach path indicator", "Simplified glidepath indicator with fewer lights than PAPI"],
+["Advanced precision approach path indicator", "Advanced precision approach path indicator", "Enhanced glide slope visual aid"],
+["Automatic precision approach path indicator", "Automatic precision approach path indicator", "Automated glidepath system"],
+["Airport precision approach path indicator", "Airport precision approach path indicator", "Airport‑based glide slope aid"],
+["Approach precision and path indicator", "Approach precision and path indicator", "Approach path visual reference"],
+["Aircraft precision approach path indicator", "Aircraft precision approach path indicator", "Aircraft‑mounted glidepath device"]
+],
+"correct": "Abbreviated precision approach path indicator",
+"hint": "APAPI has fewer lights than a full PAPI and is used where a full system is not needed or space is limited.",
+"insight": "'Abbreviated' indicates the reduced configuration compared to the full PAPI system.",
+"explanation": "APAPI stands for Abbreviated Precision Approach Path Indicator, a simplified visual glide slope indicator."
+},
+{
+"variants": [
+"ATZ is the abbreviation for:",
+"What does ATZ stand for?",
+"The acronym ATZ means:"
+],
+"options": [
+["Aerodrome traffic zone", "Aerodrome traffic zone", "Airspace around an aerodrome established to protect aerodrome traffic"],
+["Air traffic zone", "Air traffic zone", "General ATC zone"],
+["Approach traffic zone", "Approach traffic zone", "Traffic zone near approach paths"],
+["Aerodrome terminal zone", "Aerodrome terminal zone", "Terminal airspace at aerodrome"],
+["Area traffic zone", "Area traffic zone", "Traffic zone in a specific area"],
+["Airport transit zone", "Airport transit zone", "Transit area at airport"]
+],
+"correct": "Aerodrome traffic zone",
+"hint": "The ATZ is the airspace of defined dimensions established around an aerodrome to protect aerodrome traffic.",
+"insight": "It is specific to the aerodrome traffic, not a general air traffic zone or terminal area.",
+"explanation": "ATZ stands for Aerodrome Traffic Zone, a defined airspace around an aerodrome designed to protect aerodrome traffic."
+},
+{
+"variants": [
+"CAS is the abbreviation for:",
+"What does CAS stand for in aviation?",
+"The acronym CAS means:"
+],
+"options": [
+["Calibrated airspeed", "Calibrated airspeed", "Indicated airspeed corrected for installation and instrument errors"],
+["Computed airspeed", "Computed airspeed", "Calculated airspeed from flight computer"],
+["Corrected approach speed", "Corrected approach speed", "Approach speed with wind correction"],
+["Constant airspeed", "Constant airspeed", "Steady speed indication"],
+["Control airspeed setting", "Control airspeed setting", "Airspeed control setting"],
+["Cruise airspeed standard", "Cruise airspeed standard", "Standard cruise speed reference"]
+],
+"correct": "Calibrated airspeed",
+"hint": "CAS is the IAS corrected for known installation and instrument errors.",
+"insight": "'Calibrated' refers to the correction process applied to the raw indicated airspeed.",
+"explanation": "CAS stands for Calibrated Airspeed, which is indicated airspeed corrected for position and instrument errors."
+},
+{
+"variants": [
+"CFME is the abbreviation for:",
+"What does CFME stand for?",
+"The acronym CFME means:"
+],
+"options": [
+["Continuous friction measuring equipment", "Continuous friction measuring equipment", "Device used to measure runway surface friction"],
+["Calibrated friction measuring equipment", "Calibrated friction measuring equipment", "Calibrated runway friction sensor"],
+["Compact friction measuring equipment", "Compact friction measuring equipment", "Compact runway friction tester"],
+["Centreline friction measuring equipment", "Centreline friction measuring equipment", "Runway centreline friction tester"],
+["Continuous flow measuring equipment", "Continuous flow measuring equipment", "Fuel flow measurement device"],
+["Control function monitoring equipment", "Control function monitoring equipment", "Control system monitor"]
+],
+"correct": "Continuous friction measuring equipment",
+"hint": "CFME is used to measure the runway surface friction which is relevant to landing and aborted take‑off performance.",
+"insight": "'Continuous' indicates that the measurement is taken along the runway surface, not at a single point.",
+"explanation": "CFME stands for Continuous Friction Measuring Equipment, used to assess runway surface friction."
+},
+{
+"variants": [
+"CNS in aviation stands for:",
+"What does CNS mean?",
+"The acronym CNS refers to:"
+],
+"options": [
+["Communications, navigation and surveillance", "Comms, nav and surveillance", "The three pillars of air traffic infrastructure"],
+["Central navigation system", "Central nav system", "Centralised navigation equipment"],
+["Control notification system", "Control notification system", "System for control alerts"],
+["Cumulonimbus cloud specification", "CB cloud specification", "Thunderstorm cloud type"],
+["Coordinated navigation services", "Navigation services coordination", "Navigation service coordination"],
+["Communication navigation standard", "Communication navigation standard", "Standard for communication and navigation"]
+],
+"correct": "Communications, navigation and surveillance",
+"hint": "CNS describes the three core technical components that underpin air traffic management.",
+"insight": "Each word represents a distinct domain: radio comms, navigation aids, and radar/ADS surveillance.",
+"explanation": "CNS stands for Communications, Navigation and Surveillance, the three fundamental technical elements of ATM infrastructure."
+},
+{
+"variants": [
+"CDO is the abbreviation for:",
+"What does CDO stand for in modern aviation operations?",
+"The acronym CDO means:"
+],
+"options": [
+["Continuous descent operation", "Continuous descent operation", "A descent technique that minimises level segments for fuel efficiency"],
+["Controlled descent operation", "Controlled descent operation", "ATC‑monitored descent procedure"],
+["Constant descent operation", "Constant descent operation", "Descent at a fixed rate"],
+["Calibrated descent operation", "Calibrated descent operation", "Calibrated descent profile"],
+["Continuous departure operation", "Continuous departure operation", "Continuous climb to cruise"],
+["Computed descent optimisation", "Computed descent optimisation", "Optimised descent calculation"]
+],
+"correct": "Continuous descent operation",
+"hint": "CDO is an operational technique where the aircraft descends with minimum level segments, reducing fuel burn and noise.",
+"insight": "'Continuous' indicates the absence of level‑offs; it is a descent profile, not a climb (CCO) or departure.",
+"explanation": "CDO stands for Continuous Descent Operation, a technique enabling an uninterrupted descent to minimise fuel consumption and emissions."
+},
+{
+"variants": [
+"MEA is the abbreviation for:",
+"What does MEA stand for in air navigation?",
+"The acronym MEA means:"
+],
+"options": [
+["Minimum enroute altitude", "Minimum enroute altitude", "The minimum altitude for safe flight on an airway segment"],
+["Maximum enroute altitude", "Maximum enroute altitude", "The highest permitted altitude on a route"],
+["Minimum engine altitude", "Minimum engine altitude", "Minimum altitude for engine performance"],
+["Mean enroute altitude", "Mean enroute altitude", "Average altitude along a route"],
+["Minimum emergency altitude", "Minimum emergency altitude", "Safe altitude during emergency descent"],
+["Meteorological enroute altitude", "Meteorological enroute altitude", "Altitude based on MET conditions"]
+],
+"correct": "Minimum enroute altitude",
+"hint": "MEA ensures obstacle clearance and acceptable navigation signal coverage along an airway.",
+"insight": "'Minimum' means this is the lowest safe altitude, not maximum, mean, or emergency‑related.",
+"explanation": "MEA stands for Minimum Enroute Altitude, the lowest published altitude that ensures obstacle clearance and navigation reception."
+},
+{
+"variants": [
+"IAS is the abbreviation for:",
+"What does IAS stand for?",
+"The acronym IAS means:"
+],
+"options": [
+["Indicated airspeed", "Indicated airspeed", "The airspeed read directly from the flight deck instrument"],
+["Instrument approach system", "Instrument approach system", "Precision approach equipment"],
+["International aviation standard", "International aviation standard", "Global aviation standard"],
+["Initial approach segment", "Initial approach segment", "Beginning of an approach procedure"],
+["Indicated altitude setting", "Indicated altitude setting", "Altimeter pressure setting"],
+["Integrated avionics system", "Integrated avionics system", "Combined avionics suite"]
+],
+"correct": "Indicated airspeed",
+"hint": "IAS is the raw airspeed reading from the cockpit instrument, uncorrected for installation or environmental errors.",
+"insight": "'Indicated' refers to the instrument indication before any corrections are applied (CAS, TAS).",
+"explanation": "IAS stands for Indicated Airspeed, the speed shown on the aircraft's airspeed indicator."
+},
+{
+"variants": [
+"GPS is the abbreviation for:",
+"What does GPS stand for?",
+"The acronym GPS means:"
+],
+"options": [
+["Global positioning system", "Global positioning system", "Satellite‑based navigation system providing position and time data"],
+["Ground proximity system", "Ground proximity system", "Terrain warning system"],
+["Glide path system", "Glide path system", "ILS‑based approach guidance"],
+["General purpose surveillance", "General purpose surveillance", "Multi‑purpose surveillance network"],
+["Ground power supply", "Ground power supply", "External electrical power for aircraft"],
+["Global protection service", "Global protection service", "Worldwide safety monitoring"]
+],
+"correct": "Global positioning system",
+"hint": "GPS is a satellite constellation that provides precise position, velocity, and time to users worldwide.",
+"insight": "'Global' refers to the worldwide coverage; it is for positioning, not terrain warning or glide path.",
+"explanation": "GPS stands for Global Positioning System, a space‑based radio‑navigation system that provides worldwide positioning."
+},
+{
+"variants": [
+"GPWS is the abbreviation for:",
+"What does GPWS stand for?",
+"The acronym GPWS means:"
+],
+"options": [
+["Ground proximity warning system", "Ground proximity warning system", "System that warns pilots of potential terrain conflict"],
+["Glide path warning system", "Glide path warning system", "System that alerts on glide path deviation"],
+["General purpose weather system", "General purpose weather system", "Weather monitoring equipment"],
+["GPS positioning warning system", "GPS positioning warning system", "GPS‑based warning system"],
+["Ground personnel warning system", "Ground personnel warning system", "System to warn ground staff of aircraft movement"],
+["Guidance positioning and warning system", "Guidance positioning and warning system", "Navigation guidance and warning"]
+],
+"correct": "Ground proximity warning system",
+"hint": "GPWS alerts the pilot when the aircraft is in danger of flying into terrain.",
+"insight": "'Ground proximity' indicates it senses closeness to the ground; it uses radio altimeter data.",
+"explanation": "GPWS stands for Ground Proximity Warning System, providing alerts to pilots when the aircraft is dangerously close to terrain."
+},
+{
+"variants": [
+"IAP is the abbreviation for:",
+"What does IAP stand for?",
+"The acronym IAP means:"
+],
+"options": [
+["Instrument approach procedure", "Instrument approach procedure", "Published procedure using navigation aids for approach in IMC"],
+["Initial approach position", "Initial approach position", "Starting point of an approach"],
+["Instrument arrival procedure", "Instrument arrival procedure", "Standard arrival route for IFR flights"],
+["International approach procedure", "International approach procedure", "Global standard approach method"],
+["Intermediate approach point", "Intermediate approach point", "Mid‑point of the approach segment"],
+["Independent approach procedure", "Independent approach procedure", "Approach without controller guidance"]
+],
+"correct": "Instrument approach procedure",
+"hint": "IAP is a series of predetermined manoeuvres using flight instruments and navigation aids.",
+"insight": "'Instrument' distinguishes it from a visual approach; it is a complete procedure, not just a point.",
+"explanation": "IAP stands for Instrument Approach Procedure, a published procedure to guide an aircraft to land under instrument conditions."
+},
+{
+"variants": [
+"ELEV is the abbreviation for:",
+"What does ELEV stand for?",
+"The acronym ELEV means:"
+],
+"options": [
+["Elevation", "Elevation", "The vertical distance of a point above mean sea level"],
+["Elevator", "Elevator", "The pitch control surface of an aircraft"],
+["Electric voltage", "Electric voltage", "Electrical power measurement"],
+["Electronic level", "Electronic level", "Electronic altitude indicator"],
+["Emergency location equipment vehicle", "Emergency location equipment vehicle", "Emergency response vehicle"],
+["Equivalent level verification", "Equivalent level verification", "Compliance verification method"]
+],
+"correct": "Elevation",
+"hint": "In aviation, ELEV is used to denote the vertical distance of an aerodrome or point above MSL.",
+"insight": "'Elevation' is used for fixed points (aerodromes, obstacles), distinct from 'altitude' which is for aircraft in flight.",
+"explanation": "ELEV stands for Elevation, the height of a fixed point measured above mean sea level."
+},
+{
+"variants": [
+"ACN is the abbreviation for:",
+"What does ACN stand for?",
+"The acronym ACN means:"
+],
+"options": [
+["Aircraft classification number", "Aircraft classification number", "Number expressing the relative effect of an aircraft on a pavement"],
+["Aircraft control number", "Aircraft control number", "Aircraft registration or tracking code"],
+["Airspace classification number", "Airspace classification number", "Airspace category identifier"],
+["Aerodrome classification number", "Aerodrome classification number", "Aerodrome category code"],
+["Approach control number", "Approach control number", "APP facility identification"],
+["Altitude correction number", "Altitude correction number", "Correction factor for altitude"]
+],
+"correct": "Aircraft classification number",
+"hint": "ACN is used with PCN (Pavement Classification Number) to determine whether an aircraft can use a particular pavement.",
+"insight": "'Classification' indicates it categorises the aircraft's effect on pavements, not airspace or control.",
+"explanation": "ACN stands for Aircraft Classification Number, expressing the relative effect of an aircraft on a pavement structure."
+},
+{
+"variants": [
+"APRX is the abbreviation for:",
+"What does APRX stand for?",
+"The acronym APRX means:"
+],
+"options": [
+["Approximate or approximately", "Approximately", "Roughly, not exact"],
+["Approach", "Approach", "The phase of flight before landing"],
+["Approval", "Approval", "ATC clearance"],
+["Appendix", "Appendix", "Supplementary document attachment"],
+["Approach radar", "Approach radar", "Radar for approach guidance"],
+["Airport proximity", "Airport proximity", "Near the airport"]
+],
+"correct": "Approximate or approximately",
+"hint": "APRX is a shorthand notation used in aviation documents to indicate a value that is not exact.",
+"insight": "'Approximately' is the full word; 'Approach' has its own distinct abbreviation (APP).",
+"explanation": "APRX stands for Approximate or Approximately, used to indicate that a value is not exact."
+},
+{
+"variants": [
+"GS is the abbreviation for:",
+"What does GS stand for in aviation?",
+"The acronym GS means:"
+],
+"options": [
+["Ground speed", "Ground speed", "The actual speed of an aircraft over the ground"],
+["Glide slope", "Glide slope", "The vertical guidance component of ILS"],
+["Ground station", "Ground station", "ATC facility on the ground"],
+["General surveillance", "General surveillance", "Broad area surveillance"],
+["Gust suppression", "Gust suppression", "Wind gust control system"],
+["Grid speed", "Grid speed", "Speed measured against a grid coordinate system"]
+],
+"correct": "Ground speed",
+"hint": "GS is a navigation parameter showing how fast the aircraft is travelling relative to the Earth's surface.",
+"insight": "'Glide slope' is abbreviated as GP (Glide Path), not GS; GS is ground speed in knots.",
+"explanation": "GS stands for Ground Speed, the actual horizontal speed of an aircraft over the ground."
+},
+{
+"variants": [
+"ISA is the abbreviation for:",
+"What does ISA stand for?",
+"The acronym ISA means:"
+],
+"options": [
+["International standard atmosphere", "International standard atmosphere", "Standardised atmospheric model used for aircraft performance"],
+["Instrument approach system", "Instrument approach system", "Aircraft instrument landing guidance"],
+["International safety assessment", "International safety assessment", "Global aviation safety evaluation"],
+["Inertial sensor assembly", "Inertial sensor assembly", "Navigation sensor unit"],
+["Integrated surveillance application", "Integrated surveillance application", "Combined surveillance tool"],
+["Independent safety auditor", "Independent safety auditor", "External safety oversight body"]
+],
+"correct": "International standard atmosphere",
+"hint": "ISA provides a reference set of temperature, pressure, and density values for altitude.",
+"insight": "'International' indicates the globally agreed standard; it defines the baseline for aircraft performance calculations.",
+"explanation": "ISA stands for International Standard Atmosphere, a model defining standard atmospheric conditions used as a reference."
+},
+{
+"variants": [
+"ETD is the abbreviation for:",
+"What does ETD stand for?",
+"The acronym ETD means:"
+],
+"options": [
+["Estimated time of departure", "Estimated time of departure", "The predicted time an aircraft will become airborne"],
+["Estimated time of delay", "Estimated time of delay", "Predicted delay duration"],
+["Exact time of departure", "Exact time of departure", "Confirmed take‑off time"],
+["Engine thrust data", "Engine thrust data", "Engine performance parameters"],
+["Expected touchdown", "Expected touchdown", "Predicted landing contact time"],
+["Electronic taxi data", "Electronic taxi data", "Digital taxi clearance information"]
+],
+"correct": "Estimated time of departure",
+"hint": "ETD is the forecast time an aircraft will start take‑off, subject to change.",
+"insight": "'Estimated' means it is not an exact time; it may be updated. ETA is for arrival.",
+"explanation": "ETD stands for Estimated Time of Departure, the estimated time at which an aircraft will commence take‑off."
+},
+{
+"variants": [
+"ABAS is the abbreviation for:",
+"What does ABAS stand for?",
+"The acronym ABAS means:"
+],
+"options": [
+["Airborne based augmentation system", "Airborne based augmentation system", "System that augments GNSS using aircraft‑based equipment"],
+["Advanced braking assistance system", "Advanced braking assistance system", "Aircraft braking aid"],
+["Automatic braking and steering", "Automatic braking and steering", "Ground movement automation"],
+["Airspace based augmentation service", "Airspace based augmentation service", "Airspace‑based GNSS correction"],
+["Automatic broadcast advisory service", "Automatic broadcast advisory service", "Automated information broadcast"],
+["Airborne based alerting system", "Airborne based alerting system", "Aircraft‑based warning network"]
+],
+"correct": "Airborne based augmentation system",
+"hint": "ABAS enhances GNSS performance using equipment carried on the aircraft itself.",
+"insight": "'Airborne based' distinguishes it from ground‑based (GBAS) or satellite‑based (SBAS) augmentation systems.",
+"explanation": "ABAS stands for Airborne Based Augmentation System, which uses aircraft‑based systems to augment GNSS signals."
+},
+{
+"variants": [
+"GBAS is the abbreviation for:",
+"What does GBAS stand for?",
+"The acronym GBAS means:"
+],
+"options": [
+["Ground-based augmentation system", "Ground-based augmentation system", "System that augments GNSS using ground‑based reference stations"],
+["Global broadcast augmentation system", "Global broadcast augmentation system", "Worldwide GNSS augmentation broadcast"],
+["Geostationary based augmentation system", "Geostationary based augmentation system", "Satellite‑based GNSS augmentation"],
+["Ground barrier alerting system", "Ground barrier alerting system", "Terrain proximity warning network"],
+["Graphical bearing analysis system", "Graphical bearing analysis system", "Bearing analysis display tool"],
+["Generic built‑in alerting system", "Generic built‑in alerting system", "Standard aircraft alerting platform"]
+],
+"correct": "Ground-based augmentation system",
+"hint": "GBAS uses ground reference stations to measure GNSS errors and broadcasts corrections to aircraft.",
+"insight": "'Ground‑based' distinguishes it from ABAS (airborne) and SBAS (satellite); it provides precision approach guidance.",
+"explanation": "GBAS stands for Ground-Based Augmentation System, providing GNSS corrections from ground stations for precision approaches."
+},
+{
+"variants": [
+"ABN is the abbreviation for:",
+"What does ABN stand for?",
+"The acronym ABN means:"
+],
+"options": [
+["Aerodrome beacon", "Aerodrome beacon", "Visual beacon at an aerodrome"],
+["Approach beacon", "Approach beacon", "Beacon for final approach"],
+["Airborne navigation beacon", "Airborne navigation beacon", "Beacon for airborne navigation"],
+["Automatic beacon network", "Automatic beacon network", "Automated beacon system"],
+["Area boundary navigation", "Area boundary navigation", "Boundary navigation aid"],
+["Aerodrome boundary note", "Aerodrome boundary note", "Note about aerodrome boundary"]
+],
+"correct": "Aerodrome beacon",
+"hint": "ABN refers to a visual beacon used to identify an aerodrome from the air.",
+"insight": "It is not a navigation beacon or a boundary marker; it's a rotating or flashing light at the aerodrome.",
+"explanation": "ABN stands for Aerodrome Beacon, a visual beacon that indicates the location of an aerodrome."
+},
+{
+"variants": [
+"ACFT is the abbreviation for:",
+"What does ACFT stand for?",
+"The acronym ACFT means:"
+],
+"options": [
+["Aircraft", "Aircraft", "Any machine capable of atmospheric flight"],
+["Air traffic control flight tracking", "ATC flight tracking", "Flight tracking system"],
+["Approach control facility terminal", "Approach control facility terminal", "Terminal approach facility"],
+["Aircraft crew and flight technician", "Crew and flight technician", "Aircrew and engineer"],
+["Automatic collision and flight tracker", "Automatic collision and flight tracker", "Safety tracking system"],
+["Airborne communication and flight transceiver", "Airborne communication and flight transceiver", "Radio transceiver"]
+],
+"correct": "Aircraft",
+"hint": "ACFT is the standard abbreviation for aircraft in aviation documentation.",
+"insight": "It is a simple truncation of the word 'aircraft', commonly used throughout ICAO documents.",
+"explanation": "ACFT stands for Aircraft, a device used or intended to be used for flight in the air."
+},
+{
+"variants": [
+"AD is the abbreviation for:",
+"What does AD stand for in aviation?",
+"The acronym AD means:"
+],
+"options": [
+["Aerodrome", "Aerodrome", "A defined area on land or water used for aircraft operations"],
+["Air defense", "Air defense", "Military air defense"],
+["Advisory direction", "Advisory direction", "Directional advisory"],
+["Automatic detection", "Automatic detection", "Detection system"],
+["Altitude deviation", "Altitude deviation", "Deviation from assigned altitude"],
+["Approach director", "Approach director", "Director for approach"]
+],
+"correct": "Aerodrome",
+"hint": "AD is used to denote an aerodrome, including all buildings, installations, and equipment.",
+"insight": "It's not air defense or approach; it's the entire facility for aircraft operations.",
+"explanation": "AD stands for Aerodrome, a defined area used for the arrival, departure, and surface movement of aircraft."
+},
+{
+"variants": [
+"ADA is the abbreviation for:",
+"What does ADA stand for?",
+"The acronym ADA means:"
+],
+"options": [
+["Advisory area", "Advisory area", "Airspace where air traffic advisory service is provided"],
+["Aerodrome approach area", "Aerodrome approach area", "Approach area around an aerodrome"],
+["Automatic departure advisory", "Automatic departure advisory", "Automated departure information"],
+["Altitude deviation alert", "Altitude deviation alert", "Warning of altitude deviation"],
+["Approach decision altitude", "Approach decision altitude", "Decision altitude for approaches"],
+["Airspace designated area", "Airspace designated area", "Designated airspace"]
+],
+"correct": "Advisory area",
+"hint": "ADA is an area where advisory service is available to IFR flights until replaced by ATC.",
+"insight": "It's not a specific aerodrome area or decision altitude; it's about the air traffic advisory service.",
+"explanation": "ADA stands for Advisory Area, a defined area where air traffic advisory service is available."
+},
+{
+"variants": [
+"ADC is the abbreviation for:",
+"What does ADC stand for?",
+"The acronym ADC means:"
+],
+"options": [
+["Aerodrome chart", "Aerodrome chart", "Chart providing aerodrome layout and data"],
+["Approach distance calculator", "Approach distance calculator", "Distance measuring tool"],
+["Automatic data capture", "Automatic data capture", "Data collection system"],
+["Airspace direction chart", "Airspace direction chart", "Airspace orientation chart"],
+["Aircraft departure control", "Aircraft departure control", "Departure control procedure"],
+["Aerodrome control centre", "Aerodrome control centre", "Control centre at aerodrome"]
+],
+"correct": "Aerodrome chart",
+"hint": "ADC is a map that shows the aerodrome layout, taxiways, runways, and other relevant information.",
+"insight": "The 'C' stands for 'chart', not 'control' or 'calculator'; it's a published chart in the AIP.",
+"explanation": "ADC stands for Aerodrome Chart, a chart showing the aerodrome layout and essential data for pilots."
+},
+{
+"variants": [
+"ADR is the abbreviation for:",
+"What does ADR stand for?",
+"The acronym ADR means:"
+],
+"options": [
+["Advisory route", "Advisory route", "A route where air traffic advisory service is available"],
+["Automatic departure release", "Automatic departure release", "System for releasing departures"],
+["Aerodrome reference point", "Aerodrome reference point", "Geographical location of aerodrome"],
+["Area departure route", "Area departure route", "Standard departure route"],
+["Approach delay report", "Approach delay report", "Delay notification for approach"],
+["Altitude deviation report", "Altitude deviation report", "Report of altitude discrepancy"]
+],
+"correct": "Advisory route",
+"hint": "ADR is a designated route along which air traffic advisory service is provided.",
+"insight": "'Advisory' indicates the service level; it's a route, not a report or reference point.",
+"explanation": "ADR stands for Advisory Route, a route where air traffic advisory service is available."
+},
+{
+"variants": [
+"AIS is the abbreviation for:",
+"What does AIS stand for?",
+"The acronym AIS means:"
+],
+"options": [
+["Aeronautical information services", "Aeronautical information services", "Services providing aeronautical data and publications"],
+["Airborne information system", "Airborne information system", "Aircraft information display"],
+["Approach information system", "Approach information system", "System for approach data"],
+["Automatic identification system", "Automatic identification system", "Maritime identification system"],
+["Aircraft inspection service", "Aircraft inspection service", "Aircraft maintenance inspection"],
+["Airspace information system", "Airspace information system", "System for airspace data"]
+],
+"correct": "Aeronautical information services",
+"hint": "AIS is responsible for collecting and distributing aeronautical information through the AIP, NOTAMs, and other products.",
+"insight": "'Aeronautical' distinguishes it from aircraft-specific or maritime systems; it's a service, not an airborne system.",
+"explanation": "AIS stands for Aeronautical Information Services, responsible for the provision of aeronautical data and publications."
+},
+{
+"variants": [
+"ALS is the abbreviation for:",
+"What does ALS stand for?",
+"The acronym ALS means:"
+],
+"options": [
+["Approach lighting system", "Approach lighting system", "System of lights before the runway to guide landing aircraft"],
+["Automatic landing system", "Automatic landing system", "Auto-land capability"],
+["Airborne lighting system", "Airborne lighting system", "Aircraft external lighting"],
+["Altitude level sensor", "Altitude level sensor", "Sensor for altitude measurement"],
+["Area lighting system", "Area lighting system", "General airfield lighting"],
+["Approach and landing strip", "Approach and landing strip", "Physical landing strip"]
+],
+"correct": "Approach lighting system",
+"hint": "ALS extends from the runway threshold outward and provides visual guidance for landing.",
+"insight": "'Approach' indicates its placement and purpose; it consists of multiple light bars, not just a strip.",
+"explanation": "ALS stands for Approach Lighting System, a series of lights arranged to provide visual guidance during an approach."
+},
+{
+"variants": [
+"AMSL is the abbreviation for:",
+"What does AMSL stand for?",
+"The acronym AMSL means:"
+],
+"options": [
+["Above mean sea level", "Above mean sea level", "Vertical distance measured from mean sea level"],
+["Aerodrome minimum sector level", "Aerodrome minimum sector level", "Minimum altitude for a sector"],
+["Approach minimum safe limit", "Approach minimum safe limit", "Safe approach altitude"],
+["Aircraft maximum service level", "Aircraft maximum service level", "Service ceiling of an aircraft"],
+["Actual mean surface level", "Actual mean surface level", "Average ground elevation"],
+["Automatic meteorological sensor link", "Automatic meteorological sensor link", "Weather sensor network"]
+],
+"correct": "Above mean sea level",
+"hint": "AMSL is the altitude reference that uses mean sea level as the baseline.",
+"insight": "It is commonly used for aerodrome elevations and obstacle heights; not a sector or approach limit.",
+"explanation": "AMSL stands for Above Mean Sea Level, the height of an object or point relative to the average sea level."
+},
+{
+"variants": [
+"ANC is the abbreviation for:",
+"What does ANC stand for?",
+"The acronym ANC means:"
+],
+"options": [
+["Aeronautical chart", "Aeronautical chart", "A chart used for air navigation"],
+["Approach navigation chart", "Approach navigation chart", "Chart for approach procedures"],
+["Airspace navigation centre", "Airspace navigation centre", "Navigation facility"],
+["Automatic navigation controller", "Automatic navigation controller", "Flight path controller"],
+["Aircraft noise certificate", "Aircraft noise certificate", "Noise level documentation"],
+["Airborne navigation computer", "Airborne navigation computer", "Onboard navigation computer"]
+],
+"correct": "Aeronautical chart",
+"hint": "ANC is a general term for any chart used in aeronautical navigation, such as enroute or area charts.",
+"insight": "'Aeronautical' specifies its aviation purpose; it could be an enroute or a specific type of chart.",
+"explanation": "ANC stands for Aeronautical Chart, a representation of a portion of the Earth, its terrain, and aeronautical data."
+},
+{
+"variants": [
+"AP is the abbreviation for:",
+"What does AP stand for?",
+"The acronym AP means:"
+],
+"options": [
+["Airport", "Airport", "An aerodrome with extensive facilities for commercial flights"],
+["Approach", "Approach", "Phase of flight before landing"],
+["Autopilot", "Autopilot", "Automatic flight control system"],
+["Aerodrome pattern", "Aerodrome pattern", "Traffic pattern"],
+["Aircraft position", "Aircraft position", "Position of an aircraft"],
+["Alerting phase", "Alerting phase", "Emergency alert phase"]
+],
+"correct": "Airport",
+"hint": "AP is a common abbreviation for airport, often used on charts and in documents.",
+"insight": "While 'Approach' is abbreviated APP, and 'Autopilot' is often A/P, the context in the list is 'Airport'.",
+"explanation": "AP stands for Airport, a location where aircraft take off and land, typically equipped with passenger facilities."
+},
+{
+"variants": [
+"APP is the abbreviation for:",
+"What does APP stand for?",
+"The acronym APP means:"
+],
+"options": [
+["Approach control office or approach", "Approach control office or approach", "The unit responsible for controlling approaching aircraft or the phase of flight itself"],
+["Aircraft position plot", "Aircraft position plot", "Plot of aircraft position"],
+["Automatic pilot panel", "Automatic pilot panel", "Panel for autopilot"],
+["Airport protection plan", "Airport protection plan", "Safety plan for airport"],
+["Approach path projector", "Approach path projector", "Visual approach aid"],
+["Air traffic procedural publication", "Air traffic procedural publication", "Document of procedures"]
+],
+"correct": "Approach control office or approach",
+"hint": "APP can refer either to the control facility or to the approach phase of flight.",
+"insight": "In the context of ATC, APP usually means the approach control unit, not just any approach.",
+"explanation": "APP stands for Approach control office or approach, the unit providing ATC service to arriving and departing aircraft."
+},
+{
+"variants": [
+"ARR is the abbreviation for:",
+"What does ARR stand for?",
+"The acronym ARR means:"
+],
+"options": [
+["Arrival", "Arrival", "The act of arriving at a destination"],
+["Airport runway report", "Airport runway report", "Runway condition report"],
+["Arrival route requirement", "Arrival route requirement", "Required arrival route"],
+["Aircraft radar return", "Aircraft radar return", "Radar contact of aircraft"],
+["Approach and runway reference", "Approach and runway reference", "Reference for approach and runway"],
+["Aerodrome rescue resources", "Aerodrome rescue resources", "Rescue equipment at aerodrome"]
+],
+"correct": "Arrival",
+"hint": "ARR is used in flight plans, ATIS, and ATC communications to denote arrival traffic.",
+"insight": "It is not a report or a requirement; it's simply 'Arrival' as a phase of flight.",
+"explanation": "ARR stands for Arrival, the phase of flight when an aircraft is approaching its destination."
+},
+{
+"variants": [
+"ATFM is the abbreviation for:",
+"What does ATFM stand for?",
+"The acronym ATFM means:"
+],
+"options": [
+["Air traffic flow management", "Air traffic flow management", "Service that optimises traffic flow to match capacity"],
+["Airport traffic frequency management", "Airport traffic frequency management", "Frequency assignment"],
+["Automatic terminal flight management", "Automatic terminal flight management", "Automated terminal system"],
+["Aircraft tracking and flow monitoring", "Aircraft tracking and flow monitoring", "Surveillance and flow system"],
+["Airspace traffic flow model", "Airspace traffic flow model", "Flow simulation tool"],
+["Approach traffic flow method", "Approach traffic flow method", "Approach sequencing method"]
+],
+"correct": "Air traffic flow management",
+"hint": "ATFM balances demand and capacity to prevent excessive congestion.",
+"insight": "'Flow management' indicates its role in smoothing traffic; it is not limited to airports or terminals.",
+"explanation": "ATFM stands for Air Traffic Flow Management, a service that ensures traffic volume is compatible with declared ATC capacities."
+},
+{
+"variants": [
+"ATM is the abbreviation for:",
+"What does ATM stand for?",
+"The acronym ATM means:"
+],
+"options": [
+["Air traffic management", "Air traffic management", "The overall management of air traffic operations"],
+["Airport terminal module", "Airport terminal module", "Terminal building module"],
+["Altitude tracking monitor", "Altitude tracking monitor", "Altitude monitoring tool"],
+["Automatic traffic monitoring", "Automatic traffic monitoring", "Surveillance automation"],
+["Airborne traffic monitoring", "Airborne traffic monitoring", "Traffic monitoring from aircraft"],
+["Area traffic map", "Area traffic map", "Traffic situation display"]
+],
+"correct": "Air traffic management",
+"hint": "ATM encompasses all functions and services that ensure safe and efficient aircraft operations.",
+"insight": "ATM is broader than ATC; it includes airspace management and flow management.",
+"explanation": "ATM stands for Air Traffic Management, the dynamic, integrated management of air traffic and airspace."
+},
+{
+"variants": [
+"ATS is the abbreviation for:",
+"What does ATS stand for?",
+"The acronym ATS means:"
+],
+"options": [
+["Air traffic services", "Air traffic services", "Services including ATC, flight information, and alerting"],
+["Automatic terminal service", "Automatic terminal service", "Automated terminal information"],
+["Airspace tracking system", "Airspace tracking system", "Surveillance system"],
+["Approach and tower services", "Approach and tower services", "Terminal control services"],
+["Aircraft telemetry system", "Aircraft telemetry system", "Data transmission system"],
+["Airborne track surveillance", "Airborne track surveillance", "Aircraft tracking system"]
+],
+"correct": "Air traffic services",
+"hint": "ATS includes air traffic control, flight information, and alerting services.",
+"insight": "'Services' is plural because it covers multiple distinct services, not just control.",
+"explanation": "ATS stands for Air Traffic Services, a generic term for ATC, FIS, alerting, and advisory services."
+},
+{
+"variants": [
+"CAT is the abbreviation for:",
+"What does CAT stand for in aviation meteorology?",
+"The acronym CAT means:"
+],
+"options": [
+["Clear air turbulence", "Clear air turbulence", "Turbulence occurring in cloud‑free air"],
+["Category", "Category", "Classification category"],
+["Continuous air transport", "Continuous air transport", "Air transport mode"],
+["Constant altitude track", "Constant altitude track", "Level flight path"],
+["Collision avoidance technique", "Collision avoidance technique", "Technique to avoid collisions"],
+["Weather category", "Weather category", "Weather phenomenon class"]
+],
+"correct": "Clear air turbulence",
+"hint": "CAT is invisible and often encountered at high altitudes near jet streams.",
+"insight": "In aviation weather, CAT is specifically clear air turbulence; 'Category' uses a different context (e.g., CAT I/II/III).",
+"explanation": "CAT stands for Clear Air Turbulence, unexpected turbulence that occurs in the absence of visual clouds."
+},
+{
+"variants": [
+"CWY is the abbreviation for:",
+"What does CWY stand for?",
+"The acronym CWY means:"
+],
+"options": [
+["Clearway", "Clearway", "An area beyond the runway over which an aircraft may climb"],
+["Crossway", "Crossway", "Intersecting path"],
+["Continuous waypoint", "Continuous waypoint", "Navigation waypoint"],
+["Caution waypoint", "Caution waypoint", "Warning point"],
+["Clear weather yard", "Clear weather yard", "Meteorological station"],
+["Control way", "Control way", "ATC control area"]
+],
+"correct": "Clearway",
+"hint": "CWY is a defined rectangular area clear of obstacles, intended to increase the allowable take‑off distance.",
+"insight": "It is part of runway declared distances (TODA includes CWY), not a navigation waypoint.",
+"explanation": "CWY stands for Clearway, a defined area beyond the end of the runway used for the initial climb during take‑off."
+},
+{
+"variants": [
+"CCO is the abbreviation for:",
+"What does CCO stand for?",
+"The acronym CCO means:"
+],
+"options": [
+["Continuous climb operation", "Continuous climb operation", "Climb with minimum level segments for fuel efficiency"],
+["Continuous cruise operation", "Continuous cruise operation", "Cruise with no altitude changes"],
+["Controlled climb only", "Controlled climb only", "Climb under strict ATC control"],
+["Constant course operation", "Constant course operation", "Flight along a fixed track"],
+["Clean configuration operation", "Clean configuration operation", "Operation with flaps and gear up"],
+["Circular climb operation", "Circular climb operation", "Climb in a circular path"]
+],
+"correct": "Continuous climb operation",
+"hint": "CCO minimises fuel burn and noise by avoiding step climbs.",
+"insight": "The opposite of CDO; 'continuous climb' indicates an uninterrupted ascent.",
+"explanation": "CCO stands for Continuous Climb Operation, a technique allowing an uninterrupted climb to cruising altitude."
+},
+{
+"variants": [
+"DEP is the abbreviation for:",
+"What does DEP stand for?",
+"The acronym DEP means:"
+],
+"options": [
+["Depart or departure", "Depart or departure", "The act of departing from an aerodrome"],
+["Deep altitude", "Deep altitude", "Very low altitude"],
+["Defense emergency procedure", "Defense emergency procedure", "Military emergency procedure"],
+["Departure entry point", "Departure entry point", "Point of departure entry"],
+["Delay extension procedure", "Delay extension procedure", "Procedure for delay management"],
+["Distance end point", "Distance end point", "End of a measured distance"]
+],
+"correct": "Depart or departure",
+"hint": "DEP is a standard abbreviation for departure, used in flight plans and ATC communication.",
+"insight": "It can be a noun (the departure) or a verb (depart).",
+"explanation": "DEP stands for Depart or Departure, the phase of flight where an aircraft begins to leave an aerodrome."
+},
+{
+"variants": [
+"DME is the abbreviation for:",
+"What does DME stand for?",
+"The acronym DME means:"
+],
+"options": [
+["Distance measuring equipment", "Distance measuring equipment", "Navigation equipment that measures slant range to a ground station"],
+["Departure message equipment", "Departure message equipment", "Equipment for departure communications"],
+["Distance monitoring equipment", "Distance monitoring equipment", "Traffic monitoring tool"],
+["Direction and measurement equipment", "Direction and measurement equipment", "Navigation and measurement device"],
+["Digital meteorological equipment", "Digital meteorological equipment", "Weather measurement tool"],
+["Distance and mapping equipment", "Distance and mapping equipment", "Charting aid"]
+],
+"correct": "Distance measuring equipment",
+"hint": "DME provides the pilot with the distance to a VOR/DME or ILS/DME facility.",
+"insight": "'Measuring' is the key word; it measures slant range, not horizontal distance.",
+"explanation": "DME stands for Distance Measuring Equipment, a radio navigation aid that measures the slant range between the aircraft and a ground station."
+},
+{
+"variants": [
+"ETA is the abbreviation for:",
+"What does ETA stand for?",
+"The acronym ETA means:"
+],
+"options": [
+["Estimated time of arrival", "Estimated time of arrival", "The predicted time an aircraft will arrive at a point"],
+["Exact time of arrival", "Exact time of arrival", "Actual arrival time"],
+["Extended traffic area", "Extended traffic area", "Enlarged traffic pattern"],
+["Electronics test assembly", "Electronics test assembly", "Avionics test equipment"],
+["Estimated taxi arrival", "Estimated taxi arrival", "Taxi time estimate"],
+["Emergency traffic area", "Emergency traffic area", "Area for emergency traffic"]
+],
+"correct": "Estimated time of arrival",
+"hint": "ETA is a forecast arrival time, subject to change due to weather or other factors.",
+"insight": "'Estimated' indicates it is not a precise time; 'arrival' is opposite of departure (ETD).",
+"explanation": "ETA stands for Estimated Time of Arrival, the time at which an aircraft is expected to arrive at a specified point."
+},
+{
+"variants": [
+"FIC is the abbreviation for:",
+"What does FIC stand for?",
+"The acronym FIC means:"
+],
+"options": [
+["Flight information centre", "Flight information centre", "Facility providing flight information and alerting services in an FIR"],
+["Frequency information channel", "Frequency information channel", "Radio channel for information"],
+["Final interception course", "Final interception course", "Final approach path for military aircraft"],
+["Flow information control", "Flow information control", "Traffic flow monitoring"],
+["Fighter information control", "Fighter information control", "Military control unit"],
+["Flight inspection centre", "Flight inspection centre", "Centre for navaid inspection"]
+],
+"correct": "Flight information centre",
+"hint": "FIC is the ATS unit responsible for providing FIS and alerting services within an FIR.",
+"insight": "'Centre' indicates it is a facility; not a channel or interception course.",
+"explanation": "FIC stands for Flight Information Centre, an ATS unit that provides flight information and alerting services."
+},
+{
+"variants": [
+"FIR is the abbreviation for:",
+"What does FIR stand for?",
+"The acronym FIR means:"
+],
+"options": [
+["Flight information region", "Flight information region", "Airspace of defined dimensions where flight information and alerting services are provided"],
+["Flight inspection route", "Flight inspection route", "Route for navaid calibration"],
+["Final instrument runway", "Final instrument runway", "Runway with instrument approach"],
+["Frequency information receiver", "Frequency information receiver", "Radio receiver for information broadcasts"],
+["Flight identification region", "Flight identification region", "Airspace requiring aircraft identification"],
+["First instrument reading", "First instrument reading", "Initial instrument indication"]
+],
+"correct": "Flight information region",
+"hint": "An FIR is a large area of airspace within which FIS and alerting service are provided.",
+"insight": "'Region' indicates its spatial extent; it is not a route or receiver.",
+"explanation": "FIR stands for Flight Information Region, a defined space where flight information and alerting services are available."
+},
+{
+"variants": [
+"FL is the abbreviation for:",
+"What does FL stand for?",
+"The acronym FL means:"
+],
+"options": [
+["Flight level", "Flight level", "A constant atmospheric pressure surface expressed in hundreds of feet"],
+["Fuel load", "Fuel load", "Quantity of fuel on board"],
+["Final level", "Final level", "Last assigned altitude"],
+["Flight limit", "Flight limit", "Maximum altitude for a flight"],
+["Forward limit", "Forward limit", "CG limit"],
+["Frequency limit", "Frequency limit", "Radio frequency boundary"]
+],
+"correct": "Flight level",
+"hint": "FL is a standard pressure altitude referenced to 1013.2 hPa.",
+"insight": "It is expressed as three digits representing hundreds of feet; e.g., FL 100 = 10,000 ft.",
+"explanation": "FL stands for Flight Level, a surface of constant atmospheric pressure used for altitude reference."
+},
+{
+"variants": [
+"FMS is the abbreviation for:",
+"What does FMS stand for?",
+"The acronym FMS means:"
+],
+"options": [
+["Flight management system", "Flight management system", "Aircraft computer system that automates navigation and performance optimization"],
+["Fuel monitoring system", "Fuel monitoring system", "System that tracks fuel quantity"],
+["Flight mode selector", "Flight mode selector", "Selector for autopilot modes"],
+["Frequency management system", "Frequency management system", "Radio frequency control system"],
+["Flap management system", "Flap management system", "System controlling flap extension"],
+["Flight medical service", "Flight medical service", "Medical transport service"]
+],
+"correct": "Flight management system",
+"hint": "FMS integrates navigation, performance, and flight planning functions in modern aircraft.",
+"insight": "'Management system' implies comprehensive automation, not just fuel or frequency monitoring.",
+"explanation": "FMS stands for Flight Management System, an integrated system that assists pilots in navigation and performance."
+},
+{
+"variants": [
+"F&R is the abbreviation for:",
+"What does F&R stand for?",
+"The acronym F&R means:"
+],
+"options": [
+["Fire and rescue", "Fire and rescue", "Service responsible for aircraft firefighting and rescue operations"],
+["Flight and route", "Flight and route", "Flight path and routing"],
+["Fuel and refuelling", "Fuel and refuelling", "Fuel supply and refuelling services"],
+["Frequency and range", "Frequency and range", "Radio frequency and range"],
+["Flight allowance and regulation", "Flight allowance and regulation", "Operational allowances"],
+["Finding and recovery", "Finding and recovery", "Search and recovery operations"]
+],
+"correct": "Fire and rescue",
+"hint": "F&R services are essential at aerodromes for aircraft emergencies.",
+"insight": "It is often abbreviated as F&RS; 'rescue' not 'refuelling' is the second component.",
+"explanation": "F&R stands for Fire and Rescue, the aerodrome service that provides firefighting and rescue in aircraft emergencies."
+},
+{
+"variants": [
+"GP is the abbreviation for:",
+"What does GP stand for?",
+"The acronym GP means:"
+],
+"options": [
+["Glide path", "Glide path", "The vertical descent profile of an ILS approach"],
+["Ground position", "Ground position", "Position over the ground"],
+["General purpose", "General purpose", "Multi‑purpose equipment"],
+["Ground pressure", "Ground pressure", "Atmospheric pressure at the surface"],
+["Geographic point", "Geographic point", "Coordinates on the Earth's surface"],
+["Gust probe", "Gust probe", "Wind turbulence sensor"]
+],
+"correct": "Glide path",
+"hint": "GP is the UHF component of ILS that provides vertical guidance during an approach.",
+"insight": "'Glide path' is the standard term; it is not to be confused with GPS or ground position.",
+"explanation": "GP stands for Glide Path, the vertical guidance system of an ILS that directs the aircraft's descent."
+},
+{
+"variants": [
+"LDA is the abbreviation for:",
+"What does LDA stand for?",
+"The acronym LDA means:"
+],
+"options": [
+["Landing distance available", "Landing distance available", "The length of runway declared available and suitable for landing"],
+["Localizer distance aid", "Localizer distance aid", "Distance information from localizer"],
+["Level deviation alert", "Level deviation alert", "Watch for altitude deviation"],
+["Landing decision altitude", "Landing decision altitude", "Decision altitude for landing"],
+["Lateral deviation angle", "Lateral deviation angle", "Angular deviation from a course"],
+["Landing distance assessment", "Landing distance assessment", "Assessment of landing performance"]
+],
+"correct": "Landing distance available",
+"hint": "LDA is part of the runway declared distances, often affected by a displaced threshold.",
+"insight": "'Landing distance available' is the usable runway for landing; not a decision altitude or deviation measurement.",
+"explanation": "LDA stands for Landing Distance Available, the length of runway declared suitable for the ground run of a landing aircraft."
+},
+{
+"variants": [
+"LOC is the abbreviation for:",
+"What does LOC stand for?",
+"The acronym LOC means:"
+],
+"options": [
+["Localizer", "Localizer", "Component of ILS providing lateral guidance"],
+["Location", "Location", "Geographical position"],
+["Local operation control", "Local operation control", "ATC local control"],
+["Line of communication", "Line of communication", "Communication link"],
+["Low oil control", "Low oil control", "Oil system warning"],
+["Landing obstacle clearance", "Landing obstacle clearance", "Obstacle clearance for landing"]
+],
+"correct": "Localizer",
+"hint": "LOC transmits on VHF and guides the aircraft laterally to the runway centreline.",
+"insight": "'Localizer' is the specific navaid; 'location' might be used informally, but in navigation, LOC is the ILS lateral guidance.",
+"explanation": "LOC stands for Localizer, the primary lateral‑guidance component of an ILS."
+},
+{
+"variants": [
+"MSA is the abbreviation for:",
+"What does MSA stand for?",
+"The acronym MSA means:"
+],
+"options": [
+["Minimum sector altitude", "Minimum sector altitude", "The minimum altitude for a sector around a navaid that ensures obstacle clearance"],
+["Minimum safe altitude", "Minimum safe altitude", "General lowest safe altitude"],
+["Maximum structural altitude", "Maximum structural altitude", "Aircraft structure limit"],
+["Mid‑sector altitude", "Mid‑sector altitude", "Altitude in the middle of a sector"],
+["Mean sea altitude", "Mean sea altitude", "Altitude above mean sea level"],
+["Meteorological service area", "Meteorological service area", "Area for meteorological services"]
+],
+"correct": "Minimum sector altitude",
+"hint": "MSA provides 1,000 ft obstacle clearance within a specified radius and sector around a navigation aid.",
+"insight": "'Sector' indicates it applies to specified sectors, not just a general safe altitude.",
+"explanation": "MSA stands for Minimum Sector Altitude, the lowest altitude that ensures terrain and obstacle clearance within a sector."
+},
+{
+"variants": [
+"MSAW is the abbreviation for:",
+"What does MSAW stand for?",
+"The acronym MSAW means:"
+],
+"options": [
+["Minimum safe altitude warning", "Minimum safe altitude warning", "A ground‑based safety net that alerts ATC if an aircraft descends below minimum safe altitudes"],
+["Minimum separation aircraft warning", "Minimum separation aircraft warning", "Separation alert"],
+["Maximum speed altitude warning", "Maximum speed altitude warning", "Speed and altitude advisory"],
+["Mission support aircraft warning", "Mission support aircraft warning", "Support aircraft advisory"],
+["Mountainous sector altitude warning", "Mountainous sector altitude warning", "Alert for mountainous terrain"],
+["Monitoring system altitude warning", "Monitoring system altitude warning", "Altitude monitoring alert"]
+],
+"correct": "Minimum safe altitude warning",
+"hint": "MSAW is a ground‑based safety net, not an aircraft system.",
+"insight": "'Minimum safe altitude' warns when an aircraft is too low; similar to GPWS but ground‑based.",
+"explanation": "MSAW stands for Minimum Safe Altitude Warning, a system that alerts ATC when an aircraft is dangerously low."
+},
+{
+"variants": [
+"MSL is the abbreviation for:",
+"What does MSL stand for?",
+"The acronym MSL means:"
+],
+"options": [
+["Mean sea level", "Mean sea level", "The average height of the sea surface used as a reference for altitudes"],
+["Minimum safety limit", "Minimum safety limit", "Lowest safety altitude"],
+["Microwave scanning locator", "Microwave scanning locator", "Scanning radar device"],
+["Magnetic sensing line", "Magnetic sensing line", "Magnetic field detection"],
+["Mission support log", "Mission support log", "Operational logbook"],
+["Maintenance service level", "Maintenance service level", "Level of maintenance support"]
+],
+"correct": "Mean sea level",
+"hint": "MSL is the standard vertical datum for measuring elevations and altitudes.",
+"insight": "'Mean' indicates it is an average tidal level; it is the reference for QNH and height measurements.",
+"explanation": "MSL stands for Mean Sea Level, the average level of the sea used as a basis for vertical measurements."
+},
+{
+"variants": [
+"MWO is the abbreviation for:",
+"What does MWO stand for?",
+"The acronym MWO means:"
+],
+"options": [
+["Meteorological watch office", "Meteorological watch office", "Office responsible for monitoring and issuing aviation weather warnings"],
+["Meteorological warning office", "Meteorological warning office", "Office that issues weather warnings only"],
+["Mountain wave observation", "Mountain wave observation", "Observation of mountain waves"],
+["Maximum wind observation", "Maximum wind observation", "Wind speed monitoring"],
+["Military weather office", "Military weather office", "Military weather service"],
+["Marine weather office", "Marine weather office", "Maritime weather office"]
+],
+"correct": "Meteorological watch office",
+"hint": "MWO is the designated office that monitors meteorological conditions and issues SIGMETs.",
+"insight": "'Watch' indicates it keeps continuous watch over weather affecting aviation, not just warning issuance.",
+"explanation": "MWO stands for Meteorological Watch Office, responsible for maintaining a weather watch and issuing SIGMETs."
+},
+{
+"variants": [
+"MVA is the abbreviation for:",
+"What does MVA stand for?",
+"The acronym MVA means:"
+],
+"options": [
+["Minimum vector altitude", "Minimum vector altitude", "The lowest altitude for radar vectoring that ensures obstacle clearance"],
+["Maximum vector altitude", "Maximum vector altitude", "The highest altitude for radar vectors"],
+["Minimum vertical altitude", "Minimum vertical altitude", "The lowest permitted altitude"],
+["Mean vector altitude", "Mean vector altitude", "Average altitude during vectoring"],
+["Meteorological visual altitude", "Meteorological visual altitude", "Altitude for visual meteorological conditions"],
+["Minimum visibility altitude", "Minimum visibility altitude", "Altitude for minimum visibility"]
+],
+"correct": "Minimum vector altitude",
+"hint": "MVA is used by ATC when providing radar vectors to ensure terrain and obstacle clearance.",
+"insight": "'Vector' refers to radar heading instructions; it is not a visibility or meteorological minimum.",
+"explanation": "MVA stands for Minimum Vector Altitude, the lowest MSL altitude at which an aircraft will be vectored by ATC while ensuring obstacle clearance."
+},
+{
+"variants": [
+"MOCA is the abbreviation for:",
+"What does MOCA stand for?",
+"The acronym MOCA means:"
+],
+"options": [
+["Minimum obstacle clearance altitude", "Minimum obstacle clearance altitude", "The lowest altitude that ensures obstacle clearance along a route"],
+["Maximum obstacle clearance altitude", "Maximum obstacle clearance altitude", "Highest altitude for obstacle clearance"],
+["Minimum operational control altitude", "Minimum operational control altitude", "Lowest controlled altitude"],
+["Mean obstacle clearance altitude", "Mean obstacle clearance altitude", "Average obstacle clearance"],
+["Minimum oceanic crossing altitude", "Minimum oceanic crossing altitude", "Lowest altitude for ocean crossing"],
+["Meteorological obstacle clearance altitude", "Meteorological obstacle clearance altitude", "Weather‑based obstacle clearance"]
+],
+"correct": "Minimum obstacle clearance altitude",
+"hint": "MOCA ensures required obstacle clearance along an airway segment.",
+"insight": "'Obstacle clearance' indicates its safety purpose; it guarantees clearance over terrain and obstacles.",
+"explanation": "MOCA stands for Minimum Obstacle Clearance Altitude, the lowest published altitude that meets obstacle clearance requirements along a route."
+},
+{
+"variants": [
+"MDA/H is the abbreviation for:",
+"What does MDA/H stand for?",
+"The acronym MDA/H means:"
+],
+"options": [
+["Minimum decision altitude/height", "Minimum decision altitude/height", "The lowest altitude or height at which a missed approach must be initiated if visual reference is not established"],
+["Maximum descent altitude/height", "Maximum descent altitude/height", "Highest descent point"],
+["Minimum departure altitude/height", "Minimum departure altitude/height", "Lowest safe departure altitude"],
+["Mean decision altitude/height", "Mean decision altitude/height", "Average decision point"],
+["Meteorological decision altitude/height", "Meteorological decision altitude/height", "Weather‑based decision point"],
+["Minimum diversion altitude/height", "Minimum diversion altitude/height", "Altitude for diversion"]
+],
+"correct": "Minimum decision altitude/height",
+"hint": "MDA is used in non‑precision approaches; DA is used in precision approaches.",
+"insight": "'Decision' indicates the pilot must decide at this point whether to continue or go around.",
+"explanation": "MDA/H stands for Minimum Decision Altitude/Height, the altitude or height in a non‑precision approach below which descent must not be made without visual reference."
+},
+{
+"variants": [
+"NPA is the abbreviation for:",
+"What does NPA stand for?",
+"The acronym NPA means:"
+],
+"options": [
+["Non-precision approach", "Non-precision approach", "An instrument approach without electronic glide path guidance"],
+["Non‑precision altimeter", "Non‑precision altimeter", "Altimeter without precision"],
+["Navigation performance area", "Navigation performance area", "Area for navigation performance"],
+["Non‑pilot area", "Non‑pilot area", "Area restricted from pilots"],
+["Normal precision approach", "Normal precision approach", "Standard precision approach"],
+["National procedure authority", "National procedure authority", "National authority for procedures"]
+],
+"correct": "Non-precision approach",
+"hint": "NPA uses lateral guidance but lacks the electronic vertical guidance of a precision approach.",
+"insight": "'Non‑precision' indicates the absence of glide path guidance; only lateral guidance is provided.",
+"explanation": "NPA stands for Non‑Precision Approach, an instrument approach that provides lateral guidance but not electronic vertical guidance."
+},
+{
+"variants": [
+"NDB is the abbreviation for:",
+"What does NDB stand for?",
+"The acronym NDB means:"
+],
+"options": [
+["Non-directional radio beacon", "Non-directional radio beacon", "A ground‑based radio transmitter that radiates signals in all directions"],
+["Navigation data beacon", "Navigation data beacon", "Beacon for navigation data"],
+["Non‑directional distance beacon", "Non‑directional distance beacon", "Beacon without distance capability"],
+["National direction beacon", "National direction beacon", "Nationally operated beacon"],
+["Night direction beacon", "Night direction beacon", "Beacon for night operations"],
+["Navigational display board", "Navigational display board", "Panel for navigation display"]
+],
+"correct": "Non-directional radio beacon",
+"hint": "NDB signals are used with an ADF receiver in the aircraft to determine bearing to the station.",
+"insight": "'Non‑directional' means the signal is transmitted equally in all directions, unlike VOR which provides radial information.",
+"explanation": "NDB stands for Non‑Directional Radio Beacon, a radio transmitter that emits signals in all directions for navigation."
+},
+{
+"variants": [
+"NM is the abbreviation for:",
+"What does NM stand for in aviation?",
+"The acronym NM means:"
+],
+"options": [
+["Nautical miles", "Nautical miles", "Unit of distance used in air and sea navigation, equal to 1,852 metres"],
+["Navigation measurement", "Navigation measurement", "Measurement for navigation"],
+["National miles", "National miles", "Statute miles for national use"],
+["Northern meridian", "Northern meridian", "Northern reference line"],
+["Network message", "Network message", "Data network message"],
+["Normal metres", "Normal metres", "Metre unit"]
+],
+"correct": "Nautical miles",
+"hint": "NM is the standard unit of distance in aviation and maritime navigation.",
+"insight": "One nautical mile equals 1,852 metres, distinct from a statute mile (1,609 metres).",
+"explanation": "NM stands for Nautical Miles, the primary unit of distance measurement in air navigation."
+},
+{
+"variants": [
+"OCA is the abbreviation for:",
+"What does OCA stand for?",
+"The acronym OCA means:"
+],
+"options": [
+["Obstacle clearance altitude", "Obstacle clearance altitude", "The lowest altitude above mean sea level that provides required obstacle clearance"],
+["Operational control area", "Operational control area", "Area under operational control"],
+["Oceanic control area", "Oceanic control area", "Area over ocean controlled by ATC"],
+["Obstacle crossing altitude", "Obstacle crossing altitude", "Altitude for crossing obstacles"],
+["Overshoot clearance altitude", "Overshoot clearance altitude", "Altitude for missed approach"],
+["Optional climb altitude", "Optional climb altitude", "Optional altitude for climb"]
+],
+"correct": "Obstacle clearance altitude",
+"hint": "OCA is referenced to mean sea level, while OCH is referenced to the aerodrome or threshold elevation.",
+"insight": "'Altitude' means it is measured above sea level; not to be confused with OCH (height).",
+"explanation": "OCA stands for Obstacle Clearance Altitude, the lowest altitude above mean sea level that ensures required obstacle clearance."
+},
+{
+"variants": [
+"OCH is the abbreviation for:",
+"What does OCH stand for?",
+"The acronym OCH means:"
+],
+"options": [
+["Obstacle clearance height", "Obstacle clearance height", "The lowest height above aerodrome elevation or threshold that provides required obstacle clearance"],
+["Operational ceiling height", "Operational ceiling height", "Ceiling for operations"],
+["Oceanic clearance height", "Oceanic clearance height", "Height for oceanic operations"],
+["Obstacle crossing height", "Obstacle crossing height", "Height for obstacle crossing"],
+["Optional cruise height", "Optional cruise height", "Height option for cruise"],
+["Operational control height", "Operational control height", "Height for operational control"]
+],
+"correct": "Obstacle clearance height",
+"hint": "OCH is referenced to the aerodrome or threshold, while OCA uses mean sea level.",
+"insight": "'Height' indicates it is measured above the aerodrome or threshold, not above sea level.",
+"explanation": "OCH stands for Obstacle Clearance Height, the lowest height above the aerodrome or threshold that ensures required obstacle clearance."
+},
+{
+"variants": [
+"OFZ is the abbreviation for:",
+"What does OFZ stand for?",
+"The acronym OFZ means:"
+],
+"options": [
+["Obstacle free zone", "Obstacle free zone", "A zone around an aerodrome maintained free from obstacles to protect aircraft operations"],
+["Operational flight zone", "Operational flight zone", "Zone for flight operations"],
+["Oceanic flight zone", "Oceanic flight zone", "Zone over ocean for flights"],
+["Obstacle-free flight zone", "Obstacle-free flight zone", "Zone without flight obstacles"],
+["Optional free zone", "Optional free zone", "Optional cleared zone"],
+["Overflight zone", "Overflight zone", "Zone for overflights"]
+],
+"correct": "Obstacle free zone",
+"hint": "The OFZ is established to prevent the aerodrome from becoming unusable due to obstacle growth.",
+"insight": "'Obstacle free' indicates no obstacle may penetrate this protected airspace.",
+"explanation": "OFZ stands for Obstacle Free Zone, a defined volume of airspace above the aerodrome that must be kept clear of obstacles."
+},
+{
+"variants": [
+"OPS is the abbreviation for:",
+"What does OPS stand for?",
+"The acronym OPS means:"
+],
+"options": [
+["Operations", "Operations", "Flight or ground operational activities"],
+["Obstacle protection system", "Obstacle protection system", "System for obstacle protection"],
+["Oceanic positioning service", "Oceanic positioning service", "Service for ocean position"],
+["Optional procedures", "Optional procedures", "Non‑mandatory procedures"],
+["Operational planning section", "Operational planning section", "Planning unit"],
+["Overflight permission service", "Overflight permission service", "Service for overflight permits"]
+],
+"correct": "Operations",
+"hint": "OPS is a generic abbreviation used for all types of operational activities in aviation.",
+"insight": "'Operations' encompasses all day‑to‑day flight and ground activities.",
+"explanation": "OPS stands for Operations, referring to the operational activities and functions in aviation."
+},
+{
+"variants": [
+"PNR is the abbreviation for:",
+"What does PNR stand for?",
+"The acronym PNR means:"
+],
+"options": [
+["Point of no return", "Point of no return", "The point along a route beyond which an aircraft cannot return to its departure point with the available fuel"],
+["Position and navigation report", "Position and navigation report", "Report containing position and navigation data"],
+["Pilot navigation record", "Pilot navigation record", "Record of pilot navigation"],
+["Primary navigation route", "Primary navigation route", "Main navigation route"],
+["Potential noise restriction", "Potential noise restriction", "Possible noise limits"],
+["Pre‑notification requirement", "Pre‑notification requirement", "Requirement for advance notice"]
+],
+"correct": "Point of no return",
+"hint": "PNR is calculated based on fuel endurance; beyond this point, the aircraft must continue to destination.",
+"insight": "'No return' indicates the critical nature of this point; it is a fuel‑based decision point.",
+"explanation": "PNR stands for Point of No Return, the farthest point an aircraft can fly and still return to its departure point with the available fuel."
+},
+{
+"variants": [
+"POB is the abbreviation for:",
+"What does POB stand for?",
+"The acronym POB means:"
+],
+"options": [
+["Persons on board", "Persons on board", "Total number of people, including passengers and crew, on an aircraft"],
+["Pilot on board", "Pilot on board", "Pilot present on the aircraft"],
+["Position on beacon", "Position on beacon", "Position relative to a beacon"],
+["Passenger occupancy board", "Passenger occupancy board", "Display showing passenger count"],
+["Pilots operational briefing", "Pilots operational briefing", "Briefing for pilots"],
+["Personnel operating base", "Personnel operating base", "Base for operating personnel"]
+],
+"correct": "Persons on board",
+"hint": "POB is a safety item reported during emergencies so rescue services know how many people are involved.",
+"insight": "'Persons' includes both passengers and crew; not just pilots or passengers alone.",
+"explanation": "POB stands for Persons On Board, the total number of individuals (passengers and crew) carried on an aircraft."
+},
+{
+"variants": [
+"PA is the abbreviation for:",
+"What does PA stand for in approach terminology?",
+"The acronym PA means:"
+],
+"options": [
+["Precision approach", "Precision approach", "An instrument approach providing both lateral and vertical guidance"],
+["Position approach", "Position approach", "Approach based on position"],
+["Performance approach", "Performance approach", "Approach based on performance"],
+["Precautionary approach", "Precautionary approach", "Approach with extra caution"],
+["Pilot approach", "Pilot approach", "Pilot‑controlled approach"],
+["Parking area", "Parking area", "Aircraft parking zone"]
+],
+"correct": "Precision approach",
+"hint": "PA uses ILS, MLS, or PAR to provide both lateral and vertical guidance to the runway.",
+"insight": "'Precision' indicates it has both azimuth and glide path guidance, unlike an NPA.",
+"explanation": "PA stands for Precision Approach, an instrument approach that provides both lateral and vertical guidance."
+},
+{
+"variants": [
+"PAPI is the abbreviation for:",
+"What does PAPI stand for?",
+"The acronym PAPI means:"
+],
+"options": [
+["Precision approach path indicator", "Precision approach path indicator", "A visual glide slope aid using red and white lights beside the runway"],
+["Position approach path indicator", "Position approach path indicator", "Indicator for approach path position"],
+["Pilot approach path indicator", "Pilot approach path indicator", "Pilot‑controlled glidepath indicator"],
+["Precision altitude path indicator", "Precision altitude path indicator", "Altitude and glide path visual aid"],
+["Parallel approach path indicator", "Parallel approach path indicator", "Approach indicator for parallel runways"],
+["Perimeter approach path indicator", "Perimeter approach path indicator", "Approach indicator at the perimeter"]
+],
+"correct": "Precision approach path indicator",
+"hint": "PAPI typically consists of four lights that show whether the aircraft is above, on, or below the glide path.",
+"insight": "'Precision' indicates it provides accurate glide path information visually to the pilot.",
+"explanation": "PAPI stands for Precision Approach Path Indicator, a system of lights that provides visual glide slope guidance."
+},
+{
+"variants": [
+"PBN is the abbreviation for:",
+"What does PBN stand for?",
+"The acronym PBN means:"
+],
+"options": [
+["Performance-based navigation", "Performance-based navigation", "Navigation based on aircraft performance capabilities rather than ground‑based sensor requirements"],
+["Precision beacon navigation", "Precision beacon navigation", "Navigation using precision beacons"],
+["Pilot baseline navigation", "Pilot baseline navigation", "Basic pilot navigation"],
+["Passenger booking network", "Passenger booking network", "Airline reservation system"],
+["Perimeter beacon network", "Perimeter beacon network", "Network of perimeter beacons"],
+["Proximity bearing navigation", "Proximity bearing navigation", "Navigation based on proximity and bearing"]
+],
+"correct": "Performance-based navigation",
+"hint": "PBN defines navigation requirements in terms of accuracy, integrity, continuity, and availability.",
+"insight": "'Performance‑based' means the navigation specification is defined by what the aircraft must achieve, not what equipment it must carry.",
+"explanation": "PBN stands for Performance‑Based Navigation, an ICAO concept that defines navigation system performance requirements."
+},
+{
+"variants": [
+"PCN is the abbreviation for:",
+"What does PCN stand for?",
+"The acronym PCN means:"
+],
+"options": [
+["Pavement classification number", "Pavement classification number", "A number expressing the load‑carrying capacity of a pavement"],
+["Precision control number", "Precision control number", "Number for precision control"],
+["Pilot certification number", "Pilot certification number", "Pilot licence number"],
+["Passenger clearance notice", "Passenger clearance notice", "Notice for passenger processing"],
+["Proximity collision notice", "Proximity collision notice", "Notice of proximity to other aircraft"],
+["Position calculation network", "Position calculation network", "Network for position calculation"]
+],
+"correct": "Pavement classification number",
+"hint": "PCN is used with ACN to determine whether a runway or taxiway can support a particular aircraft.",
+"insight": "'Pavement' indicates it relates to the structural capacity of runways, taxiways, and aprons.",
+"explanation": "PCN stands for Pavement Classification Number, expressing the load‑bearing capacity of a pavement for unrestricted operations."
+},
+{
+"variants": [
+"PSR is the abbreviation for:",
+"What does PSR stand for?",
+"The acronym PSR means:"
+],
+"options": [
+["Primary surveillance radar", "Primary surveillance radar", "Radar that detects aircraft by reflected radio waves without any onboard equipment"],
+["Primary search radar", "Primary search radar", "Radar for search operations"],
+["Pilot status report", "Pilot status report", "Report on pilot status"],
+["Passenger service report", "Passenger service report", "Passenger services report"],
+["Position surveillance record", "Position surveillance record", "Record of surveillance position"],
+["Proximity scanning radar", "Proximity scanning radar", "Radar for scanning nearby objects"]
+],
+"correct": "Primary surveillance radar",
+"hint": "PSR operates independently of any equipment on the aircraft; it relies solely on reflected radio waves.",
+"insight": "'Primary' distinguishes it from secondary radar (SSR) which depends on aircraft transponders.",
+"explanation": "PSR stands for Primary Surveillance Radar, a radar system that detects and displays aircraft position using reflected radio signals."
+},
+{
+"variants": [
+"RCC is the abbreviation for:",
+"What does RCC stand for?",
+"The acronym RCC means:"
+],
+"options": [
+["Rescue coordination centre", "Rescue coordination centre", "The facility responsible for coordinating search and rescue operations"],
+["Radio communication centre", "Radio communication centre", "Centre for radio communications"],
+["Runway control centre", "Runway control centre", "Centre for runway management"],
+["Regional control centre", "Regional control centre", "Regional ATC centre"],
+["Radar coordination centre", "Radar coordination centre", "Centre for radar coordination"],
+["Relief coordination centre", "Relief coordination centre", "Centre for relief operations"]
+],
+"correct": "Rescue coordination centre",
+"hint": "RCC is activated during the alert and distress phases to manage search and rescue efforts.",
+"insight": "'Rescue' indicates its primary mission of saving lives, not routine ATC or communications.",
+"explanation": "RCC stands for Rescue Coordination Centre, the unit responsible for coordinating the response to aircraft in distress."
+},
+{
+"variants": [
+"RA is the abbreviation for:",
+"What does RA stand for in ACAS terminology?",
+"The acronym RA means:"
+],
+"options": [
+["Resolution advisory", "Resolution advisory", "An ACAS instruction recommending vertical manoeuvres to avoid a collision"],
+["Radio advisory", "Radio advisory", "Advisory on radio communications"],
+["Range advisory", "Range advisory", "Advisory on range"],
+["Route advisory", "Route advisory", "Advisory on route"],
+["Runway advisory", "Runway advisory", "Advisory on runway conditions"],
+["Radar advisory", "Radar advisory", "Advisory from radar controller"]
+],
+"correct": "Resolution advisory",
+"hint": "An RA commands a specific escape manoeuvre, unlike a TA which only provides traffic information.",
+"insight": "'Resolution' indicates it provides a solution (climb or descend) to resolve a potential collision.",
+"explanation": "RA stands for Resolution Advisory, an ACAS recommendation providing vertical manoeuvre guidance to avoid a collision."
+},
+{
+"variants": [
+"ROC is the abbreviation for:",
+"What does ROC stand for?",
+"The acronym ROC means:"
+],
+"options": [
+["Rate of climb", "Rate of climb", "The speed at which an aircraft gains altitude, typically in feet per minute"],
+["Rate of cruise", "Rate of cruise", "Cruise speed"],
+["Range of communication", "Range of communication", "Communication distance"],
+["Runway operation control", "Runway operation control", "Control of runway operations"],
+["Radio operation control", "Radio operation control", "Control of radio operations"],
+["Rest of climb", "Rest of climb", "Remaining climb distance"]
+],
+"correct": "Rate of climb",
+"hint": "ROC is usually displayed on the Vertical Speed Indicator (VSI) in feet per minute.",
+"insight": "'Rate of climb' measures vertical speed; it is a performance parameter, not a communication or control function.",
+"explanation": "ROC stands for Rate of Climb, the vertical speed of an aircraft as it ascends."
+},
+{
+"variants": [
+"RPA is the abbreviation for:",
+"What does RPA stand for?",
+"The acronym RPA means:"
+],
+"options": [
+["Remotely piloted aircraft", "Remotely piloted aircraft", "An aircraft operated from a remote pilot station, a type of unmanned aircraft"],
+["Radar position aircraft", "Radar position aircraft", "Aircraft detected by radar"],
+["Rapid position aircraft", "Rapid position aircraft", "Fast‑moving aircraft"],
+["Radio piloted aircraft", "Radio piloted aircraft", "Aircraft controlled by radio"],
+["Rescue pilot aircraft", "Rescue pilot aircraft", "Aircraft used for rescue missions"],
+["Returning patrol aircraft", "Returning patrol aircraft", "Aircraft returning from patrol"]
+],
+"correct": "Remotely piloted aircraft",
+"hint": "RPAs are a subset of unmanned aircraft systems (UAS) that are flown by a pilot from a remote location.",
+"insight": "'Remotely piloted' distinguishes it from fully autonomous drones; a human pilot is still in control.",
+"explanation": "RPA stands for Remotely Piloted Aircraft, an aircraft flown by a pilot situated at a remote control station."
+},
+{
+"variants": [
+"RPAS is the abbreviation for:",
+"What does RPAS stand for?",
+"The acronym RPAS means:"
+],
+"options": [
+["Remotely piloted aircraft system", "Remotely piloted aircraft system", "The complete system including the RPA, remote pilot station, and command and control links"],
+["Radar positioning and surveillance", "Radar positioning and surveillance", "Radar‑based surveillance system"],
+["Radio positioning and scanning", "Radio positioning and scanning", "Radio‑based positioning system"],
+["Rescue and patrol air system", "Rescue and patrol air system", "System for rescue and patrol"],
+["Rapid precision approach system", "Rapid precision approach system", "Fast precision approach aid"],
+["Regional planning and scheduling", "Regional planning and scheduling", "Planning and scheduling system"]
+],
+"correct": "Remotely piloted aircraft system",
+"hint": "RPAS includes the aircraft, the remote control station, and the data link connecting them.",
+"insight": "'System' means it covers more than just the aircraft; it is the whole operational package.",
+"explanation": "RPAS stands for Remotely Piloted Aircraft System, comprising the remotely piloted aircraft, associated pilot station(s), and command/control links."
+},
+{
+"variants": [
+"ROD is the abbreviation for:",
+"What does ROD stand for?",
+"The acronym ROD means:"
+],
+"options": [
+["Rate of descent", "Rate of descent", "The speed at which an aircraft loses altitude, typically in feet per minute"],
+["Rate of distance", "Rate of distance", "Speed over a distance"],
+["Range of detection", "Range of detection", "Distance at which an object can be detected"],
+["Radio operation distance", "Radio operation distance", "Distance for radio operations"],
+["Runway obstruction detection", "Runway obstruction detection", "Detection of runway obstructions"],
+["Required obstacle data", "Required obstacle data", "Mandatory obstacle information"]
+],
+"correct": "Rate of descent",
+"hint": "ROD is the opposite of ROC; it shows how quickly the aircraft is losing altitude.",
+"insight": "Like Rate of Climb, it is displayed on the VSI but indicates a negative vertical speed.",
+"explanation": "ROD stands for Rate of Descent, the vertical speed of an aircraft as it descends."
+},
+{
+"variants": [
+"RTF is the abbreviation for:",
+"What does RTF stand for?",
+"The acronym RTF means:"
+],
+"options": [
+["Radiotelephone", "Radiotelephone", "Voice communication using radio frequencies between aircraft and ground stations"],
+["Route tracking facility", "Route tracking facility", "Facility for tracking aircraft routes"],
+["Runway taxi facility", "Runway taxi facility", "Facility for runway and taxiway operations"],
+["Radio transmission facility", "Radio transmission facility", "Facility for radio transmissions"],
+["Remote tower facility", "Remote tower facility", "Remote ATC tower installation"],
+["Radar tracking function", "Radar tracking function", "Function for radar tracking"]
+],
+"correct": "Radiotelephone",
+"hint": "RTF refers to the voice communication system and the phraseology used in aviation radio exchanges.",
+"insight": "'Radiotelephone' is the formal term for voice communication over radio, distinct from data link.",
+"explanation": "RTF stands for Radiotelephone, the system and procedures for voice communication in aviation."
+},
+{
+"variants": [
+"RVR is the abbreviation for:",
+"What does RVR stand for?",
+"The acronym RVR means:"
+],
+"options": [
+["Runway visual range", "Runway visual range", "The distance over which a pilot on the runway centreline can see the runway surface markings or lights"],
+["Radar visual range", "Radar visual range", "Range of visual radar coverage"],
+["Radio visual range", "Radio visual range", "Range for visual radio navigation"],
+["Runway visibility report", "Runway visibility report", "Report on runway visibility"],
+["Reduced visibility range", "Reduced visibility range", "Range in reduced visibility conditions"],
+["Required visibility range", "Required visibility range", "Minimum required visibility"]
+],
+"correct": "Runway visual range",
+"hint": "RVR is measured by instruments at the runway and is used to determine if conditions meet approach minima.",
+"insight": "'Runway' specifies it relates to what a pilot sees from the runway, not general visibility.",
+"explanation": "RVR stands for Runway Visual Range, the distance over which a pilot can see the runway markings or lights from the centreline."
+},
+{
+"variants": [
+"RVSM is the abbreviation for:",
+"What does RVSM stand for?",
+"The acronym RVSM means:"
+],
+"options": [
+["Reduced vertical separation minimum", "Reduced vertical separation minimum", "A reduction in vertical separation between FL 290 and FL 410 from 2,000 ft to 1,000 ft"],
+["Runway visual separation minimum", "Runway visual separation minimum", "Minimum separation on runway"],
+["Radar visual separation method", "Radar visual separation method", "Method using radar and visual separation"],
+["Required velocity and speed management", "Required velocity and speed management", "Management of speed requirements"],
+["Regional vertical separation method", "Regional vertical separation method", "Regional separation technique"],
+["Remote virtual separation module", "Remote virtual separation module", "Virtual separation system"]
+],
+"correct": "Reduced vertical separation minimum",
+"hint": "RVSM allows more aircraft to operate at optimum levels by halving the vertical separation above FL 290.",
+"insight": "'Reduced' refers to the 1,000 ft minimum instead of the previous 2,000 ft; it requires specific aircraft certification.",
+"explanation": "RVSM stands for Reduced Vertical Separation Minimum, reducing vertical separation to 1,000 ft between FL 290 and FL 410."
+},
+{
+"variants": [
+"RWY is the abbreviation for:",
+"What does RWY stand for?",
+"The acronym RWY means:"
+],
+"options": [
+["Runway", "Runway", "The defined rectangular area on an aerodrome prepared for the landing and take‑off of aircraft"],
+["Railway", "Railway", "Rail transport track"],
+["Rightway", "Rightway", "Direction indicator"],
+["Routeway", "Routeway", "Navigation route"],
+["Rotary way", "Rotary way", "Helicopter landing area"],
+["Repair way", "Repair way", "Maintenance area"]
+],
+"correct": "Runway",
+"hint": "RWY is the standard abbreviation for runway used on charts, flight strips, and in ATC communication.",
+"insight": "A commonly used three‑letter abbreviation in all aspects of aviation operations.",
+"explanation": "RWY stands for Runway, the rectangular paved or unpaved surface on an aerodrome used for aircraft landings and take‑offs."
+},
+{
+"variants": [
+"RAM is the abbreviation for:",
+"What does RAM stand for in ATS?",
+"The acronym RAM means:"
+],
+"options": [
+["Restricted area monitor", "Restricted area monitor", "A system that monitors restricted airspace for unauthorised entries"],
+["Radar altitude monitor", "Radar altitude monitor", "Monitor for radar altitude"],
+["Radio access module", "Radio access module", "Module for radio communication"],
+["Runway access monitor", "Runway access monitor", "Monitor for runway access"],
+["Remote alert module", "Remote alert module", "Module for remote alerts"],
+["Required accuracy monitor", "Required accuracy monitor", "Monitor for navigation accuracy"]
+],
+"correct": "Restricted area monitor",
+"hint": "RAM alerts ATC when an aircraft enters or approaches restricted airspace.",
+"insight": "'Restricted area' indicates it protects prohibited or danger areas from unauthorised penetration.",
+"explanation": "RAM stands for Restricted Area Monitor, a safety net that warns ATC of potential unauthorised entry into restricted airspace."
+},
+{
+"variants": [
+"SAR is the abbreviation for:",
+"What does SAR stand for?",
+"The acronym SAR means:"
+],
+"options": [
+["Search and rescue", "Search and rescue", "Service provided to locate and assist persons in distress"],
+["Surveillance and radar", "Surveillance and radar", "Radar surveillance system"],
+["Standard arrival route", "Standard arrival route", "Arrival procedures"],
+["Safety and regulation", "Safety and regulation", "Safety oversight function"],
+["Sector altitude reference", "Sector altitude reference", "Reference for sector altitudes"],
+["Satellite access route", "Satellite access route", "Route for satellite communication"]
+],
+"correct": "Search and rescue",
+"hint": "SAR operations are coordinated by the RCC when an aircraft is in distress.",
+"insight": "'Search' and 'rescue' are two distinct phases; SAR covers both locating and recovering persons.",
+"explanation": "SAR stands for Search and Rescue, a service that locates and assists persons or aircraft in distress."
+},
+{
+"variants": [
+"SARPS is the abbreviation for:",
+"What does SARPS stand for?",
+"The acronym SARPS means:"
+],
+"options": [
+["Standards and Recommended Practices", "Standards and recommended practices", "ICAO documents containing binding and non‑binding rules for international aviation"],
+["Search and rescue procedures", "Search and rescue procedures", "Procedures for SAR operations"],
+["Standard arrival procedures", "Standard arrival procedures", "Arrival route procedures"],
+["Surveillance and radar processing system", "Surveillance and radar processing system", "System for processing radar data"],
+["Safety and regulation procedures", "Safety and regulation procedures", "Procedures for safety regulation"],
+["Sector and route planning standards", "Sector and route planning standards", "Standards for sector and route planning"]
+],
+"correct": "Standards and Recommended Practices",
+"hint": "SARPs are adopted by the ICAO Council and form the basis of Annexes to the Chicago Convention.",
+"insight": "'Standards' are binding; 'Recommended Practices' are desirable but not mandatory.",
+"explanation": "SARPs stands for Standards and Recommended Practices, the international rules developed by ICAO to govern civil aviation."
+},
+{
+"variants": [
+"SID is the abbreviation for:",
+"What does SID stand for?",
+"The acronym SID means:"
+],
+"options": [
+["Standard instrument departure", "Standard instrument departure", "A published IFR departure procedure connecting the runway to the en‑route phase"],
+["Standard instrument descent", "Standard instrument descent", "Standard descent procedure"],
+["Simple instrument display", "Simple instrument display", "Basic flight instrument"],
+["Standard initial departure", "Standard initial departure", "Initial departure procedure"],
+["Sector instrument designation", "Sector instrument designation", "Sector‑based instrument designation"],
+["Single instrument departure", "Single instrument departure", "Simple departure procedure"]
+],
+"correct": "Standard instrument departure",
+"hint": "SID provides a defined route for departing aircraft to transition from the runway to the en‑route airway structure.",
+"insight": "'Standard' means it is a published procedure; 'instrument' indicates it is for IFR flights.",
+"explanation": "SID stands for Standard Instrument Departure, an IFR departure procedure that links the runway to the en‑route network."
+},
+{
+"variants": [
+"SWY is the abbreviation for:",
+"What does SWY stand for?",
+"The acronym SWY means:"
+],
+"options": [
+["Stopway", "Stopway", "A defined area beyond the runway prepared to support an aircraft in an aborted take‑off"],
+["Sideway", "Sideway", "Path beside the runway"],
+["Standard waypoint", "Standard waypoint", "Navigation waypoint"],
+["Secondary runway way", "Secondary runway way", "Path for secondary runway"],
+["Slant way", "Slant way", "Slanted path"],
+["Safety way", "Safety way", "Safety path"]
+],
+"correct": "Stopway",
+"hint": "SWY is included in the ASDA (Accelerate‑Stop Distance Available) declared distance.",
+"insight": "'Stop' indicates its use for decelerating after a rejected take‑off, not for normal taxi or flight.",
+"explanation": "SWY stands for Stopway, a prepared area beyond the take‑off runway available for stopping in an aborted take‑off."
+},
+{
+"variants": [
+"STCA is the abbreviation for:",
+"What does STCA stand for?",
+"The acronym STCA means:"
+],
+"options": [
+["Short term conflict alert", "Short term conflict alert", "A ground‑based safety net that warns ATC of an imminent loss of separation"],
+["Standard terminal control area", "Standard terminal control area", "Standard TMA"],
+["Short term climb approval", "Short term climb approval", "Temporary climb clearance"],
+["Short track conflict advisory", "Short track conflict advisory", "Advisory for track conflicts"],
+["Standard traffic collision alert", "Standard traffic collision alert", "Alert for collision risk"],
+["Surface traffic conflict alert", "Surface traffic conflict alert", "Alert for surface conflicts"]
+],
+"correct": "Short term conflict alert",
+"hint": "STCA predicts aircraft trajectories and alerts the controller before separation is lost.",
+"insight": "'Short term' indicates the conflict is predicted within a brief time horizon, requiring immediate action.",
+"explanation": "STCA stands for Short Term Conflict Alert, a safety net that warns ATC when aircraft are predicted to lose separation soon."
+},
+{
+"variants": [
+"SSR is the abbreviation for:",
+"What does SSR stand for?",
+"The acronym SSR means:"
+],
+"options": [
+["Secondary surveillance radar", "Secondary surveillance radar", "Radar that interrogates aircraft transponders and receives coded replies"],
+["Standard surveillance radar", "Standard surveillance radar", "Standard surveillance system"],
+["Surface search radar", "Surface search radar", "Radar for surface search"],
+["Satellite surveillance radar", "Satellite surveillance radar", "Space‑based radar surveillance"],
+["Short‑range surveillance radar", "Short‑range surveillance radar", "Short‑range radar system"],
+["Secondary separation requirement", "Secondary separation requirement", "Additional separation standard"]
+],
+"correct": "Secondary surveillance radar",
+"hint": "SSR requires an operating transponder on the aircraft and provides identity and altitude information.",
+"insight": "'Secondary' distinguishes it from primary radar (reflected signals); it uses a coded interrogation and reply system.",
+"explanation": "SSR stands for Secondary Surveillance Radar, a radar system that uses aircraft transponders to provide identity, position, and altitude."
+},
+{
+"variants": [
+"TA is the abbreviation for:",
+"What does TA stand for in ACAS?",
+"The acronym TA means:"
+],
+"options": [
+["Traffic advisory", "Traffic advisory", "An ACAS alert showing the position of a nearby aircraft that could become a threat"],
+["Terminal area", "Terminal area", "Area around a terminal"],
+["Transition altitude", "Transition altitude", "Altitude at which flight level reference changes to QNH"],
+["True altitude", "True altitude", "Actual height above sea level"],
+["Turbulence advisory", "Turbulence advisory", "Advisory for turbulence"],
+["Taxiway advisory", "Taxiway advisory", "Advisory for taxiway operations"]
+],
+"correct": "Traffic advisory",
+"hint": "A TA is a precursor to an RA; it alerts the pilot to potential conflict but does not yet command a manoeuvre.",
+"insight": "'Traffic' indicates it provides the position of conflicting aircraft; it precedes the 'resolution' phase if the threat worsens.",
+"explanation": "TA stands for Traffic Advisory, an ACAS alert providing information on a nearby aircraft that may become a collision threat."
+},
+{
+"variants": [
+"TA is also the abbreviation for:",
+"What else does TA stand for in aviation?",
+"The acronym TA also means:"
+],
+"options": [
+["Transition altitude", "Transition altitude", "The altitude at which aircraft change from QNH to standard pressure (1013.2 hPa)"],
+["Terminal approach", "Terminal approach", "Final approach segment"],
+["Terrain avoidance", "Terrain avoidance", "System to avoid terrain"],
+["Tower advisory", "Tower advisory", "Advisory from the tower"],
+["Temporary altitude", "Temporary altitude", "Temporarily assigned altitude"],
+["Track advisory", "Track advisory", "Advisory on track"]
+],
+"correct": "Transition altitude",
+"hint": "Transition altitude is the fixed altitude above which all aircraft use standard pressure (1013.2 hPa) to reference altitude as flight levels.",
+"insight": "'Transition' indicates the changeover point between QNH‑based altitudes and standard pressure flight levels.",
+"explanation": "TA also stands for Transition Altitude, the altitude above which aircraft reference vertical position using the standard pressure setting of 1013.2 hPa."
+},
+{
+"variants": [
+"TAS is the abbreviation for:",
+"What does TAS stand for?",
+"The acronym TAS means:"
+],
+"options": [
+["True airspeed", "True airspeed", "Calibrated airspeed corrected for altitude and non‑standard temperature"],
+["Terminal approach speed", "Terminal approach speed", "Speed on terminal approach"],
+["Turbulence avoidance system", "Turbulence avoidance system", "System to avoid turbulence"],
+["Traffic advisory system", "Traffic advisory system", "System for traffic advisories"],
+["Touchdown approach speed", "Touchdown approach speed", "Speed at touchdown"],
+["Track and speed", "Track and speed", "Navigation parameters"]
+],
+"correct": "True airspeed",
+"hint": "TAS represents the actual speed of an aircraft through the air mass, essential for navigation.",
+"insight": "'True' indicates it has been fully corrected for environmental factors, unlike IAS or CAS.",
+"explanation": "TAS stands for True Airspeed, the speed of the aircraft relative to the air mass, corrected for altitude and temperature."
+},
+{
+"variants": [
+"TDZ is the abbreviation for:",
+"What does TDZ stand for?",
+"The acronym TDZ means:"
+],
+"options": [
+["Touchdown zone", "Touchdown zone", "The portion of the runway where aircraft first make contact during landing"],
+["Terminal departure zone", "Terminal departure zone", "Zone for terminal departures"],
+["Traffic density zone", "Traffic density zone", "Zone of high traffic density"],
+["Turbulence danger zone", "Turbulence danger zone", "Zone with turbulence hazard"],
+["Temporary danger zone", "Temporary danger zone", "Temporary danger area"],
+["Tactical descent zone", "Tactical descent zone", "Zone for tactical descent"]
+],
+"correct": "Touchdown zone",
+"hint": "The TDZ is often marked by touchdown zone lights and markings on precision approach runways.",
+"insight": "'Touchdown' refers to the moment of contact; it is the first portion of the runway where landing aircraft should touch down.",
+"explanation": "TDZ stands for Touchdown Zone, the first part of the runway where an aircraft touches down upon landing."
+},
+{
+"variants": [
+"TODA is the abbreviation for:",
+"What does TODA stand for?",
+"The acronym TODA means:"
+],
+"options": [
+["Take-off distance available", "Take-off distance available", "TORA plus the length of any clearway"],
+["Take-off direction area", "Take-off direction area", "Area for take‑off direction"],
+["Terminal operations data area", "Terminal operations data area", "Data area for terminal operations"],
+["Total departure available", "Total departure available", "Total usable departure distance"],
+["Temporary obstacle departure area", "Temporary obstacle departure area", "Area for temporary obstacles during departure"],
+["Tactical operations departure area", "Tactical operations departure area", "Departure area for tactical ops"]
+],
+"correct": "Take-off distance available",
+"hint": "TODA = TORA + CWY; it represents the total distance available for the take‑off run plus initial climb.",
+"insight": "'Distance available' indicates it is a declared runway distance, not a direction or tactical area.",
+"explanation": "TODA stands for Take‑Off Distance Available, the length of TORA plus the length of any clearway provided."
+},
+{
+"variants": [
+"TORA is the abbreviation for:",
+"What does TORA stand for?",
+"The acronym TORA means:"
+],
+"options": [
+["Take-off run available", "Take-off run available", "The length of runway declared available and suitable for the ground run of an aeroplane taking off"],
+["Turn off runway area", "Turn off runway area", "Area for turning off the runway"],
+["Terminal operations runway area", "Terminal operations runway area", "Runway area for terminal operations"],
+["Temporary open runway allocation", "Temporary open runway allocation", "Temporary runway allocation"],
+["Tower obstruction radar altimeter", "Tower obstruction radar altimeter", "Radar altimeter for tower obstruction"],
+["Turbulence over runway area", "Turbulence over runway area", "Turbulence above the runway"]
+],
+"correct": "Take-off run available",
+"hint": "TORA is the physical runway length available for the take‑off ground roll only.",
+"insight": "'Run available' indicates it is the usable distance; it excludes clearway and stopway.",
+"explanation": "TORA stands for Take‑Off Run Available, the length of runway suitable for the ground run of an aircraft during take‑off."
+},
+{
+"variants": [
+"TS is the abbreviation for:",
+"What does TS stand for in METAR and weather reports?",
+"The acronym TS means:"
+],
+"options": [
+["Thunderstorm", "Thunderstorm", "A weather phenomenon with lightning, thunder, heavy rain, and often strong winds"],
+["Turbulence severe", "Turbulence severe", "Severe turbulence"],
+["Temperature sensor", "Temperature sensor", "Sensor for temperature"],
+["Terminal speed", "Terminal speed", "Speed near the terminal"],
+["Track signal", "Track signal", "Navigation track signal"],
+["Temporary suspension", "Temporary suspension", "Temporary cessation of operations"]
+],
+"correct": "Thunderstorm",
+"hint": "TS is a standard METAR code that appears in aviation weather reports to warn of hazardous convective activity.",
+"insight": "'Thunderstorm' is a major aviation weather hazard; it often appears with other indicators like TSRA (thunderstorm with rain).",
+"explanation": "TS stands for Thunderstorm, a severe weather event producing lightning, thunder, heavy precipitation, and turbulence."
+},
+{
+"variants": [
+"TWR is the abbreviation for:",
+"What does TWR stand for?",
+"The acronym TWR means:"
+],
+"options": [
+["Aerodrome control tower", "Aerodrome control tower", "The facility providing ATC service to aerodrome traffic"],
+["Terminal weather radar", "Terminal weather radar", "Weather radar at the terminal"],
+["Turbulence warning radar", "Turbulence warning radar", "Radar for turbulence warnings"],
+["Traffic warning receiver", "Traffic warning receiver", "Receiver for traffic alerts"],
+["Transmission weather report", "Transmission weather report", "Transmission of weather data"],
+["Temporary weather restriction", "Temporary weather restriction", "Temporary restriction due to weather"]
+],
+"correct": "Aerodrome control tower",
+"hint": "TWR is responsible for controlling aircraft on the runway and in the aerodrome traffic circuit.",
+"insight": "Though 'TWR' abbreviates 'Tower', it is understood as the aerodrome control tower unit providing ATC service.",
+"explanation": "TWR stands for Aerodrome Control Tower, the ATS unit that provides aerodrome control service."
+},
+{
+"variants": [
+"TMA is the abbreviation for:",
+"What does TMA stand for?",
+"The acronym TMA means:"
+],
+"options": [
+["Terminal manoeuvring area", "Terminal manoeuvring area", "Controlled airspace established at the confluence of ATS routes near one or more major aerodromes"],
+["Terminal meteorological area", "Terminal meteorological area", "Area for meteorological observations"],
+["Traffic management area", "Traffic management area", "Area for traffic management"],
+["Temporary military area", "Temporary military area", "Temporarily designated military airspace"],
+["Training manoeuvring area", "Training manoeuvring area", "Area for flight training"],
+["Transit management area", "Transit management area", "Area for flight transits"]
+],
+"correct": "Terminal manoeuvring area",
+"hint": "TMA is a block of controlled airspace designed to protect traffic arriving at or departing from one or more aerodromes.",
+"insight": "'Terminal' refers to the terminal phase of flight around major airports; 'manoeuvring' indicates aircraft manoeuvres in this space.",
+"explanation": "TMA stands for Terminal Manoeuvring Area, controlled airspace near one or more major aerodromes where arriving and departing traffic is sequenced."
+},
+{
+"variants": [
+"VASIS is the abbreviation for:",
+"What does VASIS stand for?",
+"The acronym VASIS means:"
+],
+"options": [
+["Visual approach slope indicator systems", "Visual approach slope indicator systems", "A system of lights that provides visual glide slope guidance to pilots on approach"],
+["Vertical approach speed indicator system", "Vertical approach speed indicator system", "Indicator for vertical speed on approach"],
+["Visual altitude and speed indicator system", "Visual altitude and speed indicator system", "System showing altitude and speed visually"],
+["Variable approach slope indicator system", "Variable approach slope indicator system", "Adjustable glide path indicator"],
+["Vector approach signal indicator system", "Vector approach signal indicator system", "Vectoring signal for approach"],
+["Visibility approach signal indicator system", "Visibility approach signal indicator system", "Signal for visibility on approach"]
+],
+"correct": "Visual approach slope indicator systems",
+"hint": "VASIS was an earlier system that has largely been replaced by PAPI and APAPI at most aerodromes.",
+"insight": "'Visual' indicates it uses lights the pilot can see; 'slope' refers to the glide path angle.",
+"explanation": "VASIS stands for Visual Approach Slope Indicator Systems, providing visual glide path information using coloured lights."
+},
+{
+"variants": [
+"WX is the abbreviation for:",
+"What does WX stand for?",
+"The acronym WX means:"
+],
+"options": [
+["Weather", "Weather", "Atmospheric conditions including temperature, wind, precipitation, and visibility"],
+["Wind exchange", "Wind exchange", "Change in wind direction"],
+["Wireless transmission", "Wireless transmission", "Radio communication"],
+["Wing extension", "Wing extension", "Extended wing configuration"],
+["Weight excess", "Weight excess", "Excess weight condition"],
+["Warning extra", "Warning extra", "Additional warning"]
+],
+"correct": "Weather",
+"hint": "WX is a commonly used shorthand in aviation for weather conditions and meteorological information.",
+"insight": "It appears in many contexts such as METAR, ATIS, and flight documentation.",
+"explanation": "WX stands for Weather, the atmospheric conditions that affect flight operations."
+}
+]
+}
+}
+}
