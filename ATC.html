@@ -1540,9 +1540,6 @@ Throttle / Lever (controls):
 </div>
 </div>
 </div>
-<div data-mode-show="solo">
-<div id="kb-last-session-banner" style="margin-bottom:14px;"></div>
-</div>
 <input type="checkbox" id="progressive-toggle" style="display:none;">
 <button class="lobby-btn-start" id="lobby-start-btn" onclick="startSelectedQuiz()"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg><span>START QUIZ</span><span class="lobby-start-meta" id="lobby-start-meta">pick a bank</span></button>
 </aside>
@@ -9865,7 +9862,7 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.28',
+version: '0.29',
 revisionDate: '06/05/2026',
 changelog: [
 "Initial release.",
@@ -11939,12 +11936,22 @@ msg._hideTimer=setTimeout(function(){ msg.style.display='none'; },3000);
 }
 return;
 }
-if(typeof partySystem==='undefined' || !partySystem.friends || partySystem.friends.length===0) return;
+if(typeof partySystem==='undefined' || !partySystem.friends) partySystem.friends = [];
 var existingBots = (lobbyState && lobbyState.players && lobbyState.players[uid] && lobbyState.players[uid].aiFriends) || {};
 var existingNames = Object.keys(existingBots).map(function(bid){ return existingBots[bid].name; });
 var availableFriends = partySystem.friends.filter(function(f){ return existingNames.indexOf(f.name) === -1; });
-if(availableFriends.length === 0) return;
-const f=availableFriends[Math.floor(Math.random()*availableFriends.length)];
+var f;
+if(availableFriends.length > 0) {
+f = availableFriends[Math.floor(Math.random()*availableFriends.length)];
+} else {
+var usedNames = new Set(partySystem.friends.map(function(f){ return f.name; }).concat(existingNames));
+var pool = FRIEND_NAME_POOL.filter(function(n){ return !usedNames.has(n); });
+var name = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : (FRIEND_NAME_POOL[Math.floor(Math.random() * FRIEND_NAME_POOL.length)] + '_' + Math.floor(Math.random() * 99));
+var lr = getSearchLevelRange();
+f = createFriend({ name: name, level: lr[0] + Math.floor(Math.random() * (lr[1] - lr[0] + 1)) });
+partySystem.friends.push(f);
+partySystem.save();
+}
 const fb=window.fb;
 const botId='bot_'+Date.now().toString(36);
 fb.set(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid+'/aiFriends/'+botId), { name:(f.name||'Bot').slice(0,20), level:f.level||1, avatarUrl:f.avatarUrl||'' });
