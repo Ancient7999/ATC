@@ -699,7 +699,7 @@ fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke
 <div id="result"></div>
 <div id="quiz-end-actions">
 <button class="q-end-btn" onclick="showResultsScreen()">Results</button>
-<button class="q-end-btn q-end-add" onclick="addMoreQuestions(5)">+5</button>
+<button class="q-end-btn q-end-add" onclick="addMoreQuestions(5)">+5 (Enter)</button>
 </div>
 <div id="exit-confirm-overlay" class="exit-confirm-overlay" style="display:none;"><div class="exit-confirm-box"><div class="exit-confirm-title">Return to Menu?</div><div class="exit-confirm-msg">Current progress will be saved.</div><div class="exit-confirm-btns"><button class="exit-confirm-btn" id="exit-confirm-cancel" onclick="hideExitConfirm()">Cancel</button><button class="exit-confirm-btn exit-confirm-focused" id="exit-confirm-ok" onclick="confirmExit()">Confirm</button></div></div></div>
 </div>
@@ -1067,6 +1067,8 @@ if ((e.code === 'ArrowLeft' || e.code === 'ArrowRight') && document.getElementBy
 const quizScreen = document.getElementById('quiz-screen');
 const onQuiz = quizScreen && quizScreen.style.display === 'block';
 if (!onQuiz) return;
+const endActions = document.getElementById('quiz-end-actions');
+if ((e.code === 'Enter' || e.code === 'NumpadEnter') && endActions && endActions.style.display === 'flex') { e.preventDefault(); e.stopPropagation(); addMoreQuestions(5); return; }
 const sc = window.userShortcuts || ATC_SHORTCUT_DEFAULTS;
 if (e.code === sc.prev || e.code === 'ArrowLeft') { e.preventDefault(); e.stopPropagation(); navigatePrevQuestion(); return; }
 if (e.code === sc.next || e.code === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); navigateNextQuestion(); return; }
@@ -1781,6 +1783,7 @@ const totalTime = formatTimer(totalQuizStartTime ? Math.max(0, now - totalQuizSt
 document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Total Time: ${totalTime}</small>`;
 const btn5 = document.getElementById('btn-continue-5');
 const btnUnlock = document.getElementById('btn-continue-unlock');
+if (window._exitToResults) { btn5.style.display = 'none'; window._exitToResults = false; }
 let diagnosticHTML = '';
 const breakdown = getPerformanceBreakdown();
 const hasMultipleTypes = breakdown.length > 1;
@@ -1901,7 +1904,7 @@ document.getElementById('selection-screen').style.display = 'block';
 let exitConfirmActive=false;let exitFocusIdx=1;
 function showExitConfirm(){const o=document.getElementById('exit-confirm-overlay');if(!o)return;o.style.display='flex';exitConfirmActive=true;exitFocusIdx=1;updateExitFocus();}
 function hideExitConfirm(){const o=document.getElementById('exit-confirm-overlay');if(!o)return;o.style.display='none';exitConfirmActive=false;}
-function confirmExit(){hideExitConfirm();backToSelection();}
+function confirmExit(){hideExitConfirm();if(currentQuestionNum>0){window._exitToResults=true;showResultsScreen();}else{backToSelection();}}
 function updateExitFocus(){const c=document.getElementById('exit-confirm-cancel'),k=document.getElementById('exit-confirm-ok');if(!c||!k)return;c.classList.toggle('exit-confirm-focused',exitFocusIdx===0);k.classList.toggle('exit-confirm-focused',exitFocusIdx===1);}
 window.addEventListener('message', function(e) {
 if (!e.data || e.data.type !== 'quiz_select_option') return;
@@ -3477,11 +3480,11 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.14',
+version: '0.15',
 revisionDate: '07/05/2026',
 changelog: [
-"Minor fixes to timers.",
-"Adjusted UI in Normal mode."
+"Adjusted UI in Normal mode.",
+"Added results screen on exit."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
