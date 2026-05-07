@@ -381,12 +381,13 @@ to{ transform: scaleX(-1) translateX(-4px); }
 .dot-bouncing-bot { animation: dot-bounce-bot 0.9s cubic-bezier(0.33,0.8,0.66,1) forwards; }
 #timer-display{font-family:'Consolas','Courier New',monospace;font-size:0.9em;color:var(--col-text-muted);line-height: 1.4;margin-right:8px;display: inline-block;vertical-align: middle;text-align: right;}
 .q-box-menu { position: absolute; top: 65px; right: 25px; z-index: 50; }
+.quiz-mode-normal #hints-menu-container { display: none !important; }
 .q-menu-btn { background: transparent; border: 1px solid var(--col-primary); color: var(--col-primary); font-size: 1.2em; width: 32px; height: 32px; border-radius: var(--radius-sm); padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
 .q-menu-btn:hover { border-color: var(--col-primary); color: var(--col-primary); background: rgba(var(--accent-0-rgb), 0.08); }
 .q-menu-dropdown { position: absolute; top: 100%; right: 0; background: var(--col-bg-card); border: 1px solid var(--col-border); border-radius: var(--radius-md); min-width: 220px; max-width: 300px; box-shadow: 0 6px 24px rgba(0,0,0,0.5); display: none; overflow: visible; margin-top: 4px; padding: 10px 12px; font-size: 0.9em; line-height: 1.4; color: var(--col-text-muted); text-align: left; }
 .q-menu-dropdown.open { display: block; }
 .q-menu-dropdown.hidden-force { display: none !important; }
-.q-box-avg-time{position:absolute;top:65px;left:25px;z-index:50;font-size:0.85em;font-weight:bold;color:var(--col-text-muted);letter-spacing:0.5px;pointer-events:none;line-height:1.3;white-space:nowrap;}
+.q-box-avg-time{position:absolute;top:65px;left:25px;z-index:50;font-size:0.85em;font-weight:bold;color:var(--col-text-muted);letter-spacing:0.5px;pointer-events:none;line-height:1.3;white-space:nowrap;display:none;}
 .q-info-row{display:flex;align-items:center;justify-content:center;margin:15px auto 0;max-width:600px;}
 .q-box-score{position:absolute!important;top:10px;left:20px;max-width:200px!important;text-align:left!important;}
 .q-info-row .numpad-hint{margin-right:10px;text-align:center;flex:1;}
@@ -851,6 +852,7 @@ const state = sessionState.conv;
 if (state.screen === 'quiz' && state.currentQuestionData) {
 document.getElementById('selection-screen').style.display = 'none';
 document.getElementById('quiz-screen').style.display = 'block';
+document.getElementById('quiz-screen').classList.toggle('quiz-mode-normal', window.quizMode === 'normal');
 showFloatingBackBtn();
 quizHistory = state.history;
 currentQuestionNum = state.currentQ;
@@ -922,16 +924,18 @@ let quizHistory=[];let selectedFormulas=["rate"];const selectedVariants={};windo
 let numQuestionsTotal=10;let questionStartTime=0;let questionTimers=[];let totalQuizStartTime=0;
 let timerPauseStart = 0;
 let totalPauseDuration = 0;
+let totalReviewPauseStart = 0;
+let totalReviewPauseAccumulated = 0;
 function formatTimer(ms){const s=Math.floor(ms/1000);const m=Math.floor(s/60);const r=s%60;return String(m).padStart(2,'0')+':'+String(r).padStart(2,'0');}function startQuestionTimer(){questionStartTime=Date.now();if(!questionTimers[currentQuestionNum])questionTimers[currentQuestionNum]=0;updateQuestionTimerDisplay();}
 function updateQuestionTimerDisplay() {
 const el = document.getElementById('timer-display');
 if (!el) return;
 const now = Date.now();
 const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStart : 0);
+const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ? now - totalReviewPauseStart : 0);
 const curr = questionStartTime ? Math.max(0, now - questionStartTime - pauseOffset) : 0;
-const total = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset) : 0;
-el.innerHTML = 'Timer: <span>' + formatTimer(curr) + '</span><br>Total Time: <span>' + formatTimer(total) + '</span>';
-const _avg=document.getElementById('conv-box-avg-time');if(_avg&&currentQuestionNum>0){const avgMs=Math.max(0,now-questionStartTime-pauseOffset)/currentQuestionNum;_avg.textContent='Avg time: '+formatTimer(avgMs);}
+const total = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0;
+el.innerHTML = 'Total Time: <span>' + formatTimer(total) + '</span>';
 }
 function stopQuestionTimer() {
 if (questionStartTime) {
@@ -1391,6 +1395,7 @@ if (currentQuestionNum === 0) return;
 reviewIndex = currentQuestionNum - 1;
 isReviewingHistory = true;
 stopQuestionTimer();
+totalReviewPauseStart = Date.now();
 } else {
 if (reviewIndex > 0) reviewIndex--;
 }
@@ -1403,6 +1408,8 @@ reviewIndex++;
 if (reviewIndex >= currentQuestionNum) {
 isReviewingHistory = false;
 reviewIndex = -1;
+if (totalReviewPauseStart) { totalReviewPauseAccumulated += Date.now() - totalReviewPauseStart; totalReviewPauseStart = 0; }
+questionStartTime = Date.now();
 renderQuestionContent(window.currentQuestionData);
 const optsDiv = document.getElementById("options");
 optsDiv.innerHTML = "";
@@ -1458,11 +1465,12 @@ const _vn = FORMULA_METADATA[item.type]?.variants?.[_vi] || 'Variant';
 boxScore.innerHTML = _fn + ' (' + _vn + '): <span class="q-score-correct">' + _vc + '</span>/<span class="q-score-total">' + FORMULA_MASTERY_GOAL + '</span>';
 }
 const timerEl = document.getElementById('timer-display');
-if (timerEl && item.timeSpent !== undefined) {
+if (timerEl) {
 const now = Date.now();
 const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStart : 0);
-const total = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset) : 0;
-timerEl.innerHTML = 'Timer: <span>' + formatTimer(item.timeSpent) + '</span><br>Total Time: <span>' + formatTimer(total) + '</span>';
+const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ? now - totalReviewPauseStart : 0);
+const total = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0;
+timerEl.innerHTML = 'Total Time: <span>' + formatTimer(total) + '</span>';
 }
 }
 function generateQuestion(){isReviewingHistory=false;reviewIndex=-1;updateNavArrows();startQuestionTimer();
@@ -1658,11 +1666,14 @@ function startQuiz() {
 numQuestionsTotal = parseInt(document.getElementById('num-questions').value) || 10;
 document.getElementById('selection-screen').style.display = 'none';
 document.getElementById('quiz-screen').style.display = 'block';
+document.getElementById('quiz-screen').classList.toggle('quiz-mode-normal', window.quizMode === 'normal');
 showFloatingBackBtn();
 document.body.classList.add('quiz-layout-active');
 score = 0; currentQuestionNum = 0; quizHistory = [];
 totalPauseDuration = 0;
 timerPauseStart = 0;
+totalReviewPauseStart = 0;
+totalReviewPauseAccumulated = 0;
 startTotalTimer();
 updateNavArrows();
 const formulaNames = selectedFormulas.map(f => (typeof FORMULA_METADATA !== 'undefined' && FORMULA_METADATA[f]) ? FORMULA_METADATA[f].name : f);
@@ -1765,7 +1776,8 @@ currentSessionId = null;
 const pct = Math.round(score/numQuestionsTotal*100);
 const now = Date.now();
 const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStart : 0);
-const totalTime = formatTimer(totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset) : 0);
+const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ? now - totalReviewPauseStart : 0);
+const totalTime = formatTimer(totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0);
 document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Total Time: ${totalTime}</small>`;
 const btn5 = document.getElementById('btn-continue-5');
 const btnUnlock = document.getElementById('btn-continue-unlock');
@@ -1864,6 +1876,7 @@ currentSessionId = 'formula-session-' + Date.now();
 startQuizTimer(currentSessionId);
 document.getElementById('results-screen').style.display = 'none';
 document.getElementById('quiz-screen').style.display = 'block';
+document.getElementById('quiz-screen').classList.toggle('quiz-mode-normal', window.quizMode === 'normal');
 showFloatingBackBtn();
 document.body.classList.add('quiz-layout-active');
 generateQuestion();
@@ -3464,10 +3477,11 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.12',
-revisionDate: '02/05/2026',
+version: '0.14',
+revisionDate: '07/05/2026',
 changelog: [
-"Little fix to Normal Mode progress."
+"Minor fixes to timers.",
+"Adjusted UI in Normal mode."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
