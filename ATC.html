@@ -1567,8 +1567,8 @@ Throttle / Lever (controls):
 <div class="lobby-panel-title" style="display:flex;align-items:center;justify-content:space-between;gap:10px;"><span id="mp-inlobby-title">Lobby</span><button class="cloud-refresh-btn" onclick="multiplayerSystem.leaveLobby()" title="Leave">✕</button></div>
 <div class="mp-sub" id="mp-inlobby-sub" style="margin-bottom:10px;">Waiting for players.</div>
 <div style="display:flex;gap:14px;flex-wrap:wrap;">
-<div class="mp-lobby-info" style="flex:1;min-width:200px;padding:14px;background:rgba(8,12,24,0.6);border:1px solid var(--col-border-light);border-radius:10px;">
-<div class="lobby-field lobby-field-row"><span class="lobby-dot"></span><span class="lobby-label">Password Lock</span><span id="mp-lobby-code-display" class="mp-lobby-code" style="margin-left:8px;cursor:pointer;user-select:all;font-family:var(--font-mono-sci);letter-spacing:1px;color:var(--nexus-multiplayer);display:none;font-size:0.8em;padding:2px 6px;background:rgba(0,0,0,0.3);border:1px solid var(--nexus-multiplayer);border-radius:4px;" onclick="multiplayerSystem.copyCode()" title="Click to copy"></span><label class="lobby-toggle"><input type="checkbox" id="mp-access-toggle" onchange="multiplayerSystem.togglePrivateAccess()"><span class="lobby-toggle-track"></span></label></div>
+<div id="mp-lobby-info-box" class="mp-lobby-info" style="flex:1;min-width:200px;padding:14px;background:rgba(8,12,24,0.6);border:1px solid var(--col-border-light);border-radius:10px;">
+<div id="mp-password-lock-row" class="lobby-field lobby-field-row" style="display:none;"><span class="lobby-dot"></span><span class="lobby-label">Password Lock</span><span id="mp-lobby-code-display" class="mp-lobby-code" style="margin-left:8px;cursor:pointer;user-select:all;font-family:var(--font-mono-sci);letter-spacing:1px;color:var(--nexus-multiplayer);display:none;font-size:0.8em;padding:2px 6px;background:rgba(0,0,0,0.3);border:1px solid var(--nexus-multiplayer);border-radius:4px;" onclick="multiplayerSystem.copyCode()" title="Click to copy"></span><label class="lobby-toggle"><input type="checkbox" id="mp-access-toggle" onchange="multiplayerSystem.togglePrivateAccess()"><span class="lobby-toggle-track"></span></label></div>
 <div class="mp-bank-picker" id="mp-bank-picker-wrap" style="display:block;margin-top:12px;">
 <div style="font-weight:600;font-size:0.85em;color:var(--col-text-main);margin-bottom:4px;">Question Bank</div>
 <select id="mp-bank-select" class="lobby-input" onchange="multiplayerSystem.setBank(this.value)" style="width:100%;"></select>
@@ -1592,19 +1592,18 @@ Throttle / Lever (controls):
 <div class="mp-actions-row" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
 <button class="mp-btn" id="mp-start-btn" onclick="multiplayerSystem.startQuiz()" style="display: none;">Start Quiz</button>
 <button class="mp-btn" id="mp-join-quiz-btn" onclick="multiplayerSystem.restoreUI()" style="display:none;">Join Quiz</button>
-<button class="mp-btn secondary" onclick="multiplayerSystem.addBot()" id="mp-addbot-btn">+ AI Friend</button>
+<button class="mp-btn secondary" onclick="multiplayerSystem.addBot()" id="mp-addbot-btn" disabled="" style="display:none;">+ AI Friend</button>
 <button class="mp-btn" id="mp-rejoin-btn" onclick="multiplayerSystem.requestRejoin()" style="display:none;">Rejoin Quiz</button>
 <span id="mp-bot-limit-msg" style="display:none;color:var(--col-error);font-size:0.78em;margin-top:4px;margin-left:4px;">Max players reached for your slot</span>
 </div>
-
 </div>
 <div style="flex:1;min-width:180px;">
-<div style="font-weight:600;font-size:0.85em;color:var(--col-text-main);margin-bottom:8px;">Roster <span id="mp-roster-count" style="color:var(--col-text-muted);font-weight:400;font-size:0.85em;"></span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;"><span style="font-weight:600;font-size:0.85em;color:var(--col-text-main);">Roster</span><span id="mp-roster-count" style="background:rgba(255,136,0,0.15);color:#ff8800;font-size:0.68em;font-weight:bold;padding:2px 8px;border-radius:10px;border:1px solid rgba(255,136,0,0.3);">0/4</span></div>
 <div class="mp-roster" id="mp-roster" style="max-height:260px;overflow-y:auto;"></div>
 </div>
 </div>
 <div id="mp-chat-box" style="margin-top:14px;padding:10px 14px;background:rgba(8,12,24,0.6);border:1px solid var(--col-border-light);border-radius:10px;display:flex;flex-direction:column;height:180px;position:relative;">
-<span class="hoverable" data-tooltip="Chat messages are encrypted using AES-256-GCM with a key derived from the lobby code. They are never stored as plaintext on Firebase." style="position:absolute;top:8px;right:12px;font-size:0.9em;color:var(--col-text-muted);cursor:help;z-index:5;">ⓘ</span>
+<span class="hoverable" data-tooltip="Chat messages are encrypted using AES-256-GCM with a key derived from the lobby id. To avoid transmitting session's chat as plaintext on Firebase." style="position:absolute;top:8px;right:12px;font-size:0.9em;color:var(--col-text-muted);cursor:help;z-index:5;">ⓘ</span>
 <div id="mp-chat-messages" style="flex:1;overflow-y:auto;font-size:0.82em;color:var(--col-text-main);padding-bottom:6px;border-bottom:1px solid var(--col-border-light);margin-bottom:6px;scrollbar-width:thin;"></div>
 <div style="display:flex;gap:6px;">
 <input type="text" id="mp-chat-input" class="lobby-input" placeholder="Type a message..." style="flex:1;padding:6px 10px;font-size:0.82em;" disabled onkeydown="if(event.key==='Enter')multiplayerSystem.sendChatMessage(this.value);">
@@ -4968,7 +4967,7 @@ _originalBackToSelection();
 };
 function backToSelection() {
 if (window.multiplayerSession && window.multiplayerSession.inPaneQuiz) {
-if (!confirm('Leave the multiplayer session? Your progress will be saved.')) return;
+if (!confirm('Leave the multiplayer session?')) return;
 document.body.classList.remove('quiz-layout-active', 'multi-quiz-active', 'viewport-lock');
 var container = document.getElementById('multi-quiz-container');
 if (container) container.classList.add('hidden');
@@ -9862,11 +9861,10 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.29',
-revisionDate: '06/05/2026',
+version: '0.30',
+revisionDate: '08/05/2026',
 changelog: [
-"Initial release.",
-"Bug fixes."
+"Multiplayer interface polishing."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
@@ -11029,19 +11027,28 @@ joinLobbyDirect(code);
 });
 }).catch(function(err){showError('mp-hub-error','Request failed: '+err.code);});
 }
-function joinLobbyDirect(code) {
+function joinLobbyDirect(code, isHost) {
 window.multiplayerSession.lobbyId = code;
-window.multiplayerSession.isHost = false;
+window.multiplayerSession.isHost = !!isHost;
 window.multiplayerSession.inLobby = true;
 attachLobby(code);
 _myJoinTime = Date.now();
 startChatListener();
 startPingsListener();
 startHeartbeat();
-attachOnDisconnect(code, window.multiplayerSession.uid, false);
+attachOnDisconnect(code, window.multiplayerSession.uid, isHost);
 applyPlayerNameSettingsUI();
 stopListingLobbies();
 updateMPLobbyUI(true);
+}
+function showMultiplayerLobbyUI() {
+leaveNexus();
+switchTab('knowledge');
+setKbMode('multiplayer');
+document.getElementById('knowledge-selection-screen').classList.remove('hidden');
+document.getElementById('knowledge-quiz-screen').classList.add('hidden');
+document.getElementById('knowledge-results-screen').classList.add('hidden');
+document.body.classList.remove('quiz-layout-active','viewport-lock');
 }
 function acceptJoinRequest(requestUid) {
 const code=window.multiplayerSession.lobbyId;
@@ -11052,6 +11059,13 @@ fb.get(requestRef).then(function(snap){
 var data=snap.val();
 if(!data)return;
 const existingPlayers = lobbyState.players || {};
+var humanCount=Object.keys(existingPlayers).length;
+var botCount=0; Object.keys(existingPlayers).forEach(function(uid){botCount+=Object.keys((existingPlayers[uid].aiFriends||{})).length;});
+var maxPlayers=lobbyState.maxPlayers||4;
+if(humanCount+botCount >= maxPlayers){
+showFullLobbyJoinPrompt(requestUid, data);
+return;
+}
 const existingNames = new Set(Object.values(existingPlayers).map(function(p){return p.displayName||p.name||'';}));
 let displayName = (data.name||'Player').slice(0,20);
 let suffix = 1;
@@ -11097,19 +11111,8 @@ const isPrivate=!!(privateEl&&privateEl.checked);
 const lobby={ host:uid, phase:'lobby', createdAt:fb.serverTimestamp(), joinCode:joinCode, isPrivate:isPrivate, lobbyName:lobbyName, sectionKey:_lobbySelectedKey||'', questionOrder:'', questionIndex:-1, currentQStartedAt:0, questionCount:10, gameMode:'classic', maxPlayers:maxPlayers, players:{} };
 lobby.players[uid]={ name:(playerProfile.data.name||'You').slice(0,20), displayName:(playerProfile.data.name||'You').slice(0,20), avatarUrl:playerProfile.data.avatarUrl||'', online:true, score:0, joinedAt:fb.serverTimestamp(), lastOnline: fb.serverTimestamp(), bankSynced: true };
 fb.set(fb.ref(fb.db,'lobbies/'+code), lobby).then(function(){
-window.multiplayerSession.lobbyId=code;
-window.multiplayerSession.isHost=true;
-window.multiplayerSession.inLobby=true;
 sessionStorage.setItem('mp_rejoin',JSON.stringify({id:code,name:lobbyName,host:true}));
-attachLobby(code);
-_myJoinTime = Date.now();
-startChatListener();
-startPingsListener();
-startHeartbeat();
-attachOnDisconnect(code, uid, true);
-applyPlayerNameSettingsUI();
-stopListingLobbies();
-updateMPLobbyUI(true);
+joinLobbyDirect(code, true);
 setTimeout(function() {
 multiplayerSystem.sendChatSystemMessage(playerProfile.data.name + ' created the lobby');
 }, 500);
@@ -11147,19 +11150,23 @@ if(lobbies.length===0){el.innerHTML='<div style="padding:20px;color:var(--col-te
 const db=getMergedDatabase();
 const pendingSet = window.multiplayerSession.requestedLobbyCodes || new Set();
 el.innerHTML=lobbies.map(function(l){
-const hostUid=Object.keys(l.players||{})[0]||'';
-const host=(l.players||{})[hostUid]||{};
-const playerCount=Object.keys(l.players||{}).length;
+const hostUid=l.host||Object.keys(l.players||{})[0]||'';
+const hostPlayer=(l.players||{})[hostUid]||{};
+const humanCount=Object.keys(l.players||{}).length;
+let botCount=0;
+Object.keys(l.players||{}).forEach(function(uid){botCount+=Object.keys((l.players[uid].aiFriends||{})).length;});
+const totalSlots=humanCount+botCount;
 const sec=db.sections[l.sectionKey];
-const bankName=sec?(sec.title||'Unknown'):(l.sectionKey||'No bank');
-const title=escapeHTML(bankName);
-const hostName=escapeHTML(host.name||'Unknown');
+const bankName=sec?(sec.title||'Unknown'):(l.sectionKey||'No bank selected');
+const lobbyName=l.lobbyName||'Unnamed Lobby';
+const hostName=escapeHTML(hostPlayer.displayName||hostPlayer.name||'Unknown');
 const isQuiz=l.phase==='quiz';
 const lockIcon=l.isPrivate?'🔒 ':'';
-const badgeHTML=isQuiz?'<span class="mp-card-badge quiz-badge">In Quiz</span>':'<span class="mp-card-badge">'+playerCount+' player'+(playerCount!==1?'s':'')+'</span>';
-var joinClick, joinLabel;
-if(isQuiz){
-var alreadyRequested = pendingSet.has(l.code);
+const maxPlayers=l.maxPlayers||4;
+const gameMode=l.gameMode||'classic';
+var joinClick, joinLabel, alreadyRequested;
+if(isQuiz||totalSlots>=maxPlayers){
+alreadyRequested=pendingSet.has(l.code);
 if(alreadyRequested){
 joinClick=''; joinLabel='Pending...';
 }else{
@@ -11170,8 +11177,72 @@ joinLabel='Request Join';
 joinClick=l.isPrivate?'multiplayerSystem.tryJoinPrivate(\''+escapeHTML(l.code)+'\',\''+escapeHTML(l.joinCode||'')+'\')':'multiplayerSystem.joinLobby(\''+escapeHTML(l.code)+'\')';
 joinLabel='Join';
 }
-return '<div class="mp-lobby-card'+(isQuiz?' quiz':'')+'" '+(joinClick?'onclick="'+joinClick+'" style="cursor:pointer;"':'style="cursor:pointer;"')+'><div class="mp-card-title">'+lockIcon+title+'</div>'+badgeHTML+'<div class="mp-card-desc">'+hostName+(l.isPrivate?' · 🔒 Code required':'')+'</div><div class="mp-card-footer">'+(joinClick||alreadyRequested?'<button class="mp-lobby-join-btn" '+(alreadyRequested?'disabled style="opacity:0.5;cursor:default;"':'onclick="event.stopPropagation();'+joinClick+'"')+'>'+joinLabel+'</button>':'')+'</div></div>';
+return '<div class="mp-lobby-card'+(isQuiz?' quiz':'')+'" '+(joinClick?'onclick="'+joinClick+'" style="cursor:pointer;"':'style="cursor:pointer;"')+'><div class="mp-card-title">'+lockIcon+escapeHTML(lobbyName)+'</div><span class="mp-card-badge'+(isQuiz?' quiz-badge':'')+'">'+(isQuiz?'In Quiz':totalSlots+'/'+maxPlayers)+'</span><div class="mp-card-desc">Bank: <span style="color:#ff8800;">'+escapeHTML(bankName)+'</span><br>Mode: '+escapeHTML(gameMode)+'<br>'+humanCount+' Player'+(humanCount!==1?'s':'')+(botCount?' · '+botCount+' AI':'')+'<br>Host: '+hostName+'</div><div class="mp-card-footer">'+(joinClick||alreadyRequested?'<button class="mp-lobby-join-btn" '+(alreadyRequested?'disabled style="opacity:0.5;cursor:default;"':'onclick="event.stopPropagation();'+joinClick+'"')+'>'+joinLabel+'</button>':'')+'</div></div>';
 }).join('');
+}
+function rejoinLobby(code) {
+if(!ready()){alert('Not connected yet.');return;}
+const fb=window.fb, uid=window.multiplayerSession.uid;
+fb.get(fb.ref(fb.db,'lobbies/'+code)).then(function(snap){
+if(!snap.exists()){alert('Lobby no longer exists.');return;}
+const v=snap.val();
+const myPlayer=(v.players||{})[uid];
+const isHost=(v.host===uid);
+const lobbyName=v.lobbyName||'Lobby';
+sessionStorage.setItem('mp_rejoin',JSON.stringify({id:code,name:lobbyName,host:isHost}));
+const humanCount=Object.keys(v.players||{}).length;
+let botCount=0;
+Object.keys(v.players||{}).forEach(function(u){botCount+=Object.keys((v.players[u].aiFriends||{})).length;});
+const maxP=v.maxPlayers||4;
+const currentTotal=humanCount+botCount;
+if(isHost){
+if(!myPlayer||myPlayer.left){
+var updates={};
+var playerEntry={name:(playerProfile.data.name||'You').slice(0,20),displayName:(playerProfile.data.name||'You').slice(0,20),avatarUrl:playerProfile.data.avatarUrl||'',online:true,score:myPlayer?myPlayer.score||0:0,left:false,joinedAt:fb.serverTimestamp(),lastOnline:fb.serverTimestamp()};
+if(currentTotal>=maxP){
+var botKicked=false;
+for(var ownerUid in v.players){
+if(botKicked)break;
+var aiFriends=v.players[ownerUid].aiFriends||{};
+var botIds=Object.keys(aiFriends);
+if(botIds.length>0){
+var botId=botIds[0];
+updates['players/'+ownerUid+'/aiFriends/'+botId]=null;
+botKicked=true;
+}
+}
+if(!botKicked){alert('Lobby is full and no bot to swap.');return;}
+}
+updates['players/'+uid]=playerEntry;
+fb.update(fb.ref(fb.db,'lobbies/'+code),updates).then(function(){
+joinLobbyDirect(code, true);
+showMultiplayerLobbyUI();
+}).catch(function(err){alert('Rejoin failed: '+err.code);});
+return;
+}
+fb.update(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid),{online:true,left:false,lastOnline:fb.serverTimestamp()}).then(function(){
+joinLobbyDirect(code, true);
+showMultiplayerLobbyUI();
+}).catch(function(err){alert('Rejoin failed: '+err.code);});
+return;
+}else{
+if(myPlayer&&!myPlayer.left){
+fb.update(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid),{online:true,lastOnline:fb.serverTimestamp()}).then(function(){
+joinLobbyDirect(code, false);
+showMultiplayerLobbyUI();
+}).catch(function(err){alert('Rejoin failed: '+err.code);});
+return;
+}else{
+if(currentTotal>=maxP){alert('Lobby is full.');return;}
+var playerEntry={name:(playerProfile.data.name||'You').slice(0,20),displayName:(playerProfile.data.name||'You').slice(0,20),avatarUrl:playerProfile.data.avatarUrl||'',online:true,score:0,left:false,joinedAt:fb.serverTimestamp(),lastOnline:fb.serverTimestamp()};
+fb.set(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid),playerEntry).then(function(){
+joinLobbyDirect(code, false);
+showMultiplayerLobbyUI();
+}).catch(function(err){alert('Rejoin failed: '+err.code);});
+return;
+}
+}
+}).catch(function(err){alert('Lookup failed: '+err.code);});
 }
 function joinLobby(code) {
 if(!ready()){showError('mp-hub-error','Not connected yet.');return;}
@@ -11180,6 +11251,8 @@ fb.get(fb.ref(fb.db,'lobbies/'+code)).then(function(snap){
 if(!snap.exists()){showError('mp-hub-error','Lobby not found.');return;}
 const v=snap.val();
 if(v.phase!=='lobby'){showError('mp-hub-error','Lobby already in progress.');return;}
+var humanCount=Object.keys(v.players||{}).length; var botCount=0; Object.keys(v.players||{}).forEach(function(uid){botCount+=Object.keys((v.players[uid].aiFriends||{})).length;});
+if(humanCount+botCount >= (v.maxPlayers||4)){ requestJoinQuizLobby(code); return; }
 const existingPlayers = v.players || {};
 const myRawName = (playerProfile.data.name||'You').slice(0,20);
 const existingNames = new Set(Object.values(existingPlayers).map(function(p){return p.displayName||p.name||'';}));
@@ -11188,24 +11261,10 @@ let suffix = 1;
 while (existingNames.has(displayName)) { suffix++; displayName = myRawName + '(' + suffix + ')'; }
 const slot={ name:myRawName, displayName:displayName, avatarUrl:playerProfile.data.avatarUrl||'', online:true, score:0, joinedAt:fb.serverTimestamp(), lastOnline: fb.serverTimestamp() };
 fb.set(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid), slot).then(function(){
-window.multiplayerSession.lobbyId=code;
-window.multiplayerSession.isHost=false;
-window.multiplayerSession.inLobby=true;
 sessionStorage.setItem('mp_rejoin',JSON.stringify({id:code,name:v.lobbyName||'Lobby',host:false}));
 var container = document.querySelector('#knowledge-selection-screen .selection-box');
 if (container) { container.dataset.activeMode = 'multiplayer'; }
-document.getElementById('knowledge-selection-screen').classList.remove('hidden');
-document.getElementById('mp-inlobby-view').style.display = '';
-document.getElementById('mp-hub-view').style.display = 'none';
-attachLobby(code);
-_myJoinTime = Date.now();
-startChatListener();
-startPingsListener();
-startHeartbeat();
-attachOnDisconnect(code, uid, false);
-applyPlayerNameSettingsUI();
-stopListingLobbies();
-updateMPLobbyUI(true);
+joinLobbyDirect(code, false);
 setTimeout(function() {
 multiplayerSystem.sendChatSystemMessage(playerProfile.data.name + ' joined the lobby');
 }, 500);
@@ -11556,7 +11615,7 @@ showPanel('results');
 renderResults();
 }
 const lobbyTitle=document.getElementById('mp-inlobby-title');
-if(lobbyTitle)lobbyTitle.textContent=(lobbyState.lobbyName||'Lobby')+(lobbyState.isPrivate?' 🔒':'');
+if(lobbyTitle)lobbyTitle.textContent=(lobbyState.isPrivate?'🔒 ':'')+(lobbyState.lobbyName||'Lobby');
 const code=window.multiplayerSession.lobbyId;
 const isPrivate=lobbyState.isPrivate;
 const codeDisplay=document.getElementById('mp-lobby-code-display');
@@ -11568,17 +11627,26 @@ codeDisplay.style.display='inline-block';
 codeDisplay.style.display='none';
 }
 }
+var pwRow=document.getElementById('mp-password-lock-row');
+if(pwRow) pwRow.style.display = window.multiplayerSession.isHost ? '' : 'none';
+var infoBox=document.getElementById('mp-lobby-info-box');
+if(infoBox) infoBox.style.display = window.multiplayerSession.isHost ? '' : 'none';
 const accessToggle=document.getElementById('mp-access-toggle');
 if(accessToggle)accessToggle.checked=isPrivate;
 const subEl=document.getElementById('mp-inlobby-sub');
 if(subEl)subEl.textContent=isPrivate?'Share the code below.' : 'Waiting for players.';
 const addBotBtn=document.getElementById('mp-addbot-btn');
 if(addBotBtn){
+var isHost=window.multiplayerSession.isHost;
+if(!isHost){addBotBtn.style.display='none';addBotBtn.disabled=true;}
+else{
+addBotBtn.style.display='';
 var totalReal=Object.keys(players).length;
 var totalBots=Object.keys(players).reduce(function(sum,pid){return sum+(players[pid].aiFriends?Object.keys(players[pid].aiFriends).length:0);},0);
 var atLimit=totalReal+totalBots>=maxPlayers;
 addBotBtn.disabled=atLimit;
 addBotBtn.style.opacity=atLimit?'0.4':'';
+}
 }
 const botLimitMsg=document.getElementById('mp-bot-limit-msg');
 if(botLimitMsg){ botLimitMsg.style.display='none'; }
@@ -11661,15 +11729,39 @@ window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + code + '/players/' + u
 }
 });
 }
-const cnt=document.getElementById('mp-roster-count'); if(cnt)cnt.textContent='('+list.length+')';
-if(roster){ roster.innerHTML=list.reduce(function(acc,p){
+const joinRequests = lobbyState.joinRequests || {};
+const jrList = Object.keys(joinRequests).map(function(uid){ return Object.assign({uid:uid, isPending:true}, joinRequests[uid]); });
+const allRoster = list.concat(jrList);
+var _playerList=Object.keys(players);
+var _humanCount=_playerList.length;
+var _botCount=0;
+_playerList.forEach(function(uid){_botCount+=Object.keys((players[uid].aiFriends||{})).length;});
+var _boundCount=_humanCount+_botCount;
+const cnt=document.getElementById('mp-roster-count');
+if(cnt){
+cnt.textContent=_boundCount+'/'+maxPlayers;
+if(_boundCount>=maxPlayers){
+cnt.style.background='rgba(255,68,68,0.15)';
+cnt.style.color='#ff4444';
+cnt.style.borderColor='rgba(255,68,68,0.3)';
+}else{
+cnt.style.background='rgba(0,255,136,0.15)';
+cnt.style.color='#00ff88';
+cnt.style.borderColor='rgba(0,255,136,0.3)';
+}
+}
+if(roster){ roster.innerHTML=allRoster.map(function(p){
+if(p.isPending){
+var acceptDecline = '';
+if(window.multiplayerSession.isHost) acceptDecline = '<div style="display:flex;gap:4px;margin-left:auto;"><button class="mp-btn" style="padding:2px 8px;font-size:0.65em;" onclick="event.stopPropagation();multiplayerSystem.acceptJoinRequest(\''+p.uid+'\')">Accept</button><button class="mp-btn secondary" style="padding:2px 8px;font-size:0.65em;" onclick="event.stopPropagation();multiplayerSystem.declineJoinRequest(\''+p.uid+'\')">Refuse</button></div>';
+return '<div class="mp-roster-card" style="opacity:0.55;border-style:dashed;"><img class="mp-roster-avatar" src="'+escapeHTML(p.avatarUrl||'')+'"><div class="mp-roster-meta"><div class="mp-roster-name">'+escapeHTML(p.name||'?')+'</div><div class="mp-roster-tag" style="font-style:italic;">Requesting to join...</div></div>'+acceptDecline+'</div>';
+}
 const isHost=(lobbyState.host===p.uid); const isYou=(myUid===p.uid);
 var setHostBtn=''; if(window.multiplayerSession.isHost&&!isHost&&p.uid!==myUid) setHostBtn='<button class="mp-set-host-btn" data-uid="'+p.uid+'" onclick="event.stopPropagation();multiplayerSystem.requestSetHost(this,\''+p.uid+'\')" style="margin-left:auto;background:transparent;border:1px solid var(--nexus-multiplayer);color:var(--nexus-multiplayer);border-radius:4px;cursor:pointer;font-size:0.7em;padding:2px 5px;flex-shrink:0;">Set Host</button>';
 var selfBorder = isYou ? ' border:2px solid var(--accent-0);' : '';
-acc.push('<div class="mp-roster-card '+(isHost?'host':'')+' '+(p.online?'':'offline')+'" style="'+selfBorder+'"><img class="mp-roster-avatar" src="'+escapeHTML(p.avatarUrl||'')+'"><div class="mp-roster-meta"><div class="mp-roster-name">'+escapeHTML(p.displayName||p.name||'?')+(p.left?' <span style="opacity:0.6;">(Left)</span>':'')+'</div><div class="mp-roster-tag '+(isYou?'you':'')+' '+(isHost?'host-tag':'')+'">'+(isHost?'HOST':'')+(isYou?(isHost?' · YOU':'YOU'):'')+(p.online?'':' · offline')+'</div></div>'+setHostBtn+'</div>');
-if(p.aiFriends){ Object.keys(p.aiFriends).forEach(function(bid){ const b=p.aiFriends[bid]; acc.push('<div class="mp-roster-card is-bot"><img class="mp-roster-avatar" src="'+escapeHTML(b.avatarUrl||'')+'"><div class="mp-roster-meta"><div class="mp-roster-name">'+escapeHTML(b.name||'Bot')+'</div><div class="mp-roster-tag">AI · Lvl '+(b.level||1)+(p.uid===myUid?' · yours':'')+'</div></div>'+(window.multiplayerSession.isHost?'<button class="mp-kick-bot-btn" onclick="event.stopPropagation();multiplayerSystem.kickBot(\''+p.uid+'\',\''+bid+'\')" title="Kick bot" style="margin-left:auto;background:transparent;border:1px solid var(--col-error);color:var(--col-error);border-radius:4px;cursor:pointer;font-size:0.7em;padding:2px 5px;flex-shrink:0;">✕</button>':'')+'</div>'); }); }
-return acc;
-},[]).join(''); }
+return '<div class="mp-roster-card '+(isHost?'host':'')+' '+(p.online?'':'offline')+'" style="'+selfBorder+'"><img class="mp-roster-avatar" src="'+escapeHTML(p.avatarUrl||'')+'"><div class="mp-roster-meta"><div class="mp-roster-name">'+escapeHTML(p.displayName||p.name||'?')+(p.left?' <span style="opacity:0.6;">(Left)</span>':'')+'</div><div class="mp-roster-tag '+(isYou?'you':'')+' '+(isHost?'host-tag':'')+'">'+(isHost?'HOST':'')+(isYou?(isHost?' · YOU':'YOU'):'')+(p.online?'':' · offline')+'</div></div>'+setHostBtn+'</div>'+
+(p.aiFriends?Object.keys(p.aiFriends).map(function(bid){ const b=p.aiFriends[bid]; return '<div class="mp-roster-card is-bot"><img class="mp-roster-avatar" src="'+escapeHTML(b.avatarUrl||'')+'"><div class="mp-roster-meta"><div class="mp-roster-name">'+escapeHTML(b.name||'Bot')+'</div><div class="mp-roster-tag">AI · Lvl '+(b.level||1)+(p.uid===myUid?' · yours':'')+'</div></div>'+(window.multiplayerSession.isHost?'<button class="mp-kick-bot-btn" onclick="event.stopPropagation();multiplayerSystem.kickBot(\''+p.uid+'\',\''+bid+'\')" title="Kick bot" style="margin-left:auto;background:transparent;border:1px solid var(--col-error);color:var(--col-error);border-radius:4px;cursor:pointer;font-size:0.7em;padding:2px 5px;flex-shrink:0;">✕</button>':'')+'</div>'; }).join(''):'');
+}).join(''); }
 if (_waitingForSync) {
 const allSyncedNow = Object.values(lobbyState.players).every(function(p){ return p.bankSynced === true; });
 if (allSyncedNow) {
@@ -11773,16 +11865,6 @@ const nextBtn=document.getElementById('mp-next-btn');
 if(nextBtn){ nextBtn.style.display=(window.multiplayerSession.isHost && _allAnswered)?'inline-block':'none'; nextBtn.textContent=(qIdx+1>=total)?'Show Results':'Next Question'; }
 const qroster=document.getElementById('mp-quiz-roster');
 if(qroster){ qroster.innerHTML=Object.keys(players).map(function(uid){const p=players[uid];const isYou=(uid===myUid);const selfBorder=isYou?' border:2px solid var(--accent-0);':'';return '<div class="mp-roster-card" style="'+selfBorder+'"><img class="mp-roster-avatar" src="'+escapeHTML(p.avatarUrl||'')+'"><div class="mp-roster-meta"><div class="mp-roster-name">'+escapeHTML(p.name||'?')+(p.left?' <span style="opacity:0.6;">(Left)</span>':'')+'</div><div class="mp-roster-tag">Score: '+(p.score||0)+'</div></div></div>';}).join(''); }
-if(window.multiplayerSession.isHost){
-var jrContainer=document.getElementById('mp-join-requests');
-if(!jrContainer){ jrContainer=document.createElement('div'); jrContainer.id='mp-join-requests'; jrContainer.style.marginTop='12px'; qroster.parentNode.insertBefore(jrContainer,qroster.nextSibling); }
-jrContainer.innerHTML='';
-var joinRequests=lobbyState.joinRequests||{};
-Object.keys(joinRequests).forEach(function(rUid){
-var req=joinRequests[rUid];
-jrContainer.innerHTML+='<div class="mp-roster-card" style="justify-content:space-between;"><div style="display:flex;align-items:center;gap:8px;"><img class="mp-roster-avatar" src="'+escapeHTML(req.avatarUrl||'')+'"><span>'+escapeHTML(req.name||'')+'</span></div><div><button class="mp-btn" style="padding:3px 8px;font-size:0.7em;" onclick="multiplayerSystem.acceptJoinRequest(\''+rUid+'\')">Accept</button><button class="mp-btn secondary" style="padding:3px 8px;font-size:0.7em;" onclick="multiplayerSystem.declineJoinRequest(\''+rUid+'\')">Decline</button></div></div>';
-});
-}
 renderChatQuiz();
 }
 function pickAnswer(optionIdx, isCorrect) {
@@ -11884,6 +11966,58 @@ const code=window.multiplayerSession.lobbyId;
 if(!code||!playerUid||!botId)return;
 window.fb.remove(window.fb.ref(window.fb.db,'lobbies/'+code+'/players/'+playerUid+'/aiFriends/'+botId)).catch(function(){});
 }
+var _pendingFullJoinRequest = null;
+function showFullLobbyJoinPrompt(requestUid, data) {
+_pendingFullJoinRequest = { uid: requestUid, data: data };
+var modal = document.getElementById('full-lobby-join-modal');
+if(!modal){
+modal = document.createElement('div');
+modal.id = 'full-lobby-join-modal';
+modal.className = 'help-modal-overlay';
+modal.addEventListener('click', function(e){ if(e.target===modal) declineFullLobbyJoin(); });
+document.body.appendChild(modal);
+}
+var botsHTML = '';
+Object.keys(lobbyState.players||{}).forEach(function(ownerUid){
+var aiFriends = lobbyState.players[ownerUid].aiFriends||{};
+Object.keys(aiFriends).forEach(function(botId){
+var b = aiFriends[botId];
+botsHTML += '<div class="mp-roster-card" style="justify-content:space-between;margin-bottom:6px;"><div style="display:flex;align-items:center;gap:8px;"><img class="mp-roster-avatar" src="'+escapeHTML(b.avatarUrl||'')+'"><span>'+escapeHTML(b.name||'Bot')+'</span></div><button class="mp-btn" style="padding:3px 8px;font-size:0.7em;" onclick="swapBotAndAcceptFullJoin(\''+ownerUid+'\',\''+botId+'\')">Swap &amp; Accept</button></div>';
+});
+});
+modal.innerHTML = '<div class="help-modal-container" style="max-width:450px;"><div class="help-modal-header"><div class="help-modal-title">Player Requesting Join</div><button class="help-close-btn" onclick="declineFullLobbyJoin()">✕</button></div><div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><img src="'+escapeHTML(data.avatarUrl||'')+'" style="width:40px;height:40px;border-radius:50%;object-fit:cover;"><span style="font-weight:bold;color:var(--col-text-main);">'+escapeHTML(data.name||'Player')+'</span></div><p style="color:var(--col-text-muted);margin-bottom:14px;">Lobby is full. Select an AI friend to swap with to accept.</p><div>'+botsHTML+'</div><div class="knowledge-actions" style="margin-top:20px;"><button class="btn btn-secondary" onclick="declineFullLobbyJoin()">Refuse</button></div></div>';
+modal.classList.add('active');
+}
+function declineFullLobbyJoin() {
+var modal = document.getElementById('full-lobby-join-modal');
+if(modal) modal.classList.remove('active');
+if(_pendingFullJoinRequest){
+declineJoinRequest(_pendingFullJoinRequest.uid);
+_pendingFullJoinRequest = null;
+}
+}
+function swapBotAndAcceptFullJoin(botOwnerUid, botId) {
+if(!_pendingFullJoinRequest) return;
+var requestUid = _pendingFullJoinRequest.uid;
+var data = _pendingFullJoinRequest.data;
+var code = window.multiplayerSession.lobbyId;
+var fb = window.fb;
+var requestRef = fb.ref(fb.db,'lobbies/'+code+'/joinRequests/'+requestUid);
+fb.remove(fb.ref(fb.db,'lobbies/'+code+'/players/'+botOwnerUid+'/aiFriends/'+botId)).then(function(){
+const existingPlayers = lobbyState.players || {};
+const existingNames = new Set(Object.values(existingPlayers).map(function(p){return p.displayName||p.name||'';}));
+let displayName = (data.name||'Player').slice(0,20);
+let suffix = 1;
+while (existingNames.has(displayName)) { suffix++; displayName = (data.name||'Player').slice(0,20) + '(' + suffix + ')'; }
+var playerEntry = { name: data.name, displayName: displayName, avatarUrl: data.avatarUrl, online: true, score: 0, left: false, joinedAt: fb.serverTimestamp(), lastOnline: fb.serverTimestamp() };
+fb.set(fb.ref(fb.db,'lobbies/'+code+'/players/'+requestUid), playerEntry).then(function(){
+fb.remove(requestRef);
+}).catch(function(err){ console.error(err); });
+}).catch(function(err){ console.error(err); });
+var modal = document.getElementById('full-lobby-join-modal');
+if(modal) modal.classList.remove('active');
+_pendingFullJoinRequest = null;
+}
 var _pendingRemovalTimers = {};
 function scheduleRemoveSlot(slotUid) {
 if (_pendingRemovalTimers[slotUid]) return;
@@ -11923,6 +12057,7 @@ delete _pendingRemovalTimers[uid];
 }
 function addBot() {
 if(!window.multiplayerSession.inLobby)return;
+if(!window.multiplayerSession.isHost)return;
 var uid=window.multiplayerSession.uid, code=window.multiplayerSession.lobbyId;
 var allPlayers = (lobbyState && lobbyState.players) || {};
 var totalReal = Object.keys(allPlayers).length;
@@ -12269,7 +12404,7 @@ hue: f.favoriteHue
 });
 }, 100);
 }
-return { openHub: openHub, exit: exit, createLobby: createLobby, joinLobby: joinLobby, joinLobbyDirect: joinLobbyDirect, requestJoinQuizLobby: requestJoinQuizLobby, leaveLobby: leaveLobby, setBank: setBank, setQuestionCount: setQuestionCount, setGameMode: setGameMode, startQuiz: startQuiz, startPaneQuiz: startPaneQuiz, pickAnswer: pickAnswer, pickPaneAnswer: pickPaneAnswer, advance: advance, returnToLobby: returnToLobby, addBot: addBot, kickBot: kickBot, uploadProfile: uploadProfile, refreshLobbies: refreshLobbies, listLobbies: listLobbies, togglePrivateAccess: togglePrivateAccess, tryJoinPrivate: tryJoinPrivate, copyCode: copyCode, joinByTypedCode: joinByTypedCode, setMaxPlayers: setMaxPlayers, sendChatMessage: sendChatMessage,
+return { openHub: openHub, exit: exit, createLobby: createLobby, joinLobby: joinLobby, joinLobbyDirect: joinLobbyDirect, rejoinLobby: rejoinLobby, requestJoinQuizLobby: requestJoinQuizLobby, leaveLobby: leaveLobby, setBank: setBank, setQuestionCount: setQuestionCount, setGameMode: setGameMode, startQuiz: startQuiz, startPaneQuiz: startPaneQuiz, pickAnswer: pickAnswer, pickPaneAnswer: pickPaneAnswer, advance: advance, returnToLobby: returnToLobby, addBot: addBot, kickBot: kickBot, uploadProfile: uploadProfile, refreshLobbies: refreshLobbies, listLobbies: listLobbies, togglePrivateAccess: togglePrivateAccess, tryJoinPrivate: tryJoinPrivate, copyCode: copyCode, joinByTypedCode: joinByTypedCode, setMaxPlayers: setMaxPlayers, sendChatMessage: sendChatMessage,
 confirmLeaveLobby: function() { if (confirm('Are you sure you want to leave the game?')) this.leaveLobby(); },
 sendChatSystemMessage: async function(text) {
 const code = window.multiplayerSession.lobbyId;
@@ -12284,7 +12419,7 @@ var notif=document.getElementById('mp-compact-notif');if(!notif)return;
 var restoreBtn=notif.querySelector('#mp-compact-restore');var leaveBtn=notif.querySelector('#mp-compact-leave');var rejoinBtn=notif.querySelector('#mp-compact-rejoin');
 if(restoreBtn)restoreBtn.onclick=function(){if(window.multiplayerSystem&&window.multiplayerSystem.restoreUI)window.multiplayerSystem.restoreUI();};
 if(leaveBtn)leaveBtn.onclick=function(){if(window.multiplayerSystem&&window.multiplayerSystem.leaveLobby)window.multiplayerSystem.leaveLobby();};
-if(rejoinBtn)rejoinBtn.onclick=function(){var saved=sessionStorage.getItem('mp_rejoin');if(!saved)return;try{var d=JSON.parse(saved);if(d.id&&window.multiplayerSystem){sessionStorage.removeItem('mp_rejoin');notif.style.display='none';window.multiplayerSystem.joinLobby(d.id);}}catch(e){}};
+if(rejoinBtn)rejoinBtn.onclick=function(){var saved=sessionStorage.getItem('mp_rejoin');if(!saved)return;try{var d=JSON.parse(saved);if(d.id&&window.multiplayerSystem){sessionStorage.removeItem('mp_rejoin');notif.style.display='none';window.multiplayerSystem.rejoinLobby(d.id);}}catch(e){};};
 window.updateMPCompactNotif=function(){var ses=window.multiplayerSession||{};var state=window._mpLobbyState||{};var inLobby=ses.inLobby||ses.inQuiz||ses.inPaneQuiz;var lobbyVisible=document.getElementById('mp-inlobby-view')&&document.getElementById('mp-inlobby-view').style.display!=='none';var hubVisible=document.getElementById('mp-hub-view')&&document.getElementById('mp-hub-view').style.display!=='none';var quizActive=document.getElementById('mp-panel-quiz')&&document.getElementById('mp-panel-quiz').classList.contains('active');var paneActive=document.getElementById('multi-quiz-container')&&!document.getElementById('multi-quiz-container').classList.contains('hidden');var restoreEl=document.getElementById('mp-compact-restore');var rejoinEl=document.getElementById('mp-compact-rejoin');if(inLobby&&!lobbyVisible&&!hubVisible&&!quizActive&&!paneActive){var lobbyPhase=state.phase||(ses.inLobby?'lobby':'');if(ses.inPaneQuiz)lobbyPhase='panequiz';notif.style.display='block';if(restoreEl)restoreEl.style.display='';if(rejoinEl)rejoinEl.style.display='none';var dot=document.getElementById('mp-compact-dot');if(dot){dot.className='mp-status-dot '+(lobbyPhase==='lobby'?'online':'connecting');}var statusEl=document.getElementById('mp-compact-status');if(statusEl)statusEl.textContent=lobbyPhase==='lobby'?'In Lobby':(lobbyPhase==='quiz'?'Quiz in progress':(lobbyPhase==='panequiz'?'Pane Quiz':'Connected'));var players=(state.players&&Object.keys(state.players).length)||0;var count=document.getElementById('mp-compact-players');if(count)count.textContent=players+' player'+(players!==1?'s':'');}else{var saved=sessionStorage.getItem('mp_rejoin');if(saved&&!inLobby){try{var rd=JSON.parse(saved);if(rd.host){notif.style.display='none';return;}notif.style.display='block';if(restoreEl)restoreEl.style.display='none';if(rejoinEl)rejoinEl.style.display='';var dot2=document.getElementById('mp-compact-dot');if(dot2)dot2.className='mp-status-dot connecting';var st2=document.getElementById('mp-compact-status');if(st2)st2.textContent='Session Available';var ct2=document.getElementById('mp-compact-players');if(ct2)ct2.textContent=rd.name||'Lobby';}catch(e){notif.style.display='none';}}else{notif.style.display='none';}}};
 window.multiplayerSystem.restoreUI=function(){var s=window.multiplayerSession;if(s.inLobby||s.inQuiz||s.inPaneQuiz){document.body.classList.remove('nexus-active');switchTab('knowledge');setKbMode('multiplayer');var c=document.querySelector('#knowledge-selection-screen .selection-box');if(c)c.dataset.activeMode='multiplayer';document.getElementById('mp-hub-view').style.display='none';document.getElementById('mp-inlobby-view').style.display='none';s._leftPaneQuizView=false;s._leftQuizView=false;if(s.inPaneQuiz){document.getElementById('knowledge-selection-screen').classList.add('hidden');var mc=document.getElementById('multi-quiz-container');if(mc){mc.classList.remove('hidden');document.body.classList.add('quiz-layout-active','multi-quiz-active','viewport-lock');if(typeof multiQuizSession!=='undefined'&&multiQuizSession){renderMultiQuizPanes();multiQuizSession.slots.forEach(function(s,i){setTimeout(function(){if(multiQuizSession&&multiQuizSession.slots[i])renderPaneQuestion(i);},50+i*20);});setTimeout(spawnFriendCursorsAtBoxes,300);}else{if(s.isHost){startLocalPaneQuiz();}else{showPaneQuizGuest();}setTimeout(function(){document.body.classList.add('quiz-layout-active','multi-quiz-active','viewport-lock');},200);}}}else if(s.inQuiz){document.getElementById('knowledge-selection-screen').classList.add('hidden');showPanel('quiz');renderQuiz();}else{document.getElementById('knowledge-selection-screen').classList.remove('hidden');document.getElementById('mp-inlobby-view').style.display='';renderLobby();}}};
 })();
