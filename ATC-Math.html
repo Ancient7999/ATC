@@ -3491,10 +3491,9 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.18',
+version: '0.19',
 revisionDate: '09/05/2026',
 changelog: [
-"Timer fixes.",
 "Progress behavior adjustments."
 ]
 };
