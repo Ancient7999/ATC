@@ -1327,8 +1327,22 @@ function generateConversionsQuestion(){
 const variant=pickVariant('conversions');
 if(variant===0){const n=[1,2,3,4,5,6,7,8,9][Math.floor(Math.random()*9)];const d=[2,4,5,8,10,100,1000][Math.floor(Math.random()*7)];const correct=parseFloat((n/d).toFixed(4));const pool=[correct*10,correct/10,correct*100,(n+1)/d];const wrong=makeDistractors(correct,pool,3);const opts=[correct,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Fraction → Decimal: divide numerator by denominator<br>Step 1: ${n} ÷ ${d}<br>Step 2: ${n} ÷ ${d} = ${correct}<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:0,q:`Convert ${n}/${d} to a decimal.`,ans:opts.indexOf(correct),opts:opts.map(String),expl};}
 if(variant===1){const decimals=[0.05,0.10,0.25,0.40,0.55,0.61,0.75,0.80,0.95,0.061,0.125,0.333,0.667];const dec=decimals[Math.floor(Math.random()*decimals.length)];const correct=(dec*100).toFixed(2).replace(/\.?0+$/,'')+'%';const pool=[(dec/100*100).toFixed(2)+'%',(dec*10*100).toFixed(2)+'%',(dec*100+1).toFixed(2)+'%'];const wrong=makeDistractors(parseFloat(correct),pool.map(p=>parseFloat(p)),3);const opts=[correct,...wrong.map(w=>w.toFixed(2).replace(/\.?0+$/,'')+'%')].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Decimal → Percent: multiply by 100, add %<br>Step 1: ${dec} × 100 = ${dec*100}<br>Step 2: Add % symbol<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:1,q:`Convert ${dec} to a percentage.`,ans:opts.indexOf(correct),opts:opts,expl};}
-if(variant===2){const n=[1,2,3,4,5,6,7,8,9,10,12,15][Math.floor(Math.random()*12)];const d=[4,5,8,10,16,20,25][Math.floor(Math.random()*7)];const correct=((n/d)*100).toFixed(2).replace(/\.?0+$/,'')+'%';const pool=[(n*d).toFixed(2)+'%',((d/n)*100).toFixed(2).replace(/\.?0+$/,'')+'%',((n/d)*10).toFixed(2).replace(/\.?0+$/,'')+'%'];const wrong=makeDistractors(parseFloat(correct),pool.map(p=>parseFloat(p)),3);const opts=[correct,...wrong.map(w=>w.toFixed(2).replace(/\.?0+$/,'')+'%')].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Fraction → Percent: (n/d) × 100%<br>Step 1: ${n} ÷ ${d} = ${n/d}<br>Step 2: ${n/d} × 100 = ${(n/d)*100}%<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:2,q:`Convert ${n}/${d} to a percentage.`,ans:opts.indexOf(correct),opts:opts,expl};}
-if(variant===3){const a=[1,2,3,4,5,6,7,8,9][Math.floor(Math.random()*9)];const b=[2,3,4,5,6,7,8,9,10,15,20,25][Math.floor(Math.random()*12)];if(a>=b)return generateConversionsQuestion();const correct=((a/(a+b))*100).toFixed(2).replace(/\.?0+$/,'')+'%';const pool=[(a/b*100).toFixed(2).replace(/\.?0+$/,'')+'%',(b/(a+b)*100).toFixed(2).replace(/\.?0+$/,'')+'%',((a/(a+b))*100+5).toFixed(2).replace(/\.?0+$/,'')+'%'];const wrong=makeDistractors(parseFloat(correct),pool.map(p=>parseFloat(p)),3);const opts=[correct,...wrong.map(w=>w.toFixed(2).replace(/\.?0+$/,'')+'%')].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Ratio a:b → Percent: a/(a+b) × 100%<br>Step 1: Total parts = ${a} + ${b} = ${a+b}<br>Step 2: ${a} ÷ ${a+b} = ${a/(a+b)}<br>Step 3: ${a/(a+b)} × 100 = ${correct}<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:3,q:`Express the ratio ${a} : ${b} as a percentage.`,ans:opts.indexOf(correct),opts:opts,expl};}
+if(variant===2){const n=[1,2,3,4,5,6,7,8,9,10,12,15][Math.floor(Math.random()*12)];const d=[4,5,8,10,16,20,25][Math.floor(Math.random()*7)];const correct=((n/d)*100).toFixed(2).replace(/\.?0+$/,'')+'%';let wrongNumbers=[];
+const rawPool=[n*d,(d/n)*100,(n/d)*10];
+rawPool.forEach(function(v){
+var f=parseFloat(v.toFixed(2));
+if(Math.abs(f-parseFloat(correct))>0.01&&!wrongNumbers.some(function(u){return Math.abs(u-f)<0.01;}))wrongNumbers.push(f);
+});
+let wrong=wrongNumbers.slice(0,window.maxOptionsPerQuestion-1);
+var attempt=0;
+while(wrong.length<window.maxOptionsPerQuestion-1&&attempt<200){
+var r=parseFloat((Math.floor(Math.random()*99)+1)*(n/d)*100);
+r=parseFloat(r.toFixed(2));
+if(Math.abs(r-parseFloat(correct))>0.01&&!wrong.some(function(w){return Math.abs(w-r)<0.01;}))wrong.push(r);
+attempt++;
+}
+const opts=[correct].concat(wrong.map(function(w){return w.toFixed(2).replace(/\.?0+$/,'')+'%';})).sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Fraction → Percent: (n/d) × 100%<br>Step 1: ${n} ÷ ${d} = ${n/d}<br>Step 2: ${n/d} × 100 = ${(n/d)*100}%<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:2,q:`Convert ${n}/${d} to a percentage.`,ans:opts.indexOf(correct),opts:opts,expl};}
+if(variant===3){const a=[1,2,3,4,5,6,7,8,9][Math.floor(Math.random()*9)];const b=[2,3,4,5,6,7,8,9,10,15,20,25][Math.floor(Math.random()*12)];if(a>=b)return generateConversionsQuestion();const correct=((a/(a+b))*100).toFixed(2).replace(/\.?0+$/,'')+'%';const pool=[(a/b*100).toFixed(2).replace(/\.?0+$/,'')+'%',(b/(a+b)*100).toFixed(2).replace(/\.?0+$/,'')+'%',((a/(a+b))*100+5).toFixed(2).replace(/\.?0+$/,'')+'%'];const wrong=makeDistractors(parseFloat(correct),pool.map(p=>parseFloat(p)),3);const opts=[correct,...wrong.map(w=>w.toFixed(2).replace(/\.?0+$/,'')+'%')].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Ratio a:b → Percent: a/(a+b) × 100%<br>Step 1: Total parts = ${a} + ${b} = ${a+b}<br>Step 2: ${a} ÷ ${a+b} = ${nf(a/(a+b))}<br>Step 3: ${nf(a/(a+b))} × 100 = ${correct}<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:3,q:`Express the ratio ${a} : ${b} as a percentage.`,ans:opts.indexOf(correct),opts:opts,expl};}
 const p=[10,20,25,30,40,50,60,75,80][Math.floor(Math.random()*9)];const gcd=(a,b)=>b?gcd(b,a%b):a;const g=gcd(p,100);const num=p/g;const den=100/g;const correct=`${num}/${den}`;const pool=[`${p}/100`,`${den}/${num}`,`${p+5}/100`];
 const wrong=pool.filter(p=>p!==correct).slice(0,3);
 const opts=[correct,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> Percent → Fraction: write over 100, reduce<br>Step 1: ${p}% = ${p}/100<br>Step 2: GCD of ${p} and 100 is ${g}<br>Step 3: ${p}/${g} / 100/${g} = ${num}/${den}<br><strong>Answer: ${correct}</strong>`;return{type:"conversions",_formulaVariant:4,q:`Convert ${p}% to a fraction in lowest terms.`,ans:opts.indexOf(correct),opts:opts,expl};
@@ -1826,7 +1840,7 @@ const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ?
 const totalMs = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0;
 const totalTime = formatTimer(totalMs);
 const avgTime = numQuestionsTotal > 0 ? formatTimer(Math.round(totalMs / numQuestionsTotal)) : '00:00';
-document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Average Time: ${avgTime}<br>Total Time: ${totalTime}</small>`;
+document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Average time per question: ${avgTime}<br>Total Time: ${totalTime}</small>`;
 let diagnosticHTML = '';
 const breakdown = getPerformanceBreakdown();
 if (breakdown.length > 1) {
@@ -3508,12 +3522,12 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.25',
+version: '0.27',
 revisionDate: '09/05/2026',
 changelog: [
-"Distractors fixed for Integer Division section.",
-"Total timer behavior changes.",
-"Average timer per question shows on results menu."
+"Results screen adjustments.",
+"Fixed some explanations Decimal Precision implementation.",
+"Fixed some distractors limited to 2"
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
