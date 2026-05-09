@@ -1475,6 +1475,12 @@ const total = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseO
 timerEl.innerHTML = 'Total Time: <span>' + formatTimer(total) + '</span>';
 }
 }
+function shouldAutoShowResults(){
+if (window.quizMode !== 'normal') return false;
+var key = selectedFormulas[0];
+var m = getOrInitFormulaMastery(key);
+return m.counts.length > 0 && m.counts.every(function(c){ return c >= FORMULA_MASTERY_GOAL; });
+}
 function generateQuestion(){isReviewingHistory=false;reviewIndex=-1;updateNavArrows();startQuestionTimer();
 let qData;
 if(window._firstQuestion){qData=window._firstQuestion;window._firstQuestion=null;}else{
@@ -1730,7 +1736,7 @@ updateNavArrows();
 const advanceDelay = isCorrect ? 1800 : 2340;
 setTimeout(() => {
 if (currentQuestionNum >= numQuestionsTotal) {
-if (window.quizMode === 'normal' && !window._normalStageAlreadyMastered) {
+if (shouldAutoShowResults()) {
 showResultsScreen();
 } else {
 if (totalReviewPauseStart) totalReviewPauseAccumulated += Date.now() - totalReviewPauseStart;
@@ -1778,6 +1784,7 @@ function showResultsScreen() {
 document.getElementById('quiz-screen').style.display = 'none';
 const rs = document.getElementById('results-screen');
 rs.style.display = 'block';
+hideFloatingBackBtn();
 if (currentSessionId) {
 currentSessionId = null;
 }
@@ -2026,7 +2033,6 @@ window.quizMode='normal';
 selectedFormulas=[key];delete selectedVariants[key];
 window.answerMode='entry';try{localStorage.setItem('atc_answer_mode','entry');}catch(e){}
 document.getElementById('num-questions').value=30;
-window._normalStageAlreadyMastered = getNormalProgress(key).done;
 startQuiz();
 }
 let ps2FocusIndex=-1;
@@ -3491,7 +3497,7 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.19',
+version: '0.20',
 revisionDate: '09/05/2026',
 changelog: [
 "Progress behavior adjustments."
@@ -3806,7 +3812,7 @@ updateNavArrows();
 const advanceDelay=(isCorrect?1800:2340)*0.5;
 setTimeout(function(){
 if(currentQuestionNum>=numQuestionsTotal){
-if(window.quizMode==='normal' && !window._normalStageAlreadyMastered){
+if(shouldAutoShowResults()){
 showResultsScreen();
 } else {
 if(totalReviewPauseStart) totalReviewPauseAccumulated+=Date.now()-totalReviewPauseStart;
