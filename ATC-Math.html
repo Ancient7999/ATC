@@ -1057,7 +1057,7 @@ window.addEventListener('keydown', function(e) {
 if (window._atcListeningForShortcut) return;
 const _sm = document.getElementById('settings-modal');
 if (_sm && _sm.style.display === 'flex') return;
-if(exitConfirmActive){if(e.code==='ArrowLeft'){e.preventDefault();e.stopPropagation();exitFocusIdx=0;updateExitFocus();}else if(e.code==='ArrowRight'){e.preventDefault();e.stopPropagation();exitFocusIdx=1;updateExitFocus();}else if(e.code==='Enter'){e.preventDefault();e.stopPropagation();if(exitFocusIdx===0)hideExitConfirm();else confirmExit();}else if(e.code==='Escape'){e.preventDefault();e.stopPropagation();hideExitConfirm();}return;}
+if(exitConfirmActive){if(e.code==='ArrowLeft'){e.preventDefault();e.stopPropagation();exitFocusIdx=0;updateExitFocus();}else if(e.code==='ArrowRight'){e.preventDefault();e.stopPropagation();exitFocusIdx=1;updateExitFocus();}else if(e.code==='Enter'||e.code==='NumpadEnter'){e.preventDefault();e.stopPropagation();if(exitFocusIdx===0)hideExitConfirm();else confirmExit();}else if(e.code==='Escape'){e.preventDefault();e.stopPropagation();hideExitConfirm();}return;}
 if(e.code==='Escape'){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block'){e.preventDefault();e.stopPropagation();showExitConfirm();return;}}
 if ((e.code === 'ArrowLeft' || e.code === 'ArrowRight') && document.getElementById('calculator-widget').style.display === 'block') return;
 const quizScreen = document.getElementById('quiz-screen');
@@ -1335,6 +1335,34 @@ const opts=[correct,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Fo
 }
 function generateRoundingQuestion(){
 const variant=pickVariant('rounding');
+function buildOpts(correct, decimals, seedVals){
+const tol = Math.abs(correct) * 0.01;
+let candidates = [];
+seedVals.forEach(function(v){
+v = parseFloat(v.toFixed(decimals));
+if (Math.abs(v - correct) >= tol) candidates.push(v);
+});
+let unique = [];
+for (let i = 0; i < candidates.length; i++){
+let dup = false;
+for (let j = 0; j < unique.length; j++){
+if (Math.abs(unique[j] - candidates[i]) < tol) { dup = true; break; }
+}
+if (!dup) unique.push(candidates[i]);
+}
+let wrong = unique.slice(0, window.maxOptionsPerQuestion - 1);
+let attempt = 0;
+while (wrong.length < window.maxOptionsPerQuestion - 1 && attempt < 200){
+let r = correct * (0.2 + Math.random() * 2.5);
+r = parseFloat(r.toFixed(decimals));
+if (Math.abs(r - correct) >= tol && !wrong.some(function(w){ return Math.abs(w - r) < tol; })){
+wrong.push(r);
+}
+attempt++;
+}
+const opts = [correct].concat(wrong).sort(function(){ return Math.random() - 0.5; });
+return opts;
+}
 if(variant===0){
 const whole=Math.floor(Math.random()*90)+10;const tenths=Math.floor(Math.random()*10);const hundredths=Math.floor(Math.random()*10);const thousandths=Math.floor(Math.random()*10);
 const x=parseFloat(((whole*1000+tenths*100+hundredths*10+thousandths)/1000).toFixed(3));
@@ -1342,8 +1370,7 @@ const correct=parseFloat((Math.round(x*10)/10).toFixed(1));
 const floorVal=parseFloat((Math.floor(x*10)/10).toFixed(1));
 const ceilVal=parseFloat((Math.ceil(x*10)/10).toFixed(1));
 const offByOne=parseFloat((correct+(hundredths>=5?-0.1:0.1)).toFixed(1));
-const pool=[floorVal,ceilVal,offByOne];
-const wrong=makeDistractors(correct,pool,3);const opts=[correct,...wrong].sort(()=>Math.random()-0.5);
+const opts=buildOpts(correct, 1, [floorVal,ceilVal,offByOne]);
 const expl=`<strong>Formula:</strong> Round to nearest tenth: look at hundredths digit<br>Step 1: ${x} → hundredths digit = ${hundredths}<br>Step 2: ${hundredths} ${hundredths>=5?'≥':'<'} 5, so ${hundredths>=5?'round up':'round down'}<br>Step 3: Result = ${correct}<br><strong>Answer: ${correct}</strong>`;
 return{type:"rounding",_formulaVariant:0,q:`Round ${x} to the nearest tenth.`,ans:opts.indexOf(correct),opts:opts.map(v=>nf(v)),expl};}
 const whole=Math.floor(Math.random()*90)+10;const tenths=Math.floor(Math.random()*10);const hundredths=Math.floor(Math.random()*10);const thousandths=Math.floor(Math.random()*10);const tenThousandths=Math.floor(Math.random()*10);
@@ -1352,8 +1379,7 @@ const correct=parseFloat((Math.round(x*100)/100).toFixed(2));
 const roundedToTenth=parseFloat((Math.round(x*10)/10).toFixed(1));
 const floorVal=parseFloat((Math.floor(x*100)/100).toFixed(2));
 const ceilVal=parseFloat((Math.ceil(x*100)/100).toFixed(2));
-const pool=[roundedToTenth,floorVal,ceilVal];
-const wrong=makeDistractors(correct,pool,3);const opts=[correct,...wrong].sort(()=>Math.random()-0.5);
+const opts=buildOpts(correct, 2, [roundedToTenth,floorVal,ceilVal]);
 const expl=`<strong>Formula:</strong> Round to nearest hundredth: look at thousandths digit<br>Step 1: ${x} → thousandths digit = ${thousandths}<br>Step 2: ${thousandths} ${thousandths>=5?'≥':'<'} 5, so ${thousandths>=5?'round up':'round down'}<br>Step 3: Result = ${correct}<br><strong>Answer: ${correct}</strong>`;
 return{type:"rounding",_formulaVariant:1,q:`Round ${x} to the nearest hundredth.`,ans:opts.indexOf(correct),opts:opts.map(v=>nf(v)),expl};
 }
@@ -3471,11 +3497,11 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.22',
+version: '0.23',
 revisionDate: '09/05/2026',
 changelog: [
-"Answer selection adjustments.",
-"Decimal Precision implemented in explanations."
+"Shortcuts adjustments.",
+"Distractors fixed for Rounding Decimals section."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
