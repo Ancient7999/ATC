@@ -1311,7 +1311,7 @@ pool.splice(idx,1);}return result;}
 function generateDivisionQuestion(){
 const variant=pickVariant('division');
 if(variant===0){const big=Math.random()<0.5;let d,q;if(big){d=[11,12,13,14,15,16,17,18,19,21,23,25,27,29][Math.floor(Math.random()*14)];const qMin=Math.ceil(1000/d),qMax=Math.floor((9999-d)/d);q=Math.floor(Math.random()*(qMax-qMin+1))+qMin;}else{d=[2,3,4,5,6,7,8,9][Math.floor(Math.random()*8)];q=Math.floor(Math.random()*89)+11;}const dividend=d*q;const correct=q;const pool=big?[correct+5,correct-5,correct+10,correct-10,correct+25,correct-25,Math.floor(correct/10),correct*10]:[correct+1,correct-1,correct+2,correct-2,Math.floor(correct/10),Math.floor(correct*10)];const wrong=makeDistractors(correct,pool,3);const opts=[correct,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> dividend ÷ divisor = quotient<br>Step 1: ${dividend} ÷ ${d} = ?<br>Step 2: Find q where ${d} × q = ${dividend}<br>Step 3: ${d} × ${q} = ${dividend}<br><strong>Answer: ${correct}</strong>`;return{type:"division",_formulaVariant:0,q:`${dividend} ÷ ${d} = ?`,ans:opts.indexOf(correct),opts:opts.map(String),expl};}
-else{const big=Math.random()<0.5;let d,q,r;if(big){d=[11,12,13,14,15,16,17,18,19,21,23,25,27,29][Math.floor(Math.random()*14)];const qMin=Math.ceil(1000/d),qMax=Math.floor((9999-d)/d);q=Math.floor(Math.random()*(qMax-qMin+1))+qMin;r=Math.floor(Math.random()*(d-1))+1;}else{d=[3,4,6,7,8,9][Math.floor(Math.random()*6)];q=Math.floor(Math.random()*89)+11;r=Math.floor(Math.random()*(d-1))+1;}const dividend=d*q+r;const floorResult=q;const decimalResult=parseFloat((dividend/d).toFixed(1));const pool=big?[q+5,q-5,q+10,q-10,q+25,q-25,q+50,q-50,Math.floor(q/10),q*10]:[q+1,q-1,decimalResult,Math.floor(dividend/d)+1];const wrong=makeDistractors(floorResult,pool,3);const opts=[floorResult,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> dividend ÷ divisor = q remainder r<br>Step 1: ${dividend} ÷ ${d}<br>Step 2: ${d} × ${q} = ${d*q}<br>Step 3: Remainder: ${dividend} - ${d*q} = ${r}<br>Step 4: Result = ${q} remainder ${r}<br><strong>Answer: ${q} remainder ${r}</strong>`;return{type:"division",_formulaVariant:1,q:`${dividend} ÷ ${d} = ? (whole number result)`,ans:opts.indexOf(floorResult),opts:opts.map(String),expl};}
+else{const big=Math.random()<0.5;let d,q,r;if(big){d=[11,12,13,14,15,16,17,18,19,21,23,25,27,29][Math.floor(Math.random()*14)];const qMin=Math.ceil(1000/d),qMax=Math.floor((9999-d)/d);q=Math.floor(Math.random()*(qMax-qMin+1))+qMin;r=Math.floor(Math.random()*(d-1))+1;}else{d=[3,4,6,7,8,9][Math.floor(Math.random()*6)];q=Math.floor(Math.random()*89)+11;r=Math.floor(Math.random()*(d-1))+1;}const dividend=d*q+r;const floorResult=q;const decimalResult=parseFloat((dividend/d).toFixed(1));const pool=big?[q+5,q-5,q+10,q-10,q+25,q-25,q+50,q-50,Math.floor(q/10),q*10]:[q+1,q-1,decimalResult,Math.floor(dividend/d)+1];let wrong=makeDistractors(floorResult,pool,3);let needed=(window.maxOptionsPerQuestion-1)-wrong.length;let attempt=0;while(needed>0&&attempt<200){let cand=floorResult+(Math.random()<0.5?1:-1)*(2+Math.floor(Math.random()*8));if(Math.abs(cand-floorResult)>1&&!wrong.some(w=>Math.abs(w-cand)<=1)){for(let i=0;i<wrong.length;i++)if(Math.abs(wrong[i]-cand)<1)continue;wrong.push(cand);needed--;}attempt++;}const opts=[floorResult,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Formula:</strong> dividend ÷ divisor = q remainder r<br>Step 1: ${dividend} ÷ ${d}<br>Step 2: ${d} × ${q} = ${d*q}<br>Step 3: Remainder: ${dividend} - ${d*q} = ${r}<br>Step 4: Result = ${q} remainder ${r}<br><strong>Answer: ${q} remainder ${r}</strong>`;return{type:"division",_formulaVariant:1,q:`${dividend} ÷ ${d} = ? (whole number result)`,ans:opts.indexOf(floorResult),opts:opts.map(String),expl};}
 }
 function generateDecimalOpsQuestion(){
 const variant=pickVariant('decimal_ops');
@@ -1430,6 +1430,12 @@ function navigateNextQuestion() {
 if (!isReviewingHistory) return;
 reviewIndex++;
 if (reviewIndex >= currentQuestionNum) {
+if (currentQuestionNum >= numQuestionsTotal) {
+reviewIndex = currentQuestionNum - 1;
+renderQuestionFromHistory(reviewIndex);
+updateNavArrows();
+return;
+}
 isReviewingHistory = false;
 reviewIndex = -1;
 if (totalReviewPauseStart) { totalReviewPauseAccumulated += Date.now() - totalReviewPauseStart; totalReviewPauseStart = 0; }
@@ -1495,6 +1501,9 @@ const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStar
 const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ? now - totalReviewPauseStart : 0);
 const total = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0;
 timerEl.innerHTML = 'Total Time: <span>' + formatTimer(total) + '</span>';
+}
+if (currentQuestionNum >= numQuestionsTotal && idx === currentQuestionNum - 1) {
+document.getElementById('quiz-end-actions').style.display = 'flex';
 }
 }
 function shouldAutoShowResults(){
@@ -1814,8 +1823,10 @@ const pct = Math.round(score/numQuestionsTotal*100);
 const now = Date.now();
 const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStart : 0);
 const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ? now - totalReviewPauseStart : 0);
-const totalTime = formatTimer(totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0);
-document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Total Time: ${totalTime}</small>`;
+const totalMs = totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0;
+const totalTime = formatTimer(totalMs);
+const avgTime = numQuestionsTotal > 0 ? formatTimer(Math.round(totalMs / numQuestionsTotal)) : '00:00';
+document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Average Time: ${avgTime}<br>Total Time: ${totalTime}</small>`;
 let diagnosticHTML = '';
 const breakdown = getPerformanceBreakdown();
 if (breakdown.length > 1) {
@@ -3497,10 +3508,12 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.24',
+version: '0.25',
 revisionDate: '09/05/2026',
 changelog: [
-"Distractors adjusted for Rounding Decimals section."
+"Distractors fixed for Integer Division section.",
+"Total timer behavior changes.",
+"Average timer per question shows on results menu."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
