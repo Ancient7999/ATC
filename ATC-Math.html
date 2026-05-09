@@ -708,10 +708,6 @@ fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke
 <h1 class="text-primary">Quiz Complete!</h1>
 <div class="final-score-display" id="final-score"></div>
 <div id="review-list" class="results-container"></div>
-<div class="btn-group">
-<button id="btn-continue-5" class="btn btn-secondary" onclick="continueQuiz(5)">Continue (+5)</button>
-<button id="btn-continue-unlock" class="btn btn-primary hidden"></button>
-</div>
 <button class="atc-back-btn" onclick="backToSelection()">
 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" viewBox="0 0 52 24"
 fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;">
@@ -1736,7 +1732,7 @@ updateNavArrows();
 const advanceDelay = isCorrect ? 1800 : 2340;
 setTimeout(() => {
 if (currentQuestionNum >= numQuestionsTotal) {
-if (shouldAutoShowResults()) {
+if (shouldAutoShowResults() && !window._normalStageAlreadyMastered) {
 showResultsScreen();
 } else {
 if (totalReviewPauseStart) totalReviewPauseAccumulated += Date.now() - totalReviewPauseStart;
@@ -1794,31 +1790,9 @@ const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStar
 const reviewPauseOffset = totalReviewPauseAccumulated + (totalReviewPauseStart ? now - totalReviewPauseStart : 0);
 const totalTime = formatTimer(totalQuizStartTime ? Math.max(0, now - totalQuizStartTime - pauseOffset - reviewPauseOffset) : 0);
 document.getElementById('final-score').innerHTML = `Final Score: <strong>${score} / ${numQuestionsTotal}</strong> (${pct}%)<br><small style="color:var(--col-text-muted);font-weight:normal;">Total Time: ${totalTime}</small>`;
-const btn5 = document.getElementById('btn-continue-5');
-const btnUnlock = document.getElementById('btn-continue-unlock');
-if (window._exitToResults) { btn5.style.display = 'none'; window._exitToResults = false; }
 let diagnosticHTML = '';
 const breakdown = getPerformanceBreakdown();
-const hasMultipleTypes = breakdown.length > 1;
-const needed = 15 - numQuestionsTotal;
-if (hasMultipleTypes && needed > 0) {
-btnUnlock.style.display = 'inline-block';
-btnUnlock.textContent = `Continue (+${needed}) to Unlock Details`;
-btnUnlock.onclick = () => continueQuiz(needed);
-btn5.className = 'btn btn-secondary';
-diagnosticHTML = `
-<div class="diagnostic-box" style="border-color: var(--col-border-light);">
-<div class="diagnostic-title" style="color:var(--col-text-muted);">📊 Performance Breakdown</div>
-<div style="text-align:center; padding:10px;">
-<small style="color:var(--col-text-muted);">Answer <strong>${needed}</strong> more question${needed === 1 ? '' : 's'} to unlock the detailed breakdown.</small>
-</div>
-</div>
-`;
-}
-else {
-btnUnlock.style.display = 'none';
-btn5.className = 'btn btn-primary';
-if (hasMultipleTypes) {
+if (breakdown.length > 1) {
 let rows = [];
 breakdown.forEach(stat => {
 let rowClass = '';
@@ -1841,7 +1815,6 @@ diagnosticHTML = `
 ${rows.join('')}
 </div>
 `;
-}
 }
 let reviewHTML = '';
 quizHistory.forEach((item, i) => {
@@ -2033,6 +2006,7 @@ window.quizMode='normal';
 selectedFormulas=[key];delete selectedVariants[key];
 window.answerMode='entry';try{localStorage.setItem('atc_answer_mode','entry');}catch(e){}
 document.getElementById('num-questions').value=30;
+window._normalStageAlreadyMastered = getNormalProgress(key).done;
 startQuiz();
 }
 let ps2FocusIndex=-1;
@@ -3497,7 +3471,7 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.20',
+version: '0.21',
 revisionDate: '09/05/2026',
 changelog: [
 "Progress behavior adjustments."
@@ -3812,7 +3786,7 @@ updateNavArrows();
 const advanceDelay=(isCorrect?1800:2340)*0.5;
 setTimeout(function(){
 if(currentQuestionNum>=numQuestionsTotal){
-if(shouldAutoShowResults()){
+if(shouldAutoShowResults() && !window._normalStageAlreadyMastered){
 showResultsScreen();
 } else {
 if(totalReviewPauseStart) totalReviewPauseAccumulated+=Date.now()-totalReviewPauseStart;
