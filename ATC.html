@@ -9861,11 +9861,10 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.32',
-revisionDate: '11/05/2026',
+version: '0.33',
+revisionDate: '12/05/2026',
 changelog: [
-"Multiplayer internal logic changes.",
-"Security updates to how server handles multiplayer sessions."
+"Multiplayer bug fixes."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
@@ -11041,6 +11040,7 @@ attachOnDisconnect(code, window.multiplayerSession.uid, isHost);
 applyPlayerNameSettingsUI();
 stopListingLobbies();
 updateMPLobbyUI(true);
+if (!isHost) { showMultiplayerLobbyUI(); }
 }
 function showMultiplayerLobbyUI() {
 leaveNexus();
