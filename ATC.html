@@ -4187,17 +4187,20 @@ sessionQuestionCount++; if (isCorrect) sessionCorrectCount++; updateSessionCount
 const buttons = document.querySelectorAll('#knowledge-options button');
 buttons.forEach(b => b.disabled = true);
 const resultEl = document.getElementById('knowledge-result');
-if (qEngine._progressiveID && knowledgeQuestionState[qEngine._progressiveID]) {
-var _qs = knowledgeQuestionState[qEngine._progressiveID];
-if (isCorrect) _qs.correctCount = (_qs.correctCount || 0) + 1;
-else _qs.incorrectCount = (_qs.incorrectCount || 0) + 1;
+if (qEngine._progressiveID) {
+var _qsProg = knowledgeQuestionState[qEngine._progressiveID];
+if (_qsProg) {
+if (isCorrect) _qsProg.correctCount = (_qsProg.correctCount || 0) + 1;
+else _qsProg.incorrectCount = (_qsProg.incorrectCount || 0) + 1;
 saveKnowledgeState();
+}
 }
 if (isCorrect) {
 if (isKnowledgeProgressive && qEngine._progressiveID) {
 const stateObj = knowledgeQuestionState[qEngine._progressiveID];
+if (stateObj) {
 const idx = qEngine._variantIndex;
-if (idx !== undefined) {
+if (idx !== undefined && stateObj.cleared) {
 if (!stateObj.cleared[idx]) stateObj.cleared[idx] = true;
 if (!stateObj.clearCount) stateObj.clearCount = stateObj.cleared.map(c => c ? 1 : 0);
 if (stateObj.clearCount[idx] <= masteryPlusLevel) {
@@ -4207,6 +4210,7 @@ if (dnsaActiveForCurrent) knowledgeDNSASet.add(qEngine._progressiveID+'_'+idx);
 if (stateObj.sectionKey) onVariantCleared(stateObj.sectionKey, qEngine._progressiveID, idx);
 }
 saveKnowledgeState();
+}
 }
 }
 recordCorrectAnswer();
@@ -9861,10 +9865,11 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.33',
-revisionDate: '12/05/2026',
+version: '0.34',
+revisionDate: '13/05/2026',
 changelog: [
-"Multiplayer bug fixes."
+"Multiplayer bug fixes.",
+"Solo Progressive mode fixes."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
