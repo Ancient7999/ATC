@@ -9865,10 +9865,10 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.35',
+version: '0.36',
 revisionDate: '13/05/2026',
 changelog: [
-"Multiplayer logic and bug fixes."
+"Multiplayer Classic mode bug fixes."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
@@ -10281,7 +10281,7 @@ try { const r = localStorage.getItem(PLAYER_PROFILE_KEY); if (r) { const p = JSO
 if (!this.data.avatarUrl || AVATAR_POOL.indexOf(this.data.avatarUrl) === -1) { this.data.avatarUrl = pickRandomAvatar(); this.save(); }
 },
 save: function() { try { localStorage.setItem(PLAYER_PROFILE_KEY, JSON.stringify(this.data)); } catch(e) {} },
-setAvatar: function(url) { this.data.avatarUrl = url; this.save(); applyPlayerAvatarUI(); if(window.multiplayerSystem)window.multiplayerSystem.uploadProfile(); }
+setAvatar: function(url) { this.data.avatarUrl = url; this.save(); applyPlayerAvatarUI(); if(window.multiplayerSystem){window.multiplayerSystem.uploadProfile();if(typeof syncLobbyProfile==='function')syncLobbyProfile();} }
 };
 function applyPlayerAvatarUI() { const img = document.getElementById('player-avatar'); if (img) img.src = playerProfile.data.avatarUrl || ''; const nm = document.getElementById('player-name-display'); if (nm) nm.textContent = playerProfile.data.name || 'You'; if (window.multiplayerSession && window.multiplayerSession.inPaneQuiz) { var focusedBox = document.querySelector('#multi-quiz-container .party-member-box.pane-focused'); if (focusedBox) { var swatch = focusedBox.querySelector('.pane-friend-swatch'); if (swatch) swatch.style.backgroundImage = "url('" + (playerProfile.data.avatarUrl || '') + "')"; } } }
 function isInOnlineLobby() { return !!(window.multiplayerSession && window.multiplayerSession.inLobby); }
@@ -11349,6 +11349,15 @@ window.fb.remove(window.fb.ref(window.fb.db, 'pings/' + uid)).catch(function(){}
 }).catch(function() {});
 }
 }
+if (lobbyState.phase === 'quiz' && !window.multiplayerSession.isHost) {
+var currentHostQ = lobbyState.host;
+var playersQ = lobbyState.players || {};
+if (!playersQ[currentHostQ] && playersQ[window.multiplayerSession.uid] && lobbyState.hostHeir === window.multiplayerSession.uid) {
+window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + window.multiplayerSession.lobbyId), { host: window.multiplayerSession.uid }).then(function() {
+window.multiplayerSession.isHost = true;
+}).catch(function() {});
+}
+}
 if (window.multiplayerSession.isHost) {
 maintainHostHeir();
 maintainLobbiesIndex();
@@ -11453,7 +11462,17 @@ try {
 if(isHost){ fb.onDisconnect(fb.ref(fb.db,'lobbies/'+code)).cancel(); }
 else { fb.onDisconnect(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid)).cancel(); }
 } catch(e) {}
-if(isHost){ Promise.all([fb.remove(fb.ref(fb.db,'lobbies/'+code)), fb.remove(fb.ref(fb.db,'lobbiesIndex/'+code))]).then(cleanup).catch(cleanup); }
+if(isHost){
+var otherPlayers = Object.keys(lobbyState.players || {}).filter(function(p){ return p !== uid && !lobbyState.players[p].left; });
+if (otherPlayers.length > 0 && (lobbyState.phase === 'quiz' || lobbyState.phase === 'lobby')) {
+fb.remove(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid)).then(function(){
+fb.remove(fb.ref(fb.db,'lobbiesIndex/'+code)).catch(function(){});
+cleanup();
+}).catch(cleanup);
+} else {
+Promise.all([fb.remove(fb.ref(fb.db,'lobbies/'+code)), fb.remove(fb.ref(fb.db,'lobbiesIndex/'+code))]).then(cleanup).catch(cleanup);
+}
+}
 else { fb.remove(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid)).then(cleanup).catch(cleanup); }
 }
 function togglePrivateAccess() {
