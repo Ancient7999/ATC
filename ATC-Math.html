@@ -458,6 +458,7 @@ body.quiz-layout-active .question-box { margin-top: 150px !important; }
 .calc-toggle-btn.calc-disabled{opacity:0.4 !important;cursor:not-allowed !important;border-color:var(--col-text-muted) !important;color:var(--col-text-muted) !important;}
 .calc-toggle-btn.calc-disabled:hover{background:transparent !important;box-shadow:none !important;filter:none !important;}
 .calc-wrapper{position:relative}
+.info-popup{position:absolute;top:4px;left:50%;transform:translateX(-50%);z-index:10;background:var(--col-bg-card);border:1px solid var(--accent-0);border-radius:var(--radius-md);padding:10px 14px 28px 14px;font-size:0.82em;color:var(--col-text-main);text-align:center;max-width:240px;box-shadow:0 4px 18px rgba(0,0,0,0.6);display:none}.info-popup.visible{display:block}.info-popup p{margin:0;line-height:1.4}.info-close{position:absolute;bottom:4px;right:8px;background:none;border:none;color:var(--col-text-muted);font-size:0.9em;padding:0;cursor:pointer}.info-close:hover{color:var(--col-error)}.info-btn{position:absolute;left:12px;top:8px;z-index:2;background:transparent;border:1px solid var(--col-text-muted);color:var(--col-text-muted);border-radius:50%;width:16px;height:16px;font-size:9px;font-weight:bold;display:flex;align-items:center;justify-content:center;padding:0;cursor:pointer}.info-btn:hover{border-color:var(--accent-0);color:var(--accent-0)}
 .calc-body{position:relative;overflow:hidden;width:290px;background:linear-gradient(160deg,#0a0a1a 0%,#0d0520 50%,#080818 100%);border-radius:13px;border:2px solid var(--accent-2);padding:30px 25px;box-shadow:0 12px 40px rgba(0,0,0,0.65),inset 0 1px 0 rgba(255,255,255,0.05)}
 .calc-body::before{content:"";position:absolute;inset:-50%;background:linear-gradient(45deg,var(--accent-1),var(--accent-2),var(--accent-3),var(--accent-4),var(--accent-5),var(--accent-6),var(--accent-7),var(--accent-1));background-size:400% 400%;opacity:0.15;animation:calcWallpaperWave 20s ease infinite;z-index:0;pointer-events:none}
 @keyframes calcWallpaperWave{0%{background-position:0% 50%;transform:translate(-10%,-10%) scale(1.2) rotate(0deg)}50%{background-position:100% 50%;transform:translate(10%,10%) scale(1.3) rotate(10deg)}100%{background-position:0% 50%;transform:translate(-10%,-10%) scale(1.2) rotate(0deg)}}
@@ -922,7 +923,8 @@ let timerPauseStart = 0;
 let totalPauseDuration = 0;
 let totalReviewPauseStart = 0;
 let totalReviewPauseAccumulated = 0;
-function formatTimer(ms){const s=Math.floor(ms/1000);const m=Math.floor(s/60);const r=s%60;return String(m).padStart(2,'0')+':'+String(r).padStart(2,'0');}function startQuestionTimer(){questionStartTime=Date.now();if(!questionTimers[currentQuestionNum])questionTimers[currentQuestionNum]=0;updateQuestionTimerDisplay();}
+function formatTimer(ms){const s=Math.floor(ms/1000);const m=Math.floor(s/60);const r=s%60;return String(m).padStart(2,'0')+':'+String(r).padStart(2,'0');}let questionPauseAtStart = 0;
+function startQuestionTimer(){questionStartTime=Date.now();if(!questionTimers[currentQuestionNum])questionTimers[currentQuestionNum]=0;questionPauseAtStart=totalPauseDuration;updateQuestionTimerDisplay();}
 function updateQuestionTimerDisplay() {
 const el = document.getElementById('timer-display');
 if (!el) return;
@@ -936,7 +938,7 @@ el.innerHTML = 'Total Time: <span>' + formatTimer(total) + '</span>';
 function stopQuestionTimer() {
 if (questionStartTime) {
 const now = Date.now();
-const pauseOffset = totalPauseDuration + (timerPauseStart ? now - timerPauseStart : 0);
+const pauseOffset = (totalPauseDuration - questionPauseAtStart) + (timerPauseStart ? now - timerPauseStart : 0);
 questionTimers[currentQuestionNum] = (questionTimers[currentQuestionNum] || 0) + Math.max(0, now - questionStartTime - pauseOffset);
 questionStartTime = 0;
 timerPauseStart = 0;
@@ -1722,7 +1724,7 @@ document.getElementById('quiz-screen').style.display = 'block';
 document.getElementById('quiz-screen').classList.toggle('quiz-mode-normal', window.quizMode === 'normal');
 showFloatingBackBtn();
 document.body.classList.add('quiz-layout-active');
-score = 0; currentQuestionNum = 0; quizHistory = [];
+score = 0; currentQuestionNum = 0; quizHistory = []; questionTimers = [];
 totalPauseDuration = 0;
 timerPauseStart = 0;
 totalReviewPauseStart = 0;
@@ -3522,12 +3524,11 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.27',
-revisionDate: '09/05/2026',
+version: '0.28',
+revisionDate: '12/05/2026',
 changelog: [
-"Results screen adjustments.",
-"Fixed some explanations Decimal Precision implementation.",
-"Fixed some distractors limited to 2"
+"UI fixes.",
+"Timer fixes."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
