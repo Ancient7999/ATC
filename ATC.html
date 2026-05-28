@@ -1246,7 +1246,7 @@ body:has(#tab-history.active) h1 { display: none; }
 .lobby-left #kb-last-session-banner .history-row .section-menu-wrapper { display:none; }
 .lobby-actions>*:nth-child(1){justify-self:end;}
 .lobby-actions>*:nth-child(3){justify-self:start;}
-@media(max-width:768px){.lobby-actions{position:fixed;bottom:0;left:0;right:0;background:rgba(10,15,35,0.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:12px 20px calc(12px + env(safe-area-inset-bottom));border-top:1px solid rgba(var(--accent-1-rgb),0.2);z-index:100;display:flex;justify-content:space-between;gap:10px;}.lobby-shell{padding-bottom:80px;}.lobby-actions .lobby-btn-secondary,.lobby-actions .lobby-btn-primary{flex:1;padding:12px 16px;font-size:0.9em;}}
+@media(max-width:768px){.lobby-actions{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;display:flex;align-items:center;justify-content:center;width:calc(100% - 48px);max-width:860px;gap:10px;}.lobby-shell{padding-bottom:80px;}.lobby-actions .lobby-btn-secondary,.lobby-actions .lobby-btn-primary{flex:1;padding:12px 16px;font-size:0.9em;}}
 .lobby-btn-primary{padding:14px 42px;background:transparent;border:2px solid #7df9ff;border-radius:14px;color:#e6ecff;font-size:1.05em;font-weight:700;letter-spacing:1.5px;cursor:pointer;box-shadow:0 0 22px rgba(var(--accent-1-rgb),0.4),inset 0 0 18px rgba(var(--accent-1-rgb),0.1);transition:transform .15s,box-shadow .2s;}
 .lobby-btn-primary:hover{transform:translateY(-1px);box-shadow:0 0 32px rgba(var(--accent-1-rgb),0.6),inset 0 0 22px rgba(var(--accent-1-rgb),0.18);}
 .lobby-btn-secondary{padding:11px 26px;background:transparent;border:1px solid rgba(var(--accent-1-rgb),0.35);border-radius:10px;color:#cfd8ff;font-size:0.9em;font-weight:600;letter-spacing:1px;cursor:pointer;transition:border-color .2s,color .2s;}
@@ -9866,7 +9866,7 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.41',
+version: '0.42',
 revisionDate: '28/05/2026',
 changelog: [
 "Mobile phone UI optimizations."
