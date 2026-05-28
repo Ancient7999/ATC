@@ -5390,7 +5390,7 @@ const floatingBtn = document.createElement('button');
 floatingBtn.id = 'floating-back-btn';
 floatingBtn.className = 'rso-back-btn';
 floatingBtn.onclick = backToSelection;
-floatingBtn.style.cssText = 'position:fixed;bottom:20px;left:20px;z-index:10000;display:flex;align-items:center;gap:8px;background:var(--col-bg-card);border:2px solid var(--col-primary);border-radius:var(--radius-md);padding:8px 14px;color:var(--col-primary);cursor:pointer;font-family:var(--font-sci);font-size:0.9em;letter-spacing:1px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all 0.2s;';
+floatingBtn.style.cssText = 'position:fixed;bottom:75px;left:20px;z-index:10000;display:flex;align-items:center;gap:8px;background:var(--col-bg-card);border:2px solid var(--col-primary);border-radius:var(--radius-md);padding:8px 14px;color:var(--col-primary);cursor:pointer;font-family:var(--font-sci);font-size:0.9em;letter-spacing:1px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all 0.2s;';
 floatingBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 5 8 12 15 19"></polyline></svg><span>Back</span>';
 floatingBtn.onmouseenter = function() { this.style.transform = 'translateY(-2px)'; this.style.boxShadow = '0 6px 24px rgba(0,0,0,0.5)'; };
 floatingBtn.onmouseleave = function() { this.style.transform = ''; this.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)'; };
@@ -9865,7 +9865,7 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.38',
+version: '0.39',
 revisionDate: '28/05/2026',
 changelog: [
 "Mobile phone UI optimizations."
