@@ -1173,6 +1173,7 @@ body:has(#tab-history.active) h1 { display: none; }
 .lobby-header .mp-status-line{grid-column:1;justify-self:start;}
 .lobby-header .mp-status-line{grid-column:1;justify-self:start;margin-bottom:0;}
 .lobby-header, .lobby-actions { flex-shrink: 0; }
+.lobby-actions { margin-bottom: 75px; }
 .lobby-grid { flex: 1; overflow-y: auto; min-height: 0; }
 .lobby-profile{display:flex;align-items:center;gap:12px;background:rgba(15,22,40,0.7);border:1px solid rgba(var(--accent-1-rgb),0.2);border-radius:14px;padding:8px 14px 8px 8px;width:fit-content;}
 .lobby-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#6b8cff,#b66bff);display:flex;align-items:center;justify-content:center;font-size:1.2em;}
@@ -9865,7 +9866,7 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.39',
+version: '0.4',
 revisionDate: '28/05/2026',
 changelog: [
 "Mobile phone UI optimizations."
