@@ -1113,7 +1113,8 @@ body:has(#tab-history.active) h1 { display: none; }
 #tab-history.active ~ h1 { display: none; }
 .search-overlay { background: rgba(5,10,25,0.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 .search-input { background: rgba(5,10,25,0.6) !important; font-family: var(--font-sci) !important; }
-.lobby-shell{width:100%;background:radial-gradient(120% 80% at 50% 100%,rgba(var(--accent-1-rgb),0.08),transparent 60%),linear-gradient(180deg,#0a0f1a 0%,#0d1224 100%);border:1px solid rgba(var(--accent-1-rgb),0.18);border-radius:var(--radius-box);padding:22px 26px 26px;text-align:left;position:relative;overflow:hidden;box-sizing:border-box;}
+.lobby-shell{width:100%;background:radial-gradient(120% 80% at 50% 100%,rgba(var(--accent-1-rgb),0.08),transparent 60%),linear-gradient(180deg,#0a0f1a 0%,#0d1224 100%);border:1px solid rgba(var(--accent-1-rgb),0.18);border-radius:var(--radius-box);padding:22px 26px 26px;text-align:left;position:relative;overflow:hidden;box-sizing:border-box;}@media(max-width:768px){
+.lobby-shell{padding-bottom:calc(26px + 80px);}}
 .lobby-shell::before{content:"";position:absolute;left:0;right:0;bottom:-40px;height:160px;background:radial-gradient(50% 100% at 18% 100%,rgba(50,255,150,0.18),transparent 70%);pointer-events:none;}
 .lobby-shell[data-active-mode="solo"] [data-mode-show="party"],.lobby-shell[data-active-mode="solo"] .lobby-right{display:none!important;}
 .lobby-shell:not([data-active-mode="multiplayer"]) [data-mode-show="multiplayer"]{display:none!important;}
@@ -9866,7 +9867,7 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.42',
+version: '0.43',
 revisionDate: '28/05/2026',
 changelog: [
 "Mobile phone UI optimizations."
