@@ -398,13 +398,13 @@ body.quiz-layout-active #session-counter { top:30px; left:100px; }
 .kb-mode-btn {padding:7px 14px; font-size:0.8em; font-weight:var(--font-bold); border:1.5px solid var(--col-border); border-radius:50px; background:transparent; color:var(--col-text-muted); cursor:pointer; transition:all 0.3s ease;}
 .kb-mode-btn:hover {border-color:var(--col-primary); color:var(--col-primary); background: linear-gradient(135deg, rgba(var(--accent-0-rgb), 0.06), rgba(var(--accent-2-rgb), 0.03)); transform: translateY(-1px) scale(1.02); box-shadow: 0 3px 10px rgba(var(--accent-0-rgb), 0.12);}
 .kb-mode-btn.active {border-color:var(--col-primary); background: linear-gradient(135deg, rgba(var(--accent-0-rgb), 0.12), rgba(var(--accent-2-rgb), 0.07)); color:var(--col-primary); box-shadow: 0 2px 8px rgba(var(--accent-0-rgb), 0.15);}
-.history-fullscreen { display: flex; flex-direction: column; height: calc(100vh - 150px); width: 100%; margin-top: 80px; background: rgba(5,10,25,0.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 0; }
+.history-fullscreen { position: fixed; top: 80px; left: 0; right: 0; bottom: 70px; z-index: 199; display: flex; flex-direction: column; background: rgba(5,10,25,0.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 0; overflow: hidden; }
 .history-fullscreen-header { flex-shrink: 0; padding: 70px 30px 10px; border-bottom: 1px solid rgba(0,212,255,0.2); text-align: left; position: relative; }
 .history-fullscreen-header h2 { font-family: var(--font-sci); color: var(--col-primary); margin: 0 0 4px; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px; }
 .history-fullscreen-header p { color: var(--col-text-muted); font-size: 0.8em; margin: 0; }
 .history-fullscreen-body { flex: 1; overflow-y: auto; padding: 20px 30px 40px; scrollbar-width: none; }
 .history-fullscreen-body::-webkit-scrollbar { display: none; }
-.search-fullscreen { display: flex; flex-direction: column; height: calc(100vh - 150px); width: 100%; margin-top: 80px; background: rgba(5,10,25,0.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 0; }
+.search-fullscreen { position: fixed; top: 80px; left: 0; right: 0; bottom: 70px; z-index: 199; display: flex; flex-direction: column; background: rgba(5,10,25,0.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 0; overflow: hidden; }
 .search-fullscreen-header { flex-shrink: 0; padding: 20px 30px 10px; border-bottom: 1px solid rgba(0,212,255,0.2); position: relative; }
 .search-fullscreen-body { flex: 1; overflow-y: auto; padding: 10px 30px 20px; scrollbar-width: none; }
 .search-fullscreen-body::-webkit-scrollbar { display: none; }
@@ -1021,7 +1021,7 @@ body.nexus-active #nexus-view { pointer-events: auto; opacity: 1; }
 .nexus-return-btn:hover { background: rgba(0,212,255,0.18); box-shadow: 0 0 18px rgba(0,212,255,0.5); color: #fff; }
 .nexus-return-btn .nexus-return-glyph { font-family: var(--font-mono-sci); font-size: 14px; }
 body:not(.nexus-active):not(.quiz-layout-active) .nexus-return-btn { display: inline-flex; }
-body.nexus-active .tab-nav, body.nexus-active .tab-content, body.nexus-active #multi-quiz-container, body.nexus-active #floating-back-btn, body.nexus-active #floating-quiz-title { display: none !important; }
+body.nexus-active .tab-nav, body.nexus-active #tab-knowledge, body.nexus-active #multi-quiz-container, body.nexus-active #floating-back-btn, body.nexus-active #floating-quiz-title { display: none !important; }
 :root { --p1-color: #00ff66; --p2-color: #00bfff; --p3-color: #bf00ff; --p4-color: #ff6600; --bg-arena-glass: rgba(10,15,35,0.7); --bg-arena-glass-dark: rgba(5,10,20,0.85); }
 body.quiz-layout-active #multi-quiz-container.layout-stack { display: grid !important; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 1fr; gap: 24px; padding: 30px 36px; flex-direction: unset !important; position: relative; }
 #multi-quiz-container .party-member-box:nth-child(1) { --p-color: var(--p1-color); --p-grad-angle: 135deg; }
@@ -1160,7 +1160,10 @@ body:has(#tab-history.active) h1 { display: none; }
 .lobby-friends-grid .pd-friend-card{padding:10px 12px;}
 .lobby-btn-start{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:14px;padding:11px 14px;border-radius:10px;background:linear-gradient(135deg,#3dff88,#7df9ff);border:none;color:#06121f;cursor:pointer;font-weight:800;font-size:0.95em;letter-spacing:1px;text-transform:uppercase;box-shadow:0 0 0 0 rgba(61,255,136,0);transition:transform 0.15s,box-shadow 0.25s,filter 0.15s;position:relative;flex-wrap:wrap;}
 .lobby-btn-start.ready{box-shadow:0 0 26px rgba(61,255,136,0.45),0 0 8px rgba(61,255,136,0.6) inset;}
+.lobby-btn-start:disabled{background:linear-gradient(135deg,#444,#333)!important;color:#888!important;cursor:not-allowed!important;box-shadow:none!important;transform:none!important;opacity:0.8;}
+.lobby-btn-start:disabled .lobby-start-meta{color:rgba(140,140,140,0.7)!important;}
 .lobby-btn-start:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.lobby-btn-start:disabled:hover{transform:none!important;filter:none!important;}
 .lobby-btn-start:active{transform:translateY(0);}
 .lobby-btn-start .lobby-start-meta{flex-basis:100%;text-align:center;font-size:0.65em;font-weight:600;letter-spacing:0.5px;text-transform:none;color:rgba(6,18,31,0.7);margin-top:-2px;}
 .lobby-btn-start.ready .lobby-start-meta{color:rgba(6,18,31,0.85);}
@@ -1413,7 +1416,7 @@ body:has(#tab-history.active) h1 { display: none; }
 <div class="nexus-node-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L13 10 L22 13 L22 15 L13 13.5 L13 19 L16 20.5 L16 22 L12 20.5 L8 22 L8 20.5 L11 19 L11 13.5 L2 15 L2 13 L11 10 Z"/></svg></div><div class="nexus-node-text">Solo</div>
 </div>
 <div class="nexus-node nexus-node-party" onclick="event.stopPropagation();nexusOpenParty()">
-<div class="nexus-node-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5"/><circle cx="4" cy="5" r="2"/><circle cx="20" cy="5" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/><path d="M5.5 6.5 L10 10.5"/><path d="M18.5 6.5 L14 10.5"/><path d="M5.5 17.5 L10 13.5"/><path d="M18.5 17.5 L14 13.5"/></svg></div><div class="nexus-node-text">Party</div>
+<div class="nexus-node-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5"/><circle cx="4" cy="5" r="2"/><circle cx="20" cy="5" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/><path d="M5.5 6.5 L10 10.5"/><path d="M18.5 6.5 L14 10.5"/><path d="M5.5 17.5 L10 13.5"/><path d="M18.5 17.5 L14 13.5"/></svg></div><div class="nexus-node-text">AI Party</div>
 </div>
 <div class="nexus-node nexus-node-multiplayer" onclick="event.stopPropagation();nexusOpenMultiplayer()" style="opacity:0.55;filter:grayscale(40%);">
 <div class="nexus-node-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L12.6 5 L15.5 6 L12.6 6.5 L12.6 8.5 L13.4 9 L12 8.7 L10.6 9 L11.4 8.5 L11.4 6.5 L8.5 6 L11.4 5 Z"/><path d="M5 12 L5.6 15 L8.5 16 L5.6 16.5 L5.6 18.5 L6.4 19 L5 18.7 L3.6 19 L4.4 18.5 L4.4 16.5 L1.5 16 L4.4 15 Z"/><path d="M19 12 L19.6 15 L22.5 16 L19.6 16.5 L19.6 18.5 L20.4 19 L19 18.7 L17.6 19 L18.4 18.5 L18.4 16.5 L15.5 16 L18.4 15 Z"/></svg></div><div class="nexus-node-text">Multiplayer</div>
@@ -1449,9 +1452,9 @@ Throttle / Lever (controls):
 </div>
 <div style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:60;display:flex;align-items:center;justify-content:center;width:calc(100% - 48px);max-width:860px;">
 <div style="display:flex;gap:24px;">
-<a href="#" onclick="event.preventDefault();closeSettingsModal();leaveNexus();setKbMode('solo');switchTab('history')" style="color:var(--nexus-history);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:14px;">HISTORY</a>
-<a href="#" onclick="event.preventDefault();closeSettingsModal();setKbMode('solo');openSearchScreen()" style="color:var(--nexus-history);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:14px;">SEARCH</a>
-<a href="#" onclick="event.preventDefault();leaveNexus();setKbMode('solo');openSettingsModal()" style="color:var(--nexus-solo);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:14px;">SETTINGS</a>
+<a href="#" onclick="event.preventDefault();closeSettingsModal();switchTab('history')" style="color:var(--nexus-history);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:14px;">HISTORY</a>
+<a href="#" onclick="event.preventDefault();closeSettingsModal();openSearchScreen()" style="color:var(--nexus-history);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:14px;">SEARCH</a>
+<a href="#" onclick="event.preventDefault();openSettingsModal()" style="color:var(--nexus-solo);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:14px;">SETTINGS</a>
 </div>
 </div>
 <div id="mouse-tooltip"></div>
@@ -1514,14 +1517,7 @@ Throttle / Lever (controls):
 </div>
 </div>
 <div data-mode-show="party">
-<div class="lobby-panel-title">PARTY SETUP</div>
-<div class="lobby-field"><span class="lobby-dot"></span><span class="lobby-label">Maximum Players</span></div>
-<div id="kb-mode-selector" class="lobby-pill-row">
-<button class="kb-mode-btn lobby-pill" data-mode="party1" onclick="setKbMode('party1')">2</button>
-<button class="kb-mode-btn lobby-pill" data-mode="party2" onclick="setKbMode('party2')">3</button>
-<button class="kb-mode-btn lobby-pill" data-mode="party3" onclick="setKbMode('party3')">4</button>
-<button class="kb-mode-btn lobby-pill active" data-mode="party4" onclick="setKbMode('party4')">5</button>
-</div>
+<div class="lobby-panel-title">AI PARTY SETUP</div>
 </div>
 <div data-mode-show="multiplayer">
 <div class="lobby-panel-title">Host a Lobby</div>
@@ -1582,8 +1578,8 @@ Throttle / Lever (controls):
 <div id="mp-mode-picker-wrap" style="display:none;margin-top:12px;">
 <div style="font-weight:600;font-size:0.85em;color:var(--col-text-main);margin-bottom:4px;">Game Mode</div>
 <div style="display:flex;gap:8px;">
-<button class="mp-mode-pill active" data-mode="classic" onclick="multiplayerSystem.setGameMode('classic')">Classic</button>
-<button class="mp-mode-pill" data-mode="pane" onclick="multiplayerSystem.setGameMode('pane')">Pane</button>
+<button class="mp-mode-pill active" data-mode="pane" onclick="multiplayerSystem.setGameMode('pane')">Pane</button>
+<button class="mp-mode-pill" data-mode="classic" onclick="multiplayerSystem.setGameMode('classic')">Classic</button>
 </div>
 </div>
 <div id="mp-question-count-wrap" style="display:none;margin-top:12px;">
@@ -1632,10 +1628,8 @@ Throttle / Lever (controls):
 </div>
 </section>
 <aside class="lobby-panel lobby-right" data-mode-show="party">
-<div class="lobby-panel-title-sm">Party Rules</div>
-<div class="lobby-panel-title-sm" style="margin-top:16px;display:flex;align-items:center;justify-content:space-between;">Party Slots <span id="lobby-slot-count" style="font-size:0.85em;color:var(--col-text-muted);">0 / 4</span></div>
+<div class="lobby-panel-title-sm" style="display:flex;align-items:center;justify-content:space-between;">AI Friends <span id="lobby-slot-count" style="font-size:0.85em;color:var(--col-text-muted);">0 / 4</span></div>
 <div id="lobby-slot-list"></div>
-<div class="lobby-sort-hint" style="margin-top:10px;">Manage your roster below the bank cards.</div>
 </aside>
 </div>
 <div class="lobby-actions">
@@ -1706,7 +1700,7 @@ Throttle / Lever (controls):
 </button>
 </div>
 </div>
-<button class="rso-back-btn" onclick="backToSelection()">
+<button class="rso-back-btn" onclick="handleFloatingBackClick()">
 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" viewBox="0 0 52 24"
 fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;">
 <line x1="49" y1="12" x2="3" y2="12"/>
@@ -1736,7 +1730,7 @@ fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stro
 <h1 class="text-primary">Question Bank Complete!</h1>
 <div class="final-score-display" id="knowledge-final-score"></div>
 <div id="knowledge-review-list" class="results-container"></div>
-<button class="rso-back-btn" onclick="backToSelection()">
+<button class="rso-back-btn" onclick="handleFloatingBackClick()">
 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" viewBox="0 0 52 24"
 fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
 style="display:block;">
@@ -1751,12 +1745,22 @@ style="display:block;">
 <div class="history-fullscreen-header">
 <h2>Quiz History</h2>
 <p>Your recent sessions · click to expand</p>
-<button class="settings-close-modal" id="history-close-btn" onclick="switchTab('knowledge')" title="Close" style="position:absolute;top:15px;right:20px;z-index:5;">✕</button>
+<button class="settings-close-modal" id="history-close-btn" onclick="document.querySelector('.history-fullscreen').style.display=''; switchTab('knowledge');" title="Close" style="position:absolute;top:15px;right:20px;z-index:5;">✕</button>
 </div>
 <div class="history-fullscreen-body">
 <div id="history-list" class="history-container"></div>
-<div id="history-pagination" class="history-pagination"></div>
-<div id="history-per-page-controls" class="history-per-page"></div>
+</div>
+<div class="search-fullscreen-footer">
+<div id="history-nav-bar" class="search-quiz-bar" style="display: flex; max-width: none;">
+<button class="btn btn-secondary" id="history-prev-btn" onclick="historyGoToPage(historyPage - 1)" disabled>← Previous</button>
+<span id="history-page-indicator" style="width:130px;display:inline-block;text-align:center;font-weight:600;">Page 1 of 1</span>
+<button class="btn btn-secondary" id="history-next-btn" onclick="historyGoToPage(historyPage + 1)">Next →</button>
+<select id="history-per-page-select" onchange="setHistoryPerPage(parseInt(this.value))" style="margin-left:auto;padding:6px 10px;border-radius:6px;background:var(--col-bg-input);color:var(--col-text-main);border:1px solid var(--col-border-light);">
+<option value="10">10 per page</option>
+<option value="25" selected>25 per page</option>
+<option value="50">50 per page</option>
+</select>
+</div>
 </div>
 </div>
 </div>
@@ -1764,7 +1768,7 @@ style="display:block;">
 <div class="search-fullscreen">
 <div class="search-fullscreen-header">
 <h2 style="margin:0; color:var(--col-primary); font-family:var(--font-sci);">Search Questions</h2>
-<button class="settings-close-modal" id="search-close-btn" onclick="switchTab('knowledge')" title="Close" style="position:absolute;top:15px;right:20px;z-index:5;">✕</button>
+<button class="settings-close-modal" id="search-close-btn" onclick="document.querySelector('.search-fullscreen').style.display=''; switchTab('knowledge');" title="Close" style="position:absolute;top:15px;right:20px;z-index:5;">✕</button>
 <div class="search-header-bar">
 <input type="text" id="search-input" class="search-input" placeholder="Search questions..." oninput="performSearch(this.value)" autocomplete="off">
 <span id="search-result-count" class="search-result-count"></span>
@@ -1794,7 +1798,7 @@ style="display:block;">
 <div class="search-fullscreen-footer">
 <div id="search-quiz-bar" class="search-quiz-bar">
 <button class="btn btn-secondary" id="search-prev-btn" onclick="goToSearchPage(searchPage - 1)" disabled>← Previous</button>
-<span id="search-page-indicator" style="min-width:60px;text-align:center;font-weight:600;">Page 1</span>
+<span id="search-page-indicator" style="width:130px;display:inline-block;text-align:center;font-weight:600;">Page 1</span>
 <button class="btn btn-secondary" id="search-next-btn" onclick="goToSearchPage(searchPage + 1)" disabled>Next →</button>
 <select id="search-per-page-select" onchange="setSearchPerPage(this.value)" style="margin-left:auto;padding:6px 10px;border-radius:6px;background:var(--col-bg);color:var(--col-text-main);border:1px solid var(--col-border-light);">
 <option value="25" selected>25 per page</option>
@@ -3592,6 +3596,7 @@ return;
 }
 var n = partySystem.party.length;
 var mode = (document.querySelector('.lobby-shell') || {}).dataset && document.querySelector('.lobby-shell').dataset.activeMode;
+if (mode && mode.startsWith('party') && n === 0) { return; }
 if (mode === 'solo' || n === 0) { startSectionQuiz(_lobbySelectedKey); return; }
 var slots = buildKbPartySlots(n, [_lobbySelectedKey]);
 var histId = createMultiQuizHistoryEntry(slots);
@@ -4977,16 +4982,33 @@ _originalBackToSelection();
 function backToSelection() {
 if (window.multiplayerSession && window.multiplayerSession.inPaneQuiz) {
 if (!confirm('Leave the multiplayer session?')) return;
+hideFloatingBackBtn();
+window.multiplayerSession.inPaneQuiz = false;
 document.body.classList.remove('quiz-layout-active', 'multi-quiz-active', 'viewport-lock');
 var container = document.getElementById('multi-quiz-container');
 if (container) container.classList.add('hidden');
-window.multiplayerSession._leftPaneQuizView = true;
+if (multiQuizSession) {
+saveMultiQuizProgress(false);
+destroyAllPaneHintWidgets();
+friendAI.stopAll();
+friendCursorSystem.removeAll();
+multiQuizSession = null;
+}
+if (window.multiplayerSession.isHost) window.multiplayerSystem.returnToLobby();
+else {
+window.fb.update(window.fb.ref(window.fb.db,'lobbies/'+window.multiplayerSession.lobbyId+'/players/'+window.multiplayerSession.uid),{left:true}).catch(function(){});
+}
+if (window._mpLobbyState) {
+window._mpLobbyState.phase = 'lobby';
+window._mpLobbyState.paneData = null;
+window._mpLobbyState.paneSlots = null;
+}
+document.getElementById('mp-panel-quiz').classList.remove('active');
+document.getElementById('mp-panel-results').classList.remove('active');
 document.getElementById('knowledge-selection-screen').classList.remove('hidden');
 var c = document.querySelector('#knowledge-selection-screen .selection-box');
 if (c) c.dataset.activeMode = 'multiplayer';
-document.getElementById('mp-inlobby-view').style.display = '';
-document.getElementById('mp-hub-view').style.display = 'none';
-if (window._mpRenderLobby) window._mpRenderLobby();
+if (window.multiplayerSystem) window.multiplayerSystem.openHub();
 if (typeof updateMPCompactNotif === 'function') updateMPCompactNotif();
 return;
 }
@@ -4999,9 +5021,7 @@ window.multiplayerSession._leftQuizView = true;
 document.getElementById('knowledge-selection-screen').classList.remove('hidden');
 var c = document.querySelector('#knowledge-selection-screen .selection-box');
 if (c) c.dataset.activeMode = 'multiplayer';
-document.getElementById('mp-inlobby-view').style.display = '';
-document.getElementById('mp-hub-view').style.display = 'none';
-if (window._mpRenderLobby) window._mpRenderLobby();
+if (window.multiplayerSystem) window.multiplayerSystem.openHub();
 if (typeof updateMPCompactNotif === 'function') updateMPCompactNotif();
 return;
 }
@@ -5043,24 +5063,6 @@ document.getElementById('knowledge-results-screen').classList.add('hidden');
 document.getElementById('knowledge-selection-screen').classList.remove('hidden');
 renderKnowledgeSections();
 }
-window.addEventListener('message', function(e) {
-if (!e.data || e.data.type !== 'quiz_select_option') return;
-const index = e.data.index;
-const screens = [
-{ id: 'knowledge-quiz-screen',optionsId: 'knowledge-options',useDisplay: false }
-];
-for (const s of screens) {
-const el = document.getElementById(s.id);
-if (!el) continue;
-const visible = s.useDisplay ? el.style.display === 'block' : !el.classList.contains('hidden');
-if (!visible) continue;
-const container = document.getElementById(s.optionsId);
-if (!container) break;
-const buttons = container.querySelectorAll('button');
-if (buttons[index] && !buttons[index].disabled) buttons[index].click();
-break;
-}
-});
 }
 function minimizeQuiz() {
 if (window.multiplayerSession && (window.multiplayerSession.inLobby || window.multiplayerSession.inQuiz || window.multiplayerSession.inPaneQuiz)) {
@@ -5390,20 +5392,43 @@ if (w) w.remove();
 }
 function showFloatingBackBtn() {
 const btn = document.getElementById('floating-back-btn');
-if (btn) { btn.style.display = 'flex'; return; }
+if (btn) { btn.style.display = 'flex'; }
+else {
 const floatingBtn = document.createElement('button');
 floatingBtn.id = 'floating-back-btn';
 floatingBtn.className = 'rso-back-btn';
-floatingBtn.onclick = backToSelection;
+floatingBtn.onclick = handleFloatingBackClick;
 floatingBtn.style.cssText = 'position:fixed;bottom:75px;left:20px;z-index:10000;display:flex;align-items:center;gap:8px;background:var(--col-bg-card);border:2px solid var(--col-primary);border-radius:var(--radius-md);padding:8px 14px;color:var(--col-primary);cursor:pointer;font-family:var(--font-sci);font-size:0.9em;letter-spacing:1px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all 0.2s;';
 floatingBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 5 8 12 15 19"></polyline></svg><span>Back</span>';
 floatingBtn.onmouseenter = function() { this.style.transform = 'translateY(-2px)'; this.style.boxShadow = '0 6px 24px rgba(0,0,0,0.5)'; };
 floatingBtn.onmouseleave = function() { this.style.transform = ''; this.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)'; };
 document.body.appendChild(floatingBtn);
 }
+const isPaneMP = window.multiplayerSession && window.multiplayerSession.inPaneQuiz;
+const leaveBtn = document.getElementById('floating-leave-btn');
+if (isPaneMP) {
+if (leaveBtn) { leaveBtn.style.display = 'flex'; }
+else {
+const lvBtn = document.createElement('button');
+lvBtn.id = 'floating-leave-btn';
+lvBtn.className = 'rso-back-btn';
+lvBtn.onclick = function() { if(window.multiplayerSystem && window.multiplayerSystem.confirmLeaveLobby) window.multiplayerSystem.confirmLeaveLobby(); };
+lvBtn.style.cssText = 'position:fixed;bottom:75px;left:130px;z-index:10000;display:flex;align-items:center;gap:8px;background:var(--col-bg-card);border:2px solid var(--col-error);border-radius:var(--radius-md);padding:8px 14px;color:var(--col-error);cursor:pointer;font-family:var(--font-sci);font-size:0.9em;letter-spacing:1px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all 0.2s;';
+lvBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg><span>Leave</span>';
+lvBtn.onmouseenter = function() { this.style.transform = 'translateY(-2px)'; this.style.boxShadow = '0 6px 24px rgba(0,0,0,0.5)'; };
+lvBtn.onmouseleave = function() { this.style.transform = ''; this.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)'; };
+document.body.appendChild(lvBtn);
+}
+} else {
+if (leaveBtn) leaveBtn.style.display = 'none';
+}
+}
+function handleFloatingBackClick() { backToSelection(); }
 function hideFloatingBackBtn() {
 const btn = document.getElementById('floating-back-btn');
 if (btn) btn.style.display = 'none';
+const lvBtn = document.getElementById('floating-leave-btn');
+if (lvBtn) lvBtn.style.display = 'none';
 }
 function showPauseToast() {
 const toast = document.getElementById('pause-toast');
@@ -5754,7 +5779,14 @@ const layoutControls = document.getElementById('party-layout-controls');
 const isPaneHost = window.multiplayerSession && window.multiplayerSession.inPaneQuiz && window.multiplayerSession.isHost;
 if (layoutControls && multiQuizSession.slots.length > 1 && !isPaneHost) layoutControls.classList.remove('hidden');
 renderMultiQuizPanes();
-showFloatingBackBtn();
+var _plb=document.getElementById('pane-leave-btn-wrap');
+if(!_plb){
+_plb=document.createElement('div');
+_plb.id='pane-leave-btn-wrap';
+_plb.style.cssText='position:fixed;bottom:75px;left:20px;z-index:10000;';
+_plb.innerHTML='<button class="mp-btn secondary" onclick="multiplayerSystem.confirmLeaveLobby()">Leave</button>';
+document.body.appendChild(_plb);
+}
 var _pab=document.getElementById('pause-all-btn');
 if(_pab){_pab.textContent='⏸ Pause All';_pab.classList.remove('paused-all');}
 setTimeout(function() {
@@ -6903,9 +6935,12 @@ startKnowledgeQuiz();
 function renderHistoryTab() {
 loadHistoryLog();
 const listEl = document.getElementById('history-list');
-const pageEl = document.getElementById('history-pagination');
-const perPageEl = document.getElementById('history-per-page-controls');
 const sorted = [...quizHistoryLog].sort((a, b) => (b.startTime || 0) - (a.startTime || 0));
+const prevBtn = document.getElementById('history-prev-btn');
+const nextBtn = document.getElementById('history-next-btn');
+const indicator = document.getElementById('history-page-indicator');
+const perPageSelect = document.getElementById('history-per-page-select');
+
 if (sorted.length === 0) {
 listEl.innerHTML = `
 <div class="history-empty">
@@ -6955,8 +6990,9 @@ fill="var(--col-primary)" opacity="0.7"/>
 <p>No quiz history yet.</p>
 <p style="font-size:0.85em;">Complete a quiz to see your results here.</p>
 </div>`;
-pageEl.innerHTML = '';
-perPageEl.innerHTML = '';
+if (prevBtn) prevBtn.disabled = true;
+if (nextBtn) nextBtn.disabled = true;
+if (indicator) indicator.textContent = 'Page 0 of 0';
 return;
 }
 const totalPages = Math.ceil(sorted.length / historyPerPage);
@@ -7036,21 +7072,10 @@ ${isExpanded ? renderHistoryDetail(entry) : ''}
 `;
 });
 listEl.innerHTML = html;
-if (totalPages > 1) {
-let pagHTML = '';
-for (let p = 1; p <= totalPages; p++) {
-pagHTML += `<button class="history-page-btn ${p === historyPage ? 'active' : ''}" onclick="historyGoToPage(${p})">${p}</button>`;
-}
-pageEl.innerHTML = pagHTML;
-} else {
-pageEl.innerHTML = '';
-}
-perPageEl.innerHTML = `
-<span class="history-per-page-label">Per page:</span>
-<button class="history-page-btn ${historyPerPage === 10 ? 'active' : ''}" onclick="setHistoryPerPage(10)">10</button>
-<button class="history-page-btn ${historyPerPage === 25 ? 'active' : ''}" onclick="setHistoryPerPage(25)">25</button>
-<button class="history-page-btn ${historyPerPage === 50 ? 'active' : ''}" onclick="setHistoryPerPage(50)">50</button>
-`;
+if (prevBtn) prevBtn.disabled = historyPage <= 1;
+if (nextBtn) nextBtn.disabled = historyPage >= totalPages;
+if (indicator) indicator.textContent = `Page ${historyPage} of ${totalPages}`;
+if (perPageSelect) perPageSelect.value = historyPerPage;
 }
 function renderHistoryDetail(entry) {
 const durationStr = entry.timeSpent ? formatDuration(entry.timeSpent) : '--';
@@ -7280,7 +7305,7 @@ saveCurrentProgressToHistory(false);
 <div class="settings-fullscreen-content">
 <div class="settings-fullscreen-header">
 <h2>Settings</h2>
-<button class="settings-close-modal" id="settings-fullscreen-close">×</button>
+<button class="settings-close-modal" id="settings-fullscreen-close" onclick="closeSettingsModal()" title="Close" style="position:absolute;top:15px;right:20px;z-index:5;">✕</button>
 </div>
 <div class="settings-fullscreen-body">
 <nav class="settings-nav">
@@ -9205,10 +9230,17 @@ var btn = document.getElementById('lobby-start-btn'), meta = document.getElement
 if (!btn || !meta) return;
 var key = (typeof _lobbySelectedKey !== 'undefined') ? _lobbySelectedKey : null;
 var n = this.party.length, mode = (document.querySelector('.lobby-shell') || {}).dataset && document.querySelector('.lobby-shell').dataset.activeMode;
-if (!key) { meta.textContent = 'pick a bank'; btn.classList.remove('ready'); return; }
+if (mode && mode.startsWith('party') && n === 0) {
+meta.textContent = 'add AI friends to start';
+btn.classList.remove('ready');
+btn.disabled = true;
+return;
+}
+if (!key) { meta.textContent = 'pick a bank'; btn.classList.remove('ready'); btn.disabled = false; return; }
 if (mode === 'solo' || n === 0) meta.textContent = 'solo · 1 player';
 else meta.textContent = (n + 1) + ' players · you + ' + n + ' AI';
 btn.classList.add('ready');
+btn.disabled = false;
 }
 };
 function setLobbyFriendSort(sort, btn) {
@@ -9870,10 +9902,10 @@ resizeObserver.observe(hintsWidget);
 }
 });
 const APP_INFO = {
-version: '0.44',
-revisionDate: '28/05/2026',
+version: '0.47',
+revisionDate: '29/05/2026',
 changelog: [
-"Mobile phone UI optimizations."
+"Bug fixes for Multiplayer Pane mode"
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
@@ -9957,7 +9989,6 @@ let searchSortMode = 'az';
 let searchBankFilter = null;
 let searchSelectedQIDs=new Set();
 function openSearchScreen() {
-if (document.body.classList.contains('nexus-active')) leaveNexus();
 switchTab('search');
 var inp = document.getElementById('search-input');
 inp.value = '';
@@ -10079,6 +10110,7 @@ var wrapper = document.getElementById('search-check-all-wrapper');
 if (wrapper) wrapper.innerHTML = '<button class="search-sort-btn" id="search-select-all-btn" onclick="onSearchSelectAllClick()" style="font-weight:bold;">' + btnIcon + ' Select All</button>';
 var html = '';
 pageItems.forEach(function(item,i){var highlighted=_searchQuizTerm.length>=2?item.displayText.replace(new RegExp('('+_searchQuizTerm.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'),'<mark>$1</mark>'):item.displayText;var qID=item.sectionKey+'_'+item.questionIndex;var st=knowledgeQuestionState[qID];var vCount=(item.qData.variants&&item.qData.variants.length>0)?item.qData.variants.length:1;var vCleared=st&&st.cleared?st.cleared.filter(Boolean).length:0;var cCount=st?(st.correctCount||0):0;var iCount=st?(st.incorrectCount||0):0;var masteryPct=vCount>0?Math.round((vCleared/vCount)*100):0;var pID_=item.sectionKey+'_'+item.questionIndex;var vCnt_=(item.qData.variants&&item.qData.variants.length)?item.qData.variants.length:1;var isDNSA_=Array.from({length:vCnt_},function(_,k){return knowledgeDNSASet.has(pID_+'_'+k);}).every(Boolean);var safeSk_=item.sectionKey.replace(/\\/g,'\\\\').replace(/'/g,"\\'");html+='<div class="search-result-item"><div style="flex:1;min-width:0;"><div class="search-result-q-header" onclick="toggleSearchVariants(this,\''+safeSk_+'\','+item.questionIndex+')" style="cursor:pointer;display:flex;align-items:flex-start;gap:6px;"><button class="search-sort-btn search-item-toggle-btn" data-qid="'+qID+'" onclick="event.stopPropagation();toggleSearchItem(this)" style="flex-shrink:0;margin-right:10px;">'+(searchSelectedQIDs.has(qID)?'☑':'☐')+'</button><span class="search-result-q" style="flex:1;">'+(startIdx+i+1)+'. '+highlighted+'</span></div><div class="search-variants-panel" data-sk="'+item.sectionKey.replace(/"/g,'&quot;')+'" data-qi="'+item.questionIndex+'"></div></div><span class="search-result-section">'+item.sectionTitle+'</span><div class="search-q-menu" style="margin-left:auto;"><button class="search-q-dots" onclick="toggleSearchQMenu(this,event)">&#8942;</button><div class="search-q-dropdown" data-sk="'+item.sectionKey.replace(/"/g,'&quot;')+'" data-qi="'+item.questionIndex+'"><div class="search-q-drop-item" onclick="toggleSearchDNSA(this)" style="'+(isDNSA_?'color:var(--col-error)':'')+'" ><span>'+(isDNSA_?'&#x2611;':'&#x2610;')+'</span> Do not show in quizzes</div></div></div></div>';});listEl.innerHTML=html;
+updateSearchPagination(searchResults.length);
 syncAllCheckState();}
 function syncAllCheckState(){
 var btn=document.getElementById('search-select-all-btn');
@@ -10275,7 +10307,7 @@ function nexusOpenSolo() { leaveNexus(); switchTab('knowledge'); setKbMode('solo
 function nexusOpenParty() { leaveNexus(); switchTab('knowledge'); setKbMode('party4'); }
 function nexusOpenHistory() { leaveNexus(); switchTab('history'); }
 function nexusOpenSearch() { openSearchScreen(); }
-function nexusOpenMultiplayer() { leaveNexus(); switchTab('knowledge'); setKbMode('multiplayer'); if (window.multiplayerSystem) window.multiplayerSystem.openHub(); }
+function nexusOpenMultiplayer() { leaveNexus(); switchTab('knowledge'); setKbMode('multiplayer'); document.getElementById('knowledge-selection-screen').classList.remove('hidden'); if (window.multiplayerSystem) window.multiplayerSystem.openHub(); }
 const AVATAR_POOL = ['https://randomuser.me/api/portraits/men/2.jpg','https://randomuser.me/api/portraits/men/12.jpg','https://randomuser.me/api/portraits/men/22.jpg','https://randomuser.me/api/portraits/men/32.jpg','https://randomuser.me/api/portraits/men/42.jpg','https://randomuser.me/api/portraits/men/47.jpg','https://randomuser.me/api/portraits/men/52.jpg','https://randomuser.me/api/portraits/men/67.jpg','https://randomuser.me/api/portraits/men/72.jpg','https://randomuser.me/api/portraits/men/82.jpg','https://randomuser.me/api/portraits/men/85.jpg','https://randomuser.me/api/portraits/men/92.jpg','https://randomuser.me/api/portraits/women/2.jpg','https://randomuser.me/api/portraits/women/12.jpg','https://randomuser.me/api/portraits/women/22.jpg','https://randomuser.me/api/portraits/women/32.jpg','https://randomuser.me/api/portraits/women/42.jpg','https://randomuser.me/api/portraits/women/44.jpg','https://randomuser.me/api/portraits/women/52.jpg','https://randomuser.me/api/portraits/women/62.jpg','https://randomuser.me/api/portraits/women/64.jpg','https://randomuser.me/api/portraits/women/72.jpg','https://randomuser.me/api/portraits/women/82.jpg','https://randomuser.me/api/portraits/women/85.jpg'];
 function pickRandomAvatar() { return AVATAR_POOL[Math.floor(Math.random() * AVATAR_POOL.length)]; }
 const PLAYER_PROFILE_KEY = 'atcq_player_profile_v1';
@@ -10542,8 +10574,12 @@ if (Object.keys(updates).length) window.fb.update(window.fb.ref(window.fb.db,'lo
 }
 function startPaneCursorSync() {
 const code = window.multiplayerSession.lobbyId;
+const myUid = window.multiplayerSession.uid;
 if (_paneCursorsUnsub) _paneCursorsUnsub();
 if (!friendCursorSystem._remoteMice) friendCursorSystem._remoteMice = {};
+if (code && myUid && window.fb) {
+window.fb.onDisconnect(window.fb.ref(window.fb.db, 'lobbies/' + code + '/cursors/' + myUid)).remove();
+}
 const cursorsRef = window.fb.ref(window.fb.db, 'lobbies/' + code + '/cursors');
 _paneCursorsUnsub = window.fb.onValue(cursorsRef, function(snap) {
 const cursors = snap.val() || {};
@@ -10551,6 +10587,7 @@ const myUid = window.multiplayerSession.uid;
 const players = (lobbyState && lobbyState.players) || {};
 Object.keys(cursors).forEach(function(uid) {
 if (uid === myUid) return;
+if (!players[uid] || players[uid].left) return;
 const c = cursors[uid];
 const hue = (typeof getPlayerHue === 'function') ? getPlayerHue(uid) : (c.hue || 200);
 const pName = (players[uid] && (players[uid].name || players[uid].displayName)) || c.name || 'Player';
@@ -10579,7 +10616,7 @@ friendCursorSystem._remoteMice[uid] = { x: c.x, y: c.y };
 Object.keys(friendCursorSystem._remoteMice).forEach(function(uid){ if (!cursors[uid]) { friendCursorSystem._clearRemoteHover(uid); delete friendCursorSystem._remoteMice[uid]; } });
 document.querySelectorAll('[id^="mp-cursor-"]').forEach(function(el) {
 var cuid = el.id.replace('mp-cursor-', '');
-if (!cursors[cuid]) el.remove();
+if (!cursors[cuid] || !players[cuid] || players[cuid].left) el.remove();
 });
 friendCursorSystem._updateRemoteOptionHovers();
 });
@@ -10631,11 +10668,19 @@ c.targetY = cy;
 }
 function stopPaneCursorSync() {
 if (_paneCursorsUnsub) { _paneCursorsUnsub(); _paneCursorsUnsub = null; }
+if (window._paneDataUnsub) { window._paneDataUnsub(); window._paneDataUnsub = null; }
 if (window._aiCursorBroadcast) { clearInterval(window._aiCursorBroadcast); window._aiCursorBroadcast = null; }
 if (window._aiCursorUnsub) { window._aiCursorUnsub(); window._aiCursorUnsub = null; }
 if (window._paneStaleCleanupInterval) { clearInterval(window._paneStaleCleanupInterval); window._paneStaleCleanupInterval = null; }
 if (friendCursorSystem) friendCursorSystem._remoteMice = {};
 document.querySelectorAll('[id^="mp-cursor-"]').forEach(function(el) { el.remove(); });
+const code = window.multiplayerSession.lobbyId;
+const myUid = window.multiplayerSession.uid;
+if (code && myUid && window.fb) {
+const myCursorRef = window.fb.ref(window.fb.db, 'lobbies/' + code + '/cursors/' + myUid);
+window.fb.onDisconnect(myCursorRef).cancel();
+window.fb.remove(myCursorRef).catch(function(){});
+}
 }
 function markBankSynced() {
 const uid = window.multiplayerSession.uid;
@@ -11040,6 +11085,10 @@ function joinLobbyDirect(code, isHost) {
 window.multiplayerSession.lobbyId = code;
 window.multiplayerSession.isHost = !!isHost;
 window.multiplayerSession.inLobby = true;
+window.multiplayerSession.inQuiz = false;
+window.multiplayerSession.inPaneQuiz = false;
+window.multiplayerSession._leftPaneQuizView = false;
+window.multiplayerSession._leftQuizView = false;
 attachLobby(code);
 _myJoinTime = Date.now();
 startChatListener();
@@ -11110,7 +11159,7 @@ if(screen)screen.classList.remove('active');
 if(typeof enterNexus==='function')enterNexus();
 }
 function maintainHostHeir() {
-if (!window.multiplayerSession.isHost || !lobbyState) return;
+if (!window.multiplayerSession.isHost || !lobbyState || lobbyState.host !== window.multiplayerSession.uid) return;
 const code = window.multiplayerSession.lobbyId;
 const players = lobbyState.players || {};
 const hostUid = lobbyState.host;
@@ -11125,7 +11174,7 @@ window.fb.remove(window.fb.ref(window.fb.db, 'lobbies/' + code + '/hostHeir')).c
 }
 }
 function maintainLobbiesIndex() {
-if (!window.multiplayerSession.isHost || !lobbyState) return;
+if (!window.multiplayerSession.isHost || !lobbyState || lobbyState.host !== window.multiplayerSession.uid) return;
 const code = window.multiplayerSession.lobbyId;
 if (lobbyState.isPrivate) {
 window.fb.remove(window.fb.ref(window.fb.db, 'lobbiesIndex/' + code)).catch(function(){});
@@ -11151,7 +11200,7 @@ const nameEl=document.getElementById('mp-create-name');
 const privateEl=document.getElementById('mp-create-private-toggle');
 const lobbyName=(nameEl&&nameEl.value.trim())||'My Quiz Crew';
 const isPrivate=!!(privateEl&&privateEl.checked);
-const lobby={ host:uid, phase:'lobby', createdAt:fb.serverTimestamp(), joinCode:joinCode, isPrivate:isPrivate, lobbyName:lobbyName, sectionKey:_lobbySelectedKey||'', questionOrder:'', questionIndex:-1, currentQStartedAt:0, questionCount:10, gameMode:'classic', maxPlayers:maxPlayers, players:{} };
+const lobby={ host:uid, phase:'lobby', createdAt:fb.serverTimestamp(), joinCode:joinCode, isPrivate:isPrivate, lobbyName:lobbyName, sectionKey:_lobbySelectedKey||'', questionOrder:'', questionIndex:-1, currentQStartedAt:0, questionCount:10, gameMode:'pane', maxPlayers:maxPlayers, players:{} };
 lobby.players[uid]={ name:(playerProfile.data.name||'You').slice(0,20), displayName:(playerProfile.data.name||'You').slice(0,20), avatarUrl:playerProfile.data.avatarUrl||'', online:true, score:0, joinedAt:fb.serverTimestamp(), lastOnline: fb.serverTimestamp(), bankSynced: true };
 fb.set(fb.ref(fb.db,'lobbies/'+code), lobby).then(function(){
 if (!isPrivate) {
@@ -11327,16 +11376,38 @@ const v=snap.val();
 if(!v){ handleLobbyGone(); return; }
 lobbyState=v;
 window._mpLobbyState = lobbyState;
+if (typeof multiQuizSession !== 'undefined' && multiQuizSession && lobbyState.paneSlots && window.multiplayerSession.inPaneQuiz) {
+const validUids = new Set(lobbyState.paneSlots.map(function(s) { return s.uid; }));
+const oldLen = multiQuizSession.slots.length;
+multiQuizSession.slots = multiQuizSession.slots.filter(function(s) {
+const checkUid = s.mpUid || s.uid;
+return validUids.has(checkUid) || validUids.has(s.uid);
+});
+if (multiQuizSession.slots.length !== oldLen) {
+if (multiQuizSession.focusedSlotIndex >= multiQuizSession.slots.length) multiQuizSession.focusedSlotIndex = 0;
+renderMultiQuizPanes();
+multiQuizSession.slots.forEach(function(slot, i) {
+if (typeof renderPaneQuestion === 'function') renderPaneQuestion(i);
+});
+}
+}
 if (v.maxPlayers) maxPlayers = v.maxPlayers;
 if (typeof updateMPCompactNotif === 'function') updateMPCompactNotif();
 var _selfUid = window.multiplayerSession.uid;
 if (_selfUid && !window.multiplayerSession.isHost && (window.multiplayerSession.inLobby || window.multiplayerSession.inQuiz || window.multiplayerSession.inPaneQuiz) && v.players && !v.players[_selfUid]) { handleKicked(); return; }
 if (lobbyState.phase === 'panequiz' && !window.multiplayerSession.isHost) {
+var isHeir = false;
 var currentHost = lobbyState.host;
 var players = lobbyState.players || {};
-if (!players[currentHost] && players[window.multiplayerSession.uid] && lobbyState.hostHeir === window.multiplayerSession.uid) {
-window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + window.multiplayerSession.lobbyId), { host: window.multiplayerSession.uid }).then(function() {
+if (currentHost === window.multiplayerSession.uid) {
+isHeir = true;
+} else if (!players[currentHost] && players[window.multiplayerSession.uid] && lobbyState.hostHeir === window.multiplayerSession.uid) {
+isHeir = true;
+window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + window.multiplayerSession.lobbyId), { host: window.multiplayerSession.uid }).catch(function() {});
+}
+if (isHeir) {
 window.multiplayerSession.isHost = true;
+if (typeof ensureHostBotsAndRebuild === 'function') ensureHostBotsAndRebuild();
 if (window._paneStaleCleanupInterval) clearInterval(window._paneStaleCleanupInterval);
 window._paneStaleCleanupInterval = setInterval(function() {
 if (!window.multiplayerSession.inPaneQuiz || !window.multiplayerSession.isHost || !lobbyState) return;
@@ -11351,7 +11422,26 @@ window.fb.remove(window.fb.ref(window.fb.db, 'pings/' + uid)).catch(function(){}
 }
 });
 }, 5000);
-}).catch(function() {});
+if (typeof friendCursorSystem !== 'undefined') {
+Object.values(friendCursorSystem.cursors).forEach(function(c) {
+if (c._remoteControlled) c._remoteControlled = false;
+});
+}
+if (!window._aiCursorBroadcast) {
+window._aiCursorBroadcast = setInterval(function(){
+if (!window.multiplayerSession || !window.multiplayerSession.inPaneQuiz || !window.multiplayerSession.isHost) return;
+if (typeof multiQuizSession==='undefined' || !multiQuizSession || !multiQuizSession.slots) return;
+var code = window.multiplayerSession.lobbyId; if (!code) return;
+var updates = {};
+multiQuizSession.slots.forEach(function(s){
+if (!s.friendId || !s.mpUid || s.mpUid.indexOf('_bot_')===-1) return;
+var c = friendCursorSystem.cursors[s.friendId]; if (!c) return;
+var f = partySystem.friends.find(function(fr){return fr.id===s.friendId;});
+updates['aiCursors/'+s.mpUid] = { x: c.x, y: c.y, hue: (f&&f.favoriteHue)||c.hue||200, name: (f&&f.name)||'AI' };
+});
+if (Object.keys(updates).length) window.fb.update(window.fb.ref(window.fb.db,'lobbies/'+code), updates).catch(function(){});
+}, 80);
+}
 }
 }
 if (lobbyState.phase === 'quiz' && !window.multiplayerSession.isHost) {
@@ -11406,10 +11496,13 @@ document.querySelectorAll('[id^="mp-cursor-"]').forEach(function(el){el.remove()
 if(friendCursorSystem){friendCursorSystem.removeAll();friendCursorSystem._remoteMice={};friendCursorSystem._remoteHoverState={};}
 }
 updateAnswerOptionsUI();
+if (typeof leaveNexus === 'function') leaveNexus();
+document.body.classList.remove('nexus-active');
+switchTab('knowledge');
 document.getElementById('knowledge-selection-screen').classList.remove('hidden');
 applyPlayerNameSettingsUI();
-updateMPLobbyUI(false);
 setKbMode('multiplayer');
+updateMPLobbyUI(false);
 listLobbies();
 var _err=document.getElementById('mp-hub-error');
 if(_err){_err.innerHTML='<span style="color:var(--col-error);">Disconnected from session (connection timed out). You can rejoin if the lobby is still active.</span>';setTimeout(function(){if(_err)_err.innerHTML='';},9000);}
@@ -11434,8 +11527,12 @@ document.querySelectorAll('[id^="mp-cursor-"]').forEach(function(el){ el.remove(
 if (friendCursorSystem) { friendCursorSystem.removeAll(); friendCursorSystem._remoteMice = {}; friendCursorSystem._remoteHoverState = {}; }
 }
 updateAnswerOptionsUI();
+if (typeof leaveNexus === 'function') leaveNexus();
+document.body.classList.remove('nexus-active');
+switchTab('knowledge');
 document.getElementById('knowledge-selection-screen').classList.remove('hidden');
 applyPlayerNameSettingsUI();
+setKbMode('multiplayer');
 updateMPLobbyUI(false);
 listLobbies();
 }
@@ -11445,6 +11542,33 @@ const uid=window.multiplayerSession.uid;
 const fb=window.fb;
 const isHost=window.multiplayerSession.isHost;
 const isInQuiz=window.multiplayerSession.inQuiz;
+const isInPaneQuiz=window.multiplayerSession.inPaneQuiz;
+
+window.multiplayerSession.isHost = false;
+window.multiplayerSession.inLobby = false;
+window.multiplayerSession.inQuiz = false;
+window.multiplayerSession.inPaneQuiz = false;
+window.multiplayerSession._leftPaneQuizView = true;
+window.multiplayerSession._leftQuizView = true;
+
+if (window._paneStaleCleanupInterval) { clearInterval(window._paneStaleCleanupInterval); window._paneStaleCleanupInterval = null; }
+if (window._aiCursorBroadcast) { clearInterval(window._aiCursorBroadcast); window._aiCursorBroadcast = null; }
+
+if (isInPaneQuiz) {
+document.body.classList.remove('quiz-layout-active', 'multi-quiz-active', 'viewport-lock');
+var _mc=document.getElementById('multi-quiz-container');
+if(_mc){_mc.classList.add('hidden');_mc.innerHTML='';}
+if(typeof multiQuizSession!=='undefined'){
+saveMultiQuizProgress(false);
+destroyAllPaneHintWidgets();
+friendAI.stopAll();
+friendCursorSystem.removeAll();
+multiQuizSession=null;
+}
+document.querySelectorAll('[id^="mp-cursor-"]').forEach(function(el){el.remove();});
+window.multiplayerSession.inPaneQuiz=false;
+window.multiplayerSession._leftPaneQuizView=true;
+}
 if (isInQuiz) {
 document.getElementById('mp-panel-quiz').classList.remove('active');
 document.body.classList.remove('quiz-layout-active', 'viewport-lock');
@@ -11456,7 +11580,7 @@ window.multiplayerSession._leftQuizView=true;
 }
 var leaverName = playerProfile.data.name;
 multiplayerSystem.sendChatSystemMessage(leaverName + ' left the lobby');
-const cleanup=function(){ detach(); window.multiplayerSession.inLobby=false; window.multiplayerSession.inQuiz=false; window.multiplayerSession.lobbyId=null; window.multiplayerSession.isHost=false; multiplayerSystem._bankFetching=null; if(_chatUnsub){ _chatUnsub(); _chatUnsub=null; } _chatMessages=[]; sessionStorage.removeItem('mp_rejoin'); document.getElementById('knowledge-selection-screen').classList.remove('hidden'); applyPlayerNameSettingsUI(); updateMPLobbyUI(false); listLobbies(); if (typeof updateMPCompactNotif === 'function') updateMPCompactNotif(); };
+const cleanup=function(){ detach(); window.multiplayerSession.inLobby=false; window.multiplayerSession.inQuiz=false; window.multiplayerSession.inPaneQuiz=false; window.multiplayerSession.lobbyId=null; window.multiplayerSession.isHost=false; multiplayerSystem._bankFetching=null; if(_chatUnsub){ _chatUnsub(); _chatUnsub=null; } _chatMessages=[]; sessionStorage.removeItem('mp_rejoin'); if (typeof leaveNexus === 'function') leaveNexus(); document.body.classList.remove('nexus-active'); var _plb = document.getElementById('pane-leave-btn-wrap'); if(_plb) _plb.remove(); hideFloatingBackBtn(); switchTab('knowledge'); document.getElementById('knowledge-selection-screen').classList.remove('hidden'); applyPlayerNameSettingsUI(); setKbMode('multiplayer'); updateMPLobbyUI(false); listLobbies(); if (typeof updateMPCompactNotif === 'function') updateMPCompactNotif(); };
 if (!code || !uid) { cleanup(); return; }
 stopHeartbeat();
 if (isInQuiz && !isHost) {
@@ -11468,10 +11592,13 @@ if(isHost){ fb.onDisconnect(fb.ref(fb.db,'lobbies/'+code)).cancel(); }
 else { fb.onDisconnect(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid)).cancel(); }
 } catch(e) {}
 if(isHost){
-var otherPlayers = Object.keys(lobbyState.players || {}).filter(function(p){ return p !== uid && !lobbyState.players[p].left; });
-if (otherPlayers.length > 0 && (lobbyState.phase === 'quiz' || lobbyState.phase === 'lobby')) {
+var _pObj = (lobbyState && lobbyState.players) ? lobbyState.players : {};
+var otherPlayers = Object.keys(_pObj).filter(function(p){ return p !== uid && !_pObj[p].left; });
+var _phase = (lobbyState && lobbyState.phase) ? lobbyState.phase : 'lobby';
+if (otherPlayers.length > 0 && (_phase === 'quiz' || _phase === 'lobby' || _phase === 'panequiz')) {
+var heir = (lobbyState && lobbyState.hostHeir) ? lobbyState.hostHeir : otherPlayers[0];
+fb.update(fb.ref(fb.db,'lobbies/'+code), {host: heir}).catch(function(){});
 fb.remove(fb.ref(fb.db,'lobbies/'+code+'/players/'+uid)).then(function(){
-fb.remove(fb.ref(fb.db,'lobbiesIndex/'+code)).catch(function(){});
 cleanup();
 }).catch(cleanup);
 } else {
@@ -12086,8 +12213,7 @@ _pendingFullJoinRequest = null;
 var _pendingRemovalTimers = {};
 function scheduleRemoveSlot(slotUid) {
 if (_pendingRemovalTimers[slotUid]) return;
-_pendingRemovalTimers[slotUid] = true;
-setTimeout(function() {
+_pendingRemovalTimers[slotUid] = setTimeout(function() {
 if (!window.multiplayerSession.inPaneQuiz || !window.multiplayerSession.isHost) { delete _pendingRemovalTimers[slotUid]; return; }
 var code = window.multiplayerSession.lobbyId;
 if (!code || !lobbyState) { delete _pendingRemovalTimers[slotUid]; return; }
@@ -12098,7 +12224,7 @@ var oldPaneData = lobbyState.paneData || {};
 Object.keys(oldPaneData).forEach(function(k) { if (k !== slotUid) newPaneData[k] = oldPaneData[k]; });
 window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + code), { paneSlots: newSlots, paneData: newPaneData }).catch(function() {});
 delete _pendingRemovalTimers[slotUid];
-}, 10000);
+}, 4000);
 }
 function cleanupSlotsFromPlayers() {
 if (!window.multiplayerSession.inPaneQuiz || !window.multiplayerSession.isHost || !lobbyState) return;
@@ -12245,7 +12371,14 @@ const container = document.getElementById('multi-quiz-container');
 if (!container) return;
 container.classList.remove('hidden');
 document.body.classList.add('quiz-layout-active', 'multi-quiz-active', 'viewport-lock');
-showFloatingBackBtn();
+var _plb=document.getElementById('pane-leave-btn-wrap');
+if(!_plb){
+_plb=document.createElement('div');
+_plb.id='pane-leave-btn-wrap';
+_plb.style.cssText='position:fixed;bottom:75px;left:20px;z-index:10000;';
+_plb.innerHTML='<button class="mp-btn secondary" onclick="multiplayerSystem.confirmLeaveLobby()">Leave</button>';
+document.body.appendChild(_plb);
+}
 const code = window.multiplayerSession.lobbyId;
 const myUid = window.multiplayerSession.uid;
 const fb = window.fb;
@@ -12309,8 +12442,10 @@ return '<div class="question-box party-member-box" style="--friend-hue:' + frien
 '</div>';
 }
 startPaneCursorSync();
+if (window._paneDataUnsub) window._paneDataUnsub();
 const paneDataRef = fb.ref(fb.db, 'lobbies/' + code + '/paneData');
-fb.onValue(paneDataRef, function(snap) {
+window._paneDataUnsub = fb.onValue(paneDataRef, function(snap) {
+if (!window.multiplayerSession.inPaneQuiz) return;
 const paneData = snap.val() || {};
 const paneSlots = lobbyState.paneSlots || [];
 const players = lobbyState.players || {};
@@ -12324,6 +12459,30 @@ const uid = slot.uid;
 const isMe = (uid === myUid);
 const pData = paneData[uid] || {};
 var displayName = (players[uid] && players[uid].name) || slot.label || 'Player';
+var isDisconnected = false;
+if (slot.isBot) {
+if (!players[slot.ownerUid]) isDisconnected = true;
+} else {
+if (!players[uid]) isDisconnected = true;
+}
+if (isDisconnected) {
+var _pHue = (typeof getPlayerHue==='function') ? getPlayerHue(uid) : 200;
+html += '<div class="question-box party-member-box" style="--friend-hue:' + _pHue + '; border-color:hsla(' + _pHue + ',55%,50%,0.55); box-shadow:0 0 8px hsla(' + _pHue + ',65%,50%,0.15); opacity: 0.4; filter: grayscale(80%); position: relative; pointer-events: none;" onclick="setPaneFocus(' + i + ')">' +
+'<div class="pane-friend-header" style="border-bottom-color:hsla(' + _pHue + ',55%,50%,0.3);">' +
+'<div class="pane-stat-header">' +
+'<span class="pane-friend-swatch" style="background-color:hsl(' + _pHue + ',70%,45%);"></span>' +
+'<div class="pane-hud-bars-slot"></div>' +
+'</div>' +
+'<div class="pane-header-row">' +
+'<div class="pane-header-left">' +
+'<span class="pane-friend-name">' + escapeHTML(slot.label || 'Player') + ' <span style="opacity:0.55;font-weight:normal;">Disconnected</span></span>' +
+'</div>' +
+'</div>' +
+'</div>' +
+'<div class="pane-body" style="display:flex;align-items:center;justify-content:center;font-size:1.5em;color:var(--col-error);font-weight:bold;text-shadow:0 0 10px rgba(0,0,0,0.8);">DISCONNECTED</div>' +
+'</div>';
+return;
+}
 if (slot.isBot && slot.friendData) {
 var friend = getOrCreateBotFriend(slot);
 if (friend) {
@@ -12438,6 +12597,142 @@ if (c.el) c.el.style.transition = 'left 90ms linear, top 90ms linear';
 }
 });
 });
+}
+function rebuildPaneSlotsForNewHost() {
+if (!window.multiplayerSession.isHost || !lobbyState || lobbyState.phase !== 'panequiz') return;
+const db = getMergedDatabase();
+const sec = db.sections[lobbyState.sectionKey];
+if (!sec || !sec.questions) return;
+const players = lobbyState.players || {};
+const playerUids = Object.keys(players);
+const myUid = window.multiplayerSession.uid;
+const hostIdx = playerUids.indexOf(myUid);
+if (hostIdx > 0) { playerUids.splice(hostIdx, 1); playerUids.unshift(myUid); }
+const newSlots = [];
+const newPaneData = {};
+playerUids.forEach(function(playerUid) {
+const p = players[playerUid];
+newSlots.push({ uid: playerUid, label: p.displayName || p.name || 'Player', isBot: false, ownerUid: playerUid, friendData: null });
+});
+playerUids.forEach(function(playerUid) {
+const p = players[playerUid];
+if (!p.aiFriends) return;
+Object.keys(p.aiFriends).forEach(function(botId) {
+const b = p.aiFriends[botId];
+const botUid = playerUid + '_bot_' + botId;
+newSlots.push({ uid: botUid, label: b.name || 'AI Bot', isBot: true, ownerUid: playerUid, friendData: { name: b.name || 'AI', level: b.level || 1, avatarUrl: b.avatarUrl || '', favoriteHue: Math.floor(Math.random() * 360), maxHP: 50, currentHP: 50, maxSP: 30, currentSP: 30, exp: 0 } });
+});
+});
+newSlots.forEach(function(slot) {
+var isMe = (slot.uid === myUid);
+var qData = isMe ? generatePrioritizedPaneQuestion(sec, lobbyState.sectionKey) : generatePaneQuestion(sec);
+var pData = { questionHTML: qData.questionHTML, options: qData.options, correctIndex: qData.correctIndex, questionIndex: qData.questionIndex != null ? qData.questionIndex : 0, variantIndex: qData.variantIndex != null ? qData.variantIndex : 0, selectedIndex: -1, score: 0, masteryPct: isMe ? parseFloat((getSectionEffectivePct(lobbyState.sectionKey) || 0).toFixed(1)) : 0, ownerUid: slot.ownerUid || slot.uid, isBot: !!slot.isBot };
+if (isMe) { pData.remainingVariants = Math.max(0, computeSectionMasteryFromBits(lobbyState.sectionKey).total - computeSectionMasteryFromBits(lobbyState.sectionKey).cleared); pData.totalVariants = computeSectionMasteryFromBits(lobbyState.sectionKey).total; }
+newPaneData[slot.uid] = pData;
+});
+const code = window.multiplayerSession.lobbyId;
+window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + code), { paneSlots: newSlots, paneData: newPaneData }).catch(function(err) { console.warn('Rebuild pane slots failed', err); });
+}
+function ensureHostBotsAndRebuild() {
+if (!window.multiplayerSession.isHost || !lobbyState || lobbyState.phase !== 'panequiz') return;
+const players = lobbyState.players || {};
+const myUid = window.multiplayerSession.uid;
+const maxP = lobbyState.maxPlayers || 4;
+let humanCount = Object.keys(players).length;
+let botCount = 0;
+Object.keys(players).forEach(function(uid) { if (players[uid].aiFriends) botCount += Object.keys(players[uid].aiFriends).length; });
+let neededBots = maxP - (humanCount + botCount);
+if (neededBots > 0) {
+const updates = {};
+for (let i = 0; i < neededBots; i++) {
+var usedNames = new Set();
+Object.keys(players).forEach(function(uid) { if (players[uid].aiFriends) { Object.keys(players[uid].aiFriends).forEach(function(bid) { usedNames.add(players[uid].aiFriends[bid].name); }); } });
+var availableFriends = (typeof partySystem !== 'undefined' && partySystem.friends) ? partySystem.friends.filter(function(f) { return !usedNames.has(f.name); }) : [];
+var f;
+if (availableFriends.length > 0) { f = availableFriends[Math.floor(Math.random() * availableFriends.length)]; }
+else {
+var pool = (typeof FRIEND_NAME_POOL !== 'undefined') ? FRIEND_NAME_POOL.filter(function(n) { return !usedNames.has(n); }) : [];
+var name = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : ('Bot_' + Math.floor(Math.random() * 99));
+var lr = (typeof getSearchLevelRange === 'function') ? getSearchLevelRange() : [1, 5];
+f = (typeof createFriend === 'function') ? createFriend({ name: name, level: lr[0] + Math.floor(Math.random() * (lr[1] - lr[0] + 1)) }) : { name: name, level: 1, avatarUrl: '' };
+if (typeof partySystem !== 'undefined') { partySystem.friends.push(f); partySystem.save(); }
+}
+const botId = 'bot_' + Date.now().toString(36) + '_' + i;
+updates['players/' + myUid + '/aiFriends/' + botId] = { name: (f.name || 'Bot').slice(0, 20), level: f.level || 1, avatarUrl: f.avatarUrl || '' };
+}
+const code = window.multiplayerSession.lobbyId;
+window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + code), updates).then(function() { setTimeout(rebuildPaneSlotsForNewHost, 4000); });
+} else {
+setTimeout(rebuildPaneSlotsForNewHost, 4000);
+}
+}
+function rebuildPaneSlotsForNewHost() {
+if (!window.multiplayerSession.isHost || !lobbyState || lobbyState.phase !== 'panequiz') return;
+const db = getMergedDatabase();
+const sec = db.sections[lobbyState.sectionKey];
+if (!sec || !sec.questions) return;
+const players = lobbyState.players || {};
+const playerUids = Object.keys(players);
+const myUid = window.multiplayerSession.uid;
+const hostIdx = playerUids.indexOf(myUid);
+if (hostIdx > 0) { playerUids.splice(hostIdx, 1); playerUids.unshift(myUid); }
+const newSlots = [];
+const newPaneData = {};
+playerUids.forEach(function(playerUid) {
+const p = players[playerUid];
+newSlots.push({ uid: playerUid, label: p.displayName || p.name || 'Player', isBot: false, ownerUid: playerUid, friendData: null });
+});
+playerUids.forEach(function(playerUid) {
+const p = players[playerUid];
+if (!p.aiFriends) return;
+Object.keys(p.aiFriends).forEach(function(botId) {
+const b = p.aiFriends[botId];
+const botUid = playerUid + '_bot_' + botId;
+newSlots.push({ uid: botUid, label: b.name || 'AI Bot', isBot: true, ownerUid: playerUid, friendData: { name: b.name || 'AI', level: b.level || 1, avatarUrl: b.avatarUrl || '', favoriteHue: Math.floor(Math.random() * 360), maxHP: 50, currentHP: 50, maxSP: 30, currentSP: 30, exp: 0 } });
+});
+});
+newSlots.forEach(function(slot) {
+var isMe = (slot.uid === myUid);
+var qData = isMe ? generatePrioritizedPaneQuestion(sec, lobbyState.sectionKey) : generatePaneQuestion(sec);
+var pData = { questionHTML: qData.questionHTML, options: qData.options, correctIndex: qData.correctIndex, questionIndex: qData.questionIndex != null ? qData.questionIndex : 0, variantIndex: qData.variantIndex != null ? qData.variantIndex : 0, selectedIndex: -1, score: 0, masteryPct: isMe ? parseFloat((getSectionEffectivePct(lobbyState.sectionKey) || 0).toFixed(1)) : 0, ownerUid: slot.ownerUid || slot.uid, isBot: !!slot.isBot };
+if (isMe) { pData.remainingVariants = Math.max(0, computeSectionMasteryFromBits(lobbyState.sectionKey).total - computeSectionMasteryFromBits(lobbyState.sectionKey).cleared); pData.totalVariants = computeSectionMasteryFromBits(lobbyState.sectionKey).total; }
+newPaneData[slot.uid] = pData;
+});
+const code = window.multiplayerSession.lobbyId;
+window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + code), { paneSlots: newSlots, paneData: newPaneData }).catch(function(err) { console.warn('Rebuild pane slots failed', err); });
+}
+function ensureHostBotsAndRebuild() {
+if (!window.multiplayerSession.isHost || !lobbyState || lobbyState.phase !== 'panequiz') return;
+const players = lobbyState.players || {};
+const myUid = window.multiplayerSession.uid;
+const maxP = lobbyState.maxPlayers || 4;
+let humanCount = Object.keys(players).length;
+let botCount = 0;
+Object.keys(players).forEach(function(uid) { if (players[uid].aiFriends) botCount += Object.keys(players[uid].aiFriends).length; });
+let neededBots = maxP - (humanCount + botCount);
+if (neededBots > 0) {
+const updates = {};
+for (let i = 0; i < neededBots; i++) {
+var usedNames = new Set();
+Object.keys(players).forEach(function(uid) { if (players[uid].aiFriends) { Object.keys(players[uid].aiFriends).forEach(function(bid) { usedNames.add(players[uid].aiFriends[bid].name); }); } });
+var availableFriends = (typeof partySystem !== 'undefined' && partySystem.friends) ? partySystem.friends.filter(function(f) { return !usedNames.has(f.name); }) : [];
+var f;
+if (availableFriends.length > 0) { f = availableFriends[Math.floor(Math.random() * availableFriends.length)]; }
+else {
+var pool = (typeof FRIEND_NAME_POOL !== 'undefined') ? FRIEND_NAME_POOL.filter(function(n) { return !usedNames.has(n); }) : [];
+var name = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : ('Bot_' + Math.floor(Math.random() * 99));
+var lr = (typeof getSearchLevelRange === 'function') ? getSearchLevelRange() : [1, 5];
+f = (typeof createFriend === 'function') ? createFriend({ name: name, level: lr[0] + Math.floor(Math.random() * (lr[1] - lr[0] + 1)) }) : { name: name, level: 1, avatarUrl: '' };
+if (typeof partySystem !== 'undefined') { partySystem.friends.push(f); partySystem.save(); }
+}
+const botId = 'bot_' + Date.now().toString(36) + '_' + i;
+updates['players/' + myUid + '/aiFriends/' + botId] = { name: (f.name || 'Bot').slice(0, 20), level: f.level || 1, avatarUrl: f.avatarUrl || '' };
+}
+const code = window.multiplayerSession.lobbyId;
+window.fb.update(window.fb.ref(window.fb.db, 'lobbies/' + code), updates).then(function() { setTimeout(rebuildPaneSlotsForNewHost, 500); });
+} else {
+rebuildPaneSlotsForNewHost();
+}
 }
 function syncLobbyProfile() {
 const uid = window.multiplayerSession.uid;
