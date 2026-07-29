@@ -1384,7 +1384,7 @@ const opts=[correct,...wrong].sort(()=>Math.random()-0.5);const expl=`<strong>Fo
 }
 function generateRoundingQuestion(){
 const variant=pickVariant('rounding');
-function roundTo(val, dps){ return parseFloat((Math.round(val * Math.pow(10, dps)) / Math.pow(10, dps)).toFixed(dps)); }
+function roundTo(val, dps){ return parseFloat((Math.round(val * Math.pow(10, dps) + 1e-9) / Math.pow(10, dps)).toFixed(dps)); }
 function generateRoundingDistractors(x, correct, dp){
 const candidates = [];
 const add = function(v){ v = roundTo(v, dp); if (Math.abs(v - correct) > 1e-9) candidates.push(v); };
@@ -1417,15 +1417,17 @@ unique.push(r);
 return unique.slice(0, window.maxOptionsPerQuestion - 1);
 }
 if(variant===0){
-const whole=Math.floor(Math.random()*90)+10;const tenths=Math.floor(Math.random()*10);const hundredths=Math.floor(Math.random()*10);const thousandths=Math.floor(Math.random()*10);
-const x=parseFloat(((whole*1000+tenths*100+hundredths*10+thousandths)/1000).toFixed(3));
+const wRoll=Math.random();const whole=wRoll<0.2?Math.floor(Math.random()*9)+1:wRoll<0.7?Math.floor(Math.random()*90)+10:Math.floor(Math.random()*900)+100;
+const maxDp=whole>=100?5:6;const dp=Math.floor(Math.random()*(maxDp-2+1))+2;const dDigits=[];for(let i=0;i<dp;i++)dDigits.push(Math.floor(Math.random()*10));if(dDigits[dp-1]===0)dDigits[dp-1]=Math.floor(Math.random()*9)+1;
+const x=parseFloat(whole+'.'+dDigits.join(''));const hundredths=dDigits[1];
 const correct=roundTo(x,1);
 const wrong=generateRoundingDistractors(x,correct,1);
 const opts=[correct].concat(wrong).sort(function(){ return Math.random() - 0.5; });
 const expl=`<strong>Formula:</strong> Round to nearest tenth: look at hundredths digit<br>Step 1: ${x} → hundredths digit = ${hundredths}<br>Step 2: ${hundredths} ${hundredths>=5?'≥':'<'} 5, so ${hundredths>=5?'round up':'round down'}<br>Step 3: Result = ${correct}<br><strong>Answer: ${correct}</strong>`;
 return{type:"rounding",_formulaVariant:0,q:`Round ${x} to the nearest tenth.`,ans:opts.indexOf(correct),opts:opts.map(v=>nf(v)),expl};}
-const whole=Math.floor(Math.random()*90)+10;const tenths=Math.floor(Math.random()*10);const hundredths=Math.floor(Math.random()*10);const thousandths=Math.floor(Math.random()*10);const tenThousandths=Math.floor(Math.random()*10);
-const x=parseFloat(((whole*10000+tenths*1000+hundredths*100+thousandths*10+tenThousandths)/10000).toFixed(4));
+const wRoll=Math.random();const whole=wRoll<0.2?Math.floor(Math.random()*9)+1:wRoll<0.7?Math.floor(Math.random()*90)+10:Math.floor(Math.random()*900)+100;
+const maxDp=whole>=100?5:6;const dp=Math.floor(Math.random()*(maxDp-3+1))+3;const dDigits=[];for(let i=0;i<dp;i++)dDigits.push(Math.floor(Math.random()*10));if(dDigits[dp-1]===0)dDigits[dp-1]=Math.floor(Math.random()*9)+1;
+const x=parseFloat(whole+'.'+dDigits.join(''));const thousandths=dDigits[2];
 const correct=roundTo(x,2);
 const wrong=generateRoundingDistractors(x,correct,2);
 const opts=[correct].concat(wrong).sort(function(){ return Math.random() - 0.5; });
@@ -3509,11 +3511,11 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.31b',
-revisionDate: '21/07/2026',
+version: '0.32b',
+revisionDate: '30/07/2026',
 changelog: [
-"Bug fixes to unrounded numbers in some choices.",
-"Chapter 2 Ratio Share Word Problems progress fix."
+"Fixed an extremely rare bug where a randomly generated number such as 66.4749999999 is rounded to 66.475 in the question but the answer treats it as 66.474, which rounds it to nearest hundredth to 66.47 instead of 66.48.",
+"Extended range of numbers for rounding section to include 1 digit and 3 digits numbers."
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
