@@ -237,7 +237,9 @@ to{ transform: rotate(360deg); }
 .setting-item { margin: 0 0 26px 0; }
 .setting-item.theme-locked { position: relative; pointer-events: none; opacity: 0.3; filter: grayscale(60%); }
 .setting-item.theme-locked::after { content: attr(data-lock-hint); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; color: var(--col-text-muted); pointer-events: none; text-align: center; background: rgba(0,0,0,0.35); border-radius: var(--radius-md); padding: 10px; box-sizing: border-box; }
-:root.light-mode .setting-item.theme-locked::after { background: rgba(180,195,210,0.75); color: var(--col-text-main); }
+.setting-item.not-utilized { position: relative; pointer-events: none; opacity: 0.4; filter: grayscale(60%); }
+.setting-item.not-utilized::after { content: attr(data-lock-hint); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.85em; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: var(--col-text-muted); pointer-events: none; text-align: center; background: rgba(0,0,0,0.4); border-radius: var(--radius-md); padding: 10px; box-sizing: border-box; }
+:root.light-mode .setting-item.not-utilized::after { background: rgba(180,195,210,0.75); color: var(--col-text-main); }
 .setting-item-label { font-size: 0.95em; color: var(--col-text-main); display: block; margin-bottom: 8px; font-weight: bold; }
 .setting-item-desc { font-size: 0.83em; color: var(--col-text-muted); margin-top: 8px; line-height: 1.4; }
 .preset-swatches { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -626,7 +628,7 @@ fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke
 <div class="ps2-menu">
 <button class="ps2-menu-item" onclick="ps2EnterNormal()"><span class="ps2-icon">🗡</span><span class="ps2-label">NORMAL<span class="ps2-sub">Story mode. Beat 30 per variant to unlock the next stage.</span></span></button>
 <button class="ps2-menu-item" onclick="ps2EnterArcade()"><span class="ps2-icon">🕹</span><span class="ps2-label">ARCADE<span class="ps2-sub">All formulas unlocked. Pick variants, choose answer mode.</span></span></button>
-<button class="ps2-menu-item" onclick="ps2Show('settings')"><span class="ps2-icon">⚙</span><span class="ps2-label">SETTINGS<span class="ps2-sub">Theme, sound, shortcuts, data</span></span></button>
+<button class="ps2-menu-item" onclick="ps2Show('settings')"><span class="ps2-icon">⚙</span><span class="ps2-label">SETTINGS<span class="ps2-sub">Theme, shortcuts, data</span></span></button>
 </div>
 <div class="ps2-tip-bar"><kbd>↑</kbd><kbd>↓</kbd>Navigate<span class="tip-sep">·</span><kbd>Enter</kbd>Select<span class="tip-sep">·</span><span class="esc-back-btn"><kbd>Esc</kbd>Back</span></div>
 </div>
@@ -2301,7 +2303,7 @@ window.addEventListener('keydown',_modalSettingsKeyHandler,true);
 </div>
 <div class="settings-panel" id="settings-panel-extra">
 <div class="settings-panel-title">Extra</div>
-<div class="setting-item">
+<div class="setting-item not-utilized" data-lock-hint="Not Utilized">
 <span class="setting-item-label">Enabled Unit Prefixes</span>
 <p class="setting-item-desc" style="margin-bottom:10px;">Controls which SI prefixes appear in generated formula questions. Uncheck a prefix to exclude it.</p>
 <div id="prefix-checkboxes" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); gap:4px 12px; text-align:left; overflow-y:auto; padding:8px; background:var(--col-bg-input); border-radius:var(--radius-md); border:1px solid var(--col-border-light);"></div>
@@ -2329,11 +2331,6 @@ window.addEventListener('keydown',_modalSettingsKeyHandler,true);
 <p class="setting-item-desc">Adds a soft glow halo to cards, buttons, and borders using your accent color.</p>
 </div>
 <div class="setting-item" style="border-top:1px solid var(--col-border-light); padding-top:20px;">
-</div>
-<div style="margin-top:0; border-top:1px solid var(--col-border-light); padding-top:20px;">
-<div style="font-size:0.75em; font-weight:bold; color:var(--col-text-muted); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:16px; opacity:0.6;">Experimental Features</div>
-<div id="bm-modes-body">
-</div>
 </div>
 </div>
 <div class="settings-panel" id="settings-panel-shortcuts">
@@ -3511,11 +3508,11 @@ document.querySelectorAll('.q-menu-dropdown.open').forEach(m => m.classList.remo
 (function(){const items=getPs2Focusables();if(items.length){ps2FocusIndex=0;updatePs2Focus();}})();
 (function(){window.mouseHoveredItem=null;function syncHover(e){const qs=document.getElementById('quiz-screen');if(qs&&qs.style.display==='block')return;const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){mouseHoveredItem=item;}else{mouseHoveredItem=null;}if(window.quizMode!=='settings'){if(!document.body.classList.contains('cursor-idle')&&item){const items=getPs2Focusables();const idx=items.indexOf(item);if(idx!==-1){ps2FocusIndex=idx;updatePs2Focus();}}return;}const navBtn=e.target.closest('.settings-nav-btn');if(navBtn){const btns=getSettingsNavBtns();const idx=btns.indexOf(navBtn);if(idx!==-1){ps2SettingsState.zone='nav';ps2SettingsState.tabIdx=idx;updateSettingsFocusUI();}return;}const settingItem=e.target.closest('.setting-item');if(settingItem){const items=getSettingsItems();const idx=items.indexOf(settingItem);if(idx!==-1){ps2SettingsState.zone='panel';ps2SettingsState.itemIdx=idx;ps2SettingsState.subIdx=0;ps2SettingsState.onSecondary=false;updateSettingsFocusUI();}}}document.addEventListener('mouseout',function(e){const item=e.target.closest('.ps2-menu-item,.ps2-back-btn,.option-card,.variant-pill,.mode-btn,.btn');if(item){item.classList.remove('focused');if(mouseHoveredItem===item){mouseHoveredItem=null;}}},true);document.addEventListener('mouseover',syncHover,true);})();
 const APP_INFO = {
-version: '0.32b',
-revisionDate: '30/07/2026',
+version: '0.34',
+revisionDate: '31/07/2026',
 changelog: [
-"Fixed an extremely rare bug where a randomly generated number such as 66.4749999999 is rounded to 66.475 in the question but the answer treats it as 66.474, which rounds it to nearest hundredth to 66.47 instead of 66.48.",
-"Extended range of numbers for rounding section to include 1 digit and 3 digits numbers."
+"UI text edits.",
+"Marked unit prefixes as Not Utilized".
 ]
 };
 const versionFooterEl = document.getElementById('version-footer');
